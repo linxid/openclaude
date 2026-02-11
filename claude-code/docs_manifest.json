@@ -1,0 +1,767 @@
+{
+  "files": {
+    "01-getting-started/01-overview.md": {
+      "slug": "overview",
+      "title": "概览",
+      "category": "入门指南",
+      "original_url": "https://code.claude.com/docs/zh-CN/overview",
+      "hash": "132b637a93708e1c8e893957199eb55dc79a843f4331ab78d6e14a6fe5f76544",
+      "last_updated": "2026-02-11T16:35:13.230416"
+    },
+    "01-getting-started/02-quickstart.md": {
+      "slug": "quickstart",
+      "title": "快速开始",
+      "category": "入门指南",
+      "original_url": "https://code.claude.com/docs/zh-CN/quickstart",
+      "hash": "7a27f7d1a833d3d5317157fed5a29a5302e4d5051ae47cbd31702a10d1f60055",
+      "last_updated": "2026-02-11T16:35:13.868740"
+    },
+    "01-getting-started/03-setup.md": {
+      "slug": "setup",
+      "title": "安装设置",
+      "category": "入门指南",
+      "original_url": "https://code.claude.com/docs/zh-CN/setup",
+      "hash": "bea208eb1cfc58a920a8df27fb1d32e67de2252973ae411420743404842daa95",
+      "last_updated": "2026-02-11T16:35:14.504085"
+    },
+    "02-core-concepts/01-how-claude-code-works.md": {
+      "slug": "how-claude-code-works",
+      "title": "Claude Code 工作原理",
+      "category": "核心概念",
+      "original_url": "https://code.claude.com/docs/zh-CN/how-claude-code-works",
+      "hash": "b69913fe9cd777ca862570c4204944885940b613bc8772cb50dcbb07ebff9355",
+      "last_updated": "2026-02-11T16:35:15.138116"
+    },
+    "02-core-concepts/02-features-overview.md": {
+      "slug": "features-overview",
+      "title": "扩展 Claude Code",
+      "category": "核心概念",
+      "original_url": "https://code.claude.com/docs/zh-CN/features-overview",
+      "hash": "89f3455b768d2fe306448a16f020a40054a1ad7f15037d61519cafa8e20f5ef0",
+      "last_updated": "2026-02-11T16:35:15.775495"
+    },
+    "02-core-concepts/03-common-workflows.md": {
+      "slug": "common-workflows",
+      "title": "常见工作流程",
+      "category": "核心概念",
+      "original_url": "https://code.claude.com/docs/zh-CN/common-workflows",
+      "hash": "66f74b393bd80ad691aecbff62f9f50d99b889e1c5a9688677b1aaf04c7b8171",
+      "last_updated": "2026-02-11T16:35:16.422476"
+    },
+    "02-core-concepts/04-best-practices.md": {
+      "slug": "best-practices",
+      "title": "最佳实践",
+      "category": "核心概念",
+      "original_url": "https://code.claude.com/docs/zh-CN/best-practices",
+      "hash": "0781b6107be077eaa99e4120fc2f4d17b2a1e220820b19b68b94f1c128aafe42",
+      "last_updated": "2026-02-11T16:35:17.062143"
+    },
+    "03-platforms/01-claude-code-on-the-web.md": {
+      "slug": "claude-code-on-the-web",
+      "title": "Claude Code 网页版",
+      "category": "平台和集成",
+      "original_url": "https://code.claude.com/docs/zh-CN/claude-code-on-the-web",
+      "hash": "62d5a083a91e5f2536718114663d626996aafee7834efbe5602499500d97eb6f",
+      "last_updated": "2026-02-11T16:35:17.730559"
+    },
+    "03-platforms/02-desktop.md": {
+      "slug": "desktop",
+      "title": "Claude Code 桌面版",
+      "category": "平台和集成",
+      "original_url": "https://code.claude.com/docs/zh-CN/desktop",
+      "hash": "dc09a4d3f3a7022b2fce98718ef770ea25a02c41777ad3fe2774fe2e6e92b7fc",
+      "last_updated": "2026-02-11T16:35:18.366545"
+    },
+    "03-platforms/03-chrome.md": {
+      "slug": "chrome",
+      "title": "Chrome 扩展",
+      "category": "平台和集成",
+      "original_url": "https://code.claude.com/docs/zh-CN/chrome",
+      "hash": "7f77557d54f310caa83da5ee394c4a5bc1989cafbd9226fb57e66262a33420b7",
+      "last_updated": "2026-02-11T16:35:19.128203"
+    },
+    "03-platforms/04-vs-code.md": {
+      "slug": "vs-code",
+      "title": "Visual Studio Code",
+      "category": "平台和集成",
+      "original_url": "https://code.claude.com/docs/zh-CN/vs-code",
+      "hash": "e616873d6b706bbd2cc52a940e8da9c187910b183202b3648f6ab07af8c7c735",
+      "last_updated": "2026-02-11T16:35:19.766484"
+    },
+    "03-platforms/05-jetbrains.md": {
+      "slug": "jetbrains",
+      "title": "JetBrains IDE",
+      "category": "平台和集成",
+      "original_url": "https://code.claude.com/docs/zh-CN/jetbrains",
+      "hash": "131c6682f4232d13ba3ed11ab981df54f7106240dd1c38c27a9c1d480067c620",
+      "last_updated": "2026-02-11T16:35:20.419762"
+    },
+    "03-platforms/06-slack.md": {
+      "slug": "slack",
+      "title": "Slack 集成",
+      "category": "平台和集成",
+      "original_url": "https://code.claude.com/docs/zh-CN/slack",
+      "hash": "4a8236451fec0692432dfea602ca9c9596781c696917aef49dfb4532e8080684",
+      "last_updated": "2026-02-11T16:35:21.047869"
+    },
+    "04-build-with-claude/01-skills.md": {
+      "slug": "skills",
+      "title": "技能 (Skills)",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/skills",
+      "hash": "33600d8892289e29b70016ac0b0517068e9a80bfd11bedfd323a0c5657d09993",
+      "last_updated": "2026-02-11T16:35:21.698128"
+    },
+    "04-build-with-claude/02-sub-agents.md": {
+      "slug": "sub-agents",
+      "title": "子代理 (Subagents)",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/sub-agents",
+      "hash": "3a8e241961a27aec3e28e2099741a9fa7d7ecc430af6306e4e50d3fe7761d4af",
+      "last_updated": "2026-02-11T16:35:22.341900"
+    },
+    "04-build-with-claude/03-hooks.md": {
+      "slug": "hooks",
+      "title": "钩子 (Hooks)",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/hooks",
+      "hash": "dd4daa601a2215bbc92ed419a996259ba33151285ee1160fbe6893e299567859",
+      "last_updated": "2026-02-11T16:35:22.979528"
+    },
+    "04-build-with-claude/04-hooks-guide.md": {
+      "slug": "hooks-guide",
+      "title": "钩子指南",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/hooks-guide",
+      "hash": "9bd0f7c07f2b99643a5bf61ef28ba76e4e8bd20b016dd1640442649e6144b758",
+      "last_updated": "2026-02-11T16:35:23.843644"
+    },
+    "04-build-with-claude/05-mcp.md": {
+      "slug": "mcp",
+      "title": "MCP 协议",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/mcp",
+      "hash": "5aa1c6f63f1cd2f1162996878d5897caa01636857ef07c08852eb9271c74791c",
+      "last_updated": "2026-02-11T16:35:24.588309"
+    },
+    "04-build-with-claude/06-plugins.md": {
+      "slug": "plugins",
+      "title": "插件",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/plugins",
+      "hash": "bb723830e4f8653994efd59befbfc8c2344a00003181513a0546f062d1f9bfce",
+      "last_updated": "2026-02-11T16:35:25.315146"
+    },
+    "04-build-with-claude/07-plugins-reference.md": {
+      "slug": "plugins-reference",
+      "title": "插件参考",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/plugins-reference",
+      "hash": "2733922dcf30d697159187730ea7e1c51b7e7d448b83763f628dd092b2255f10",
+      "last_updated": "2026-02-11T16:35:26.179569"
+    },
+    "04-build-with-claude/08-discover-plugins.md": {
+      "slug": "discover-plugins",
+      "title": "发现插件",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/discover-plugins",
+      "hash": "a6e935644e95179bbcdb5a8573e6a4fd6c2db24633bc64a074ee9876457ec15f",
+      "last_updated": "2026-02-11T16:35:26.901529"
+    },
+    "04-build-with-claude/09-plugin-marketplaces.md": {
+      "slug": "plugin-marketplaces",
+      "title": "插件市场",
+      "category": "使用 Claude 构建",
+      "original_url": "https://code.claude.com/docs/zh-CN/plugin-marketplaces",
+      "hash": "88508a6b1ebb83249753794b52939225050ba0eefe06b20a6d0ddf29dc2763ff",
+      "last_updated": "2026-02-11T16:35:27.638576"
+    },
+    "05-deployment/01-github-actions.md": {
+      "slug": "github-actions",
+      "title": "GitHub Actions",
+      "category": "部署",
+      "original_url": "https://code.claude.com/docs/zh-CN/github-actions",
+      "hash": "b46157630942d5d344736908b1cc541693c0c7a0d9f3499d2ea5967c7a28c50c",
+      "last_updated": "2026-02-11T16:35:28.509150"
+    },
+    "05-deployment/02-gitlab-ci-cd.md": {
+      "slug": "gitlab-ci-cd",
+      "title": "GitLab CI/CD",
+      "category": "部署",
+      "original_url": "https://code.claude.com/docs/zh-CN/gitlab-ci-cd",
+      "hash": "c8c36b39d509771a0425c078bf2c2fef4cc9c14df2f17e3f419733ea3e7e8235",
+      "last_updated": "2026-02-11T16:35:29.214233"
+    },
+    "05-deployment/03-headless.md": {
+      "slug": "headless",
+      "title": "无头模式",
+      "category": "部署",
+      "original_url": "https://code.claude.com/docs/zh-CN/headless",
+      "hash": "c1a75ebb78fd9cf5ab9809134bfcda1b268ae124cc133f0685149941e071fbb7",
+      "last_updated": "2026-02-11T16:35:30.086632"
+    },
+    "05-deployment/04-agent-teams.md": {
+      "slug": "agent-teams",
+      "title": "代理团队",
+      "category": "部署",
+      "original_url": "https://code.claude.com/docs/zh-CN/agent-teams",
+      "hash": "d619f1335462dc6eda59db26ce2510129f8a3df19f38d089dcca3981d29b12dd",
+      "last_updated": "2026-02-11T16:35:30.715177"
+    },
+    "05-deployment/05-devcontainer.md": {
+      "slug": "devcontainer",
+      "title": "开发容器",
+      "category": "部署",
+      "original_url": "https://code.claude.com/docs/zh-CN/devcontainer",
+      "hash": "1358c4f54b4cb1d9e802f9a5a703de50133147ba3aeb995801c94c0c2e8034e5",
+      "last_updated": "2026-02-11T16:35:31.473676"
+    },
+    "06-administration/01-third-party-integrations.md": {
+      "slug": "third-party-integrations",
+      "title": "企业部署概览",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/third-party-integrations",
+      "hash": "227a000806f0eabbdc098584ec184d0c32d639ab6fbc629532df7aed1fd8416e",
+      "last_updated": "2026-02-11T16:35:32.188602"
+    },
+    "06-administration/02-amazon-bedrock.md": {
+      "slug": "amazon-bedrock",
+      "title": "Amazon Bedrock",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/amazon-bedrock",
+      "hash": "d3a2a1d36ab6bf99a835430c8346622a1b8bc283c0bdf98f1d3c8faa22219588",
+      "last_updated": "2026-02-11T16:35:32.893710"
+    },
+    "06-administration/03-google-vertex-ai.md": {
+      "slug": "google-vertex-ai",
+      "title": "Google Vertex AI",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/google-vertex-ai",
+      "hash": "23aee5ddc9e984487fd6e9aed39c62eedc6de98eeaceb185472bdac4f5348eb9",
+      "last_updated": "2026-02-11T16:35:33.587874"
+    },
+    "06-administration/04-microsoft-foundry.md": {
+      "slug": "microsoft-foundry",
+      "title": "Microsoft Foundry",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/microsoft-foundry",
+      "hash": "7aaec311c52d54938eec8fc578536e015f41020f31728e73073ad4746e03d3ab",
+      "last_updated": "2026-02-11T16:35:34.298758"
+    },
+    "06-administration/05-llm-gateway.md": {
+      "slug": "llm-gateway",
+      "title": "LLM 网关配置",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/llm-gateway",
+      "hash": "b808888ec4d97c2d6c7ce6b335761ef7545b0d031bb432f0b58b0f53f5c6333c",
+      "last_updated": "2026-02-11T16:35:35.042536"
+    },
+    "06-administration/06-monitoring-usage.md": {
+      "slug": "monitoring-usage",
+      "title": "监控",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/monitoring-usage",
+      "hash": "a9a3564686e4db69a2700275a30d1bafae22caf225bc4aafea16bb25ad4fce51",
+      "last_updated": "2026-02-11T16:35:35.789437"
+    },
+    "06-administration/07-analytics.md": {
+      "slug": "analytics",
+      "title": "分析",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/analytics",
+      "hash": "91bbb05d074d6828ea07709b0ca7704a5cb705651351e6a4fc77be3e0e9173ba",
+      "last_updated": "2026-02-11T16:35:36.519051"
+    },
+    "06-administration/08-costs.md": {
+      "slug": "costs",
+      "title": "成本管理",
+      "category": "管理",
+      "original_url": "https://code.claude.com/docs/zh-CN/costs",
+      "hash": "0e83bf3d2986c9e45ad510d6036410b1fe16c69889ea4951827963518cd69b2e",
+      "last_updated": "2026-02-11T16:35:37.156063"
+    },
+    "07-configuration/01-settings.md": {
+      "slug": "settings",
+      "title": "设置",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/settings",
+      "hash": "ca8b460a7987ddc87a57c5fe2ddff9e09841f73d0231828c81b417fade2157fc",
+      "last_updated": "2026-02-11T16:35:37.927710"
+    },
+    "07-configuration/02-permissions.md": {
+      "slug": "permissions",
+      "title": "权限配置",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/permissions",
+      "hash": "92e70c45c6561a796686439ab6a8f36f5d47fd7d2d9a5dfda744a1ed1cf28a9e",
+      "last_updated": "2026-02-11T16:35:38.628547"
+    },
+    "07-configuration/03-memory.md": {
+      "slug": "memory",
+      "title": "记忆管理",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/memory",
+      "hash": "ef3f38b2690f5f0d06564c2aab4da96de85f6b2682300ea1ff839b02ad923d10",
+      "last_updated": "2026-02-11T16:35:39.356121"
+    },
+    "07-configuration/04-model-config.md": {
+      "slug": "model-config",
+      "title": "模型配置",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/model-config",
+      "hash": "8d1f8a9bb6f48e91f53483eeb60c99c71cb50ad42bedc9ce025ac34bd8ee6351",
+      "last_updated": "2026-02-11T16:35:40.169716"
+    },
+    "07-configuration/05-keybindings.md": {
+      "slug": "keybindings",
+      "title": "快捷键",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/keybindings",
+      "hash": "114a379635ceebecb36bb28289c8b8d033ca81e0f60e7c5a6e1a942c96997383",
+      "last_updated": "2026-02-11T16:35:40.962954"
+    },
+    "07-configuration/06-terminal-config.md": {
+      "slug": "terminal-config",
+      "title": "终端配置",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/terminal-config",
+      "hash": "810d248a40da33a33f930fb520e3f2c2112ffaf63988c9719b9962017c17e955",
+      "last_updated": "2026-02-11T16:35:41.607307"
+    },
+    "07-configuration/07-network-config.md": {
+      "slug": "network-config",
+      "title": "网络配置",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/network-config",
+      "hash": "3b68700a3d1c266a862cdc53ee1774730dbe3bd1592636db4bee52cd9f210193",
+      "last_updated": "2026-02-11T16:35:42.359580"
+    },
+    "07-configuration/08-output-styles.md": {
+      "slug": "output-styles",
+      "title": "输出样式",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/output-styles",
+      "hash": "0633f814ef2a51e88be4f1af2d941fe116c90b84ada813b0c630e9f0770fa664",
+      "last_updated": "2026-02-11T16:35:43.000481"
+    },
+    "07-configuration/09-statusline.md": {
+      "slug": "statusline",
+      "title": "状态栏",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/statusline",
+      "hash": "63a6502d6ffb034af7d233b4bca925d789586d96f2f5e8d0cb64ae550509810e",
+      "last_updated": "2026-02-11T16:35:43.689955"
+    },
+    "07-configuration/10-sandboxing.md": {
+      "slug": "sandboxing",
+      "title": "沙箱",
+      "category": "配置",
+      "original_url": "https://code.claude.com/docs/zh-CN/sandboxing",
+      "hash": "045926972c6299ff13f704b75d3fd0b22d89c843984153c53783833d29726edb",
+      "last_updated": "2026-02-11T16:35:44.445085"
+    },
+    "08-reference/01-cli-reference.md": {
+      "slug": "cli-reference",
+      "title": "CLI 参考",
+      "category": "参考",
+      "original_url": "https://code.claude.com/docs/zh-CN/cli-reference",
+      "hash": "b6ab2d7244143941f198bef9670710400f75857a57e91116f988a8b87d2ac967",
+      "last_updated": "2026-02-11T16:35:45.161508"
+    },
+    "08-reference/02-interactive-mode.md": {
+      "slug": "interactive-mode",
+      "title": "交互模式",
+      "category": "参考",
+      "original_url": "https://code.claude.com/docs/zh-CN/interactive-mode",
+      "hash": "1ea00796dd088483e06acc5a2d718b8fc4d6e3c3f293fcdf122dd6c36c5ef18b",
+      "last_updated": "2026-02-11T16:35:45.799601"
+    },
+    "08-reference/03-checkpointing.md": {
+      "slug": "checkpointing",
+      "title": "检查点",
+      "category": "参考",
+      "original_url": "https://code.claude.com/docs/zh-CN/checkpointing",
+      "hash": "e6b75791ce0358012aa46626d8a917973c80f9884ca3db2789de7592f9a2ab2b",
+      "last_updated": "2026-02-11T16:35:46.448486"
+    },
+    "09-resources/01-security.md": {
+      "slug": "security",
+      "title": "安全",
+      "category": "资源",
+      "original_url": "https://code.claude.com/docs/zh-CN/security",
+      "hash": "be215750cfb57ffc5664a873535c79c6149d446c34cb9226bfbf98ec315d9806",
+      "last_updated": "2026-02-11T16:35:47.236572"
+    },
+    "09-resources/02-data-usage.md": {
+      "slug": "data-usage",
+      "title": "数据使用",
+      "category": "资源",
+      "original_url": "https://code.claude.com/docs/zh-CN/data-usage",
+      "hash": "0be287e6e8c3cbed5713e363f84ec43d37ff21494ac11b8ab0c376250b87f911",
+      "last_updated": "2026-02-11T16:35:47.957214"
+    },
+    "09-resources/03-legal-and-compliance.md": {
+      "slug": "legal-and-compliance",
+      "title": "法律与合规",
+      "category": "资源",
+      "original_url": "https://code.claude.com/docs/zh-CN/legal-and-compliance",
+      "hash": "b37dd82c4f3039fef005d010eba1ea5eca60cff75dd7bbdc5c7c210f42af13e8",
+      "last_updated": "2026-02-11T16:35:48.661045"
+    },
+    "09-resources/04-troubleshooting.md": {
+      "slug": "troubleshooting",
+      "title": "故障排除",
+      "category": "资源",
+      "original_url": "https://code.claude.com/docs/zh-CN/troubleshooting",
+      "hash": "d5365d6c371f569ba32c10b14f1aa20fb357061679a528af0192c16614ea5897",
+      "last_updated": "2026-02-11T16:35:49.387196"
+    },
+    "changelog.md": {
+      "slug": "changelog",
+      "title": "更新日志",
+      "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "hash": "453e5ec2a3b8db92461114c20f9963df334e2e38f4a2fcbc2afefaf63095ec9b",
+      "last_updated": "2026-02-11T16:35:50.422094",
+      "source": "claude-code-repository"
+    },
+    "index.md": {
+      "slug": "index",
+      "title": "文档索引",
+      "hash": "8531aa2e9f5db89080c82e8719848f5280a4ff6a87b62d61b96d52f7b02eec2a",
+      "last_updated": "2026-02-11T16:35:50.423013"
+    }
+  },
+  "navigation": [
+    {
+      "folder": "01-getting-started",
+      "title": "入门指南",
+      "docs": [
+        {
+          "filename": "01-overview.md",
+          "slug": "overview",
+          "title": "概览"
+        },
+        {
+          "filename": "02-quickstart.md",
+          "slug": "quickstart",
+          "title": "快速开始"
+        },
+        {
+          "filename": "03-setup.md",
+          "slug": "setup",
+          "title": "安装设置"
+        }
+      ]
+    },
+    {
+      "folder": "02-core-concepts",
+      "title": "核心概念",
+      "docs": [
+        {
+          "filename": "01-how-claude-code-works.md",
+          "slug": "how-claude-code-works",
+          "title": "Claude Code 工作原理"
+        },
+        {
+          "filename": "02-features-overview.md",
+          "slug": "features-overview",
+          "title": "扩展 Claude Code"
+        },
+        {
+          "filename": "03-common-workflows.md",
+          "slug": "common-workflows",
+          "title": "常见工作流程"
+        },
+        {
+          "filename": "04-best-practices.md",
+          "slug": "best-practices",
+          "title": "最佳实践"
+        }
+      ]
+    },
+    {
+      "folder": "03-platforms",
+      "title": "平台和集成",
+      "docs": [
+        {
+          "filename": "01-claude-code-on-the-web.md",
+          "slug": "claude-code-on-the-web",
+          "title": "Claude Code 网页版"
+        },
+        {
+          "filename": "02-desktop.md",
+          "slug": "desktop",
+          "title": "Claude Code 桌面版"
+        },
+        {
+          "filename": "03-chrome.md",
+          "slug": "chrome",
+          "title": "Chrome 扩展"
+        },
+        {
+          "filename": "04-vs-code.md",
+          "slug": "vs-code",
+          "title": "Visual Studio Code"
+        },
+        {
+          "filename": "05-jetbrains.md",
+          "slug": "jetbrains",
+          "title": "JetBrains IDE"
+        },
+        {
+          "filename": "06-slack.md",
+          "slug": "slack",
+          "title": "Slack 集成"
+        }
+      ]
+    },
+    {
+      "folder": "04-build-with-claude",
+      "title": "使用 Claude 构建",
+      "docs": [
+        {
+          "filename": "01-skills.md",
+          "slug": "skills",
+          "title": "技能 (Skills)"
+        },
+        {
+          "filename": "02-sub-agents.md",
+          "slug": "sub-agents",
+          "title": "子代理 (Subagents)"
+        },
+        {
+          "filename": "03-hooks.md",
+          "slug": "hooks",
+          "title": "钩子 (Hooks)"
+        },
+        {
+          "filename": "04-hooks-guide.md",
+          "slug": "hooks-guide",
+          "title": "钩子指南"
+        },
+        {
+          "filename": "05-mcp.md",
+          "slug": "mcp",
+          "title": "MCP 协议"
+        },
+        {
+          "filename": "06-plugins.md",
+          "slug": "plugins",
+          "title": "插件"
+        },
+        {
+          "filename": "07-plugins-reference.md",
+          "slug": "plugins-reference",
+          "title": "插件参考"
+        },
+        {
+          "filename": "08-discover-plugins.md",
+          "slug": "discover-plugins",
+          "title": "发现插件"
+        },
+        {
+          "filename": "09-plugin-marketplaces.md",
+          "slug": "plugin-marketplaces",
+          "title": "插件市场"
+        }
+      ]
+    },
+    {
+      "folder": "05-deployment",
+      "title": "部署",
+      "docs": [
+        {
+          "filename": "01-github-actions.md",
+          "slug": "github-actions",
+          "title": "GitHub Actions"
+        },
+        {
+          "filename": "02-gitlab-ci-cd.md",
+          "slug": "gitlab-ci-cd",
+          "title": "GitLab CI/CD"
+        },
+        {
+          "filename": "03-headless.md",
+          "slug": "headless",
+          "title": "无头模式"
+        },
+        {
+          "filename": "04-agent-teams.md",
+          "slug": "agent-teams",
+          "title": "代理团队"
+        },
+        {
+          "filename": "05-devcontainer.md",
+          "slug": "devcontainer",
+          "title": "开发容器"
+        }
+      ]
+    },
+    {
+      "folder": "06-administration",
+      "title": "管理",
+      "docs": [
+        {
+          "filename": "01-third-party-integrations.md",
+          "slug": "third-party-integrations",
+          "title": "企业部署概览"
+        },
+        {
+          "filename": "02-amazon-bedrock.md",
+          "slug": "amazon-bedrock",
+          "title": "Amazon Bedrock"
+        },
+        {
+          "filename": "03-google-vertex-ai.md",
+          "slug": "google-vertex-ai",
+          "title": "Google Vertex AI"
+        },
+        {
+          "filename": "04-microsoft-foundry.md",
+          "slug": "microsoft-foundry",
+          "title": "Microsoft Foundry"
+        },
+        {
+          "filename": "05-llm-gateway.md",
+          "slug": "llm-gateway",
+          "title": "LLM 网关配置"
+        },
+        {
+          "filename": "06-monitoring-usage.md",
+          "slug": "monitoring-usage",
+          "title": "监控"
+        },
+        {
+          "filename": "07-analytics.md",
+          "slug": "analytics",
+          "title": "分析"
+        },
+        {
+          "filename": "08-costs.md",
+          "slug": "costs",
+          "title": "成本管理"
+        }
+      ]
+    },
+    {
+      "folder": "07-configuration",
+      "title": "配置",
+      "docs": [
+        {
+          "filename": "01-settings.md",
+          "slug": "settings",
+          "title": "设置"
+        },
+        {
+          "filename": "02-permissions.md",
+          "slug": "permissions",
+          "title": "权限配置"
+        },
+        {
+          "filename": "03-memory.md",
+          "slug": "memory",
+          "title": "记忆管理"
+        },
+        {
+          "filename": "04-model-config.md",
+          "slug": "model-config",
+          "title": "模型配置"
+        },
+        {
+          "filename": "05-keybindings.md",
+          "slug": "keybindings",
+          "title": "快捷键"
+        },
+        {
+          "filename": "06-terminal-config.md",
+          "slug": "terminal-config",
+          "title": "终端配置"
+        },
+        {
+          "filename": "07-network-config.md",
+          "slug": "network-config",
+          "title": "网络配置"
+        },
+        {
+          "filename": "08-output-styles.md",
+          "slug": "output-styles",
+          "title": "输出样式"
+        },
+        {
+          "filename": "09-statusline.md",
+          "slug": "statusline",
+          "title": "状态栏"
+        },
+        {
+          "filename": "10-sandboxing.md",
+          "slug": "sandboxing",
+          "title": "沙箱"
+        }
+      ]
+    },
+    {
+      "folder": "08-reference",
+      "title": "参考",
+      "docs": [
+        {
+          "filename": "01-cli-reference.md",
+          "slug": "cli-reference",
+          "title": "CLI 参考"
+        },
+        {
+          "filename": "02-interactive-mode.md",
+          "slug": "interactive-mode",
+          "title": "交互模式"
+        },
+        {
+          "filename": "03-checkpointing.md",
+          "slug": "checkpointing",
+          "title": "检查点"
+        }
+      ]
+    },
+    {
+      "folder": "09-resources",
+      "title": "资源",
+      "docs": [
+        {
+          "filename": "01-security.md",
+          "slug": "security",
+          "title": "安全"
+        },
+        {
+          "filename": "02-data-usage.md",
+          "slug": "data-usage",
+          "title": "数据使用"
+        },
+        {
+          "filename": "03-legal-and-compliance.md",
+          "slug": "legal-and-compliance",
+          "title": "法律与合规"
+        },
+        {
+          "filename": "04-troubleshooting.md",
+          "slug": "troubleshooting",
+          "title": "故障排除"
+        }
+      ]
+    }
+  ],
+  "fetch_metadata": {
+    "last_fetch_completed": "2026-02-11T16:35:50.423018",
+    "fetch_duration_seconds": 37.518528,
+    "total_docs": 53,
+    "successful": 53,
+    "failed": 0,
+    "failed_pages": [],
+    "base_url": "https://code.claude.com",
+    "language": "zh-CN",
+    "fetch_tool_version": "4.0-hierarchical"
+  },
+  "last_updated": "2026-02-11T16:35:50.423027",
+  "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
+  "github_repository": "ericbuess/claude-code-docs",
+  "github_ref": "main",
+  "docs_language": "zh-CN",
+  "description": "Claude Code 中文文档镜像，按官网导航结构组织"
+}

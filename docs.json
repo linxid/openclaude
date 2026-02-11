@@ -1,15 +1,275 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "AI 文档中心",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#0D9373",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#0D9373"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
+      {
+        "tab": "Claude Code",
+        "groups": [
+          {
+            "group": "入门指南",
+            "pages": [
+              "claude-code/index",
+              "claude-code/01-getting-started/01-overview",
+              "claude-code/01-getting-started/02-quickstart",
+              "claude-code/01-getting-started/03-setup"
+            ]
+          },
+          {
+            "group": "核心概念",
+            "pages": [
+              "claude-code/02-core-concepts/01-how-claude-code-works",
+              "claude-code/02-core-concepts/02-features-overview",
+              "claude-code/02-core-concepts/03-common-workflows",
+              "claude-code/02-core-concepts/04-best-practices"
+            ]
+          },
+          {
+            "group": "平台和集成",
+            "pages": [
+              "claude-code/03-platforms/01-claude-code-on-the-web",
+              "claude-code/03-platforms/02-desktop",
+              "claude-code/03-platforms/03-chrome",
+              "claude-code/03-platforms/04-vs-code",
+              "claude-code/03-platforms/05-jetbrains",
+              "claude-code/03-platforms/06-slack"
+            ]
+          },
+          {
+            "group": "使用 Claude 构建",
+            "pages": [
+              "claude-code/04-build-with-claude/01-skills",
+              "claude-code/04-build-with-claude/02-sub-agents",
+              "claude-code/04-build-with-claude/03-hooks",
+              "claude-code/04-build-with-claude/04-hooks-guide",
+              "claude-code/04-build-with-claude/05-mcp",
+              "claude-code/04-build-with-claude/06-plugins",
+              "claude-code/04-build-with-claude/07-plugins-reference",
+              "claude-code/04-build-with-claude/08-discover-plugins",
+              "claude-code/04-build-with-claude/09-plugin-marketplaces"
+            ]
+          },
+          {
+            "group": "部署",
+            "pages": [
+              "claude-code/05-deployment/01-github-actions",
+              "claude-code/05-deployment/02-gitlab-ci-cd",
+              "claude-code/05-deployment/03-headless",
+              "claude-code/05-deployment/04-agent-teams",
+              "claude-code/05-deployment/05-devcontainer"
+            ]
+          },
+          {
+            "group": "管理",
+            "pages": [
+              "claude-code/06-administration/01-third-party-integrations",
+              "claude-code/06-administration/02-amazon-bedrock",
+              "claude-code/06-administration/03-google-vertex-ai",
+              "claude-code/06-administration/04-microsoft-foundry",
+              "claude-code/06-administration/05-llm-gateway",
+              "claude-code/06-administration/06-monitoring-usage",
+              "claude-code/06-administration/07-analytics",
+              "claude-code/06-administration/08-costs"
+            ]
+          },
+          {
+            "group": "配置",
+            "pages": [
+              "claude-code/07-configuration/01-settings",
+              "claude-code/07-configuration/02-permissions",
+              "claude-code/07-configuration/03-memory",
+              "claude-code/07-configuration/04-model-config",
+              "claude-code/07-configuration/05-keybindings",
+              "claude-code/07-configuration/06-terminal-config",
+              "claude-code/07-configuration/07-network-config",
+              "claude-code/07-configuration/08-output-styles",
+              "claude-code/07-configuration/09-statusline",
+              "claude-code/07-configuration/10-sandboxing"
+            ]
+          },
+          {
+            "group": "参考",
+            "pages": [
+              "claude-code/08-reference/01-cli-reference",
+              "claude-code/08-reference/02-interactive-mode",
+              "claude-code/08-reference/03-checkpointing"
+            ]
+          },
+          {
+            "group": "资源",
+            "pages": [
+              "claude-code/09-resources/01-security",
+              "claude-code/09-resources/02-data-usage",
+              "claude-code/09-resources/03-legal-and-compliance",
+              "claude-code/09-resources/04-troubleshooting",
+              "claude-code/changelog"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "OpenClaw",
+        "groups": [
+          {
+            "group": "入门",
+            "pages": [
+              "openclaw/index",
+              "openclaw/start/getting-started",
+              "openclaw/start/setup",
+              "openclaw/start/onboarding-overview",
+              "openclaw/start/wizard",
+              "openclaw/start/bootstrapping",
+              "openclaw/start/openclaw",
+              "openclaw/start/showcase"
+            ]
+          },
+          {
+            "group": "核心概念",
+            "pages": [
+              "openclaw/concepts/features",
+              "openclaw/concepts/agent",
+              "openclaw/concepts/agent-loop",
+              "openclaw/concepts/agent-workspace",
+              "openclaw/concepts/architecture",
+              "openclaw/concepts/context",
+              "openclaw/concepts/memory",
+              "openclaw/concepts/messages",
+              "openclaw/concepts/session",
+              "openclaw/concepts/sessions",
+              "openclaw/concepts/system-prompt",
+              "openclaw/concepts/model-providers",
+              "openclaw/concepts/multi-agent"
+            ]
+          },
+          {
+            "group": "安装",
+            "pages": [
+              "openclaw/install/index",
+              "openclaw/install/node",
+              "openclaw/install/docker",
+              "openclaw/install/nix",
+              "openclaw/install/ansible",
+              "openclaw/install/fly",
+              "openclaw/install/railway",
+              "openclaw/install/render",
+              "openclaw/install/gcp",
+              "openclaw/install/hetzner",
+              "openclaw/install/updating",
+              "openclaw/install/uninstall"
+            ]
+          },
+          {
+            "group": "聊天渠道",
+            "pages": [
+              "openclaw/channels/index",
+              "openclaw/channels/telegram",
+              "openclaw/channels/whatsapp",
+              "openclaw/channels/discord",
+              "openclaw/channels/slack",
+              "openclaw/channels/msteams",
+              "openclaw/channels/feishu",
+              "openclaw/channels/line",
+              "openclaw/channels/signal",
+              "openclaw/channels/matrix",
+              "openclaw/channels/irc",
+              "openclaw/channels/groups",
+              "openclaw/channels/pairing"
+            ]
+          },
+          {
+            "group": "网关",
+            "pages": [
+              "openclaw/gateway/index",
+              "openclaw/gateway/configuration",
+              "openclaw/gateway/authentication",
+              "openclaw/gateway/discovery",
+              "openclaw/gateway/protocol",
+              "openclaw/gateway/health",
+              "openclaw/gateway/logging",
+              "openclaw/gateway/sandboxing",
+              "openclaw/gateway/remote",
+              "openclaw/gateway/troubleshooting"
+            ]
+          },
+          {
+            "group": "工具",
+            "pages": [
+              "openclaw/tools/index",
+              "openclaw/tools/skills",
+              "openclaw/tools/subagents",
+              "openclaw/tools/browser",
+              "openclaw/tools/exec",
+              "openclaw/tools/plugin",
+              "openclaw/tools/slash-commands",
+              "openclaw/tools/thinking",
+              "openclaw/tools/web"
+            ]
+          },
+          {
+            "group": "CLI 命令",
+            "pages": [
+              "openclaw/cli/index",
+              "openclaw/cli/setup",
+              "openclaw/cli/agent",
+              "openclaw/cli/agents",
+              "openclaw/cli/channels",
+              "openclaw/cli/configure",
+              "openclaw/cli/gateway",
+              "openclaw/cli/health",
+              "openclaw/cli/logs",
+              "openclaw/cli/memory",
+              "openclaw/cli/message",
+              "openclaw/cli/models",
+              "openclaw/cli/skills",
+              "openclaw/cli/status"
+            ]
+          },
+          {
+            "group": "模型提供商",
+            "pages": [
+              "openclaw/providers/index",
+              "openclaw/providers/models",
+              "openclaw/providers/anthropic",
+              "openclaw/providers/openai",
+              "openclaw/providers/bedrock",
+              "openclaw/providers/openrouter",
+              "openclaw/providers/minimax",
+              "openclaw/providers/moonshot",
+              "openclaw/providers/glm",
+              "openclaw/providers/qianfan"
+            ]
+          },
+          {
+            "group": "平台",
+            "pages": [
+              "openclaw/platforms/index",
+              "openclaw/platforms/macos",
+              "openclaw/platforms/linux",
+              "openclaw/platforms/windows",
+              "openclaw/platforms/ios",
+              "openclaw/platforms/android"
+            ]
+          },
+          {
+            "group": "帮助与参考",
+            "pages": [
+              "openclaw/help/index",
+              "openclaw/help/faq",
+              "openclaw/help/troubleshooting",
+              "openclaw/help/debugging",
+              "openclaw/help/environment",
+              "openclaw/reference/token-use"
+            ]
+          }
+        ]
+      },
       {
         "tab": "Guides",
         "groups": [
@@ -71,14 +331,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Claude Code 官方",
+          "href": "https://code.claude.com/docs/zh-CN",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "OpenClaw 官方",
+          "href": "https://docs.openclaw.ai/zh-CN",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/linxid/docs",
+          "icon": "github"
         }
       ]
     }
@@ -90,8 +355,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Claude Code 官方",
+        "href": "https://code.claude.com/docs/zh-CN"
       }
     ],
     "primary": {
@@ -102,21 +367,19 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/linxid"
     }
   }
 }
