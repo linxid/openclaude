@@ -3,19 +3,15 @@ title: "快速入门"
 description: "欢迎使用 Claude Code！"
 ---
 
-# 快速入门
-
-> 欢迎使用 Claude Code！
-
 本快速入门指南将在几分钟内让您使用 AI 驱动的编码辅助。完成后，您将了解如何使用 Claude Code 完成常见的开发任务。
 
 ## 开始前
 
 确保您拥有：
 
-* 打开的终端或命令提示符
-* 一个要处理的代码项目
-* 一个 [Claude.ai](https://claude.ai)（推荐）或 [Claude Console](https://console.anthropic.com/) 账户
+- 打开的终端或命令提示符
+- 一个要处理的代码项目
+- 一个 [Claude.ai](https://claude.ai)（推荐）或 [Claude Console](https://console.anthropic.com/) 账户
 
 ## 步骤 1：安装 Claude Code
 
@@ -25,19 +21,19 @@ To install Claude Code, use one of the following methods:
   <Tab title="Native Install (Recommended)">
     **macOS, Linux, WSL:**
 
-    ```bash  theme={null}
+    ```bash
     curl -fsSL https://claude.ai/install.sh | bash
     ```
 
     **Windows PowerShell:**
 
-    ```powershell  theme={null}
+    ```powershell
     irm https://claude.ai/install.ps1 | iex
     ```
 
     **Windows CMD:**
 
-    ```batch  theme={null}
+    ```batch
     curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
     ```
 
@@ -45,9 +41,8 @@ To install Claude Code, use one of the following methods:
       Native installations automatically update in the background to keep you on the latest version.
     </Info>
   </Tab>
-
   <Tab title="Homebrew">
-    ```sh  theme={null}
+    ```sh
     brew install --cask claude-code
     ```
 
@@ -55,9 +50,8 @@ To install Claude Code, use one of the following methods:
       Homebrew installations do not auto-update. Run `brew upgrade claude-code` periodically to get the latest features and security fixes.
     </Info>
   </Tab>
-
   <Tab title="WinGet">
-    ```powershell  theme={null}
+    ```powershell
     winget install Anthropic.ClaudeCode
     ```
 
@@ -71,20 +65,20 @@ To install Claude Code, use one of the following methods:
 
 Claude Code 需要账户才能使用。当您使用 `claude` 命令启动交互式会话时，您需要登录：
 
-```bash  theme={null}
+```bash
 claude
 # 首次使用时系统会提示您登录
 ```
 
-```bash  theme={null}
+```bash
 /login
 # 按照提示使用您的账户登录
 ```
 
 您可以使用以下任一账户类型登录：
 
-* [Claude.ai](https://claude.ai)（订阅计划 - 推荐）
-* [Claude Console](https://console.anthropic.com/)（使用预付费额度的 API 访问）
+- [Claude.ai](https://claude.ai)（订阅计划 - 推荐）
+- [Claude Console](https://console.anthropic.com/)（使用预付费额度的 API 访问）
 
 登录后，您的凭证将被存储，您无需再次登录。
 
@@ -100,7 +94,7 @@ claude
 
 在任何项目目录中打开您的终端并启动 Claude Code：
 
-```bash  theme={null}
+```bash
 cd /path/to/your/project
 claude
 ```
@@ -214,10 +208,10 @@ Claude 擅长调试和功能实现。
 
 Claude Code 将：
 
-* 定位相关代码
-* 理解上下文
-* 实现解决方案
-* 如果可用，运行测试
+- 定位相关代码
+- 理解上下文
+- 实现解决方案
+- 如果可用，运行测试
 
 ## 步骤 8：尝试其他常见工作流
 
@@ -277,7 +271,6 @@ Claude Code 将：
 
     尝试这样说："fix the login bug where users see a blank screen after entering wrong credentials"
   </Accordion>
-
   <Accordion title="使用分步说明">
     将复杂任务分解为步骤：
 
@@ -293,7 +286,6 @@ Claude Code 将：
     > 3. build a webpage that allows users to see and edit their information
     ```
   </Accordion>
-
   <Accordion title="让 Claude 先探索">
     在进行更改之前，让 Claude 了解您的代码：
 
@@ -305,12 +297,11 @@ Claude Code 将：
     > build a dashboard showing products that are most frequently returned by our UK customers
     ```
   </Accordion>
-
   <Accordion title="使用快捷方式节省时间">
-    * 按 `?` 查看所有可用的键盘快捷方式
-    * 使用 Tab 进行命令补全
-    * 按 ↑ 查看命令历史
-    * 输入 `/` 查看所有斜杠命令
+    - 按 `?` 查看所有可用的键盘快捷方式
+    - 使用 Tab 进行命令补全
+    - 按 ↑ 查看命令历史
+    - 输入 `/` 查看所有斜杠命令
   </Accordion>
 </AccordionGroup>
 
@@ -322,19 +313,15 @@ Claude Code 将：
   <Card title="常见工作流" icon="graduation-cap" href="/zh-CN/common-workflows">
     常见任务的分步指南
   </Card>
-
   <Card title="CLI 参考" icon="terminal" href="/zh-CN/cli-reference">
     掌握所有命令和选项
   </Card>
-
   <Card title="配置" icon="gear" href="/zh-CN/settings">
     为您的工作流自定义 Claude Code
   </Card>
-
   <Card title="网络上的 Claude Code" icon="cloud" href="/zh-CN/claude-code-on-the-web">
     在云中异步运行任务
   </Card>
-
   <Card title="关于 Claude Code" icon="sparkles" href="https://claude.com/product/claude-code">
     在 claude.com 上了解更多
   </Card>
@@ -342,6 +329,6 @@ Claude Code 将：
 
 ## 获取帮助
 
-* **在 Claude Code 中**：输入 `/help` 或询问"how do I..."
-* **文档**：您在这里！浏览其他指南
-* **社区**：加入我们的 [Discord](https://www.anthropic.com/discord) 获取提示和支持
+- **在 Claude Code 中**：输入 `/help` 或询问"how do I..."
+- **文档**：您在这里！浏览其他指南
+- **社区**：加入我们的 [Discord](https://www.anthropic.com/discord) 获取提示和支持
