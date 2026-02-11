@@ -3,8 +3,6 @@ title: "Bridge 协议"
 description: "Bridge 协议 文档"
 ---
 
-# Bridge 协议（旧版节点传输）
-
 Bridge 协议是一个**旧版**节点传输（TCP JSONL）。新的节点客户端应该使用统一的 Gateway 网关 WebSocket 协议。
 
 如果你正在构建操作者或节点客户端，请使用 [Gateway 网关协议](/gateway/protocol)。

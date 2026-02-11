@@ -3,8 +3,6 @@ title: "位置命令"
 description: "位置命令 文档"
 ---
 
-# 位置命令（节点）
-
 ## 简要概述
 
 * `location.get` 是一个节点命令（通过 `node.invoke`）。

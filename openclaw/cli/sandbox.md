@@ -3,8 +3,6 @@ title: "沙箱 CLI"
 description: "沙箱 CLI 文档"
 ---
 
-# 沙箱 CLI
-
 管理基于 Docker 的沙箱容器，用于隔离智能体执行。
 
 ## 概述

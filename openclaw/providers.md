@@ -3,8 +3,6 @@ title: "模型提供商"
 description: "模型提供商 文档"
 ---
 
-# 模型提供商
-
 OpenClaw 可以使用许多 LLM 提供商。选择一个提供商，进行认证，然后将默认模型设置为 `provider/model`。
 
 正在寻找聊天渠道文档（WhatsApp/Telegram/Discord/Slack/Mattermost（插件）等）？参见[渠道](/channels)。

@@ -3,8 +3,6 @@ title: "Slack"
 description: "Slack 渠道配置"
 ---
 
-# Slack
-
 ## Socket 模式（默认）
 
 ### 快速设置（新手）

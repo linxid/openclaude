@@ -3,8 +3,6 @@ title: "远程 Gateway 网关设置"
 description: "远程 Gateway 网关设置 文档"
 ---
 
-# 使用远程 Gateway 网关运行 OpenClaw\.app
-
 OpenClaw\.app 使用 SSH 隧道连接到远程 Gateway 网关。本指南向你展示如何设置。
 
 ## 概述

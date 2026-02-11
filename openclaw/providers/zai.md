@@ -3,8 +3,6 @@ title: "Z.AI"
 description: "Z.AI 文档"
 ---
 
-# Z.AI
-
 Z.AI 是 **GLM** 模型的 API 平台。它为 GLM 提供 REST API，并使用 API 密钥进行身份验证。请在 Z.AI 控制台中创建你的 API 密钥。OpenClaw 通过 `zai` 提供商配合 Z.AI API 密钥使用。
 
 ## CLI 设置

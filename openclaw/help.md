@@ -3,8 +3,6 @@ title: "帮助"
 description: "帮助 文档"
 ---
 
-# 帮助
-
 如果你想要快速“解决问题”的流程，从这里开始：
 
 * **故障排除：**[从这里开始](/help/troubleshooting)

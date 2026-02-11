@@ -3,8 +3,6 @@ title: "CLI 命令"
 description: "OpenClaw 命令行工具"
 ---
 
-# CLI 命令
-
 OpenClaw CLI 提供了管理智能体、渠道和 Gateway 的完整命令集。
 
 ## 安装 CLI

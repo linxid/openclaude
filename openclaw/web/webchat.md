@@ -3,8 +3,6 @@ title: "WebChat"
 description: "WebChat 文档"
 ---
 
-# WebChat（Gateway 网关 WebSocket UI）
-
 状态：macOS/iOS SwiftUI 聊天 UI 直接与 Gateway 网关 WebSocket 通信。
 
 ## 它是什么

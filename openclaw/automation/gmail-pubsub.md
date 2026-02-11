@@ -3,8 +3,6 @@ title: "Gmail PubSub"
 description: "Gmail PubSub 文档"
 ---
 
-# Gmail Pub/Sub -> OpenClaw
-
 目标：Gmail watch -> Pub/Sub 推送 -> `gog gmail watch serve` -> OpenClaw webhook。
 
 ## 前置条件

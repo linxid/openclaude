@@ -3,8 +3,6 @@ title: "模型提供商"
 description: "模型提供商 文档"
 ---
 
-# 模型提供商
-
 本页介绍 **LLM/模型提供商**（不是 WhatsApp/Telegram 等聊天渠道）。
 关于模型选择规则，请参阅 [/concepts/models](/concepts/models)。
 

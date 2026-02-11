@@ -3,8 +3,6 @@ title: "工作区记忆研究"
 description: "工作区记忆研究 文档"
 ---
 
-# 工作区记忆 v2（离线）：研究笔记
-
 目标：Clawd 风格的工作区（`agents.defaults.workspace`，默认 `~/.openclaw/workspace`），其中"记忆"以每天一个 Markdown 文件（`memory/YYYY-MM-DD.md`）加上一小组稳定文件（例如 `memory.md`、`SOUL.md`）的形式存储。
 
 本文档提出一种**离线优先**的记忆架构，保持 Markdown 作为规范的、可审查的数据源，但通过派生索引添加**结构化回忆**（搜索、实体摘要、置信度更新）。

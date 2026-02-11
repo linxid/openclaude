@@ -3,10 +3,6 @@ title: "插件参考"
 description: "Claude Code 插件系统的完整技术参考，包括架构、CLI 命令和组件规范。"
 ---
 
-# 插件参考
-
-> Claude Code 插件系统的完整技术参考，包括架构、CLI 命令和组件规范。
-
 <Tip>
   想要安装插件？请参阅[发现和安装插件](/zh-CN/discover-plugins)。如需创建插件，请参阅[插件](/zh-CN/plugins)。如需分发插件，请参阅[插件市场](/zh-CN/plugin-marketplaces)。
 </Tip>

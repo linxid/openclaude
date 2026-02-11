@@ -3,8 +3,6 @@ title: "Token 使用与成本"
 description: "Token 使用与成本 文档"
 ---
 
-# Token 使用与成本
-
 OpenClaw 跟踪的是 **token**，而不是字符。Token 是模型特定的，但大多数
 OpenAI 风格的模型对于英文文本平均约 4 个字符为一个 token。
 

@@ -3,8 +3,6 @@ title: "常见问题"
 description: "常见问题 文档"
 ---
 
-# 常见问题
-
 快速解答及针对实际部署场景（本地开发、VPS、多智能体、OAuth/API 密钥、模型故障转移）的深入故障排除。运行时诊断请参阅[故障排除](/gateway/troubleshooting)。完整配置参考请参阅[配置](/gateway/configuration)。
 
 ## 目录

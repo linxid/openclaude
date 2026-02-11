@@ -3,8 +3,6 @@ title: "Peekaboo Bridge"
 description: "Peekaboo Bridge 文档"
 ---
 
-# Peekaboo Bridge（macOS UI 自动化）
-
 OpenClaw 可以将 **PeekabooBridge** 作为本地的、权限感知的 UI 自动化代理进行托管。这使得 `peekaboo` CLI 能够驱动 UI 自动化，同时复用 macOS 应用的 TCC 权限。
 
 ## 这是什么（以及不是什么）

@@ -3,8 +3,6 @@ title: "macOS 日志"
 description: "macOS 日志 文档"
 ---
 
-# 日志（macOS）
-
 ## 滚动诊断文件日志（Debug 面板）
 
 OpenClaw 通过 swift-log（默认使用统一日志）路由 macOS 应用日志，并且在需要持久化捕获时可以将本地轮转文件日志写入磁盘。

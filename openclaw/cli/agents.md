@@ -3,8 +3,6 @@ title: "agents"
 description: "agents 文档"
 ---
 
-# `openclaw agents`
-
 管理隔离的智能体（工作区 + 认证 + 路由）。
 
 相关内容：

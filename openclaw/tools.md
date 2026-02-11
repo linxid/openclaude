@@ -3,8 +3,6 @@ title: "工具"
 description: "工具 文档"
 ---
 
-# 工具（OpenClaw）
-
 OpenClaw 为 browser、canvas、nodes 和 cron 暴露**一流的智能体工具**。
 这些工具取代了旧的 `openclaw-*` Skills：工具是类型化的，无需调用 shell，
 智能体应该直接依赖它们。

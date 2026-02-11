@@ -3,8 +3,6 @@ title: "Exec 工具"
 description: "Exec 工具 文档"
 ---
 
-# Exec 工具
-
 在工作区中运行 shell 命令。通过 `process` 支持前台和后台执行。
 如果 `process` 被禁用，`exec` 将同步运行并忽略 `yieldMs`/`background`。
 后台会话按智能体隔离；`process` 只能看到同一智能体的会话。

@@ -3,8 +3,6 @@ title: "思考级别"
 description: "思考级别 文档"
 ---
 
-# 思考级别（/think 指令）
-
 ## 功能说明
 
 * 在任何入站消息正文中使用内联指令：`/t <level>`、`/think:<level>` 或 `/thinking <level>`。

@@ -3,10 +3,6 @@ title: "Claude Code 钩子入门"
 description: "学习如何通过注册 shell 命令来自定义和扩展 Claude Code 的行为"
 ---
 
-# Claude Code 钩子入门
-
-> 学习如何通过注册 shell 命令来自定义和扩展 Claude Code 的行为
-
 Claude Code 钩子是用户定义的 shell 命令，在 Claude Code 生命周期的各个点执行。钩子提供对 Claude Code 行为的确定性控制，确保某些操作总是发生，而不是依赖 LLM 选择运行它们。
 
 <Tip>

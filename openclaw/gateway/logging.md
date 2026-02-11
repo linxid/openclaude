@@ -3,8 +3,6 @@ title: "日志"
 description: "日志 文档"
 ---
 
-# 日志
-
 面向用户的概览（CLI + Control UI + 配置），请参阅 [/logging](/logging)。
 
 OpenClaw 有两个日志"界面"：

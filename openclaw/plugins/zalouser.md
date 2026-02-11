@@ -3,8 +3,6 @@ title: "Zalo Personal 插件"
 description: "Zalo Personal 插件 文档"
 ---
 
-# Zalo Personal（插件）
-
 通过插件为 OpenClaw 提供 Zalo Personal 支持，使用 `zca-cli` 自动化普通 Zalo 用户账户。
 
 > **警告：** 非官方自动化可能导致账户被暂停/封禁。使用风险自负。

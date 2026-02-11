@@ -3,8 +3,6 @@ title: "Doctor"
 description: "Doctor 文档"
 ---
 
-# Doctor
-
 `openclaw doctor` 是 OpenClaw 的修复 + 迁移工具。它修复过时的配置/状态，检查健康状况，并提供可操作的修复步骤。
 
 ## 快速开始

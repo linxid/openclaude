@@ -3,8 +3,6 @@ title: "Gateway 网关锁"
 description: "Gateway 网关锁 文档"
 ---
 
-# Gateway 网关锁
-
 最后更新：2025-12-11
 
 ## 原因

@@ -3,8 +3,6 @@ title: "Bonjour 设备发现"
 description: "Bonjour 设备发现 文档"
 ---
 
-# Bonjour / mDNS 设备发现
-
 OpenClaw 使用 Bonjour（mDNS / DNS‑SD）作为**仅限局域网的便捷方式**来发现
 活跃的 Gateway 网关（WebSocket 端点）。这是尽力而为的，**不能**替代 SSH 或
 基于 Tailnet 的连接。

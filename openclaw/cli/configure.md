@@ -3,8 +3,6 @@ title: "configure"
 description: "configure 文档"
 ---
 
-# `openclaw configure`
-
 用于设置凭证、设备和智能体默认值的交互式提示。
 
 注意：**模型**部分现在包含一个用于 `agents.defaults.models` 允许列表的多选项（显示在 `/model` 和模型选择器中的内容）。

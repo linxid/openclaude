@@ -3,8 +3,6 @@ title: "在 Northflank 上部署"
 description: "在 Northflank 上部署 文档"
 ---
 
-# 在 Northflank 上部署
-
 通过一键模板在 Northflank 上部署 OpenClaw，然后在浏览器中完成设置。
 这是最简单的"无需在服务器上使用终端"的方式：Northflank 为你运行 Gateway网关，
 你通过 `/setup` 网页向导配置一切。

@@ -3,8 +3,6 @@ title: "Skills"
 description: "Skills 文档"
 ---
 
-# Skills（OpenClaw）
-
 OpenClaw 使用**兼容 [AgentSkills](https://agentskills.io)** 的 Skills 文件夹来教智能体如何使用工具。每个 Skills 是一个包含带有 YAML frontmatter 和说明的 `SKILL.md` 的目录。OpenClaw 加载**内置 Skills** 以及可选的本地覆盖，并在加载时根据环境、配置和二进制文件存在情况进行过滤。
 
 ## 位置和优先级

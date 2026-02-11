@@ -3,8 +3,6 @@ title: "IRC"
 description: "通过 IRC 连接 OpenClaw"
 ---
 
-# IRC
-
 <Note>
 IRC 渠道目前为实验性功能，通过插件提供。
 </Note>

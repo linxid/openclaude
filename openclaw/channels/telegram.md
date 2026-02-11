@@ -3,8 +3,6 @@ title: "Telegram"
 description: "Telegram 渠道配置"
 ---
 
-# Telegram（Bot API）
-
 状态：通过 grammY 支持机器人私信和群组，已可用于生产环境。默认使用长轮询；webhook 可选。
 
 ## 快速设置（入门）

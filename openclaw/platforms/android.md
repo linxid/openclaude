@@ -3,8 +3,6 @@ title: "Android 应用"
 description: "Android 应用 文档"
 ---
 
-# Android 应用（节点）
-
 ## 支持概览
 
 * 角色：配套节点应用（Android 不托管 Gateway 网关）。

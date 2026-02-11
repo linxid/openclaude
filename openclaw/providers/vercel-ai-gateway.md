@@ -3,8 +3,6 @@ title: "Vercel AI Gateway"
 description: "Vercel AI Gateway 文档"
 ---
 
-# Vercel AI Gateway
-
 [Vercel AI Gateway](https://vercel.com/ai-gateway) 提供了一个统一的 API，通过单一端点访问数百个模型。
 
 * 提供商：`vercel-ai-gateway`

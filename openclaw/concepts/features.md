@@ -3,8 +3,6 @@ title: "功能"
 description: "功能 文档"
 ---
 
-# 功能
-
 ## 亮点
 
 <Columns>

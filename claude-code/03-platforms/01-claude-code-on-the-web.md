@@ -3,10 +3,6 @@ title: "Claude Code on the web"
 description: "在安全的云基础设施上异步运行 Claude Code 任务"
 ---
 
-# Claude Code on the web
-
-> 在安全的云基础设施上异步运行 Claude Code 任务
-
 <Note>
   Claude Code on the web 目前处于研究预览阶段。
 </Note>

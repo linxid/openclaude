@@ -3,8 +3,6 @@ title: "Markdown 格式化"
 description: "Markdown 格式化 文档"
 ---
 
-# Markdown 格式化
-
 OpenClaw 通过将出站 Markdown 转换为共享的中间表示（IR），然后再渲染为特定渠道的输出来进行格式化。IR 保留源文本不变，同时携带样式/链接跨度信息，使分块和渲染在各渠道间保持一致。
 
 ## 目标

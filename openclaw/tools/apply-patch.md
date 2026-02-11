@@ -3,8 +3,6 @@ title: "apply_patch 工具"
 description: "apply_patch 工具 文档"
 ---
 
-# apply\_patch 工具
-
 使用结构化补丁格式应用文件更改。这非常适合多文件
 或多段编辑，在这些场景下单次 `edit` 调用会很脆弱。
 

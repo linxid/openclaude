@@ -3,10 +3,6 @@ title: "故障排除"
 description: "发现 Claude Code 安装和使用中常见问题的解决方案。"
 ---
 
-# 故障排除
-
-> 发现 Claude Code 安装和使用中常见问题的解决方案。
-
 ## 常见安装问题
 
 ### Windows 安装问题：WSL 中的错误

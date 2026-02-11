@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# TOOLS.md - 本地备注
-
 Skills 定义了工具的*工作方式*。此文件用于记录*你的*具体信息——那些你的环境中独有的内容。
 
 ## 应该放什么

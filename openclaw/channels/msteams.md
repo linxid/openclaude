@@ -3,10 +3,6 @@ title: "Microsoft Teams"
 description: "Microsoft Teams 文档"
 ---
 
-# Microsoft Teams（插件）
-
-> "进入此地者，放弃一切希望。"
-
 更新时间：2026-01-21
 
 状态：支持文本 + 私信附件；频道/群组文件发送需要 `sharePointSiteId` + Graph 权限（参见[在群聊中发送文件](#sending-files-in-group-chats)）。投票通过 Adaptive Cards 发送。

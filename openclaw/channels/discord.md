@@ -3,8 +3,6 @@ title: "Discord"
 description: "Discord 渠道配置"
 ---
 
-# Discord（Bot API）
-
 状态：已支持通过官方 Discord 机器人网关进行私信和服务器文字频道通信。
 
 ## 快速设置（新手）

@@ -3,10 +3,6 @@ title: "Claude Code 桌面版"
 description: "在本地或安全的云基础设施上运行 Claude Code 任务，使用 Claude 桌面应用"
 ---
 
-# Claude Code 桌面版
-
-> 在本地或安全的云基础设施上运行 Claude Code 任务，使用 Claude 桌面应用
-
 <img src="https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=c4e9dc9737b437d36ab253b75a1cc595" alt="Claude Code 桌面版界面" data-og-width="4132" width="4132" data-og-height="2620" height="2620" data-path="images/desktop-interface.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?w=280&fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=b1a8421a544c3e8c78679fa1a7b56190 280w, https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?w=560&fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=79cf4ea0923098cc429198678ea50903 560w, https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?w=840&fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=14bcbcd569d179770fe656686ffbf6bf 840w, https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?w=1100&fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=b873274db1e9ff8585ba545032aa24a5 1100w, https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?w=1650&fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=25553dced783c3a8c2a1134a53295f7e 1650w, https://mintcdn.com/claude-code/zEGbGSbinVtT3BLw/images/desktop-interface.png?w=2500&fit=max&auto=format&n=zEGbGSbinVtT3BLw&q=85&s=9ad49e6468c2f87b1895093deeea7bb2 2500w" />
 
 ## Claude Code 桌面版（预览版）

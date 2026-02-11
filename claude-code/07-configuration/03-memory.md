@@ -3,10 +3,6 @@ title: "管理 Claude 的内存"
 description: "了解如何通过不同的内存位置和最佳实践在会话中管理 Claude Code 的内存。"
 ---
 
-# 管理 Claude 的内存
-
-> 了解如何通过不同的内存位置和最佳实践在会话中管理 Claude Code 的内存。
-
 Claude Code 可以在会话中记住您的偏好设置，例如样式指南和工作流中的常用命令。
 
 ## 确定内存类型

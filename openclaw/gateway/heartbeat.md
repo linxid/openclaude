@@ -3,10 +3,6 @@ title: "心跳"
 description: "心跳 文档"
 ---
 
-# 心跳（Gateway 网关）
-
-> **心跳 vs Cron？** 参见 [Cron vs 心跳](/automation/cron-vs-heartbeat) 了解何时使用哪种方案。
-
 心跳在主会话中运行**周期性智能体轮次**，使模型能够在不打扰你的情况下提醒需要关注的事项。
 
 ## 快速开始（新手）

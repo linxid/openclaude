@@ -3,8 +3,6 @@ title: "dns"
 description: "dns 文档"
 ---
 
-# `openclaw dns`
-
 用于广域设备发现（Tailscale + CoreDNS）的 DNS 辅助工具。目前专注于 macOS + Homebrew CoreDNS。
 
 相关内容：

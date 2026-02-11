@@ -3,8 +3,6 @@ title: "迁移指南"
 description: "迁移指南 文档"
 ---
 
-# 将 OpenClaw 迁移到新机器
-
 本指南将 OpenClaw Gateway 网关从一台机器迁移到另一台，**无需重新进行新手引导**。
 
 迁移在概念上很简单：

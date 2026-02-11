@@ -3,8 +3,6 @@ title: "Synthetic"
 description: "Synthetic 文档"
 ---
 
-# Synthetic
-
 Synthetic 提供兼容 Anthropic 的端点。OpenClaw 将其注册为 `synthetic` 提供商，并使用 Anthropic Messages API。
 
 ## 快速设置

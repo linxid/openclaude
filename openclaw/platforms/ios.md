@@ -3,8 +3,6 @@ title: "iOS 应用"
 description: "iOS 应用 文档"
 ---
 
-# iOS 应用（节点）
-
 可用性：内部预览。iOS 应用尚未公开分发。
 
 ## 功能

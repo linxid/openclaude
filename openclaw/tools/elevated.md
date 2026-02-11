@@ -3,8 +3,6 @@ title: "提升模式"
 description: "提升模式 文档"
 ---
 
-# 提升模式（/elevated 指令）
-
 ## 功能说明
 
 * `/elevated on` 在 Gateway 网关主机上运行并保留 exec 审批（与 `/elevated ask` 相同）。

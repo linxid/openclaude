@@ -3,9 +3,6 @@ title: "Claude Code 更新日志"
 description: "**来源**: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
 ---
 
-# Claude Code 更新日志
-
-> **来源**: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
 >
 > 这是 Claude Code 官方更新日志，自动从 Claude Code 仓库获取。
 

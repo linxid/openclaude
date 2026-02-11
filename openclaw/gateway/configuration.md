@@ -3,8 +3,6 @@ title: "配置"
 description: "配置 文档"
 ---
 
-# 配置 🔧
-
 OpenClaw 从 `~/.openclaw/openclaw.json` 读取可选的 **JSON5** 配置（支持注释和尾逗号）。
 
 如果文件不存在，OpenClaw 使用安全的默认值（内置 Pi 智能体 + 按发送者分会话 + 工作区 `~/.openclaw/workspace`）。通常只在以下情况需要配置：

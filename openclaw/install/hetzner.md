@@ -3,8 +3,6 @@ title: "Hetzner"
 description: "Hetzner 文档"
 ---
 
-# 在 Hetzner 上运行 OpenClaw（Docker，生产 VPS 指南）
-
 ## 目标
 
 使用 Docker 在 Hetzner VPS 上运行持久的 OpenClaw Gateway 网关，带持久状态、内置二进制文件和安全的重启行为。

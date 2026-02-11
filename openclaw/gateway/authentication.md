@@ -3,8 +3,6 @@ title: "认证"
 description: "认证 文档"
 ---
 
-# 认证
-
 OpenClaw 支持模型提供商的 OAuth 和 API 密钥。对于 Anthropic 账户，我们推荐使用 **API 密钥**。对于 Claude 订阅访问，使用 `claude setup-token` 创建的长期令牌。
 
 参阅 [/concepts/oauth](/concepts/oauth) 了解完整的 OAuth 流程和存储布局。

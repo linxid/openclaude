@@ -3,8 +3,6 @@ title: "OpenRouter"
 description: "OpenRouter 文档"
 ---
 
-# OpenRouter
-
 OpenRouter 提供了一个**统一 API**，通过单一端点和 API 密钥将请求路由到多种模型。它兼容 OpenAI，因此大多数 OpenAI SDK 只需切换 base URL 即可使用。
 
 ## CLI 设置

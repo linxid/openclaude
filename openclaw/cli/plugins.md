@@ -3,8 +3,6 @@ title: "plugins"
 description: "plugins 文档"
 ---
 
-# `openclaw plugins`
-
 管理 Gateway 网关插件/扩展（进程内加载）。
 
 相关内容：

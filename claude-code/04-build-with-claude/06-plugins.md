@@ -3,10 +3,6 @@ title: "创建插件"
 description: "创建自定义插件以使用 skills、agents、hooks 和 MCP servers 扩展 Claude Code。"
 ---
 
-# 创建插件
-
-> 创建自定义插件以使用 skills、agents、hooks 和 MCP servers 扩展 Claude Code。
-
 Plugins 让你能够使用自定义功能扩展 Claude Code，这些功能可以在项目和团队中共享。本指南涵盖如何使用 skills、agents、hooks 和 MCP servers 创建自己的插件。
 
 想要安装现有插件？请参阅[发现和安装插件](/zh-CN/discover-plugins)。有关完整的技术规范，请参阅[插件参考](/zh-CN/plugins-reference)。

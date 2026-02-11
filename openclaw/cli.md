@@ -3,8 +3,6 @@ title: "CLI 参考"
 description: "CLI 参考 文档"
 ---
 
-# CLI 参考
-
 本页描述当前的 CLI 行为。如果命令发生变化，请更新此文档。
 
 ## 命令页面

@@ -3,8 +3,6 @@ title: "Anthropic"
 description: "Anthropic 文档"
 ---
 
-# Anthropic（Claude）
-
 Anthropic 构建了 **Claude** 模型系列，并通过 API 提供访问。
 在 OpenClaw 中，你可以使用 API 密钥或 **setup-token** 进行认证。
 

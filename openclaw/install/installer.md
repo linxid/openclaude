@@ -3,8 +3,6 @@ title: "安装器内部机制"
 description: "安装器内部机制 文档"
 ---
 
-# 安装器内部机制
-
 OpenClaw 提供两个安装器脚本（托管在 `openclaw.ai`）：
 
 * `https://openclaw.ai/install.sh` — "推荐"安装器（默认全局 npm 安装；也可从 GitHub 检出安装）

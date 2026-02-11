@@ -3,8 +3,6 @@ title: "OAuth"
 description: "OAuth 文档"
 ---
 
-# OAuth
-
 OpenClaw 支持通过 OAuth 进行"订阅认证"，适用于提供此功能的提供商（特别是 **OpenAI Codex（ChatGPT OAuth）**）。对于 Anthropic 订阅，请使用 **setup-token** 流程。本页说明：
 
 * OAuth **令牌交换**的工作原理（PKCE）

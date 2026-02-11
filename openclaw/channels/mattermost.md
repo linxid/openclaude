@@ -3,8 +3,6 @@ title: "Mattermost"
 description: "Mattermost 文档"
 ---
 
-# Mattermost（插件）
-
 状态：通过插件支持（bot token + WebSocket 事件）。支持频道、群组和私信。
 Mattermost 是一个可自托管的团队消息平台；有关产品详情和下载，请访问官方网站
 [mattermost.com](https://mattermost.com)。

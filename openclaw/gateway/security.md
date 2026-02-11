@@ -3,8 +3,6 @@ title: "安全性"
 description: "安全性 文档"
 ---
 
-# 安全性 🔒
-
 ## 快速检查：`openclaw security audit`
 
 另请参阅：[形式化验证（安全模型）](/security/formal-verification/)

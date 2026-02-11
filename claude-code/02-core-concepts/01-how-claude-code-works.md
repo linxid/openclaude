@@ -3,10 +3,6 @@ title: "Claude Code 如何工作"
 description: "了解代理循环、内置工具以及 Claude Code 如何与您的项目交互。"
 ---
 
-# Claude Code 如何工作
-
-> 了解代理循环、内置工具以及 Claude Code 如何与您的项目交互。
-
 Claude Code 是一个在您的终端中运行的代理助手。虽然它擅长编码，但它可以帮助您从命令行执行的任何操作：编写文档、运行构建、搜索文件、研究主题等。
 
 本指南涵盖核心架构、内置功能和[有效使用 Claude Code 的提示](#work-effectively-with-claude-code)。有关分步演练，请参阅[常见工作流](/zh-CN/common-workflows)。有关 skills、MCP 和 hooks 等可扩展性功能，请参阅[扩展 Claude Code](/zh-CN/features-overview)。

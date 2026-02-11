@@ -3,10 +3,6 @@ title: "Claude Code GitLab CI/CD"
 description: "了解如何将 Claude Code 集成到您的 GitLab CI/CD 开发工作流中"
 ---
 
-# Claude Code GitLab CI/CD
-
-> 了解如何将 Claude Code 集成到您的 GitLab CI/CD 开发工作流中
-
 <Info>
   Claude Code for GitLab CI/CD 目前处于测试阶段。随着我们完善体验，功能和特性可能会发生变化。
 

@@ -3,8 +3,6 @@ title: "SOUL Evil 钩子"
 description: "SOUL Evil 钩子 文档"
 ---
 
-# SOUL Evil 钩子
-
 SOUL Evil 钩子在清除窗口期间或随机概率下，将**注入的** `SOUL.md` 内容替换为 `SOUL_EVIL.md`。它**不会**修改磁盘上的文件。
 
 ## 工作原理

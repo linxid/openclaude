@@ -3,10 +3,6 @@ title: "法律和合规"
 description: "Claude Code 的法律协议、合规认证和安全信息。"
 ---
 
-# 法律和合规
-
-> Claude Code 的法律协议、合规认证和安全信息。
-
 ## 法律协议
 
 ### 许可证

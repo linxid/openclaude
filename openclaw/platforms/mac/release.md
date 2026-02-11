@@ -3,8 +3,6 @@ title: "macOS 发布"
 description: "macOS 发布 文档"
 ---
 
-# OpenClaw macOS 发布（Sparkle）
-
 本应用现已支持 Sparkle 自动更新。发布构建必须经过 Developer ID 签名、压缩，并发布包含签名的 appcast 条目。
 
 ## 前提条件

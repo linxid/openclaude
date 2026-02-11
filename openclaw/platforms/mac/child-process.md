@@ -3,8 +3,6 @@ title: "Gateway 网关生命周期"
 description: "Gateway 网关生命周期 文档"
 ---
 
-# macOS 上的 Gateway 网关生命周期
-
 macOS 应用**默认通过 launchd 管理 Gateway 网关**，不会将
 Gateway 网关作为子进程生成。它首先尝试连接到配置端口上已运行的
 Gateway 网关；如果无法访问，它会通过外部 `openclaw` CLI（无嵌入式运行时）启用 launchd

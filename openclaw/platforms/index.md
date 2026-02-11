@@ -3,8 +3,6 @@ title: "平台支持"
 description: "OpenClaw 支持的操作系统和平台"
 ---
 
-# 平台支持
-
 OpenClaw 支持主流操作系统和移动平台。
 
 ## 桌面平台

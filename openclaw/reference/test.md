@@ -3,8 +3,6 @@ title: "测试"
 description: "测试 文档"
 ---
 
-# 测试
-
 * 完整测试套件（测试集、实时测试、Docker）：[测试](/help/testing)
 
 * `pnpm test:force`：终止任何占用默认控制端口的遗留 Gateway 网关进程，然后使用隔离的 Gateway 网关端口运行完整的 Vitest 套件，这样服务器测试不会与正在运行的实例冲突。当之前的 Gateway 网关运行占用了端口 18789 时使用此命令。

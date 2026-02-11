@@ -3,8 +3,6 @@ title: "TypeBox"
 description: "TypeBox 文档"
 ---
 
-# TypeBox 作为协议的事实来源
-
 最后更新：2026-01-10
 
 TypeBox 是一个 TypeScript 优先的模式库。我们用它来定义 **Gateway 网关 WebSocket 协议**（握手、请求/响应、服务器事件）。这些模式驱动**运行时验证**、**JSON Schema 导出**和 macOS 应用的 **Swift 代码生成**。一个事实来源；其他一切都是生成的。

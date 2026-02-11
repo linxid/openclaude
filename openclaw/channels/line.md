@@ -3,8 +3,6 @@ title: "LINE"
 description: "LINE 文档"
 ---
 
-# LINE（插件）
-
 LINE 通过 LINE Messaging API 连接到 OpenClaw。该插件作为 webhook 接收器在 Gateway 网关上运行，使用你的 channel access token + channel secret 进行身份验证。
 
 状态：通过插件支持。支持私信、群聊、媒体、位置、Flex 消息、模板消息和快捷回复。不支持表情回应和话题回复。

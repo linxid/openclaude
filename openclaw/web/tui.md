@@ -3,8 +3,6 @@ title: "TUI"
 description: "TUI 文档"
 ---
 
-# TUI（终端 UI）
-
 ## 快速开始
 
 1. 启动 Gateway 网关。

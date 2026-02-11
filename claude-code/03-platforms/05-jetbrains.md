@@ -3,10 +3,6 @@ title: "JetBrains IDEs"
 description: "在 JetBrains IDEs（包括 IntelliJ、PyCharm、WebStorm 等）中使用 Claude Code"
 ---
 
-# JetBrains IDEs
-
-> 在 JetBrains IDEs（包括 IntelliJ、PyCharm、WebStorm 等）中使用 Claude Code
-
 Claude Code 通过专用插件与 JetBrains IDEs 集成，提供交互式差异查看、选择上下文共享等功能。
 
 ## 支持的 IDEs

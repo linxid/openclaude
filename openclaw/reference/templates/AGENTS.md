@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# AGENTS.md - 你的工作区
-
 这个文件夹是你的家。请如此对待。
 
 ## 首次运行

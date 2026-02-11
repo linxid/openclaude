@@ -3,8 +3,6 @@ title: "Gateway 网关"
 description: "OpenClaw Gateway 网关概览"
 ---
 
-# Gateway 网关
-
 Gateway 是 OpenClaw 的核心服务，负责处理所有消息路由、工具调用和智能体协调。
 
 ## 核心功能

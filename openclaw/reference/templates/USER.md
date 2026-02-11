@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# USER.md - 关于你的用户
-
 *了解你正在帮助的人。随时更新此文件。*
 
 * **姓名：**

@@ -3,8 +3,6 @@ title: "在 Render 上部署"
 description: "在 Render 上部署 文档"
 ---
 
-# 在 Render 上部署
-
 使用基础设施即代码方式在 Render 上部署 OpenClaw。内置的 `render.yaml` Blueprint 以声明式方式定义了你的整个技术栈——服务、磁盘、环境变量，让你只需一键即可完成部署，并将基础设施与代码一同进行版本管理。
 
 ## 前提条件

@@ -3,8 +3,6 @@ title: "MiniMax"
 description: "MiniMax 文档"
 ---
 
-# MiniMax
-
 MiniMax 是一家构建 **M2/M2.1** 模型系列的 AI 公司。当前面向编程的版本是 **MiniMax M2.1**（2025 年 12 月 23 日），专为现实世界的复杂任务而构建。
 
 来源：[MiniMax M2.1 发布说明](https://www.minimax.io/news/minimax-m21)

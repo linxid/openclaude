@@ -3,8 +3,6 @@ title: "网络模型"
 description: "网络模型 文档"
 ---
 
-# 网络模型
-
 大多数操作通过 Gateway 网关（`openclaw gateway`）进行，它是一个长期运行的单一进程，负责管理渠道连接和 WebSocket 控制平面。
 
 ## 核心规则

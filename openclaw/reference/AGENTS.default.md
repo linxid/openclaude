@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# AGENTS.md — OpenClaw 个人助手（默认）
-
 ## 首次运行（推荐）
 
 OpenClaw 为智能体使用专用的工作区目录。默认：`~/.openclaw/workspace`（可通过 `agents.defaults.workspace` 配置）。

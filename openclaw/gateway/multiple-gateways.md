@@ -3,8 +3,6 @@ title: "多 Gateway 网关"
 description: "多 Gateway 网关 文档"
 ---
 
-# 多 Gateway 网关（同一主机）
-
 大多数设置应该使用单个 Gateway 网关，因为一个 Gateway 网关可以处理多个消息连接和智能体。如果你需要更强的隔离或冗余（例如，救援机器人），请使用隔离的配置文件/端口运行多个 Gateway 网关。
 
 ## 隔离检查清单（必需）

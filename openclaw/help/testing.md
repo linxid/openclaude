@@ -3,8 +3,6 @@ title: "测试"
 description: "测试 文档"
 ---
 
-# 测试
-
 OpenClaw 包含三个 Vitest 测试套件（单元/集成、端到端、实时）以及一小组 Docker 运行器。
 
 本文档是一份"我们如何测试"的指南：

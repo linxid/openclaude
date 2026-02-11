@@ -3,8 +3,6 @@ title: "nodes"
 description: "nodes 文档"
 ---
 
-# `openclaw nodes`
-
 管理已配对的节点（设备）并调用节点功能。
 
 相关内容：

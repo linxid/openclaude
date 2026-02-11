@@ -3,8 +3,6 @@ title: "approvals"
 description: "approvals 文档"
 ---
 
-# `openclaw approvals`
-
 管理**本地主机**、**Gateway 网关主机**或**节点主机**的执行审批。
 默认情况下，命令针对磁盘上的本地审批文件。使用 `--gateway` 可针对 Gateway 网关，使用 `--node` 可针对特定节点。
 

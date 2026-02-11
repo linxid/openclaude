@@ -3,8 +3,6 @@ title: "macOS 应用"
 description: "macOS 应用 文档"
 ---
 
-# OpenClaw macOS 配套应用（菜单栏 + Gateway 网关代理）
-
 macOS 应用是 OpenClaw 的**菜单栏配套应用**。它拥有权限，在本地管理/附加到 Gateway 网关（launchd 或手动），并作为节点向智能体暴露 macOS 功能。
 
 ## 功能

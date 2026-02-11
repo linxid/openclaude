@@ -3,10 +3,6 @@ title: "模型配置"
 description: "了解 Claude Code 模型配置，包括模型别名如 `opusplan`"
 ---
 
-# 模型配置
-
-> 了解 Claude Code 模型配置，包括模型别名如 `opusplan`
-
 ## 可用模型
 
 对于 Claude Code 中的 `model` 设置，你可以配置以下任一项：

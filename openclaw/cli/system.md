@@ -3,8 +3,6 @@ title: "system"
 description: "system 文档"
 ---
 
-# `openclaw system`
-
 Gateway 网关的系统级辅助工具：入队系统事件、控制心跳和查看在线状态。
 
 ## 常用命令

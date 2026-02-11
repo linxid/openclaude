@@ -3,8 +3,6 @@ title: "Zalo"
 description: "Zalo 文档"
 ---
 
-# Zalo (Bot API)
-
 状态：实验性。仅支持私信；根据 Zalo 文档，群组即将推出。
 
 ## 需要插件

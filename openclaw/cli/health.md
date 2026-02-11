@@ -3,8 +3,6 @@ title: "health"
 description: "health 文档"
 ---
 
-# `openclaw health`
-
 从运行中的 Gateway 网关获取健康状态。
 
 ```bash  theme={null}

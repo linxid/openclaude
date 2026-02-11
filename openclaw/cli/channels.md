@@ -3,8 +3,6 @@ title: "channels"
 description: "channels 文档"
 ---
 
-# `openclaw channels`
-
 管理 Gateway 网关上的聊天渠道账户及其运行时状态。
 
 相关文档：

@@ -3,8 +3,6 @@ title: "ClawHub"
 description: "ClawHub 文档"
 ---
 
-# ClawHub
-
 ClawHub 是 **OpenClaw 的公共 Skills 注册中心**。它是一项免费服务：所有 Skills 都是公开的、开放的，所有人都可以查看、共享和复用。Skills 就是一个包含 `SKILL.md` 文件（以及辅助文本文件）的文件夹。你可以在网页应用中浏览 Skills，也可以使用 CLI 来搜索、安装、更新和发布 Skills。
 
 网站：[clawhub.com](https://clawhub.com)

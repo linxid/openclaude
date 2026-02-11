@@ -3,8 +3,6 @@ title: "沙箱 vs 工具策略 vs 提权"
 description: "沙箱 vs 工具策略 vs 提权 文档"
 ---
 
-# 沙箱 vs 工具策略 vs 提权
-
 OpenClaw 有三个相关（但不同）的控制：
 
 1. **沙箱**（`agents.defaults.sandbox.*` / `agents.list[].sandbox.*`）决定**工具在哪里运行**（Docker vs 主机）。

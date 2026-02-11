@@ -3,8 +3,6 @@ title: "Tailscale"
 description: "Tailscale 文档"
 ---
 
-# Tailscale（Gateway 网关仪表盘）
-
 OpenClaw 可以为 Gateway 网关仪表盘和 WebSocket 端口自动配置 Tailscale **Serve**（tailnet）或 **Funnel**（公共）。这使 Gateway 网关保持绑定到 loopback，同时 Tailscale 提供 HTTPS、路由和（对于 Serve）身份头。
 
 ## 模式

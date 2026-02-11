@@ -3,10 +3,6 @@ title: "LLM gateway 配置"
 description: "了解如何配置 Claude Code 以使用 LLM gateway 解决方案。涵盖网关要求、身份验证配置、模型选择和特定提供商的端点设置。"
 ---
 
-# LLM gateway 配置
-
-> 了解如何配置 Claude Code 以使用 LLM gateway 解决方案。涵盖网关要求、身份验证配置、模型选择和特定提供商的端点设置。
-
 LLM gateway 提供了 Claude Code 和模型提供商之间的集中代理层，通常提供以下功能：
 
 * **集中身份验证** - API 密钥管理的单一入口

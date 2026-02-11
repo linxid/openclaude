@@ -3,10 +3,6 @@ title: "Hooks 参考"
 description: "本页面提供在 Claude Code 中实现 hooks 的参考文档。"
 ---
 
-# Hooks 参考
-
-> 本页面提供在 Claude Code 中实现 hooks 的参考文档。
-
 <Tip>
   有关包含示例的快速入门指南，请参阅 [Claude Code hooks 入门](/zh-CN/hooks-guide)。
 </Tip>

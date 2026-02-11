@@ -3,8 +3,6 @@ title: "Skills 配置"
 description: "Skills 配置 文档"
 ---
 
-# Skills 配置
-
 所有 Skills 相关配置都位于 `~/.openclaw/openclaw.json` 中的 `skills` 下。
 
 ```json5  theme={null}

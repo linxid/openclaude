@@ -3,8 +3,6 @@ title: "gateway"
 description: "gateway 文档"
 ---
 
-# Gateway 网关 CLI
-
 Gateway 网关是 OpenClaw 的 WebSocket 服务器（渠道、节点、会话、hooks）。
 
 本页中的子命令位于 `openclaw gateway …` 下。

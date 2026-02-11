@@ -3,10 +3,6 @@ title: "分析"
 description: "查看您组织的 Claude Code 部署的详细使用情况洞察和生产力指标。"
 ---
 
-# 分析
-
-> 查看您组织的 Claude Code 部署的详细使用情况洞察和生产力指标。
-
 Claude Code 提供了一个分析仪表板，帮助组织了解开发者使用模式、跟踪生产力指标，并优化他们的 Claude Code 采用。
 
 <Note>

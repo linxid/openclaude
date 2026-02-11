@@ -3,8 +3,6 @@ title: "Agent Send"
 description: "Agent Send 文档"
 ---
 
-# `openclaw agent`（直接智能体运行）
-
 `openclaw agent` 运行单个智能体回合，无需入站聊天消息。
 默认情况下它**通过 Gateway 网关**运行；添加 `--local` 以强制在当前机器上使用嵌入式运行时。
 

@@ -3,8 +3,6 @@ title: "Linux 应用"
 description: "Linux 应用 文档"
 ---
 
-# Linux 应用
-
 Gateway 网关在 Linux 上完全支持。**Node 是推荐的运行时**。
 不推荐 Bun 用于 Gateway 网关（WhatsApp/Telegram 存在 bug）。
 

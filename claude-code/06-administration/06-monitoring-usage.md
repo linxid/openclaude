@@ -3,10 +3,6 @@ title: "监控"
 description: "了解如何为 Claude Code 启用和配置 OpenTelemetry。"
 ---
 
-# 监控
-
-> 了解如何为 Claude Code 启用和配置 OpenTelemetry。
-
 Claude Code 支持 OpenTelemetry (OTel) 指标和事件，用于监控和可观测性。
 
 所有指标都是通过 OpenTelemetry 的标准指标协议导出的时间序列数据，事件通过 OpenTelemetry 的日志/事件协议导出。用户有责任确保其指标和日志后端配置正确，并且聚合粒度满足其监控要求。

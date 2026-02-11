@@ -3,8 +3,6 @@ title: "入门指南"
 description: "OpenClaw 快速入门"
 ---
 
-# 入门指南
-
 目标：尽快从**零**到**第一个可用聊天**（使用合理的默认值）。
 
 最快聊天：打开 Control UI（无需渠道设置）。运行 `openclaw dashboard` 并在浏览器中聊天，或在 Gateway 网关主机上打开 `http://127.0.0.1:18789/`。文档：[Dashboard](/web/dashboard) 和 [Control UI](/web/control-ui)。

@@ -3,10 +3,6 @@ title: "协调 Claude Code 会话团队"
 description: "协调多个 Claude Code 实例作为一个团队一起工作，具有共享任务、代理间消息传递和集中管理。"
 ---
 
-# 协调 Claude Code 会话团队
-
-> 协调多个 Claude Code 实例作为一个团队一起工作，具有共享任务、代理间消息传递和集中管理。
-
 <Warning>
   Agent teams 是实验性功能，默认禁用。通过在 [settings.json](/zh-CN/settings) 或环境中添加 `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS` 来启用它们。Agent teams 在 [已知限制](#limitations) 中存在会话恢复、任务协调和关闭行为方面的问题。
 </Warning>

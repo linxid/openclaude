@@ -3,8 +3,6 @@ title: "模型 CLI"
 description: "模型 CLI 文档"
 ---
 
-# 模型 CLI
-
 参见 [/concepts/model-failover](/concepts/model-failover) 了解认证配置文件轮换、冷却时间及其与回退的交互。
 快速提供商概述 + 示例：[/concepts/model-providers](/concepts/model-providers)。
 

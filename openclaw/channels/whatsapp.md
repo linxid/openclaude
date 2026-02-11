@@ -3,8 +3,6 @@ title: "WhatsApp"
 description: "WhatsApp 渠道配置"
 ---
 
-# WhatsApp（网页渠道）
-
 状态：仅支持通过 Baileys 的 WhatsApp Web。Gateway 网关拥有会话。
 
 ## 快速设置（新手）

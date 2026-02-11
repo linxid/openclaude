@@ -3,8 +3,6 @@ title: "文档目录"
 description: "文档目录 文档"
 ---
 
-# 文档目录
-
 <Note>
   如需查看完整的文档地图，请参阅[文档中心](/start/hubs)。
 </Note>

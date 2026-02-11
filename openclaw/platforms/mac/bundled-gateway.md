@@ -3,8 +3,6 @@ title: "macOS 上的 Gateway 网关"
 description: "macOS 上的 Gateway 网关 文档"
 ---
 
-# macOS 上的 Gateway 网关（外部 launchd）
-
 OpenClaw\.app 不再捆绑 Node/Bun 或 Gateway 网关运行时。macOS 应用期望有一个**外部**的 `openclaw` CLI 安装，不会将 Gateway 网关作为子进程启动，而是管理一个每用户的 launchd 服务来保持 Gateway 网关运行（或者如果已有本地 Gateway 网关正在运行，则连接到现有的）。
 
 ## 安装 CLI（本地模式必需）

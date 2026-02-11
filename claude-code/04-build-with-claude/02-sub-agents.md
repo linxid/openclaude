@@ -3,10 +3,6 @@ title: "创建自定义 subagents"
 description: "在 Claude Code 中创建和使用专门的 AI subagents，用于特定任务的工作流和改进的上下文管理。"
 ---
 
-# 创建自定义 subagents
-
-> 在 Claude Code 中创建和使用专门的 AI subagents，用于特定任务的工作流和改进的上下文管理。
-
 Subagents 是处理特定类型任务的专门 AI 助手。每个 subagent 在自己的上下文窗口中运行，具有自定义系统提示、特定的工具访问权限和独立的权限。当 Claude 遇到与 subagent 描述相匹配的任务时，它会委托给该 subagent，该 subagent 独立工作并返回结果。
 
 <Note>

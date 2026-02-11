@@ -3,8 +3,6 @@ title: "Canvas"
 description: "Canvas 文档"
 ---
 
-# Canvas（macOS 应用）
-
 macOS 应用使用 `WKWebView` 嵌入一个智能体控制的 **Canvas 面板**。它是一个用于 HTML/CSS/JS、A2UI 和小型交互式界面的轻量级可视化工作区。
 
 ## Canvas 存储位置

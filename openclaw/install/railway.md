@@ -3,8 +3,6 @@ title: "在 Railway 上部署"
 description: "在 Railway 上部署 文档"
 ---
 
-# 在 Railway 上部署
-
 通过一键模板在 Railway 上部署 OpenClaw，并在浏览器中完成设置。
 这是最简单的"无需在服务器上使用终端"的方式：Railway 为你运行 Gateway网关，
 你只需通过 `/setup` 网页向导完成所有配置。

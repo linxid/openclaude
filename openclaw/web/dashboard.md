@@ -3,8 +3,6 @@ title: "仪表板"
 description: "仪表板 文档"
 ---
 
-# 仪表板（控制 UI）
-
 Gateway 网关仪表板是默认在 `/` 提供的浏览器控制 UI
 （通过 `gateway.controlUi.basePath` 覆盖）。
 

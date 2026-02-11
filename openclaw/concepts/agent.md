@@ -3,8 +3,6 @@ title: "智能体运行时"
 description: "OpenClaw 智能体核心概念"
 ---
 
-# 智能体运行时 🤖
-
 OpenClaw 运行一个源自 **pi-mono** 的嵌入式智能体运行时。
 
 ## 工作区（必需）

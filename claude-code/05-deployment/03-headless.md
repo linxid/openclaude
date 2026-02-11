@@ -3,10 +3,6 @@ title: "以编程方式运行 Claude Code"
 description: "使用 Agent SDK 从 CLI、Python 或 TypeScript 以编程方式运行 Claude Code。"
 ---
 
-# 以编程方式运行 Claude Code
-
-> 使用 Agent SDK 从 CLI、Python 或 TypeScript 以编程方式运行 Claude Code。
-
 [Agent SDK](https://platform.claude.com/docs/zh-CN/agent-sdk/overview) 为您提供了支持 Claude Code 的相同工具、agent 循环和上下文管理。它可作为 CLI 用于脚本和 CI/CD，或作为 [Python](https://platform.claude.com/docs/zh-CN/agent-sdk/python) 和 [TypeScript](https://platform.claude.com/docs/zh-CN/agent-sdk/typescript) 包用于完整的编程控制。
 
 <Note>

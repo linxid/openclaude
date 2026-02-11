@@ -3,8 +3,6 @@ title: "Telegram 允许列表加固"
 description: "Telegram 允许列表加固 文档"
 ---
 
-# Telegram 允许列表加固
-
 **日期**：2026-01-05\
 **状态**：已完成\
 **PR**：#216

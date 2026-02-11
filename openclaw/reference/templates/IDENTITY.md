@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# IDENTITY.md - 我是谁？
-
 *在你的第一次对话中填写此文件。让它属于你。*
 
 * **名称：**

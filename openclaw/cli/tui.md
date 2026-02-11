@@ -3,8 +3,6 @@ title: "tui"
 description: "tui 文档"
 ---
 
-# `openclaw tui`
-
 打开连接到 Gateway 网关的终端 UI。
 
 相关：

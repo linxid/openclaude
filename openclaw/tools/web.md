@@ -3,8 +3,6 @@ title: "Web 工具"
 description: "Web 工具 文档"
 ---
 
-# Web 工具
-
 OpenClaw 提供两个轻量级 Web 工具：
 
 * `web_search` — 通过 Brave Search API（默认）或 Perplexity Sonar（直连或通过 OpenRouter）搜索网络。

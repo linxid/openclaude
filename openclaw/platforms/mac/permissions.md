@@ -3,8 +3,6 @@ title: "macOS 权限"
 description: "macOS 权限 文档"
 ---
 
-# macOS 权限（TCC）
-
 macOS 权限授予是脆弱的。TCC 将权限授予与应用的代码签名、Bundle 标识符和磁盘路径关联。如果其中任何一项发生变化，macOS 会将该应用视为新应用，可能会丢弃或隐藏权限提示。
 
 ## 稳定权限的要求

@@ -3,8 +3,6 @@ title: "Gateway 网关拥有的配对"
 description: "Gateway 网关拥有的配对 文档"
 ---
 
-# Gateway 网关拥有的配对（选项 B）
-
 在 Gateway 网关拥有的配对中，**Gateway 网关**是允许哪些节点加入的唯一信息源。UI（macOS 应用、未来的客户端）只是审批或拒绝待处理请求的前端。
 
 **重要：**WS 节点在 `connect` 期间使用**设备配对**（角色 `node`）。`node.pair.*` 是一个独立的配对存储，**不会**限制 WS 握手。只有显式调用 `node.pair.*` 的客户端使用此流程。

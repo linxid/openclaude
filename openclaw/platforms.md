@@ -3,8 +3,6 @@ title: "平台"
 description: "平台 文档"
 ---
 
-# 平台
-
 OpenClaw 核心使用 TypeScript 编写。**Node 是推荐的运行时**。
 不推荐 Bun 用于 Gateway 网关（WhatsApp/Telegram 存在 bug）。
 

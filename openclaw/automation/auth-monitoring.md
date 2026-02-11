@@ -3,8 +3,6 @@ title: "认证监控"
 description: "认证监控 文档"
 ---
 
-# 认证监控
-
 OpenClaw 通过 `openclaw models status` 提供 OAuth 过期健康状态。请使用该命令进行自动化和告警；脚本是为手机工作流程提供的可选附加功能。
 
 ## 推荐方式：CLI 检查（可移植）

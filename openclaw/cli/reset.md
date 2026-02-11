@@ -3,8 +3,6 @@ title: "reset"
 description: "reset 文档"
 ---
 
-# `openclaw reset`
-
 重置本地配置/状态（保留 CLI 安装）。
 
 ```bash  theme={null}

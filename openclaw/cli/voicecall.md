@@ -3,8 +3,6 @@ title: "voicecall"
 description: "voicecall 文档"
 ---
 
-# `openclaw voicecall`
-
 `voicecall` 是一个由插件提供的命令。只有在安装并启用了语音通话插件时才会出现。
 
 主要文档：

@@ -3,8 +3,6 @@ title: "渠道故障排除"
 description: "渠道故障排除 文档"
 ---
 
-# 渠道故障排除
-
 首先运行：
 
 ```bash  theme={null}

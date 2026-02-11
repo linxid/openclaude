@@ -3,8 +3,6 @@ title: "Cron Add 加固"
 description: "Cron Add 加固 文档"
 ---
 
-# Cron Add 加固 & Schema 对齐
-
 ## 背景
 
 最近的 Gateway 网关日志显示重复的 `cron.add` 失败，参数无效（缺少 `sessionTarget`、`wakeMode`、`payload`，以及格式错误的 `schedule`）。这表明至少有一个客户端（可能是智能体工具调用路径）正在发送包装的或部分指定的任务负载。另外，TypeScript 中的 cron 提供商枚举、Gateway 网关 schema、CLI 标志和 UI 表单类型之间存在漂移，加上 `cron.status` 的 UI 不匹配（期望 `jobCount` 而 Gateway 网关返回 `jobs`）。

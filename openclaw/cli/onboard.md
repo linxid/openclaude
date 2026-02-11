@@ -3,8 +3,6 @@ title: "onboard"
 description: "onboard 文档"
 ---
 
-# `openclaw onboard`
-
 交互式新手引导向导（本地或远程 Gateway 网关设置）。
 
 相关内容：

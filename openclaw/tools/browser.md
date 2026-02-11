@@ -3,8 +3,6 @@ title: "浏览器（OpenClaw 托管）"
 description: "浏览器（OpenClaw 托管） 文档"
 ---
 
-# 浏览器（openclaw 托管）
-
 OpenClaw 可以运行一个由智能体控制的**专用 Chrome/Brave/Edge/Chromium 配置文件**。
 它与你的个人浏览器隔离，通过 Gateway 网关内部的小型本地控制服务进行管理（仅限 loopback）。
 

@@ -3,10 +3,6 @@ title: "Claude Code 最佳实践"
 description: "从配置环境到跨并行会话扩展，充分利用 Claude Code 的提示和模式。"
 ---
 
-# Claude Code 最佳实践
-
-> 从配置环境到跨并行会话扩展，充分利用 Claude Code 的提示和模式。
-
 Claude Code 是一个代理式编码环境。与等待回答问题的聊天机器人不同，Claude Code 可以读取你的文件、运行命令、进行更改，并在你观看、重定向或完全离开的情况下自主解决问题。
 
 这改变了你的工作方式。与其自己编写代码并要求 Claude 审查，不如描述你想要什么，让 Claude 弄清楚如何构建它。Claude 会探索、规划和实现。

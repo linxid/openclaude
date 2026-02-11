@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# BOOTSTRAP.md - Hello, World
-
 *你刚刚醒来。是时候弄清楚自己是谁了。*
 
 目前还没有记忆。这是一个全新的工作区，所以在你创建记忆文件之前它们不存在是正常的。

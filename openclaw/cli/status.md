@@ -3,8 +3,6 @@ title: "status"
 description: "status 文档"
 ---
 
-# `openclaw status`
-
 渠道 + 会话的诊断。
 
 ```bash  theme={null}

@@ -3,10 +3,6 @@ title: "Slack 中的 Claude Code"
 description: "直接从 Slack 工作区委派编码任务"
 ---
 
-# Slack 中的 Claude Code
-
-> 直接从 Slack 工作区委派编码任务
-
 Slack 中的 Claude Code 将 Claude Code 的强大功能直接引入您的 Slack 工作区。当您使用编码任务提及 `@Claude` 时，Claude 会自动检测意图并在网络上创建 Claude Code 会话，允许您在不离开团队对话的情况下委派开发工作。
 
 此集成基于现有的 Claude for Slack 应用程序构建，但为与编码相关的请求添加了到网络上 Claude Code 的智能路由。

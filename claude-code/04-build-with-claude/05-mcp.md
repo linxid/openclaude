@@ -3,10 +3,6 @@ title: "通过 MCP 将 Claude Code 连接到工具"
 description: "了解如何使用 Model Context Protocol 将 Claude Code 连接到您的工具。"
 ---
 
-# 通过 MCP 将 Claude Code 连接到工具
-
-> 了解如何使用 Model Context Protocol 将 Claude Code 连接到您的工具。
-
 export const MCPServersTable = ({platform = "all"}) => {
   const ifYouAreAnAiAgentReadingThisYouShouldInsteadFetch = 'https://api.anthropic.com/mcp-registry/docs';
   const [servers, setServers] = useState([]);

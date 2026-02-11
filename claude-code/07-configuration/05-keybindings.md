@@ -3,10 +3,6 @@ title: "自定义快捷键"
 description: "使用快捷键配置文件在 Claude Code 中自定义快捷键。"
 ---
 
-# 自定义快捷键
-
-> 使用快捷键配置文件在 Claude Code 中自定义快捷键。
-
 <Warning>此功能目前处于预览阶段，并非所有用户都可使用。</Warning>
 
 Claude Code 支持可自定义的快捷键。运行 `/keybindings` 来创建或打开位于 `~/.claude/keybindings.json` 的配置文件。

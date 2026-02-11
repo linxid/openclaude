@@ -3,10 +3,6 @@ title: "数据使用"
 description: "了解 Anthropic 对 Claude 的数据使用政策"
 ---
 
-# 数据使用
-
-> 了解 Anthropic 对 Claude 的数据使用政策
-
 ## 数据政策
 
 ### 数据训练政策

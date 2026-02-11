@@ -3,10 +3,6 @@ title: "使用技能扩展 Claude"
 description: "在 Claude Code 中创建、管理和共享技能以扩展 Claude 的功能。包括自定义斜杠命令。"
 ---
 
-# 使用技能扩展 Claude
-
-> 在 Claude Code 中创建、管理和共享技能以扩展 Claude 的功能。包括自定义斜杠命令。
-
 技能扩展了 Claude 能做的事情。创建一个包含说明的 `SKILL.md` 文件，Claude 就会将其添加到其工具包中。Claude 在相关时使用技能，或者你可以使用 `/skill-name` 直接调用一个技能。
 
 <Note>

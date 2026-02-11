@@ -3,10 +3,6 @@ title: "扩展 Claude Code"
 description: "了解何时使用 CLAUDE.md、Skills、subagents、hooks、MCP 和 plugins。"
 ---
 
-# 扩展 Claude Code
-
-> 了解何时使用 CLAUDE.md、Skills、subagents、hooks、MCP 和 plugins。
-
 Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/how-claude-code-works#tools)，用于文件操作、搜索、执行和网络访问。内置工具涵盖了大多数编码任务。本指南涵盖扩展层：您添加的功能，用于自定义 Claude 的知识、将其连接到外部服务并自动化工作流。
 
 <Note>

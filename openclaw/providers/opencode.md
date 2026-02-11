@@ -3,8 +3,6 @@ title: "OpenCode Zen"
 description: "OpenCode Zen 文档"
 ---
 
-# OpenCode Zen
-
 OpenCode Zen 是由 OpenCode 团队推荐的一组**精选模型列表**，适用于编程智能体。它是一个可选的托管模型访问路径，使用 API 密钥和 `opencode` 提供商。Zen 目前处于测试阶段。
 
 ## CLI 设置

@@ -3,10 +3,6 @@ title: "grammY"
 description: "grammY 文档"
 ---
 
-# grammY 集成（Telegram Bot API）
-
-# 为什么选择 grammY
-
 * 以 TS 为核心的 Bot API 客户端，内置长轮询 + webhook 辅助工具、中间件、错误处理和速率限制器。
 * 媒体处理辅助工具比手动编写 fetch + FormData 更简洁；支持所有 Bot API 方法。
 * 可扩展：通过自定义 fetch 支持代理，可选的会话中间件，类型安全的上下文。

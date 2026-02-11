@@ -3,8 +3,6 @@ title: "Lobster"
 description: "Lobster 文档"
 ---
 
-# Lobster
-
 Lobster 是一个工作流外壳，让 OpenClaw 能够将多步骤工具序列作为单个确定性操作运行，并带有显式审批检查点。
 
 ## 亮点

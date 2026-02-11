@@ -3,8 +3,6 @@ title: "故障排除"
 description: "故障排除 文档"
 ---
 
-# 故障排除 🔧
-
 当 OpenClaw 出现异常时，以下是解决方法。
 
 如果你只想快速分类问题，请先查看常见问题的[最初的六十秒](/help/faq#first-60-seconds-if-somethings-broken)。本页深入介绍运行时故障和诊断。

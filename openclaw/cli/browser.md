@@ -3,8 +3,6 @@ title: "browser"
 description: "browser 文档"
 ---
 
-# `openclaw browser`
-
 管理 OpenClaw 的浏览器控制服务器并运行浏览器操作（标签页、快照、截图、导航、点击、输入）。
 
 相关：

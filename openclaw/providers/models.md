@@ -3,8 +3,6 @@ title: "模型提供商快速入门"
 description: "模型提供商快速入门 文档"
 ---
 
-# 模型提供商
-
 OpenClaw 可以使用许多 LLM 提供商。选择一个，进行认证，然后将默认模型设置为 `provider/model`。
 
 ## 推荐：Venice（Venice AI）

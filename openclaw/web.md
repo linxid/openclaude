@@ -3,8 +3,6 @@ title: "Web"
 description: "Web 文档"
 ---
 
-# Web（Gateway 网关）
-
 Gateway 网关从与 Gateway 网关 WebSocket 相同的端口提供一个小型**浏览器 Control UI**（Vite + Lit）：
 
 * 默认：`http://<host>:18789/`

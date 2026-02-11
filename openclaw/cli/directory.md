@@ -3,8 +3,6 @@ title: "directory"
 description: "directory 文档"
 ---
 
-# `openclaw directory`
-
 对支持目录功能的渠道进行查找（联系人/对等方、群组和"我"）。
 
 ## 通用参数

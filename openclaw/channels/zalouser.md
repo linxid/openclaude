@@ -3,8 +3,6 @@ title: "Zalo Personal"
 description: "Zalo Personal 文档"
 ---
 
-# Zalo Personal（非官方）
-
 状态：实验性。此集成通过 `zca-cli` 自动化**个人 Zalo 账户**。
 
 > \*\*警告：\*\*这是一个非官方集成，可能导致账户被暂停/封禁。使用风险自负。

@@ -3,8 +3,6 @@ title: "Talk 模式"
 description: "Talk 模式 文档"
 ---
 
-# Talk 模式
-
 Talk 模式是一个连续的语音对话循环：
 
 1. 监听语音

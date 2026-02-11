@@ -3,8 +3,6 @@ title: "cron"
 description: "cron 文档"
 ---
 
-# `openclaw cron`
-
 管理 Gateway 网关调度器的 cron 作业。
 
 相关内容：

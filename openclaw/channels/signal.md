@@ -3,8 +3,6 @@ title: "Signal"
 description: "Signal 文档"
 ---
 
-# Signal (signal-cli)
-
 状态：外部 CLI 集成。Gateway 网关通过 HTTP JSON-RPC + SSE 与 `signal-cli` 通信。
 
 ## 快速设置（初学者）

@@ -3,8 +3,6 @@ title: "Gateway 网关架构"
 description: "Gateway 网关架构 文档"
 ---
 
-# Gateway 网关架构
-
 最后更新：2026-01-22
 
 ## 概述

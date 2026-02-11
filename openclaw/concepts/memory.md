@@ -3,8 +3,6 @@ title: "记忆"
 description: "记忆 文档"
 ---
 
-# 记忆
-
 OpenClaw 记忆是**智能体工作空间中的纯 Markdown 文件**。这些文件是唯一的事实来源；模型只"记住"写入磁盘的内容。
 
 记忆搜索工具由活动的记忆插件提供（默认：`memory-core`）。使用 `plugins.slots.memory = "none"` 禁用记忆插件。

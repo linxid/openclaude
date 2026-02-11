@@ -3,8 +3,6 @@ title: "Gateway 网关运行手册"
 description: "Gateway 网关运行手册 文档"
 ---
 
-# Gateway 网关服务运行手册
-
 最后更新：2025-12-09
 
 ## 是什么

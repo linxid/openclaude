@@ -3,8 +3,6 @@ title: "Nix"
 description: "Nix 文档"
 ---
 
-# Nix 安装
-
 使用 Nix 运行 OpenClaw 的推荐方式是通过 **[nix-openclaw](https://github.com/openclaw/nix-openclaw)** — 一个开箱即用的 Home Manager 模块。
 
 ## 快速开始

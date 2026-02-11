@@ -3,8 +3,6 @@ title: "输入指示器"
 description: "输入指示器 文档"
 ---
 
-# 输入指示器
-
 在运行活跃期间，输入指示器会发送到聊天渠道。使用
 `agents.defaults.typingMode` 控制输入指示器**何时**开始显示，使用 `typingIntervalSeconds`
 控制**刷新频率**。

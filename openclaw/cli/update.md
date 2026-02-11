@@ -3,8 +3,6 @@ title: "update"
 description: "update 文档"
 ---
 
-# `openclaw update`
-
 安全更新 OpenClaw 并在 stable/beta/dev 渠道之间切换。
 
 如果你通过 **npm/pnpm** 安装（全局安装，无 git 元数据），更新通过 [更新](/install/updating) 中的包管理器流程进行。

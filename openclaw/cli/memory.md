@@ -3,8 +3,6 @@ title: "memory"
 description: "memory 文档"
 ---
 
-# `openclaw memory`
-
 管理语义记忆的索引和搜索。
 由活跃的记忆插件提供（默认：`memory-core`；设置 `plugins.slots.memory = "none"` 可禁用）。
 

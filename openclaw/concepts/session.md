@@ -3,8 +3,6 @@ title: "会话管理"
 description: "会话管理 文档"
 ---
 
-# 会话管理
-
 OpenClaw 将**每个智能体的一个直接聊天会话**视为主会话。直接聊天折叠为 `agent:<agentId>:<mainKey>`（默认 `main`），而群组/频道聊天获得各自的键。`session.mainKey` 会被遵循。
 
 使用 `session.dmScope` 控制**私信**如何分组：

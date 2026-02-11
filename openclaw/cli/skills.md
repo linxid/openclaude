@@ -3,8 +3,6 @@ title: "skills"
 description: "skills 文档"
 ---
 
-# `openclaw skills`
-
 检查 Skills（内置 + 工作区 + 托管覆盖）并查看哪些符合条件，哪些缺少要求。
 
 相关内容：

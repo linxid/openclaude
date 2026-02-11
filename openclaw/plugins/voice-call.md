@@ -3,8 +3,6 @@ title: "Voice Call 插件"
 description: "Voice Call 插件 文档"
 ---
 
-# Voice Call（插件）
-
 通过插件为 OpenClaw 提供语音通话。支持出站通知和带有入站策略的多轮对话。
 
 当前提供商：

@@ -3,8 +3,6 @@ title: "Chrome 扩展"
 description: "Chrome 扩展 文档"
 ---
 
-# Chrome 扩展（浏览器中继）
-
 OpenClaw Chrome 扩展让智能体控制你**现有的 Chrome 标签页**（你的正常 Chrome 窗口），而不是启动一个单独的 openclaw 管理的 Chrome 配置文件。
 
 附加/分离通过一个**单独的 Chrome 工具栏按钮**实现。

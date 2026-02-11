@@ -3,10 +3,6 @@ title: "Claude Code GitHub Actions"
 description: "了解如何将 Claude Code 集成到您的开发工作流中，使用 Claude Code GitHub Actions"
 ---
 
-# Claude Code GitHub Actions
-
-> 了解如何将 Claude Code 集成到您的开发工作流中，使用 Claude Code GitHub Actions
-
 Claude Code GitHub Actions 为您的 GitHub 工作流带来了 AI 驱动的自动化。只需在任何 PR 或 issue 中提及 `@claude`，Claude 就可以分析您的代码、创建拉取请求、实现功能和修复错误 - 所有这些都遵循您项目的标准。
 
 <Note>

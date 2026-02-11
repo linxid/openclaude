@@ -3,8 +3,6 @@ title: "OpenClaw 传说"
 description: "OpenClaw 传说 文档"
 ---
 
-# OpenClaw 的传说 🦞📖
-
 *一个关于龙虾、蜕壳和太多 token 的故事。*
 
 ## 起源故事

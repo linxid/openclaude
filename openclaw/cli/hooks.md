@@ -3,8 +3,6 @@ title: "hooks"
 description: "hooks 文档"
 ---
 
-# `openclaw hooks`
-
 管理智能体钩子（针对 `/new`、`/reset` 等命令以及 Gateway 网关启动的事件驱动自动化）。
 
 相关内容：

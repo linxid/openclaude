@@ -3,10 +3,6 @@ title: "Amazon Bedrock 上的 Claude Code"
 description: "了解如何通过 Amazon Bedrock 配置 Claude Code，包括设置、IAM 配置和故障排除。"
 ---
 
-# Amazon Bedrock 上的 Claude Code
-
-> 了解如何通过 Amazon Bedrock 配置 Claude Code，包括设置、IAM 配置和故障排除。
-
 ## 前置条件
 
 在使用 Bedrock 配置 Claude Code 之前，请确保您拥有：

@@ -3,8 +3,6 @@ title: "models"
 description: "models 文档"
 ---
 
-# `openclaw models`
-
 模型发现、扫描和配置（默认模型、回退、认证配置）。
 
 相关内容：

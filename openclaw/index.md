@@ -3,11 +3,6 @@ title: "OpenClaw 中文文档索引"
 description: "OpenClaw 中文文档索引 文档"
 ---
 
-# OpenClaw 中文文档索引
-
-> 📚 本地镜像
-> 📖 官方文档: https://docs.openclaw.ai/zh-CN
-
 本文档镜像按照官方网站的导航结构组织。
 
 ---

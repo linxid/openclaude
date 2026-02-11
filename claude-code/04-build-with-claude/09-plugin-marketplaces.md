@@ -3,10 +3,6 @@ title: "创建和分发 plugin marketplace"
 description: "构建和托管 plugin marketplace，以在团队和社区中分发 Claude Code 扩展。"
 ---
 
-# 创建和分发 plugin marketplace
-
-> 构建和托管 plugin marketplace，以在团队和社区中分发 Claude Code 扩展。
-
 plugin marketplace 是一个目录，让你能够将 plugin 分发给他人。Marketplace 提供集中式发现、版本跟踪、自动更新以及对多种源类型（git 仓库、本地路径等）的支持。本指南展示了如何创建自己的 marketplace，与你的团队或社区共享 plugin。
 
 想要从现有 marketplace 安装 plugin？请参阅[发现和安装预构建 plugin](/zh-CN/discover-plugins)。

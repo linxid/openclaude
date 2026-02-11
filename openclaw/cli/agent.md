@@ -3,8 +3,6 @@ title: "agent"
 description: "agent 文档"
 ---
 
-# `openclaw agent`
-
 通过 Gateway 网关运行智能体回合（使用 `--local` 进行嵌入式运行）。使用 `--agent <id>` 直接指定已配置的智能体。
 
 相关内容：

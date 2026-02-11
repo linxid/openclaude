@@ -3,8 +3,6 @@ title: "OpenAI"
 description: "OpenAI 文档"
 ---
 
-# OpenAI
-
 OpenAI 提供 GPT 模型的开发者 API。Codex 支持**ChatGPT 登录**进行订阅访问，或**API 密钥**登录进行按量计费访问。Codex 云端需要 ChatGPT 登录。
 
 ## 方式 A：OpenAI API 密钥（OpenAI Platform）

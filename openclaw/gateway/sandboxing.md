@@ -3,8 +3,6 @@ title: "沙箱隔离"
 description: "沙箱隔离 文档"
 ---
 
-# 沙箱隔离
-
 OpenClaw 可以**在 Docker 容器内运行工具**以减少影响范围。
 这是**可选的**，由配置控制（`agents.defaults.sandbox` 或 `agents.list[].sandbox`）。如果沙箱隔离关闭，工具在主机上运行。
 Gateway 网关保留在主机上；启用时工具执行在隔离的沙箱中运行。

@@ -3,8 +3,6 @@ title: "iMessage"
 description: "iMessage 文档"
 ---
 
-# iMessage (imsg)
-
 状态：外部 CLI 集成。Gateway 网关生成 `imsg rpc`（基于 stdio 的 JSON-RPC）。
 
 ## 快速设置（新手）

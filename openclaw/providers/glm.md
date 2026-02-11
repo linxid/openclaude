@@ -3,8 +3,6 @@ title: "GLM 模型"
 description: "GLM 模型 文档"
 ---
 
-# GLM 模型
-
 GLM 是一个**模型系列**（而非公司），通过 Z.AI 平台提供。在 OpenClaw 中，GLM 模型通过 `zai` 提供商访问，模型 ID 格式如 `zai/glm-4.7`。
 
 ## CLI 设置

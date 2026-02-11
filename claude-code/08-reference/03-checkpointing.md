@@ -3,10 +3,6 @@ title: "checkpointing"
 description: "自动跟踪和回退 Claude 的编辑，快速恢复不需要的更改。"
 ---
 
-# checkpointing
-
-> 自动跟踪和回退 Claude 的编辑，快速恢复不需要的更改。
-
 Claude Code 自动跟踪 Claude 在工作过程中的文件编辑，允许您快速撤销更改并回退到之前的状态，以防任何事情出现偏差。
 
 ## checkpointing 如何工作

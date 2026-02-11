@@ -3,8 +3,6 @@ title: "Windows (WSL2)"
 description: "Windows (WSL2) 文档"
 ---
 
-# Windows (WSL2)
-
 Windows 上的 OpenClaw 推荐**通过 WSL2**（推荐 Ubuntu）。CLI + Gateway 网关在 Linux 内运行，这保持了运行时的一致性并使工具兼容性大大提高（Node/Bun/pnpm、Linux 二进制文件、Skills）。原生 Windows 可能更棘手。WSL2 给你完整的 Linux 体验——一条命令安装：`wsl --install`。
 
 原生 Windows 配套应用已在计划中。

@@ -3,8 +3,6 @@ title: "新手引导向导"
 description: "新手引导向导 文档"
 ---
 
-# 新手引导向导（CLI）
-
 新手引导向导是在 macOS、Linux 或 Windows（通过 WSL2；强烈推荐）上设置 OpenClaw 的**推荐**方式。
 它可以在一个引导式流程中配置本地 Gateway 网关或远程 Gateway 网关连接，以及渠道、Skills 和工作区默认值。
 

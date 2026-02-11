@@ -3,8 +3,6 @@ title: "macOS 开发设置"
 description: "macOS 开发设置 文档"
 ---
 
-# macOS 开发者设置
-
 本指南涵盖从源代码构建和运行 OpenClaw macOS 应用程序的必要步骤。
 
 ## 前置条件

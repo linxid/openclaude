@@ -3,10 +3,6 @@ title: "设置 Claude Code"
 description: "在您的开发机器上安装、认证和开始使用 Claude Code。"
 ---
 
-# 设置 Claude Code
-
-> 在您的开发机器上安装、认证和开始使用 Claude Code。
-
 ## 系统要求
 
 * **操作系统**：macOS 13.0+、Ubuntu 20.04+/Debian 10+ 或 Windows 10+（带 WSL 1、WSL 2 或 Git for Windows）

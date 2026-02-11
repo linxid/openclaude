@@ -3,8 +3,6 @@ title: "浏览器故障排除"
 description: "浏览器故障排除 文档"
 ---
 
-# 浏览器故障排除（Linux）
-
 ## 问题："Failed to start Chrome CDP on port 18800"
 
 OpenClaw 的浏览器控制服务器无法启动 Chrome/Brave/Edge/Chromium，出现以下错误：

@@ -3,8 +3,6 @@ title: "Hooks"
 description: "Hooks 文档"
 ---
 
-# Hooks
-
 Hooks 提供了一个可扩展的事件驱动系统，用于响应智能体命令和事件自动执行操作。Hooks 从目录中自动发现，可以通过 CLI 命令管理，类似于 OpenClaw 中 Skills 的工作方式。
 
 ## 入门指南

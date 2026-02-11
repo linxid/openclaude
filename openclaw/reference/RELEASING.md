@@ -3,8 +3,6 @@ title: "null"
 description: "null 文档"
 ---
 
-# 发布清单（npm + macOS）
-
 从仓库根目录使用 `pnpm`（Node 22+）。在打标签/发布前保持工作树干净。
 
 ## 操作员触发

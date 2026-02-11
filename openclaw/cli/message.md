@@ -3,8 +3,6 @@ title: "message"
 description: "message 文档"
 ---
 
-# `openclaw message`
-
 用于发送消息和渠道操作的单一出站命令
 （Discord/Google Chat/Slack/Mattermost（插件）/Telegram/WhatsApp/Signal/iMessage/MS Teams）。
 

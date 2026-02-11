@@ -3,8 +3,6 @@ title: "群组"
 description: "群组 文档"
 ---
 
-# 群组
-
 OpenClaw 在各平台上统一处理群聊：WhatsApp、Telegram、Discord、Slack、Signal、iMessage、Microsoft Teams。
 
 ## 新手入门（2 分钟）

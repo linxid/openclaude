@@ -3,10 +3,6 @@ title: "Google Vertex AI 上的 Claude Code"
 description: "了解如何通过 Google Vertex AI 配置 Claude Code，包括设置、IAM 配置和故障排除。"
 ---
 
-# Google Vertex AI 上的 Claude Code
-
-> 了解如何通过 Google Vertex AI 配置 Claude Code，包括设置、IAM 配置和故障排除。
-
 ## 前置条件
 
 在使用 Vertex AI 配置 Claude Code 之前，请确保您拥有：

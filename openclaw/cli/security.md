@@ -3,8 +3,6 @@ title: "security"
 description: "security 文档"
 ---
 
-# `openclaw security`
-
 安全工具（审计 + 可选修复）。
 
 相关：

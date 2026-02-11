@@ -3,8 +3,6 @@ title: "pairing"
 description: "pairing 文档"
 ---
 
-# `openclaw pairing`
-
 批准或检查私信配对请求（适用于支持配对的渠道）。
 
 相关内容：

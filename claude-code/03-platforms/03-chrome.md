@@ -3,10 +3,6 @@ title: "在 Chrome 中使用 Claude Code（测试版）"
 description: "将 Claude Code 连接到 Chrome 浏览器，以测试网络应用、使用控制台日志进行调试、自动填充表单以及从网页中提取数据。"
 ---
 
-# 在 Chrome 中使用 Claude Code（测试版）
-
-> 将 Claude Code 连接到 Chrome 浏览器，以测试网络应用、使用控制台日志进行调试、自动填充表单以及从网页中提取数据。
-
 Claude Code 与 Claude in Chrome 浏览器扩展程序集成，为您提供从 CLI 或 [VS Code 扩展程序](/zh-CN/vs-code#automate-browser-tasks-with-chrome) 进行浏览器自动化的功能。构建您的代码，然后在浏览器中测试和调试，无需切换上下文。
 
 Claude 为浏览器任务打开新标签页，并共享您浏览器的登录状态，因此它可以访问您已登录的任何网站。浏览器操作在实时可见的 Chrome 窗口中运行。当 Claude 遇到登录页面或 CAPTCHA 时，它会暂停并要求您手动处理。

@@ -3,10 +3,6 @@ title: "Claude Code 设置"
 description: "使用全局和项目级设置以及环境变量配置 Claude Code。"
 ---
 
-# Claude Code 设置
-
-> 使用全局和项目级设置以及环境变量配置 Claude Code。
-
 Claude Code 提供多种设置来配置其行为以满足您的需求。您可以在使用交互式 REPL 时运行 `/config` 命令来配置 Claude Code，这会打开一个选项卡式设置界面，您可以在其中查看状态信息并修改配置选项。
 
 ## 配置作用域

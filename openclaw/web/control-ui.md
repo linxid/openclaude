@@ -3,8 +3,6 @@ title: "控制 UI"
 description: "控制 UI 文档"
 ---
 
-# 控制 UI（浏览器）
-
 控制 UI 是一个由 Gateway 网关提供服务的小型 **Vite + Lit** 单页应用：
 
 * 默认：`http://<host>:18789/`

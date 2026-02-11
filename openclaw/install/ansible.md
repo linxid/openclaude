@@ -3,8 +3,6 @@ title: "Ansible"
 description: "Ansible 文档"
 ---
 
-# Ansible 安装
-
 将 OpenClaw 部署到生产服务器的推荐方式是通过 **[openclaw-ansible](https://github.com/openclaw/openclaw-ansible)** — 一个安全优先架构的自动化安装程序。
 
 ## 快速开始

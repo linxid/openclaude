@@ -3,8 +3,6 @@ title: "Webhooks"
 description: "Webhooks 文档"
 ---
 
-# Webhooks
-
 Gateway 网关可以暴露一个小型 HTTP webhook 端点用于外部触发。
 
 ## 启用

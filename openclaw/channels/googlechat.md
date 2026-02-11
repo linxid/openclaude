@@ -3,8 +3,6 @@ title: "Google Chat"
 description: "Google Chat 文档"
 ---
 
-# Google Chat（Chat API）
-
 状态：已支持通过 Google Chat API webhooks（仅 HTTP）使用私信和空间。
 
 ## 快速设置（新手）

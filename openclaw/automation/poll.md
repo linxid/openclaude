@@ -3,8 +3,6 @@ title: "投票"
 description: "投票 文档"
 ---
 
-# 投票
-
 ## 支持的渠道
 
 * WhatsApp（Web 渠道）

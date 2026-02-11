@@ -3,8 +3,6 @@ title: "exe.dev"
 description: "exe.dev 文档"
 ---
 
-# exe.dev
-
 目标：OpenClaw Gateway 网关运行在 exe.dev VM 上，可从你的笔记本电脑通过以下地址访问：`https://<vm-name>.exe.xyz`
 
 本页假设使用 exe.dev 的默认 **exeuntu** 镜像。如果你选择了不同的发行版，请相应地映射软件包。

@@ -3,8 +3,6 @@ title: "OpenAI Chat Completions"
 description: "OpenAI Chat Completions 文档"
 ---
 
-# OpenAI Chat Completions（HTTP）
-
 OpenClaw 的 Gateway 网关可以提供一个小型的 OpenAI 兼容 Chat Completions 端点。
 
 此端点**默认禁用**。请先在配置中启用它。

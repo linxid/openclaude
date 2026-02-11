@@ -3,8 +3,6 @@ title: "工具调用 API"
 description: "工具调用 API 文档"
 ---
 
-# 工具调用（HTTP）
-
 OpenClaw 的 Gateway 网关暴露了一个简单的 HTTP 端点用于直接调用单个工具。它始终启用，但受 Gateway 网关认证和工具策略限制。
 
 * `POST /tools/invoke`

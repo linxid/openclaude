@@ -3,8 +3,6 @@ title: "doctor"
 description: "doctor 文档"
 ---
 
-# `openclaw doctor`
-
 Gateway 网关和渠道的健康检查 + 快速修复。
 
 相关内容：

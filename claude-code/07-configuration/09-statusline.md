@@ -3,10 +3,6 @@ title: "状态行配置"
 description: "为 Claude Code 创建自定义状态行以显示上下文信息"
 ---
 
-# 状态行配置
-
-> 为 Claude Code 创建自定义状态行以显示上下文信息
-
 使用自定义状态行自定义 Claude Code，该状态行显示在 Claude Code 界面的底部，类似于 Oh-my-zsh 等 shell 中的终端提示符（PS1）的工作方式。
 
 ## 创建自定义状态行

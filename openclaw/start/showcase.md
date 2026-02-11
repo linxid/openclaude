@@ -3,8 +3,6 @@ title: "案例展示"
 description: "案例展示 文档"
 ---
 
-# 案例展示
-
 来自社区的真实项目。看看大家正在用 OpenClaw 构建什么。
 
 <Info>

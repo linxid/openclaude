@@ -3,8 +3,6 @@ title: "macOS IPC"
 description: "macOS IPC 文档"
 ---
 
-# OpenClaw macOS IPC 架构
-
 **当前模型：** 一个本地 Unix 套接字将**节点主机服务**连接到 **macOS 应用**，用于 exec 审批 + `system.run`。存在一个 `openclaw-mac` 调试 CLI 用于发现/连接检查；智能体操作仍通过 Gateway 网关 WebSocket 和 `node.invoke` 流转。UI 自动化使用 PeekabooBridge。
 
 ## 目标

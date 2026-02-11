@@ -3,8 +3,6 @@ title: "macOS 虚拟机"
 description: "macOS 虚拟机 文档"
 ---
 
-# 在 macOS 虚拟机上运行 OpenClaw（沙箱隔离）
-
 ## 推荐默认方案（大多数用户）
 
 * **小型 Linux VPS** 用于永久在线的 Gateway 网关，成本低。参见 [VPS 托管](/vps)。

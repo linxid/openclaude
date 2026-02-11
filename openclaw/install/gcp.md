@@ -3,8 +3,6 @@ title: "GCP"
 description: "GCP 文档"
 ---
 
-# 在 GCP Compute Engine 上运行 OpenClaw（Docker，生产 VPS 指南）
-
 ## 目标
 
 使用 Docker 在 GCP Compute Engine VM 上运行持久化的 OpenClaw Gateway 网关，具有持久状态、内置二进制文件和安全的重启行为。

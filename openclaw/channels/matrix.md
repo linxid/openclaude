@@ -3,8 +3,6 @@ title: "Matrix"
 description: "Matrix 文档"
 ---
 
-# Matrix（插件）
-
 Matrix 是一个开放的去中心化消息协议。OpenClaw 以 Matrix **用户**身份连接到任意主服务器，因此你需要为机器人创建一个 Matrix 账户。登录后，你可以直接私信机器人或邀请它加入房间（Matrix"群组"）。Beeper 也是一个有效的客户端选项，但它需要启用 E2EE。
 
 状态：通过插件（@vector-im/matrix-bot-sdk）支持。支持私信、房间、话题、媒体、表情回应、投票（发送 + poll-start 作为文本）、位置和 E2EE（需要加密支持）。

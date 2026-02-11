@@ -3,10 +3,6 @@ title: "开发容器"
 description: "了解 Claude Code 开发容器，适用于需要一致、安全环境的团队。"
 ---
 
-# 开发容器
-
-> 了解 Claude Code 开发容器，适用于需要一致、安全环境的团队。
-
 参考 [devcontainer 设置](https://github.com/anthropics/claude-code/tree/main/.devcontainer) 和相关的 [Dockerfile](https://github.com/anthropics/claude-code/blob/main/.devcontainer/Dockerfile) 提供了一个预配置的开发容器，你可以按原样使用，也可以根据需要进行自定义。此 devcontainer 与 Visual Studio Code [Dev Containers 扩展](https://code.visualstudio.com/docs/devcontainers/containers) 和类似工具兼容。
 
 容器的增强安全措施（隔离和防火墙规则）允许你运行 `claude --dangerously-skip-permissions` 来绕过权限提示，以实现无人值守操作。

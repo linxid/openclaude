@@ -3,8 +3,6 @@ title: "RPC 适配器"
 description: "RPC 适配器 文档"
 ---
 
-# RPC 适配器
-
 OpenClaw 通过 JSON-RPC 集成外部 CLI。目前使用两种模式。
 
 ## 模式 A：HTTP 守护进程（signal-cli）

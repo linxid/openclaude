@@ -3,8 +3,6 @@ title: "macOS 签名"
 description: "macOS 签名 文档"
 ---
 
-# Mac 签名（调试构建）
-
 此应用通常从 [`scripts/package-mac-app.sh`](https://github.com/openclaw/openclaw/blob/main/scripts/package-mac-app.sh) 构建，该脚本目前会：
 
 * 设置稳定的调试 Bundle 标识符：`ai.openclaw.mac.debug`

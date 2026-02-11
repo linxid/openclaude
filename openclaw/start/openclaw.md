@@ -3,8 +3,6 @@ title: "个人助手设置"
 description: "个人助手设置 文档"
 ---
 
-# 使用 OpenClaw 构建个人助手
-
 OpenClaw 是 **Pi** 智能体的 WhatsApp + Telegram + Discord + iMessage Gateway 网关。插件可添加 Mattermost。本指南是"个人助手"设置：一个专用的 WhatsApp 号码，表现得像你的常驻智能体。
 
 ## ⚠️ 安全第一

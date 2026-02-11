@@ -3,11 +3,6 @@ title: "Claude Code 中文文档索引"
 description: "📚 社区镜像: https://github.com/ericbuess/claude-code-docs"
 ---
 
-# Claude Code 中文文档索引
-
-> 📚 社区镜像: https://github.com/ericbuess/claude-code-docs
-> 📖 官方文档: https://code.claude.com/docs/zh-CN
-
 本文档镜像按照官方网站的导航结构组织。
 
 ---
