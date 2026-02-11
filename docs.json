@@ -33,7 +33,8 @@
               "claude-code/index",
               "claude-code/01-getting-started/01-overview",
               "claude-code/01-getting-started/02-quickstart",
-              "claude-code/01-getting-started/03-setup"
+              "claude-code/01-getting-started/03-setup",
+              "claude-code/01-getting-started/04-third-party-api"
             ]
           },
           {
