@@ -9,6 +9,20 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Claude Code 官方",
+          "icon": "book-open-cover",
+          "href": "https://code.claude.com/docs/zh-CN"
+        },
+        {
+          "anchor": "OpenClaw 官方",
+          "icon": "book-open-cover",
+          "href": "https://docs.openclaw.ai/zh-CN"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Claude Code",
@@ -269,84 +283,8 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Claude Code 官方",
-          "href": "https://code.claude.com/docs/zh-CN",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "OpenClaw 官方",
-          "href": "https://docs.openclaw.ai/zh-CN",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/linxid/docs",
-          "icon": "github"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
