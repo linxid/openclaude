@@ -294,8 +294,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Claude Code 官方",
-        "href": "https://code.claude.com/docs/zh-CN"
+        "label": "Github",
+        "href": "https://github.com/linxid/openclaude"
       }
     ],
     "primary": {
@@ -326,5 +326,11 @@
   },
   "seo": {
     "indexing": "all"
+  },
+  "thumbnails": {
+    "appearance": "light"
+  },
+  "styling": {
+    "latex": true
   }
 }
