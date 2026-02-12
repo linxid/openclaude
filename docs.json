@@ -288,8 +288,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/openclaude2.svg",
+    "dark": "/logo/openclaude2.svg"
   },
   "navbar": {
     "links": [
