@@ -332,5 +332,9 @@
   },
   "styling": {
     "latex": true
+  },
+  "banner": {
+    "content": "Claude Code",
+    "dismissible": true
   }
 }
