@@ -161,14 +161,14 @@ OpenClaw 为 browser、canvas、nodes 和 cron 暴露**一流的智能体工具*
 ## 插件 + 工具
 
 插件可以在核心集之外注册**额外的工具**（和 CLI 命令）。
-参见[插件](/07-tools/plugin)了解安装 + 配置，以及 [Skills](/07-tools/skills) 了解
+参见[插件](/tools/plugin)了解安装 + 配置，以及 [Skills](/tools/skills) 了解
 工具使用指导如何被注入到提示中。一些插件随工具一起提供自己的 Skills
 （例如，voice-call 插件）。
 
 可选的插件工具：
 
-* [Lobster](/07-tools/lobster)：带有可恢复审批的类型化工作流运行时（需要 Gateway 网关主机上的 Lobster CLI）。
-* [LLM Task](/07-tools/llm-task)：用于结构化工作流输出的 JSON-only LLM 步骤（可选 schema 验证）。
+* [Lobster](/tools/lobster)：带有可恢复审批的类型化工作流运行时（需要 Gateway 网关主机上的 Lobster CLI）。
+* [LLM Task](/tools/llm-task)：用于结构化工作流输出的 JSON-only LLM 步骤（可选 schema 验证）。
 
 ## 工具清单
 
@@ -202,7 +202,7 @@ OpenClaw 为 browser、canvas、nodes 和 cron 暴露**一流的智能体工具*
 * `elevated` 受 `tools.elevated` 加上任何 `agents.list[].tools.elevated` 覆盖的门控（两者都必须允许），是 `host=gateway` + `security=full` 的别名。
 * `elevated` 仅在智能体被沙箱隔离时改变行为（否则是空操作）。
 * `host=node` 可以针对 macOS 配套应用或无头节点主机（`openclaw node run`）。
-* Gateway 网关/节点审批和允许列表：[执行审批](/07-tools/exec-approvals)。
+* Gateway 网关/节点审批和允许列表：[执行审批](/tools/exec-approvals)。
 
 ### `process`
 
@@ -232,7 +232,7 @@ OpenClaw 为 browser、canvas、nodes 和 cron 暴露**一流的智能体工具*
 * 需要 Brave API 密钥（推荐：`openclaw configure --section web`，或设置 `BRAVE_API_KEY`）。
 * 通过 `tools.web.search.enabled` 启用。
 * 响应被缓存（默认 15 分钟）。
-* 参见 [Web 工具](/07-tools/web) 了解设置。
+* 参见 [Web 工具](/tools/web) 了解设置。
 
 ### `web_fetch`
 
@@ -249,8 +249,8 @@ OpenClaw 为 browser、canvas、nodes 和 cron 暴露**一流的智能体工具*
 * 通过 `tools.web.fetch.enabled` 启用。
 * 响应被缓存（默认 15 分钟）。
 * 对于 JS 密集型网站，优先使用 browser 工具。
-* 参见 [Web 工具](/07-tools/web) 了解设置。
-* 参见 [Firecrawl](/07-tools/firecrawl) 了解可选的反机器人回退。
+* 参见 [Web 工具](/tools/web) 了解设置。
+* 参见 [Firecrawl](/tools/firecrawl) 了解可选的反机器人回退。
 
 ### `browser`
 
