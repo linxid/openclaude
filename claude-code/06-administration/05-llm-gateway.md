@@ -40,7 +40,7 @@ LLM gateway 提供了 Claude Code 和模型提供商之间的集中代理层，�
 
 默认情况下，Claude Code 将为选定的 API 格式使用标准模型名称。
 
-如果您在网关中配置了自定义模型名称，请使用 [模型配置](/zh-CN/model-config) 中记录的环境变量来匹配您的自定义名称。
+如果您在网关中配置了自定义模型名称，请使用 [模型配置](/claude-code/07-configuration/04-model-config) 中记录的环境变量来匹配您的自定义名称。
 
 ## LiteLLM 配置
 
@@ -166,6 +166,6 @@ export CLOUD_ML_REGION=us-east5
 ## 其他资源
 
 * [LiteLLM 文档](https://docs.litellm.ai/)
-* [Claude Code 设置](/zh-CN/settings)
-* [企业网络配置](/zh-CN/network-config)
-* [第三方集成概述](/zh-CN/third-party-integrations)
+* [Claude Code 设置](/claude-code/07-configuration/01-settings)
+* [企业网络配置](/claude-code/07-configuration/07-network-config)
+* [第三方集成概述](/claude-code/06-administration/01-third-party-integrations)

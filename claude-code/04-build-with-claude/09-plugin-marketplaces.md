@@ -5,16 +5,16 @@ description: "构建和托管 plugin marketplace，以在团队和社区中分�
 
 plugin marketplace 是一个目录，让你能够将 plugin 分发给他人。Marketplace 提供集中式发现、版本跟踪、自动更新以及对多种源类型（git 仓库、本地路径等）的支持。本指南展示了如何创建自己的 marketplace，与你的团队或社区共享 plugin。
 
-想要从现有 marketplace 安装 plugin？请参阅[发现和安装预构建 plugin](/zh-CN/discover-plugins)。
+想要从现有 marketplace 安装 plugin？请参阅[发现和安装预构建 plugin](/claude-code/04-build-with-claude/08-discover-plugins)。
 
 ## 概述
 
 创建和分发 marketplace 涉及：
 
-1. **创建 plugin**：使用命令、agents、hooks、MCP servers 或 LSP servers 构建一个或多个 plugin。本指南假设你已经有要分发的 plugin；有关如何创建 plugin 的详细信息，请参阅[创建 plugin](/zh-CN/plugins)。
+1. **创建 plugin**：使用命令、agents、hooks、MCP servers 或 LSP servers 构建一个或多个 plugin。本指南假设你已经有要分发的 plugin；有关如何创建 plugin 的详细信息，请参阅[创建 plugin](/claude-code/04-build-with-claude/06-plugins)。
 2. **创建 marketplace 文件**：定义一个 `marketplace.json`，列出你的 plugin 及其位置（请参阅[创建 marketplace 文件](#create-the-marketplace-file)）。
 3. **托管 marketplace**：推送到 GitHub、GitLab 或其他 git 主机（请参阅[托管和分发 marketplace](#host-and-distribute-marketplaces)）。
-4. **与用户共享**：用户使用 `/plugin marketplace add` 添加你的 marketplace 并安装单个 plugin（请参阅[发现和安装 plugin](/zh-CN/discover-plugins)）。
+4. **与用户共享**：用户使用 `/plugin marketplace add` 添加你的 marketplace 并安装单个 plugin（请参阅[发现和安装 plugin](/claude-code/04-build-with-claude/08-discover-plugins)）。
 
 一旦你的 marketplace 上线，你可以通过推送更改到你的仓库来更新它。用户使用 `/plugin marketplace update` 刷新他们的本地副本。
 
@@ -100,12 +100,12 @@ plugin marketplace 是一个目录，让你能够将 plugin 分发给他人。Ma
   </Step>
 </Steps>
 
-要了解更多关于 plugin 可以做什么的信息，包括 hooks、agents、MCP servers 和 LSP servers，请参阅 [Plugins](/zh-CN/plugins)。
+要了解更多关于 plugin 可以做什么的信息，包括 hooks、agents、MCP servers 和 LSP servers，请参阅 [Plugins](/claude-code/04-build-with-claude/06-plugins)。
 
 <Note>
   **plugin 如何安装**：当用户安装 plugin 时，Claude Code 会将 plugin 目录复制到缓存位置。这意味着 plugin 无法使用 `../shared-utils` 之类的路径引用其目录外的文件，因为这些文件不会被复制。
 
-  如果你需要在 plugin 之间共享文件，请使用符号链接（在复制期间会被跟踪）或重新构造你的 marketplace，使共享目录位于 plugin 源路径内。有关详细信息，请参阅 [Plugin 缓存和文件解析](/zh-CN/plugins-reference#plugin-caching-and-file-resolution)。
+  如果你需要在 plugin 之间共享文件，请使用符号链接（在复制期间会被跟踪）或重新构造你的 marketplace，使共享目录位于 plugin 源路径内。有关详细信息，请参阅 [Plugin 缓存和文件解析](/claude-code/04-build-with-claude/07-plugins-reference#plugin-caching-and-file-resolution)。
 </Note>
 
 ## 创建 marketplace 文件
@@ -174,7 +174,7 @@ plugin marketplace 是一个目录，让你能够将 plugin 分发给他人。Ma
 
 ## Plugin 条目
 
-`plugins` 数组中的每个 plugin 条目描述一个 plugin 及其位置。你可以包含来自 [plugin manifest 架构](/zh-CN/plugins-reference#plugin-manifest-schema) 的任何字段（如 `description`、`version`、`author`、`commands`、`hooks` 等），加上这些 marketplace 特定字段：`source`、`category`、`tags` 和 `strict`。
+`plugins` 数组中的每个 plugin 条目描述一个 plugin 及其位置。你可以包含来自 [plugin manifest 架构](/claude-code/04-build-with-claude/07-plugins-reference#plugin-manifest-schema) 的任何字段（如 `description`、`version`、`author`、`commands`、`hooks` 等），加上这些 marketplace 特定字段：`source`、`category`、`tags` 和 `strict`。
 
 ### 必需字段
 
@@ -399,7 +399,7 @@ export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 /plugin install test-plugin@my-local-marketplace
 ```
 
-有关完整的添加命令范围（GitHub、Git URL、本地路径、远程 URL），请参阅[添加 marketplace](/zh-CN/discover-plugins#add-marketplaces)。
+有关完整的添加命令范围（GitHub、Git URL、本地路径、远程 URL），请参阅[添加 marketplace](/claude-code/04-build-with-claude/08-discover-plugins#add-marketplaces)。
 
 ### 为你的团队要求 marketplace
 
@@ -429,11 +429,11 @@ export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 }
 ```
 
-有关完整的配置选项，请参阅 [Plugin 设置](/zh-CN/settings#plugin-settings)。
+有关完整的配置选项，请参阅 [Plugin 设置](/claude-code/07-configuration/01-settings#plugin-settings)。
 
 ### 托管 marketplace 限制
 
-对于需要严格控制 plugin 源的组织，管理员可以使用托管设置中的 [`strictKnownMarketplaces`](/zh-CN/settings#strictknownmarketplaces) 设置限制用户允许添加哪些 plugin marketplace。
+对于需要严格控制 plugin 源的组织，管理员可以使用托管设置中的 [`strictKnownMarketplaces`](/claude-code/07-configuration/01-settings#strictknownmarketplaces) 设置限制用户允许添加哪些 plugin marketplace。
 
 当在托管设置中配置 `strictKnownMarketplaces` 时，限制行为取决于该值：
 
@@ -498,9 +498,9 @@ export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 * 对于 URL 源：完整 URL 必须完全匹配
 * 对于 `hostPattern` 源：marketplace 主机与正则表达式模式匹配
 
-因为 `strictKnownMarketplaces` 在[托管设置](/zh-CN/settings#settings-files)中设置，个人用户和项目配置无法覆盖这些限制。
+因为 `strictKnownMarketplaces` 在[托管设置](/claude-code/07-configuration/01-settings#settings-files)中设置，个人用户和项目配置无法覆盖这些限制。
 
-有关完整的配置详细信息，包括所有支持的源类型和与 `extraKnownMarketplaces` 的比较，请参阅 [strictKnownMarketplaces 参考](/zh-CN/settings#strictknownmarketplaces)。
+有关完整的配置详细信息，包括所有支持的源类型和与 `extraKnownMarketplaces` 的比较，请参阅 [strictKnownMarketplaces 参考](/claude-code/07-configuration/01-settings#strictknownmarketplaces)。
 
 ## 验证和测试
 
@@ -530,7 +530,7 @@ claude plugin validate .
 /plugin install test-plugin@marketplace-name
 ```
 
-有关完整的 plugin 测试工作流，请参阅[本地测试你的 plugin](/zh-CN/plugins#test-your-plugins-locally)。有关技术故障排除，请参阅 [Plugins 参考](/zh-CN/plugins-reference)。
+有关完整的 plugin 测试工作流，请参阅[本地测试你的 plugin](/claude-code/04-build-with-claude/06-plugins#test-your-plugins-locally)。有关技术故障排除，请参阅 [Plugins 参考](/claude-code/04-build-with-claude/07-plugins-reference)。
 
 ## 故障排除
 
@@ -613,14 +613,14 @@ claude plugin validate .
 
 **原因**：Plugin 被复制到缓存目录而不是就地使用。引用 plugin 目录外文件的路径（如 `../shared-utils`）将无法工作，因为这些文件不会被复制。
 
-**解决方案**：有关解决方法（包括符号链接和目录重组），请参阅 [Plugin 缓存和文件解析](/zh-CN/plugins-reference#plugin-caching-and-file-resolution)。
+**解决方案**：有关解决方法（包括符号链接和目录重组），请参阅 [Plugin 缓存和文件解析](/claude-code/04-build-with-claude/07-plugins-reference#plugin-caching-and-file-resolution)。
 
-有关其他调试工具和常见问题，请参阅[调试和开发工具](/zh-CN/plugins-reference#debugging-and-development-tools)。
+有关其他调试工具和常见问题，请参阅[调试和开发工具](/claude-code/04-build-with-claude/07-plugins-reference#debugging-and-development-tools)。
 
 ## 另请参阅
 
-* [发现和安装预构建 plugin](/zh-CN/discover-plugins) - 从现有 marketplace 安装 plugin
-* [Plugins](/zh-CN/plugins) - 创建你自己的 plugin
-* [Plugins 参考](/zh-CN/plugins-reference) - 完整的技术规范和架构
-* [Plugin 设置](/zh-CN/settings#plugin-settings) - Plugin 配置选项
-* [strictKnownMarketplaces 参考](/zh-CN/settings#strictknownmarketplaces) - 托管 marketplace 限制
+* [发现和安装预构建 plugin](/claude-code/04-build-with-claude/08-discover-plugins) - 从现有 marketplace 安装 plugin
+* [Plugins](/claude-code/04-build-with-claude/06-plugins) - 创建你自己的 plugin
+* [Plugins 参考](/claude-code/04-build-with-claude/07-plugins-reference) - 完整的技术规范和架构
+* [Plugin 设置](/claude-code/07-configuration/01-settings#plugin-settings) - Plugin 配置选项
+* [strictKnownMarketplaces 参考](/claude-code/07-configuration/01-settings#strictknownmarketplaces) - 托管 marketplace 限制

@@ -4,12 +4,12 @@ description: "本页面提供在 Claude Code 中实现 hooks 的参考文档。"
 ---
 
 <Tip>
-  有关包含示例的快速入门指南，请参阅 [Claude Code hooks 入门](/zh-CN/hooks-guide)。
+  有关包含示例的快速入门指南，请参阅 [Claude Code hooks 入门](/claude-code/04-build-with-claude/04-hooks-guide)。
 </Tip>
 
 ## 配置
 
-Claude Code hooks 在您的 [设置文件](/zh-CN/settings) 中配置：
+Claude Code hooks 在您的 [设置文件](/claude-code/07-configuration/01-settings) 中配置：
 
 * `~/.claude/settings.json` - 用户设置
 * `.claude/settings.json` - 项目设置
@@ -17,7 +17,7 @@ Claude Code hooks 在您的 [设置文件](/zh-CN/settings) 中配置：
 * 托管策略设置
 
 <Note>
-  企业管理员可以使用 `allowManagedHooksOnly` 来阻止用户、项目和插件 hooks。请参阅 [Hook 配置](/zh-CN/settings#hook-configuration)。
+  企业管理员可以使用 `allowManagedHooksOnly` 来阻止用户、项目和插件 hooks。请参阅 [Hook 配置](/claude-code/07-configuration/01-settings#hook-configuration)。
 </Note>
 
 ### 结构
@@ -95,7 +95,7 @@ Hooks 按匹配器组织，其中每个匹配器可以有多个 hooks：
 
 ### 插件 hooks
 
-[插件](/zh-CN/plugins) 可以提供与您的用户和项目 hooks 无缝集成的 hooks。启用插件时，插件 hooks 会自动与您的配置合并。
+[插件](/claude-code/04-build-with-claude/06-plugins) 可以提供与您的用户和项目 hooks 无缝集成的 hooks。启用插件时，插件 hooks 会自动与您的配置合并。
 
 **插件 hooks 的工作原理**：
 
@@ -140,11 +140,11 @@ Hooks 按匹配器组织，其中每个匹配器可以有多个 hooks：
 * `${CLAUDE_PROJECT_DIR}`：项目根目录（与项目 hooks 相同）
 * 所有标准环境变量都可用
 
-有关创建插件 hooks 的详细信息，请参阅 [插件组件参考](/zh-CN/plugins-reference#hooks)。
+有关创建插件 hooks 的详细信息，请参阅 [插件组件参考](/claude-code/04-build-with-claude/07-plugins-reference#hooks)。
 
 ### Skills、Agents 和 Slash Commands 中的 Hooks
 
-除了设置文件和插件外，hooks 还可以直接在 [Skills](/zh-CN/skills)、[subagents](/zh-CN/sub-agents) 和 [slash commands](/zh-CN/slash-commands) 中使用 frontmatter 定义。这些 hooks 的作用域限于组件的生命周期，仅在该组件处于活动状态时运行。
+除了设置文件和插件外，hooks 还可以直接在 [Skills](/claude-code/04-build-with-claude/01-skills)、[subagents](/claude-code/04-build-with-claude/02-sub-agents) 和 [slash commands](/claude-code/04-build-with-claude/01-skills) 中使用 frontmatter 定义。这些 hooks 的作用域限于组件的生命周期，仅在该组件处于活动状态时运行。
 
 **支持的事件**：`PreToolUse`、`PostToolUse` 和 `Stop`
 
@@ -307,7 +307,7 @@ LLM 必须使用包含以下内容的 JSON 进行响应：
 * **设置适当的超时**：默认为 30 秒，如果需要可调整
 * **用于复杂决策**：Bash hooks 更适合简单的、确定性的规则
 
-有关创建插件 hooks 的详细信息，请参阅 [插件组件参考](/zh-CN/plugins-reference#hooks)。
+有关创建插件 hooks 的详细信息，请参阅 [插件组件参考](/claude-code/04-build-with-claude/07-plugins-reference#hooks)。
 
 ## Hook 事件
 
@@ -317,7 +317,7 @@ LLM 必须使用包含以下内容的 JSON 进行响应：
 
 **常见匹配器**：
 
-* `Task` - Subagent 任务（请参阅 [subagents 文档](/zh-CN/sub-agents)）
+* `Task` - Subagent 任务（请参阅 [subagents 文档](/claude-code/04-build-with-claude/02-sub-agents)）
 * `Bash` - Shell 命令
 * `Glob` - 文件模式匹配
 * `Grep` - 内容搜索
@@ -967,7 +967,7 @@ sys.exit(0)
 
 ## 使用 MCP 工具
 
-Claude Code hooks 与 [Model Context Protocol (MCP) 工具](/zh-CN/mcp) 无缝协作。当 MCP 服务器提供工具时，它们以特殊命名模式出现，您可以在 hooks 中匹配。
+Claude Code hooks 与 [Model Context Protocol (MCP) 工具](/claude-code/04-build-with-claude/05-mcp) 无缝协作。当 MCP 服务器提供工具时，它们以特殊命名模式出现，您可以在 hooks 中匹配。
 
 ### MCP 工具命名
 
@@ -1011,7 +1011,7 @@ MCP 工具遵循模式 `mcp__<server>__<tool>`，例如：
 ## 示例
 
 <Tip>
-  有关包括代码格式化、通知和文件保护的实际示例，请参阅入门指南中的 [更多示例](/zh-CN/hooks-guide#more-examples)。
+  有关包括代码格式化、通知和文件保护的实际示例，请参阅入门指南中的 [更多示例](/claude-code/04-build-with-claude/04-hooks-guide#more-examples)。
 </Tip>
 
 ## 安全考虑

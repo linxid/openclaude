@@ -30,7 +30,7 @@ Claude Code 插件适用于大多数 JetBrains IDEs，包括：
 
 从 JetBrains 市场查找并安装 [Claude Code 插件](https://plugins.jetbrains.com/plugin/27310-claude-code-beta-)，然后重启您的 IDE。
 
-如果您还没有安装 Claude Code，请参阅[我们的快速入门指南](/zh-CN/quickstart)了解安装说明。
+如果您还没有安装 Claude Code，请参阅[我们的快速入门指南](/claude-code/01-getting-started/02-quickstart)了解安装说明。
 
 <Note>
   安装插件后，您可能需要完全重启 IDE 才能使其生效。
@@ -103,7 +103,7 @@ claude
 ### WSL 配置
 
 <Warning>
-  WSL 用户可能需要额外配置才能使 IDE 检测正常工作。有关详细的设置说明，请参阅我们的 [WSL 故障排除指南](/zh-CN/troubleshooting#jetbrains-ide-not-detected-on-wsl2)。
+  WSL 用户可能需要额外配置才能使 IDE 检测正常工作。有关详细的设置说明，请参阅我们的 [WSL 故障排除指南](/claude-code/09-resources/04-troubleshooting#jetbrains-ide-not-detected-on-wsl2)。
 </Warning>
 
 WSL 配置可能需要：
@@ -126,7 +126,7 @@ WSL 配置可能需要：
 * 验证插件已安装并启用
 * 完全重启 IDE
 * 检查您是否从集成终端运行 Claude Code
-* 对于 WSL 用户，请参阅 [WSL 故障排除指南](/zh-CN/troubleshooting#jetbrains-ide-not-detected-on-wsl2)
+* 对于 WSL 用户，请参阅 [WSL 故障排除指南](/claude-code/09-resources/04-troubleshooting#jetbrains-ide-not-detected-on-wsl2)
 
 ### 命令未找到
 
@@ -146,4 +146,4 @@ WSL 配置可能需要：
 * 特别小心确保 Claude 仅与受信任的提示一起使用
 * 了解 Claude Code 有权访问修改的文件
 
-如需更多帮助，请参阅我们的[故障排除指南](/zh-CN/troubleshooting)。
+如需更多帮助，请参阅我们的[故障排除指南](/claude-code/09-resources/04-troubleshooting)。

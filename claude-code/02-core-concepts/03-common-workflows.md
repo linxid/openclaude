@@ -3,7 +3,7 @@ title: "常见工作流程"
 description: "使用 Claude Code 探索代码库、修复错误、重构、测试和其他日常任务的分步指南。"
 ---
 
-本页涵盖日常开发的实用工作流程：探索陌生代码、调试、重构、编写测试、创建 PR 和管理会话。每个部分都包含示例提示，您可以根据自己的项目进行调整。有关更高级的模式和提示，请参阅[最佳实践](/zh-CN/best-practices)。
+本页涵盖日常开发的实用工作流程：探索陌生代码、调试、重构、编写测试、创建 PR 和管理会话。每个部分都包含示例提示，您可以根据自己的项目进行调整。有关更高级的模式和提示，请参阅[最佳实践](/claude-code/02-core-concepts/04-best-practices)。
 
 ## 理解新代码库
 
@@ -82,7 +82,7 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
 
   * 明确说明您要查找的内容
   * 使用项目中的领域语言
-  * 为您的语言安装[代码智能插件](/zh-CN/discover-plugins#code-intelligence)，以便为 Claude 提供精确的"转到定义"和"查找引用"导航
+  * 为您的语言安装[代码智能插件](/claude-code/04-build-with-claude/08-discover-plugins#code-intelligence)，以便为 Claude 提供精确的"转到定义"和"查找引用"导航
 </Tip>
 
 ***
@@ -216,14 +216,14 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
   * 在 `.claude/agents/` 中创建项目特定的 subagents 以供团队共享
   * 使用描述性的 `description` 字段来启用自动委派
   * 限制工具访问权限为每个 subagent 实际需要的内容
-  * 查看[subagents 文档](/zh-CN/sub-agents)了解详细示例
+  * 查看[subagents 文档](/claude-code/04-build-with-claude/02-sub-agents)了解详细示例
 </Tip>
 
 ***
 
 ## 使用 Plan Mode 进行安全的代码分析
 
-Plan Mode 指示 Claude 通过使用只读操作分析代码库来创建计划，非常适合探索代码库、规划复杂更改或安全地审查代码。在 Plan Mode 中，Claude 使用 [`AskUserQuestion`](/zh-CN/settings#tools-available-to-claude) 来收集需求并在提出计划之前澄清您的目标。
+Plan Mode 指示 Claude 通过使用只读操作分析代码库来创建计划，非常适合探索代码库、规划复杂更改或安全地审查代码。在 Plan Mode 中，Claude 使用 [`AskUserQuestion`](/claude-code/07-configuration/01-settings#tools-available-to-claude) 来收集需求并在提出计划之前澄清您的目标。
 
 ### 何时使用 Plan Mode
 
@@ -237,7 +237,7 @@ Plan Mode 指示 Claude 通过使用只读操作分析代码库来创建计划�
 
 您可以在会话期间使用 **Shift+Tab** 循环切换权限模式来切换到 Plan Mode。
 
-如果您处于 Normal Mode，**Shift+Tab** 首先切换到 Auto-Accept Mode，在终端底部显示 `⏵⏵ accept edits on`。随后的 **Shift+Tab** 将切换到 Plan Mode，显示 `⏸ plan mode on`。当[agent team](/zh-CN/agent-teams)处于活动状态时，循环还包括 Delegate Mode。
+如果您处于 Normal Mode，**Shift+Tab** 首先切换到 Auto-Accept Mode，在终端底部显示 `⏵⏵ accept edits on`。随后的 **Shift+Tab** 将切换到 Plan Mode，显示 `⏸ plan mode on`。当[agent team](/claude-code/05-deployment/04-agent-teams)处于活动状态时，循环还包括 Delegate Mode。
 
 **在 Plan Mode 中启动新会话**
 
@@ -249,7 +249,7 @@ claude --permission-mode plan
 
 **在 Plan Mode 中运行"无头"查询**
 
-您也可以直接在 Plan Mode 中使用 `-p` 运行查询（即在["无头模式"](/zh-CN/headless)中）：
+您也可以直接在 Plan Mode 中使用 `-p` 运行查询（即在["无头模式"](/claude-code/05-deployment/03-headless)中）：
 
 ```bash  theme={null}
 claude --permission-mode plan -p "Analyze the authentication system and suggest improvements"
@@ -285,7 +285,7 @@ Claude 分析当前实现并创建全面的计划。通过后续问题进行细�
 }
 ```
 
-有关更多配置选项，请参阅[设置文档](/zh-CN/settings#available-settings)。
+有关更多配置选项，请参阅[设置文档](/claude-code/07-configuration/01-settings#available-settings)。
 
 ***
 
@@ -335,7 +335,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 如果您配置了 Slack MCP server 并在 CLAUDE.md 中指定了频道（例如，"post PR URLs to #team-prs"），该 skill 会自动将 PR URL 发布到这些频道。
 
-为了更好地控制流程，逐步指导 Claude 完成或[创建您自己的 skill](/zh-CN/skills)：
+为了更好地控制流程，逐步指导 Claude 完成或[创建您自己的 skill](/claude-code/04-build-with-claude/01-skills)：
 
 <Steps>
   <Step title="总结您的更改">
@@ -489,7 +489,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
     > Show me the data from @github:repos/owner/repo/issues
     ```
 
-    这使用 @server:resource 格式从连接的 MCP servers 获取数据。有关详细信息，请参阅 [MCP 资源](/zh-CN/mcp#use-mcp-resources)。
+    这使用 @server:resource 格式从连接的 MCP servers 获取数据。有关详细信息，请参阅 [MCP 资源](/claude-code/04-build-with-claude/05-mcp#use-mcp-resources)。
   </Step>
 </Steps>
 
@@ -508,7 +508,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 [扩展思考](https://platform.claude.com/docs/en/build-with-claude/extended-thinking)默认启用，为 Claude 提供空间在响应前逐步推理复杂问题。这种推理在详细模式中可见，您可以使用 `Ctrl+O` 切换。
 
-此外，Opus 4.6 引入了自适应推理：不是固定的思考令牌预算，而是模型根据您的[努力级别](/zh-CN/model-config#adjust-effort-level)设置动态分配思考。扩展思考和自适应推理一起工作，让您可以控制 Claude 在响应前的推理深度。
+此外，Opus 4.6 引入了自适应推理：不是固定的思考令牌预算，而是模型根据您的[努力级别](/claude-code/07-configuration/04-model-config#adjust-effort-level)设置动态分配思考。扩展思考和自适应推理一起工作，让您可以控制 Claude 在响应前的推理深度。
 
 扩展思考对于复杂的架构决策、具有挑战性的错误、多步骤实现规划和评估不同方法之间的权衡特别有价值。
 
@@ -522,10 +522,10 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 | 范围         | 如何配置                                                                                  | 详细信息                                                                             |
 | ---------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **努力级别**   | 在 `/model` 中调整或设置 [`CLAUDE_CODE_EFFORT_LEVEL`](/zh-CN/settings#environment-variables) | 控制 Opus 4.6 的思考深度：低、中、高（默认）。请参阅[调整努力级别](/zh-CN/model-config#adjust-effort-level) |
-| **切换快捷键**  | 按 `Option+T`（macOS）或 `Alt+T`（Windows/Linux）                                           | 为当前会话切换思考开/关（所有模型）。可能需要[终端配置](/zh-CN/terminal-config)来启用 Option 键快捷键             |
+| **努力级别**   | 在 `/model` 中调整或设置 [`CLAUDE_CODE_EFFORT_LEVEL`](/claude-code/07-configuration/01-settings#environment-variables) | 控制 Opus 4.6 的思考深度：低、中、高（默认）。请参阅[调整努力级别](/claude-code/07-configuration/04-model-config#adjust-effort-level) |
+| **切换快捷键**  | 按 `Option+T`（macOS）或 `Alt+T`（Windows/Linux）                                           | 为当前会话切换思考开/关（所有模型）。可能需要[终端配置](/claude-code/07-configuration/06-terminal-config)来启用 Option 键快捷键             |
 | **全局默认值**  | 使用 `/config` 切换 Thinking Mode                                                         | 在所有项目中设置默认值（所有模型）。<br />保存为 `~/.claude/settings.json` 中的 `alwaysThinkingEnabled` |
-| **限制令牌预算** | 设置 [`MAX_THINKING_TOKENS`](/zh-CN/settings#environment-variables) 环境变量                | 将思考预算限制为特定数量的令牌（在 Opus 4.6 上忽略，除非设置为 0）。示例：`export MAX_THINKING_TOKENS=10000`    |
+| **限制令牌预算** | 设置 [`MAX_THINKING_TOKENS`](/claude-code/07-configuration/01-settings#environment-variables) 环境变量                | 将思考预算限制为特定数量的令牌（在 Opus 4.6 上忽略，除非设置为 0）。示例：`export MAX_THINKING_TOKENS=10000`    |
 
 要查看 Claude 的思考过程，按 `Ctrl+O` 切换详细模式，并查看显示为灰色斜体文本的内部推理。
 
@@ -533,9 +533,9 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 扩展思考控制 Claude 在响应前执行多少内部推理。更多思考提供更多空间来探索解决方案、分析边界情况和自我纠正错误。
 
-**使用 Opus 4.6**，思考使用自适应推理：模型根据您选择的[努力级别](/zh-CN/model-config#adjust-effort-level)（低、中、高）动态分配思考令牌。这是调整速度和推理深度之间权衡的推荐方式。
+**使用 Opus 4.6**，思考使用自适应推理：模型根据您选择的[努力级别](/claude-code/07-configuration/04-model-config#adjust-effort-level)（低、中、高）动态分配思考令牌。这是调整速度和推理深度之间权衡的推荐方式。
 
-**使用其他模型**，思考使用固定预算，最多 31,999 个令牌来自您的输出预算。您可以使用 [`MAX_THINKING_TOKENS`](/zh-CN/settings#environment-variables) 环境变量限制此，或通过 `/config` 或 `Option+T`/`Alt+T` 切换完全禁用思考。
+**使用其他模型**，思考使用固定预算，最多 31,999 个令牌来自您的输出预算。您可以使用 [`MAX_THINKING_TOKENS`](/claude-code/07-configuration/01-settings#environment-variables) 环境变量限制此，或通过 `/config` 或 `Option+T`/`Alt+T` 切换完全禁用思考。
 
 当使用 Opus 4.6 时，`MAX_THINKING_TOKENS` 被忽略，因为自适应推理控制思考深度。唯一的例外：设置 `MAX_THINKING_TOKENS=0` 仍然在任何模型上完全禁用思考。
 
@@ -700,7 +700,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
     * 其他语言：遵循您项目的标准设置流程
 </Tip>
 
-有关具有共享任务和消息的并行会话的自动协调，请参阅 [agent teams](/zh-CN/agent-teams)。
+有关具有共享任务和消息的并行会话的自动协调，请参阅 [agent teams](/claude-code/05-deployment/04-agent-teams)。
 
 ***
 
@@ -836,15 +836,15 @@ Claude 内置访问其文档，可以回答有关其自身功能和限制的问�
 ## 后续步骤
 
 <CardGroup cols={2}>
-  <Card title="最佳实践" icon="lightbulb" href="/zh-CN/best-practices">
+  <Card title="最佳实践" icon="lightbulb" href="/claude-code/02-core-concepts/04-best-practices">
     从 Claude Code 中获得最大收益的模式
   </Card>
 
-  <Card title="Claude Code 如何工作" icon="gear" href="/zh-CN/how-claude-code-works">
+  <Card title="Claude Code 如何工作" icon="gear" href="/claude-code/02-core-concepts/01-how-claude-code-works">
     理解 agentic 循环和上下文管理
   </Card>
 
-  <Card title="扩展 Claude Code" icon="puzzle-piece" href="/zh-CN/features-overview">
+  <Card title="扩展 Claude Code" icon="puzzle-piece" href="/claude-code/02-core-concepts/02-features-overview">
     添加 skills、hooks、MCP、subagents 和 plugins
   </Card>
 

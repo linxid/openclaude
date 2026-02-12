@@ -27,12 +27,13 @@ export ANTHROPIC_MODEL="model-name"
 在 `~/.claude/settings.json` 中添加：
 
 ```json
-{
-  "apiProvider": "custom",
-  "customApiUrl": "https://api.example.com/v1",
-  "customApiKey": "your-api-key",
-  "customModel": "model-name"
-}
+"env": {
+    "ANTHROPIC_API_KEY": "sk-xxxxxx",
+    "ANTHROPIC_BASE_URL": "your base url",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_TELEMETRY": "1"
+  },
 ```
 
 ## 国内模型提供商
@@ -42,20 +43,18 @@ export ANTHROPIC_MODEL="model-name"
 Kimi 2.5 是月之暗面推出的最新模型，支持超长上下文。
 
 ```bash
-export ANTHROPIC_BASE_URL="https://api.moonshot.cn/v1"
-export ANTHROPIC_API_KEY="sk-your-moonshot-key"
-export ANTHROPIC_MODEL="moonshot-v1-128k"
+# Linux/macOS 启动高速版 kimi-k2-thinking-turbo 模型
+export ANTHROPIC_BASE_URL=https://api.moonshot.cn/anthropic
+export ANTHROPIC_AUTH_TOKEN=${YOUR_MOONSHOT_API_KEY}
+export ANTHROPIC_MODEL=kimi-k2-thinking-turbo
+export ANTHROPIC_DEFAULT_OPUS_MODEL=kimi-k2-thinking-turbo
+export ANTHROPIC_DEFAULT_SONNET_MODEL=kimi-k2-thinking-turbo
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=kimi-k2-thinking-turbo
+export CLAUDE_CODE_SUBAGENT_MODEL=kimi-k2-thinking-turbo 
+claude
 ```
 
-**可用模型：**
-| 模型名称 | 上下文长度 | 说明 |
-|---------|-----------|------|
-| `moonshot-v1-8k` | 8K | 快速响应 |
-| `moonshot-v1-32k` | 32K | 平衡选择 |
-| `moonshot-v1-128k` | 128K | 长文本处理 |
-| `kimi-latest` | 1M | Kimi 2.5 最新版 |
-
-**获取 API Key：** [https://platform.moonshot.cn](https://platform.moonshot.cn)
+**获取 API Key：** [https://platform.moonshot.cn/console/api-keys](https://platform.moonshot.cn/console/api-keys)
 
 ---
 
@@ -63,20 +62,35 @@ export ANTHROPIC_MODEL="moonshot-v1-128k"
 
 MiniMax 提供高性能的国产大模型服务。
 
-```bash
-export ANTHROPIC_BASE_URL="https://api.minimax.chat/v1"
-export ANTHROPIC_API_KEY="your-minimax-key"
-export ANTHROPIC_MODEL="abab6.5s-chat"
+```json
+# Stpe1: 编辑或创建 Claude Code 的配置文件
+# MacOS & Linux 为 `~/.claude/settings.json`
+# Windows 为`用户目录/.claude/settings.json`
+# `MINIMAX_API_KEY` 需替换为您的 MiniMax API Key
+# 环境变量 `ANTHROPIC_AUTH_TOKEN` 和 `ANTHROPIC_BASE_URL` 优先级高于配置文件
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "MINIMAX_API_KEY",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+    "ANTHROPIC_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_SMALL_FAST_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M2.1",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M2.1"
+  }
+}
+# Step2: 编辑或新增 `.claude.json` 文件
+# MacOS & Linux 为 `~/.claude.json`
+# Windows 为`用户目录/.claude.json`
+# 新增 `hasCompletedOnboarding` 参数
+{
+  "hasCompletedOnboarding": true
+}
 ```
 
-**可用模型：**
-| 模型名称 | 说明 |
-|---------|------|
-| `abab6.5s-chat` | 高性能对话模型 |
-| `abab6.5g-chat` | 通用对话模型 |
-| `abab5.5-chat` | 轻量级模型 |
-
-**获取 API Key：** [https://platform.minimaxi.com](https://platform.minimaxi.com)
+**获取 API Key：** [https://platform.minimaxi.com/user-center/basic-information/interface-key](https://platform.minimaxi.com/user-center/basic-information/interface-key)
 
 ---
 

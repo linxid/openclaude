@@ -42,7 +42,7 @@ claude
 
 ## 管理员配置
 
-管理员可以通过 [托管设置文件](/zh-CN/settings#settings-files) 为所有用户配置 OpenTelemetry 设置。这允许在整个组织中集中控制遥测设置。有关设置如何应用的更多信息，请参阅 [设置优先级](/zh-CN/settings#settings-precedence)。
+管理员可以通过 [托管设置文件](/claude-code/07-configuration/01-settings#settings-files) 为所有用户配置 OpenTelemetry 设置。这允许在整个组织中集中控制遥测设置。有关设置如何应用的更多信息，请参阅 [设置优先级](/claude-code/07-configuration/01-settings#settings-precedence)。
 
 示例托管设置配置：
 

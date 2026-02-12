@@ -62,14 +62,14 @@ Claude Code 基于 Anthropic 的 API 构建。有关我们 API 的安全控制�
 
 ### 云执行：数据流和依赖项
 
-当使用[网络上的 Claude Code](/zh-CN/claude-code-on-the-web) 时，会话在 Anthropic 管理的虚拟机中运行，而不是在本地运行。在云环境中：
+当使用[网络上的 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web) 时，会话在 Anthropic 管理的虚拟机中运行，而不是在本地运行。在云环境中：
 
 * \*\*代码和数据存储：\*\*您的存储库被克隆到隔离的 VM。代码和会话数据受您的账户类型的保留和使用政策约束（请参阅上面的数据保留部分）
 * \*\*凭证：\*\*GitHub 身份验证通过安全代理处理；您的 GitHub 凭证永远不会进入沙箱
 * \*\*网络流量：\*\*所有出站流量都通过安全代理进行审计日志记录和滥用防止
 * \*\*会话数据：\*\*提示、代码更改和输出遵循与本地 Claude Code 使用相同的数据政策
 
-有关云执行的安全详情，请参阅[安全](/zh-CN/security#cloud-execution-security)。
+有关云执行的安全详情，请参阅[安全](/claude-code/09-resources/01-security#cloud-execution-security)。
 
 ## 遥测服务
 
@@ -90,4 +90,4 @@ Claude Code 从用户的机器连接到 Sentry 以进行操作错误日志记录
 | **Claude API（`/bug` 报告）** | 默认开启。<br />`DISABLE_BUG_COMMAND=1` 禁用。                 | 默认关闭。<br />`CLAUDE_CODE_USE_VERTEX` 必须为 1。 | 默认关闭。<br />`CLAUDE_CODE_USE_BEDROCK` 必须为 1。 | 默认关闭。<br />`CLAUDE_CODE_USE_FOUNDRY` 必须为 1。 |
 | **会话质量调查**                | 默认开启。<br />`CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY=1` 禁用。 | 默认关闭。<br />`CLAUDE_CODE_USE_VERTEX` 必须为 1。 | 默认关闭。<br />`CLAUDE_CODE_USE_BEDROCK` 必须为 1。 | 默认关闭。<br />`CLAUDE_CODE_USE_FOUNDRY` 必须为 1。 |
 
-所有环境变量都可以检入 `settings.json`（[了解更多](/zh-CN/settings)）。
+所有环境变量都可以检入 `settings.json`（[了解更多](/claude-code/07-configuration/01-settings)）。

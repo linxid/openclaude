@@ -85,7 +85,7 @@ Claude Code 提供两种沙箱模式：
 
 ### 配置沙箱隔离
 
-通过您的 `settings.json` 文件自定义沙箱行为。有关完整配置参考，请参阅 [设置](/zh-CN/settings#sandbox-settings)。
+通过您的 `settings.json` 文件自定义沙箱行为。有关完整配置参考，请参阅 [设置](/claude-code/07-configuration/01-settings#sandbox-settings)。
 
 <Tip>
   并非所有命令都与沙箱隔离开箱即用兼容。一些可能帮助您充分利用沙箱的注意事项：
@@ -98,7 +98,7 @@ Claude Code 提供两种沙箱模式：
 <Note>
   Claude Code 包括一个有意的逃生舱机制，允许命令在必要时在沙箱外运行。当命令因沙箱限制（如网络连接问题或不兼容的工具）而失败时，Claude 会被提示分析失败，并可能使用 `dangerouslyDisableSandbox` 参数重试命令。使用此参数的命令通过需要用户权限执行的常规 Claude Code 权限流程。这允许 Claude Code 处理某些工具或网络操作无法在沙箱约束内运行的边界情况。
 
-  您可以通过在 [沙箱设置](/zh-CN/settings#sandbox-settings) 中设置 `"allowUnsandboxedCommands": false` 来禁用此逃生舱。禁用时，`dangerouslyDisableSandbox` 参数被完全忽略，所有命令必须沙箱化运行或在 `excludedCommands` 中明确列出。
+  您可以通过在 [沙箱设置](/claude-code/07-configuration/01-settings#sandbox-settings) 中设置 `"allowUnsandboxedCommands": false` 来禁用此逃生舱。禁用时，`dangerouslyDisableSandbox` 参数被完全忽略，所有命令必须沙箱化运行或在 `excludedCommands` 中明确列出。
 </Note>
 
 ## 安全优势
@@ -111,7 +111,7 @@ Claude Code 提供两种沙箱模式：
 
 * 无法修改关键配置文件，如 `~/.bashrc`
 * 无法修改 `/bin/` 中的系统级文件
-* 无法读取在您的 [Claude 权限设置](/zh-CN/iam#configuring-permissions) 中被拒绝的文件
+* 无法读取在您的 [Claude 权限设置](/claude-code/07-configuration/02-permissions#configuring-permissions) 中被拒绝的文件
 
 **网络保护：**
 
@@ -184,9 +184,9 @@ Claude Code 提供两种沙箱模式：
 
 沙箱化 bash 工具与以下工具配合使用：
 
-* **IAM 策略**：与 [权限设置](/zh-CN/iam) 结合以实现深度防御
-* **开发容器**：与 [devcontainers](/zh-CN/devcontainer) 一起使用以获得额外隔离
-* **企业策略**：通过 [托管设置](/zh-CN/settings#settings-precedence) 强制执行沙箱配置
+* **IAM 策略**：与 [权限设置](/claude-code/07-configuration/02-permissions) 结合以实现深度防御
+* **开发容器**：与 [devcontainers](/claude-code/05-deployment/05-devcontainer) 一起使用以获得额外隔离
+* **企业策略**：通过 [托管设置](/claude-code/07-configuration/01-settings#settings-precedence) 强制执行沙箱配置
 
 ## 最佳实践
 
@@ -214,7 +214,7 @@ npx @anthropic-ai/sandbox-runtime <command-to-sandbox>
 
 ## 另请参阅
 
-* [安全](/zh-CN/security) - 全面的安全功能和最佳实践
-* [IAM](/zh-CN/iam) - 权限配置和访问控制
-* [设置](/zh-CN/settings) - 完整配置参考
-* [CLI 参考](/zh-CN/cli-reference) - 命令行选项，包括 `-sb`
+* [安全](/claude-code/09-resources/01-security) - 全面的安全功能和最佳实践
+* [IAM](/claude-code/07-configuration/02-permissions) - 权限配置和访问控制
+* [设置](/claude-code/07-configuration/01-settings) - 完整配置参考
+* [CLI 参考](/claude-code/08-reference/01-cli-reference) - 命令行选项，包括 `-sb`

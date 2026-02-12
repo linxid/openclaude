@@ -351,7 +351,7 @@ Claude Code 支持 MCP `list_changed` 通知，允许 MCP 服务器动态更新�
 
 ### 插件提供的 MCP 服务器
 
-[插件](/zh-CN/plugins) 可以捆绑 MCP 服务器，在启用插件时自动提供工具和集成。插件 MCP 服务器的工作方式与用户配置的服务器相同。
+[插件](/claude-code/04-build-with-claude/06-plugins) 可以捆绑 MCP 服务器，在启用插件时自动提供工具和集成。插件 MCP 服务器的工作方式与用户配置的服务器相同。
 
 **插件 MCP 服务器的工作原理**：
 
@@ -412,7 +412,7 @@ Claude Code 支持 MCP `list_changed` 通知，允许 MCP 服务器动态更新�
 * **自动设置**：无需手动 MCP 配置
 * **团队一致性**：安装插件时每个人都获得相同的工具
 
-有关使用插件捆绑 MCP 服务器的详细信息，请参阅 [插件组件参考](/zh-CN/plugins-reference#mcp-servers)。
+有关使用插件捆绑 MCP 服务器的详细信息，请参阅 [插件组件参考](/claude-code/04-build-with-claude/07-plugins-reference#mcp-servers)。
 
 ## MCP 安装范围
 
@@ -896,7 +896,7 @@ MCP 服务器可以公开提示，这些提示在 Claude Code 中作为斜杠命
 
 ### 选项 2：使用允许列表和拒绝列表的基于策略的控制
 
-管理员可以允许用户配置自己的 MCP 服务器，而不是进行独占控制，同时对允许的服务器实施限制。此方法在 [托管设置文件](/zh-CN/settings#settings-files) 中使用 `allowedMcpServers` 和 `deniedMcpServers`。
+管理员可以允许用户配置自己的 MCP 服务器，而不是进行独占控制，同时对允许的服务器实施限制。此方法在 [托管设置文件](/claude-code/07-configuration/01-settings#settings-files) 中使用 `allowedMcpServers` 和 `deniedMcpServers`。
 
 <Note>
   **在选项之间选择**：当您想要部署一组固定的服务器而不进行用户自定义时，使用选项 1（`managed-mcp.json`）。当您想要允许用户在策略约束内添加自己的服务器时，使用选项 2（允许列表/拒绝列表）。

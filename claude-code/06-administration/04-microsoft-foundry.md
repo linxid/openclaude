@@ -73,7 +73,7 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL='claude-haiku-4-5'
 export ANTHROPIC_DEFAULT_OPUS_MODEL='claude-opus-4-1'
 ```
 
-有关模型配置选项的更多详情，请参阅[模型配置](/zh-CN/model-config)。
+有关模型配置选项的更多详情，请参阅[模型配置](/claude-code/07-configuration/04-model-config)。
 
 ## Azure RBAC 配置
 

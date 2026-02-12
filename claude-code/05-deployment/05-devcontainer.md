@@ -74,5 +74,5 @@ devcontainer 配置设计为可适应你的需求：
 ## 相关资源
 
 * [VS Code devcontainer 文档](https://code.visualstudio.com/docs/devcontainers/containers)
-* [Claude Code 安全最佳实践](/zh-CN/security)
-* [企业网络配置](/zh-CN/network-config)
+* [Claude Code 安全最佳实践](/claude-code/09-resources/01-security)
+* [企业网络配置](/claude-code/07-configuration/07-network-config)

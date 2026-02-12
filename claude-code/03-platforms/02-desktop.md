@@ -70,7 +70,7 @@ Claude Code 桌面版支持在同一存储库中使用 Git worktrees 运行多�
 
 要从桌面启动网页会话，在创建新会话时选择远程环境。
 
-有关更多详情，请参阅 [网页版 Claude Code](/zh-CN/claude-code-on-the-web)。
+有关更多详情，请参阅 [网页版 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web)。
 
 ## 捆绑的 Claude Code 版本
 
@@ -108,8 +108,8 @@ Claude Code 桌面版包含一个捆绑的稳定版本的 Claude Code，以确�
 
 ## 相关资源
 
-* [网页版 Claude Code](/zh-CN/claude-code-on-the-web)
+* [网页版 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web)
 * [Claude 桌面支持文章](https://support.claude.com/en/collections/16163169-claude-desktop)
 * [企业配置](https://support.claude.com/en/articles/12622667-enterprise-configuration)
-* [常见工作流](/zh-CN/common-workflows)
-* [设置参考](/zh-CN/settings)
+* [常见工作流](/claude-code/02-core-concepts/03-common-workflows)
+* [设置参考](/claude-code/07-configuration/01-settings)

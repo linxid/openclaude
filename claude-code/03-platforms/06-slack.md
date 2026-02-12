@@ -21,7 +21,7 @@ Slack 中的 Claude Code 将 Claude Code 的强大功能直接引入您的 Slack
 | 要求               | 详情                                                        |
 | :--------------- | :-------------------------------------------------------- |
 | Claude 计划        | Pro、Max、Team 或 Enterprise，具有 Claude Code 访问权限（高级席位）       |
-| 网络上的 Claude Code | 必须启用对[网络上的 Claude Code](/zh-CN/claude-code-on-the-web)的访问 |
+| 网络上的 Claude Code | 必须启用对[网络上的 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web)的访问 |
 | GitHub 账户        | 连接到网络上的 Claude Code，至少有一个存储库已认证                           |
 | Slack 认证         | 您的 Slack 账户通过 Claude 应用程序链接到您的 Claude 账户                  |
 
@@ -189,7 +189,7 @@ Slack 工作区管理员控制 Claude 应用程序是否可以在工作区中安
 ## 相关资源
 
 <CardGroup>
-  <Card title="网络上的 Claude Code" icon="globe" href="/zh-CN/claude-code-on-the-web">
+  <Card title="网络上的 Claude Code" icon="globe" href="/claude-code/03-platforms/01-claude-code-on-the-web">
     了解有关网络上的 Claude Code 的更多信息
   </Card>
 

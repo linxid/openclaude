@@ -118,7 +118,7 @@ claude --model opus
 
 你可以通过多种方式查看你当前使用的模型：
 
-1. 在[状态行](/zh-CN/statusline)中（如果已配置）
+1. 在[状态行](/claude-code/07-configuration/09-statusline)中（如果已配置）
 2. 在 `/status` 中，它也显示你的账户信息。
 
 ## 环境变量
@@ -129,8 +129,8 @@ claude --model opus
 | -------------------------------- | ----------------------------------------------------------- |
 | `ANTHROPIC_DEFAULT_OPUS_MODEL`   | 用于 `opus` 的模型，或在 Plan Mode 活跃时用于 `opusplan` 的模型。            |
 | `ANTHROPIC_DEFAULT_SONNET_MODEL` | 用于 `sonnet` 的模型，或在 Plan Mode 不活跃时用于 `opusplan` 的模型。         |
-| `ANTHROPIC_DEFAULT_HAIKU_MODEL`  | 用于 `haiku` 的模型，或[后台功能](/zh-CN/costs#background-token-usage) |
-| `CLAUDE_CODE_SUBAGENT_MODEL`     | 用于 [subagents](/zh-CN/sub-agents) 的模型                       |
+| `ANTHROPIC_DEFAULT_HAIKU_MODEL`  | 用于 `haiku` 的模型，或[后台功能](/claude-code/06-administration/08-costs#background-token-usage) |
+| `CLAUDE_CODE_SUBAGENT_MODEL`     | 用于 [subagents](/claude-code/04-build-with-claude/02-sub-agents) 的模型                       |
 
 注意：`ANTHROPIC_SMALL_FAST_MODEL` 已弃用，改为使用 `ANTHROPIC_DEFAULT_HAIKU_MODEL`。
 

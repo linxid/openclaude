@@ -9,7 +9,7 @@ Claude Code 是一个代理式编码环境。与等待回答问题的聊天机�
 
 但这种自主性仍然伴随着学习曲线。Claude 在某些约束条件下工作，你需要理解这些约束。
 
-本指南涵盖了在 Anthropic 内部团队和在各种代码库、语言和环境中使用 Claude Code 的工程师中已被证明有效的模式。有关代理循环如何在幕后工作的信息，请参阅 [Claude Code 如何工作](/zh-CN/how-claude-code-works)。
+本指南涵盖了在 Anthropic 内部团队和在各种代码库、语言和环境中使用 Claude Code 的工程师中已被证明有效的模式。有关代理循环如何在幕后工作的信息，请参阅 [Claude Code 如何工作](/claude-code/02-core-concepts/01-how-claude-code-works)。
 
 ***
 
@@ -17,7 +17,7 @@ Claude Code 是一个代理式编码环境。与等待回答问题的聊天机�
 
 Claude 的 context window 保存你的整个对话，包括每条消息、Claude 读取的每个文件和每个命令输出。但这可能会很快填满。单个调试会话或代码库探索可能会生成并消耗数万个令牌。
 
-这很重要，因为当 context 填充时，LLM 性能会下降。当 context window 即将满时，Claude 可能会开始"遗忘"早期的指令或犯更多错误。context window 是最重要的资源。有关减少令牌使用的详细策略，请参阅 [减少令牌使用](/zh-CN/costs#reduce-token-usage)。
+这很重要，因为当 context 填充时，LLM 性能会下降。当 context window 即将满时，Claude 可能会开始"遗忘"早期的指令或犯更多错误。context window 是最重要的资源。有关减少令牌使用的详细策略，请参阅 [减少令牌使用](/claude-code/06-administration/08-costs#reduce-token-usage)。
 
 ***
 
@@ -37,7 +37,7 @@ Claude 的 context window 保存你的整个对话，包括每条消息、Claude
 | **以视觉方式验证 UI 更改** | *"让仪表板看起来更好"*       | *"\[粘贴屏幕截图] 实现此设计。对结果进行屏幕截图并与原始设计进行比较。列出差异并修复它们"*                                                                                   |
 | **解决根本原因，而不是症状**  | *"构建失败"*            | *"构建失败，出现此错误：\[粘贴错误]。修复它并验证构建成功。解决根本原因，不要抑制错误"*                                                                                     |
 
-UI 更改可以使用 [Chrome 中的 Claude 扩展](/zh-CN/chrome) 进行验证。它在浏览器中打开新标签页，测试 UI，并迭代直到代码工作。
+UI 更改可以使用 [Chrome 中的 Claude 扩展](/claude-code/03-platforms/03-chrome) 进行验证。它在浏览器中打开新标签页，测试 UI，并迭代直到代码工作。
 
 你的验证也可以是测试套件、linter 或检查输出的 Bash 命令。投资使你的验证非常可靠。
 
@@ -49,7 +49,7 @@ UI 更改可以使用 [Chrome 中的 Claude 扩展](/zh-CN/chrome) 进行验证�
   将研究和规划与实现分开，以避免解决错误的问题。
 </Tip>
 
-让 Claude 直接跳到编码可能会产生解决错误问题的代码。使用 [Plan Mode](/zh-CN/common-workflows#use-plan-mode-for-safe-code-analysis) 将探索与执行分开。
+让 Claude 直接跳到编码可能会产生解决错误问题的代码。使用 [Plan Mode](/claude-code/02-core-concepts/03-common-workflows#use-plan-mode-for-safe-code-analysis) 将探索与执行分开。
 
 推荐的工作流有四个阶段：
 
@@ -137,7 +137,7 @@ Claude 可以推断意图，但它不能读心术。引用特定文件、提及�
 
 ## 配置你的环境
 
-一些设置步骤使 Claude Code 在所有会话中的效果显著提高。有关扩展功能的完整概述和何时使用每个功能，请参阅 [扩展 Claude Code](/zh-CN/features-overview)。
+一些设置步骤使 Claude Code 在所有会话中的效果显著提高。有关扩展功能的完整概述和何时使用每个功能，请参阅 [扩展 Claude Code](/claude-code/02-core-concepts/02-features-overview)。
 
 ### 编写有效的 CLAUDE.md
 
@@ -161,7 +161,7 @@ CLAUDE.md 文件没有必需的格式，但要保持简短和易读。例如：
 - Prefer running single tests, and not the whole test suite, for performance
 ```
 
-CLAUDE.md 在每个会话中加载，所以只包括广泛适用的东西。对于仅在某些时候相关的域知识或工作流，改用 [skills](/zh-CN/skills)。Claude 按需加载它们，不会使每次对话都变得臃肿。
+CLAUDE.md 在每个会话中加载，所以只包括广泛适用的东西。对于仅在某些时候相关的域知识或工作流，改用 [skills](/claude-code/04-build-with-claude/01-skills)。Claude 按需加载它们，不会使每次对话都变得臃肿。
 
 保持简洁。对于每一行，问自己：*"删除这一行会导致 Claude 犯错吗？"* 如果不会，删除它。臃肿的 CLAUDE.md 文件会导致 Claude 忽略你的实际指令！
 
@@ -213,7 +213,7 @@ See @README.md for project overview and @package.json for available npm commands
   让 Claude 运行任意命令可能导致数据丢失、系统损坏或通过提示注入进行数据泄露。仅在没有互联网访问的沙箱中使用 `--dangerously-skip-permissions`。
 </Warning>
 
-阅读更多关于 [配置权限](/zh-CN/settings) 和 [启用沙箱](/zh-CN/sandboxing#sandboxing)。
+阅读更多关于 [配置权限](/claude-code/07-configuration/01-settings) 和 [启用沙箱](/claude-code/07-configuration/10-sandboxing#sandboxing)。
 
 ### 使用 CLI 工具
 
@@ -231,7 +231,7 @@ Claude 也很有效地学习它不知道的 CLI 工具。尝试像 `Use 'foo-cli
   运行 `claude mcp add` 连接外部工具，如 Notion、Figma 或你的数据库。
 </Tip>
 
-使用 [MCP servers](/zh-CN/mcp)，你可以要求 Claude 从问题跟踪器实现功能、查询数据库、分析监控数据、集成来自 Figma 的设计并自动化工作流。
+使用 [MCP servers](/claude-code/04-build-with-claude/05-mcp)，你可以要求 Claude 从问题跟踪器实现功能、查询数据库、分析监控数据、集成来自 Figma 的设计并自动化工作流。
 
 ### 设置 hooks
 
@@ -239,7 +239,7 @@ Claude 也很有效地学习它不知道的 CLI 工具。尝试像 `Use 'foo-cli
   对必须每次发生且没有例外的操作使用 hooks。
 </Tip>
 
-[Hooks](/zh-CN/hooks-guide) 在 Claude 工作流中的特定点自动运行脚本。与 CLAUDE.md 指令不同，hooks 是确定性的并保证操作发生。
+[Hooks](/claude-code/04-build-with-claude/04-hooks-guide) 在 Claude 工作流中的特定点自动运行脚本。与 CLAUDE.md 指令不同，hooks 是确定性的并保证操作发生。
 
 Claude 可以为你编写 hooks。尝试像 *"编写一个在每次文件编辑后运行 eslint 的 hook"* 或 *"编写一个阻止写入迁移文件夹的 hook。"* 这样的提示。运行 `/hooks` 进行交互式配置，或直接编辑 `.claude/settings.json`。
 
@@ -249,7 +249,7 @@ Claude 可以为你编写 hooks。尝试像 *"编写一个在每次文件编辑�
   在 `.claude/skills/` 中创建 `SKILL.md` 文件，为 Claude 提供特定于项目的域知识和可重用工作流。
 </Tip>
 
-[Skills](/zh-CN/skills) 使用特定于你的项目、团队或域的信息扩展 Claude 的知识。Claude 在相关时自动应用它们，或者你可以使用 `/skill-name` 直接调用它们。
+[Skills](/claude-code/04-build-with-claude/01-skills) 使用特定于你的项目、团队或域的信息扩展 Claude 的知识。Claude 在相关时自动应用它们，或者你可以使用 `/skill-name` 直接调用它们。
 
 通过向 `.claude/skills/` 添加带有 `SKILL.md` 的目录来创建 skill：
 
@@ -293,7 +293,7 @@ Analyze and fix the GitHub issue: $ARGUMENTS.
   在 `.claude/agents/` 中定义专门的助手，Claude 可以委托给它们进行隔离的任务。
 </Tip>
 
-[Subagents](/zh-CN/sub-agents) 在自己的上下文中运行，拥有自己的一组允许的工具。它们对于读取许多文件或需要专门关注而不会使主对话变得混乱的任务很有用。
+[Subagents](/claude-code/04-build-with-claude/02-sub-agents) 在自己的上下文中运行，拥有自己的一组允许的工具。它们对于读取许多文件或需要专门关注而不会使主对话变得混乱的任务很有用。
 
 ```markdown .claude/agents/security-reviewer.md theme={null}
 ---
@@ -319,9 +319,9 @@ Provide specific line references and suggested fixes.
   运行 `/plugin` 浏览市场。Plugins 添加 skills、工具和集成，无需配置。
 </Tip>
 
-[Plugins](/zh-CN/plugins) 将 skills、hooks、subagents 和 MCP servers 捆绑到来自社区和 Anthropic 的单个可安装单元中。如果你使用类型化语言，安装 [代码智能 plugin](/zh-CN/discover-plugins#code-intelligence) 为 Claude 提供精确的符号导航和编辑后的自动错误检测。
+[Plugins](/claude-code/04-build-with-claude/06-plugins) 将 skills、hooks、subagents 和 MCP servers 捆绑到来自社区和 Anthropic 的单个可安装单元中。如果你使用类型化语言，安装 [代码智能 plugin](/claude-code/04-build-with-claude/08-discover-plugins#code-intelligence) 为 Claude 提供精确的符号导航和编辑后的自动错误检测。
 
-有关在 skills、subagents、hooks 和 MCP 之间选择的指导，请参阅 [扩展 Claude Code](/zh-CN/features-overview#match-features-to-your-goal)。
+有关在 skills、subagents、hooks 和 MCP 之间选择的指导，请参阅 [扩展 Claude Code](/claude-code/02-core-concepts/02-features-overview#match-features-to-your-goal)。
 
 ***
 
@@ -484,9 +484,9 @@ claude -p "Analyze this log file" --output-format stream-json
 
 有三种主要方式来运行并行会话：
 
-* [Claude Desktop](/zh-CN/desktop)：以视觉方式管理多个本地会话。每个会话都获得自己的隔离 worktree。
-* [网络上的 Claude Code](/zh-CN/claude-code-on-the-web)：在 Anthropic 的安全云基础设施中的隔离 VM 上运行。
-* [Agent teams](/zh-CN/agent-teams)：具有共享任务、消息和团队主管的多个会话的自动协调。
+* [Claude Desktop](/claude-code/03-platforms/02-desktop)：以视觉方式管理多个本地会话。每个会话都获得自己的隔离 worktree。
+* [网络上的 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web)：在 Anthropic 的安全云基础设施中的隔离 VM 上运行。
+* [Agent teams](/claude-code/05-deployment/04-agent-teams)：具有共享任务、消息和团队主管的多个会话的自动协调。
 
 除了并行化工作外，多个会话还支持质量聚焦的工作流。新鲜的上下文改进代码审查，因为 Claude 不会偏向于它刚刚编写的代码。
 
@@ -577,19 +577,19 @@ claude -p "<your prompt>" --output-format json | your_command
 ## 相关资源
 
 <CardGroup cols={2}>
-  <Card title="Claude Code 如何工作" icon="gear" href="/zh-CN/how-claude-code-works">
+  <Card title="Claude Code 如何工作" icon="gear" href="/claude-code/02-core-concepts/01-how-claude-code-works">
     理解代理循环、工具和上下文管理
   </Card>
 
-  <Card title="扩展 Claude Code" icon="puzzle-piece" href="/zh-CN/features-overview">
+  <Card title="扩展 Claude Code" icon="puzzle-piece" href="/claude-code/02-core-concepts/02-features-overview">
     在 skills、hooks、MCP、subagents 和 plugins 之间选择
   </Card>
 
-  <Card title="常见工作流" icon="list-check" href="/zh-CN/common-workflows">
+  <Card title="常见工作流" icon="list-check" href="/claude-code/02-core-concepts/03-common-workflows">
     调试、测试、PR 等的分步配方
   </Card>
 
-  <Card title="CLAUDE.md" icon="file-lines" href="/zh-CN/memory">
+  <Card title="CLAUDE.md" icon="file-lines" href="/claude-code/07-configuration/03-memory">
     存储项目约定和持久上下文
   </Card>
 </CardGroup>

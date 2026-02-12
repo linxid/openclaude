@@ -143,7 +143,7 @@ claude doctor # Check installation health
 
 ### 重复的权限提示
 
-如果您发现自己反复批准相同的命令，您可以使用 `/permissions` 命令允许特定工具在不批准的情况下运行。请参阅[权限文档](/zh-CN/iam#configuring-permissions)。
+如果您发现自己反复批准相同的命令，您可以使用 `/permissions` 命令允许特定工具在不批准的情况下运行。请参阅[权限文档](/claude-code/07-configuration/02-permissions#configuring-permissions)。
 
 ### 身份验证问题
 
@@ -173,8 +173,8 @@ Claude Code 在多个位置存储配置：
 | `.claude/settings.local.json` | 本地项目设置（未提交）                                        |
 | `~/.claude.json`              | 全局状态（主题、OAuth、MCP 服务器、允许的工具）                       |
 | `.mcp.json`                   | 项目 MCP 服务器（检入源代码控制）                                |
-| `managed-settings.json`       | [托管设置](/zh-CN/settings#settings-files)             |
-| `managed-mcp.json`            | [托管 MCP 服务器](/zh-CN/mcp#managed-mcp-configuration) |
+| `managed-settings.json`       | [托管设置](/claude-code/07-configuration/01-settings#settings-files)             |
+| `managed-mcp.json`            | [托管 MCP 服务器](/claude-code/04-build-with-claude/05-mcp#managed-mcp-configuration) |
 
 在 Windows 上，`~` 指的是您的用户主目录，例如 `C:\Users\YourName`。
 
@@ -184,7 +184,7 @@ Claude Code 在多个位置存储配置：
 * Linux/WSL：`/etc/claude-code/`
 * Windows：`C:\Program Files\ClaudeCode\`
 
-有关配置这些文件的详细信息，请参阅[设置](/zh-CN/settings)和 [MCP](/zh-CN/mcp)。
+有关配置这些文件的详细信息，请参阅[设置](/claude-code/07-configuration/01-settings)和 [MCP](/claude-code/04-build-with-claude/05-mcp)。
 
 ### 重置配置
 
@@ -242,7 +242,7 @@ apk add ripgrep
 pacman -S ripgrep
 ```
 
-然后在您的[环境](/zh-CN/settings#environment-variables)中设置 `USE_BUILTIN_RIPGREP=0`。
+然后在您的[环境](/claude-code/07-configuration/01-settings#environment-variables)中设置 `USE_BUILTIN_RIPGREP=0`。
 
 ### WSL 上的搜索结果缓慢或不完整
 
@@ -301,7 +301,7 @@ networkingMode=mirrored
   这些网络问题仅影响 WSL2。WSL1 直接使用主机的网络，不需要这些配置。
 </Note>
 
-有关其他 JetBrains 配置提示，请参阅我们的 [JetBrains IDE 指南](/zh-CN/jetbrains#plugin-settings)。
+有关其他 JetBrains 配置提示，请参阅我们的 [JetBrains IDE 指南](/claude-code/03-platforms/05-jetbrains#plugin-settings)。
 
 ### 报告 Windows IDE 集成问题（原生和 WSL）
 
@@ -357,7 +357,7 @@ function example() {
 
 1. **要求 Claude 添加语言标签**：请求"为此 Markdown 文件中的所有代码块添加适当的语言标签。"
 
-2. **使用后处理钩子**：设置自动格式化钩子来检测和添加缺少的语言标签。有关实现详细信息，请参阅 [Markdown 格式化钩子示例](/zh-CN/hooks-guide#markdown-formatting-hook)。
+2. **使用后处理钩子**：设置自动格式化钩子来检测和添加缺少的语言标签。有关实现详细信息，请参阅 [Markdown 格式化钩子示例](/claude-code/04-build-with-claude/04-hooks-guide#markdown-formatting-hook)。
 
 3. **手动验证**：生成 Markdown 文件后，查看它们以确保正确的代码块格式，如果需要，请求更正。
 
@@ -371,14 +371,14 @@ function example() {
 
 2. **使用格式化工具**：设置钩子以在生成的 Markdown 文件上运行 Markdown 格式化程序（如 `prettier`）或自定义格式化脚本。
 
-3. **指定格式首选项**：在您的提示或项目[内存](/zh-CN/memory)文件中包含格式要求。
+3. **指定格式首选项**：在您的提示或项目[内存](/claude-code/07-configuration/03-memory)文件中包含格式要求。
 
 ### Markdown 生成的最佳实践
 
 要最小化格式问题：
 
 * **在请求中明确说明**：要求"格式正确的 Markdown，带有语言标记的代码块"
-* **使用项目约定**：在 [`CLAUDE.md`](/zh-CN/memory) 中记录您首选的 Markdown 风格
+* **使用项目约定**：在 [`CLAUDE.md`](/claude-code/07-configuration/03-memory) 中记录您首选的 Markdown 风格
 * **设置验证钩子**：使用后处理钩子自动验证和修复常见格式问题
 
 ## 获取更多帮助

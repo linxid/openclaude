@@ -68,7 +68,7 @@ VS Code 扩展为 Claude Code 提供了原生图形界面，直接集成到您�
   </Step>
 </Steps>
 
-有关您可以使用 Claude Code 做什么的更多想法，请参阅[常见工作流](/zh-CN/common-workflows)。
+有关您可以使用 Claude Code 做什么的更多想法，请参阅[常见工作流](/claude-code/02-core-concepts/03-common-workflows)。
 
 <Tip>
   从命令面板运行"Claude Code: Open Walkthrough"以获得基础知识的引导式教程。
@@ -81,7 +81,7 @@ VS Code 扩展为 Claude Code 提供了原生图形界面，直接集成到您�
 * **权限模式**：点击提示框底部的模式指示器以切换模式。在正常模式下，Claude 在每个操作前请求许可。在 Plan Mode 下，Claude 描述它将做什么并等待批准后再进行更改。在自动接受模式下，Claude 进行编辑而不询问。在 VS Code 设置中的 `claudeCode.initialPermissionMode` 下设置默认值。
 * **命令菜单**：点击 `/` 或输入 `/` 以打开命令菜单。选项包括附加文件、切换模型、切换扩展思考和查看计划使用情况（`/usage`）。自定义部分提供对 MCP servers、hooks、memory、permissions 和 plugins 的访问。带有终端图标的项目在集成终端中打开。
 * **Context 指示器**：提示框显示您使用了多少 Claude 的 context window。Claude 在需要时自动压缩，或者您可以手动运行 `/compact`。
-* **扩展思考**：让 Claude 花更多时间推理复杂问题。通过命令菜单（`/`）切换打开。有关详细信息，请参阅[扩展思考](/zh-CN/common-workflows#use-extended-thinking-thinking-mode)。
+* **扩展思考**：让 Claude 花更多时间推理复杂问题。通过命令菜单（`/`）切换打开。有关详细信息，请参阅[扩展思考](/claude-code/02-core-concepts/03-common-workflows#use-extended-thinking-thinking-mode)。
 * **多行输入**：按 `Shift+Enter` 添加新行而不发送。这也适用于问题对话框的"其他"自由文本输入。
 
 ### 引用文件和文件夹
@@ -101,11 +101,11 @@ VS Code 扩展为 Claude Code 提供了原生图形界面，直接集成到您�
 
 ### 恢复过去的对话
 
-点击 Claude Code 面板顶部的下拉菜单以访问您的对话历史记录。您可以按关键字搜索或按时间浏览（今天、昨天、过去 7 天等）。点击任何对话以使用完整的消息历史记录恢复它。有关恢复会话的更多信息，请参阅[常见工作流](/zh-CN/common-workflows#resume-previous-conversations)。
+点击 Claude Code 面板顶部的下拉菜单以访问您的对话历史记录。您可以按关键字搜索或按时间浏览（今天、昨天、过去 7 天等）。点击任何对话以使用完整的消息历史记录恢复它。有关恢复会话的更多信息，请参阅[常见工作流](/claude-code/02-core-concepts/03-common-workflows#resume-previous-conversations)。
 
 ### 从 Claude.ai 恢复远程会话
 
-如果您使用[网络上的 Claude Code](/zh-CN/claude-code-on-the-web)，您可以直接在 VS Code 中恢复这些远程会话。这需要使用 **Claude.ai Subscription** 登录，而不是 Anthropic Console。
+如果您使用[网络上的 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web)，您可以直接在 VS Code 中恢复这些远程会话。这需要使用 **Claude.ai Subscription** 登录，而不是 Anthropic Console。
 
 <Steps>
   <Step title="打开过去的对话">
@@ -155,7 +155,7 @@ VS Code 扩展为 Claude Code 提供了原生图形界面，直接集成到您�
 
 ## 管理 plugins
 
-VS Code 扩展包括用于安装和管理 [plugins](/zh-CN/plugins) 的图形界面。在提示框中输入 `/plugins` 以打开**管理 plugins** 界面。
+VS Code 扩展包括用于安装和管理 [plugins](/claude-code/04-build-with-claude/06-plugins) 的图形界面。在提示框中输入 `/plugins` 以打开**管理 plugins** 界面。
 
 ### 安装 plugins
 
@@ -188,7 +188,7 @@ plugin 对话框显示两个选项卡：**Plugins** 和 **Marketplaces**。
   VS Code 中的 plugin 管理在后台使用相同的 CLI 命令。您在扩展中配置的 plugins 和市场也可在 CLI 中使用，反之亦然。
 </Note>
 
-有关 plugin 系统的更多信息，请参阅 [Plugins](/zh-CN/plugins) 和 [Plugin 市场](/zh-CN/plugin-marketplaces)。
+有关 plugin 系统的更多信息，请参阅 [Plugins](/claude-code/04-build-with-claude/06-plugins) 和 [Plugin 市场](/claude-code/04-build-with-claude/09-plugin-marketplaces)。
 
 ## 使用 Chrome 自动化浏览器任务
 
@@ -204,7 +204,7 @@ plugin 对话框显示两个选项卡：**Plugins** 和 **Marketplaces**。
 
 Claude 为浏览器任务打开新选项卡并共享您的浏览器登录状态，因此它可以访问您已登录的任何网站。
 
-有关设置说明、完整的功能列表和故障排除，请参阅[使用 Claude Code 与 Chrome](/zh-CN/chrome)。
+有关设置说明、完整的功能列表和故障排除，请参阅[使用 Claude Code 与 Chrome](/claude-code/03-platforms/03-chrome)。
 
 ## VS Code 命令和快捷键
 
@@ -233,7 +233,7 @@ Claude 为浏览器任务打开新选项卡并共享您的浏览器登录状态�
 扩展有两种类型的设置：
 
 * **扩展设置**在 VS Code 中：控制扩展在 VS Code 中的行为。使用 `Cmd+,`（Mac）或 `Ctrl+,`（Windows/Linux）打开，然后转到扩展 → Claude Code。您也可以输入 `/` 并选择**常规配置**以打开设置。
-* **Claude Code 设置**在 `~/.claude/settings.json` 中：在扩展和 CLI 之间共享。用于允许的命令、环境变量、hooks 和 MCP servers。有关详细信息，请参阅[设置](/zh-CN/settings)。
+* **Claude Code 设置**在 `~/.claude/settings.json` 中：在扩展和 CLI 之间共享。用于允许的命令、环境变量、hooks 和 MCP servers。有关详细信息，请参阅[设置](/claude-code/07-configuration/01-settings)。
 
 <Tip>
   将 `"$schema": "https://json.schemastore.org/claude-code-settings.json"` 添加到您的 `settings.json` 以在 VS Code 中直接获得所有可用设置的自动完成和内联验证。
@@ -263,7 +263,7 @@ Claude Code 既可作为 VS Code 扩展（图形面板）也可作为 CLI（终�
 
 | 功能            | CLI                                             | VS Code 扩展          |
 | ------------- | ----------------------------------------------- | ------------------- |
-| 命令和 skills    | [全部](/zh-CN/interactive-mode#built-in-commands) | 子集（输入 `/` 查看可用的）    |
+| 命令和 skills    | [全部](/claude-code/08-reference/02-interactive-mode#built-in-commands) | 子集（输入 `/` 查看可用的）    |
 | MCP server 配置 | 是                                               | 否（通过 CLI 配置，在扩展中使用） |
 | Checkpoints   | 是                                               | 是                   |
 | `!` bash 快捷方式 | 是                                               | 否                   |
@@ -277,7 +277,7 @@ VS Code 扩展支持 checkpoints，它们跟踪 Claude 的文件编辑并让您�
 * **将代码回退到此处**：将文件更改恢复到对话中的此点，同时保持完整的对话历史记录
 * **分叉对话并回退代码**：启动新的对话分支并将文件更改恢复到此点
 
-有关 checkpoints 如何工作及其限制的完整详细信息，请参阅 [Checkpointing](/zh-CN/checkpointing)。
+有关 checkpoints 如何工作及其限制的完整详细信息，请参阅 [Checkpointing](/claude-code/08-reference/03-checkpointing)。
 
 ### 在 VS Code 中运行 CLI
 
@@ -307,7 +307,7 @@ MCP（Model Context Protocol）servers 为 Claude 提供对外部工具、数据
 claude mcp add --transport http github https://api.githubcopilot.com/mcp/
 ```
 
-配置后，要求 Claude 使用这些工具（例如，"Review PR #456"）。某些 servers 需要身份验证：在终端中运行 `claude`，然后输入 `/mcp` 进行身份验证。有关可用 servers，请参阅 [MCP 文档](/zh-CN/mcp)。
+配置后，要求 Claude 使用这些工具（例如，"Review PR #456"）。某些 servers 需要身份验证：在终端中运行 `claude`，然后输入 `/mcp` 进行身份验证。有关可用 servers，请参阅 [MCP 文档](/claude-code/04-build-with-claude/05-mcp)。
 
 ## 使用 git
 
@@ -339,7 +339,7 @@ cd ../project-feature-a && claude
 
 每个 worktree 维护独立的文件状态，同时共享 git 历史记录。这可以防止 Claude 实例在处理不同任务时相互干扰。
 
-有关详细的 git 工作流（包括 PR 审查和分支管理），请参阅[常见工作流](/zh-CN/common-workflows#create-pull-requests)。
+有关详细的 git 工作流（包括 PR 审查和分支管理），请参阅[常见工作流](/claude-code/02-core-concepts/03-common-workflows#create-pull-requests)。
 
 ## 使用第三方提供商
 
@@ -355,9 +355,9 @@ cd ../project-feature-a && claude
   <Step title="配置您的提供商">
     按照您的提供商的设置指南：
 
-    * [Amazon Bedrock 上的 Claude Code](/zh-CN/amazon-bedrock)
-    * [Google Vertex AI 上的 Claude Code](/zh-CN/google-vertex-ai)
-    * [Microsoft Foundry 上的 Claude Code](/zh-CN/microsoft-foundry)
+    * [Amazon Bedrock 上的 Claude Code](/claude-code/06-administration/02-amazon-bedrock)
+    * [Google Vertex AI 上的 Claude Code](/claude-code/06-administration/03-google-vertex-ai)
+    * [Microsoft Foundry 上的 Claude Code](/claude-code/06-administration/04-microsoft-foundry)
 
     这些指南涵盖在 `~/.claude/settings.json` 中配置您的提供商，这确保您的设置在 VS Code 扩展和 CLI 之间共享。
   </Step>
@@ -365,7 +365,7 @@ cd ../project-feature-a && claude
 
 ## 安全和隐私
 
-您的代码保持私密。Claude Code 处理您的代码以提供协助，但不使用它来训练模型。有关数据处理的详细信息以及如何选择退出日志记录，请参阅[数据和隐私](/zh-CN/data-usage)。
+您的代码保持私密。Claude Code 处理您的代码以提供协助，但不使用它来训练模型。有关数据处理的详细信息以及如何选择退出日志记录，请参阅[数据和隐私](/claude-code/09-resources/02-data-usage)。
 
 启用自动编辑权限后，Claude Code 可以修改 VS Code 配置文件（如 `settings.json` 或 `tasks.json`），VS Code 可能会自动执行。要在处理不受信任的代码时降低风险：
 
@@ -417,12 +417,12 @@ cd ../project-feature-a && claude
 rm -rf ~/.vscode/globalStorage/anthropic.claude-code
 ```
 
-如需更多帮助，请参阅[故障排除指南](/zh-CN/troubleshooting)。
+如需更多帮助，请参阅[故障排除指南](/claude-code/09-resources/04-troubleshooting)。
 
 ## 后续步骤
 
 现在您已在 VS Code 中设置了 Claude Code：
 
-* [探索常见工作流](/zh-CN/common-workflows)以充分利用 Claude Code
-* [设置 MCP servers](/zh-CN/mcp) 以使用外部工具扩展 Claude 的功能。使用 CLI 配置 servers，然后在扩展中使用它们。
-* [配置 Claude Code 设置](/zh-CN/settings)以自定义允许的命令、hooks 等。这些设置在扩展和 CLI 之间共享。
+* [探索常见工作流](/claude-code/02-core-concepts/03-common-workflows)以充分利用 Claude Code
+* [设置 MCP servers](/claude-code/04-build-with-claude/05-mcp) 以使用外部工具扩展 Claude 的功能。使用 CLI 配置 servers，然后在扩展中使用它们。
+* [配置 Claude Code 设置](/claude-code/07-configuration/01-settings)以自定义允许的命令、hooks 等。这些设置在扩展和 CLI 之间共享。

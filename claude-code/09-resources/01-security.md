@@ -15,13 +15,13 @@ Claude Code 默认使用严格的只读权限。当需要额外操作时（编�
 
 我们设计 Claude Code 是为了透明和安全。例如，我们要求在执行 bash 命令之前获得批准，让您拥有直接控制权。这种方法使用户和组织能够直接配置权限。
 
-有关详细的权限配置，请参阅[身份和访问管理](/zh-CN/iam)。
+有关详细的权限配置，请参阅[身份和访问管理](/claude-code/07-configuration/02-permissions)。
 
 ### 内置保护
 
 为了降低代理系统中的风险：
 
-* **沙箱化 bash 工具**：[沙箱](/zh-CN/sandboxing) bash 命令具有文件系统和网络隔离，减少权限提示同时保持安全性。使用 `/sandbox` 启用以定义 Claude Code 可以自主工作的边界
+* **沙箱化 bash 工具**：[沙箱](/claude-code/07-configuration/10-sandboxing) bash 命令具有文件系统和网络隔离，减少权限提示同时保持安全性。使用 `/sandbox` 启用以定义 Claude Code 可以自主工作的边界
 * **写入访问限制**：Claude Code 只能写入启动它的文件夹及其子文件夹——它不能在没有明确权限的情况下修改父目录中的文件。虽然 Claude Code 可以读取工作目录外的文件（对于访问系统库和依赖项很有用），但写入操作严格限制在项目范围内，创建了清晰的安全边界
 * **提示疲劳缓解**：支持按用户、按代码库或按组织的白名单常用安全命令
 * **接受编辑模式**：批量接受多个编辑，同时为具有副作用的命令保持权限提示
@@ -39,7 +39,7 @@ Claude Code 只拥有您授予它的权限。您负责在批准前审查建议�
 * **权限系统**：敏感操作需要明确批准
 * **上下文感知分析**：通过分析完整请求来检测潜在有害指令
 * **输入清理**：通过处理用户输入来防止命令注入
-* **命令黑名单**：默认阻止从网络获取任意内容的危险命令，如 `curl` 和 `wget`。显式允许时，请注意[权限模式限制](/zh-CN/iam#tool-specific-permission-rules)
+* **命令黑名单**：默认阻止从网络获取任意内容的危险命令，如 `curl` 和 `wget`。显式允许时，请注意[权限模式限制](/claude-code/07-configuration/02-permissions#tool-specific-permission-rules)
 
 ### 隐私保护
 
@@ -60,7 +60,7 @@ Claude Code 只拥有您授予它的权限。您负责在批准前审查建议�
 * **命令注入检测**：即使之前已列入白名单，可疑的 bash 命令也需要手动批准
 * **故障关闭匹配**：不匹配的命令默认需要手动批准
 * **自然语言描述**：复杂的 bash 命令包括用户理解的解释
-* **安全凭证存储**：API 密钥和令牌已加密。请参阅[凭证管理](/zh-CN/iam#credential-management)
+* **安全凭证存储**：API 密钥和令牌已加密。请参阅[凭证管理](/claude-code/07-configuration/02-permissions#credential-management)
 
 <Warning>
   **Windows WebDAV 安全风险**：在 Windows 上运行 Claude Code 时，我们建议不要启用 WebDAV 或允许 Claude Code 访问可能包含 WebDAV 子目录的路径，如 `\\*`。[WebDAV 已被 Microsoft 弃用](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features#:~:text=The%20Webclient%20\(WebDAV\)%20service%20is%20deprecated)，原因是安全风险。启用 WebDAV 可能允许 Claude Code 触发对远程主机的网络请求，绕过权限系统。
@@ -86,11 +86,11 @@ Claude Code 允许用户配置模型上下文协议 (MCP) 服务器。允许的 
 
 ## IDE 安全性
 
-有关在 IDE 中运行 Claude Code 的更多信息，请参阅 [VS Code 安全和隐私](/zh-CN/vs-code#security-and-privacy)。
+有关在 IDE 中运行 Claude Code 的更多信息，请参阅 [VS Code 安全和隐私](/claude-code/03-platforms/04-vs-code#security-and-privacy)。
 
 ## 云执行安全性
 
-使用[网络上的 Claude Code](/zh-CN/claude-code-on-the-web) 时，会实施额外的安全控制：
+使用[网络上的 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web) 时，会实施额外的安全控制：
 
 * **隔离的虚拟机**：每个云会话在隔离的、由 Anthropic 管理的 VM 中运行
 * **网络访问控制**：默认情况下网络访问受到限制，可以配置为禁用或仅允许特定域
@@ -99,7 +99,7 @@ Claude Code 允许用户配置模型上下文协议 (MCP) 服务器。允许的 
 * **审计日志**：云环境中的所有操作都被记录用于合规和审计目的
 * **自动清理**：会话完成后，云环境会自动终止
 
-有关云执行的更多详情，请参阅[网络上的 Claude Code](/zh-CN/claude-code-on-the-web)。
+有关云执行的更多详情，请参阅[网络上的 Claude Code](/claude-code/03-platforms/01-claude-code-on-the-web)。
 
 ## 安全最佳实践
 
@@ -107,15 +107,15 @@ Claude Code 允许用户配置模型上下文协议 (MCP) 服务器。允许的 
 
 * 在批准前审查所有建议的更改
 * 为敏感存储库使用项目特定的权限设置
-* 考虑使用[开发容器](/zh-CN/devcontainer)以获得额外隔离
+* 考虑使用[开发容器](/claude-code/05-deployment/05-devcontainer)以获得额外隔离
 * 使用 `/permissions` 定期审计您的权限设置
 
 ### 团队安全性
 
-* 使用[托管设置](/zh-CN/iam#managed-settings)来执行组织标准
+* 使用[托管设置](/claude-code/07-configuration/02-permissions#managed-settings)来执行组织标准
 * 通过版本控制共享已批准的权限配置
 * 培训团队成员了解安全最佳实践
-* 通过 [OpenTelemetry 指标](/zh-CN/monitoring-usage)监控 Claude Code 使用情况
+* 通过 [OpenTelemetry 指标](/claude-code/06-administration/06-monitoring-usage)监控 Claude Code 使用情况
 
 ### 报告安全问题
 
@@ -128,8 +128,8 @@ Claude Code 允许用户配置模型上下文协议 (MCP) 服务器。允许的 
 
 ## 相关资源
 
-* [沙箱](/zh-CN/sandboxing) - bash 命令的文件系统和网络隔离
-* [身份和访问管理](/zh-CN/iam) - 配置权限和访问控制
-* [监控使用情况](/zh-CN/monitoring-usage) - 跟踪和审计 Claude Code 活动
-* [开发容器](/zh-CN/devcontainer) - 安全、隔离的环境
+* [沙箱](/claude-code/07-configuration/10-sandboxing) - bash 命令的文件系统和网络隔离
+* [身份和访问管理](/claude-code/07-configuration/02-permissions) - 配置权限和访问控制
+* [监控使用情况](/claude-code/06-administration/06-monitoring-usage) - 跟踪和审计 Claude Code 活动
+* [开发容器](/claude-code/05-deployment/05-devcontainer) - 安全、隔离的环境
 * [Anthropic 信任中心](https://trust.anthropic.com) - 安全认证和合规

@@ -5,7 +5,7 @@ description: "创建自定义插件以使用 skills、agents、hooks 和 MCP ser
 
 Plugins 让你能够使用自定义功能扩展 Claude Code，这些功能可以在项目和团队中共享。本指南涵盖如何使用 skills、agents、hooks 和 MCP servers 创建自己的插件。
 
-想要安装现有插件？请参阅[发现和安装插件](/zh-CN/discover-plugins)。有关完整的技术规范，请参阅[插件参考](/zh-CN/plugins-reference)。
+想要安装现有插件？请参阅[发现和安装插件](/claude-code/04-build-with-claude/08-discover-plugins)。有关完整的技术规范，请参阅[插件参考](/claude-code/04-build-with-claude/07-plugins-reference)。
 
 ## 何时使用插件与独立配置
 
@@ -41,11 +41,11 @@ Claude Code 支持两种方式来添加自定义 skills、agents 和 hooks：
 
 ### 前置条件
 
-* Claude Code [已安装并已认证](/zh-CN/quickstart#step-1-install-claude-code)
+* Claude Code [已安装并已认证](/claude-code/01-getting-started/02-quickstart#step-1-install-claude-code)
 * Claude Code 版本 1.0.33 或更高版本（运行 `claude --version` 检查）
 
 <Note>
-  如果你没有看到 `/plugin` 命令，请将 Claude Code 更新到最新版本。有关升级说明，请参阅[故障排除](/zh-CN/troubleshooting)。
+  如果你没有看到 `/plugin` 命令，请将 Claude Code 更新到最新版本。有关升级说明，请参阅[故障排除](/claude-code/09-resources/04-troubleshooting)。
 </Note>
 
 ### 创建你的第一个插件
@@ -85,10 +85,10 @@ Claude Code 支持两种方式来添加自定义 skills、agents 和 hooks：
     | :------------ | :----------------------------------------------------------- |
     | `name`        | 唯一标识符和 skill 命名空间。Skills 以此为前缀（例如 `/my-first-plugin:hello`）。 |
     | `description` | 在浏览或安装插件时在插件管理器中显示。                                          |
-    | `version`     | 使用[语义版本控制](/zh-CN/plugins-reference#version-management)跟踪发布。 |
+    | `version`     | 使用[语义版本控制](/claude-code/04-build-with-claude/07-plugins-reference#version-management)跟踪发布。 |
     | `author`      | 可选。有助于归属。                                                    |
 
-    有关 `homepage`、`repository` 和 `license` 等其他字段，请参阅[完整清单架构](/zh-CN/plugins-reference#plugin-manifest-schema)。
+    有关 `homepage`、`repository` 和 `license` 等其他字段，请参阅[完整清单架构](/claude-code/04-build-with-claude/07-plugins-reference#plugin-manifest-schema)。
   </Step>
 
   <Step title="添加 skill">
@@ -155,7 +155,7 @@ Claude Code 支持两种方式来添加自定义 skills、agents 和 hooks：
     /my-first-plugin:hello Alex
     ```
 
-    Claude 将按名字问候你。有关向 skills 传递参数的更多信息，请参阅[Skills](/zh-CN/skills#pass-arguments-to-skills)。
+    Claude 将按名字问候你。有关向 skills 传递参数的更多信息，请参阅[Skills](/claude-code/04-build-with-claude/01-skills#pass-arguments-to-skills)。
   </Step>
 </Steps>
 
@@ -166,7 +166,7 @@ Claude Code 支持两种方式来添加自定义 skills、agents 和 hooks：
 * **Skill 参数**（`$ARGUMENTS`）：捕获用户输入以实现动态行为
 
 <Tip>
-  `--plugin-dir` 标志对开发和测试很有用。当你准备好与他人共享你的插件时，请参阅[创建和分发插件市场](/zh-CN/plugin-marketplaces)。
+  `--plugin-dir` 标志对开发和测试很有用。当你准备好与他人共享你的插件时，请参阅[创建和分发插件市场](/claude-code/04-build-with-claude/09-plugin-marketplaces)。
 </Tip>
 
 ## 插件结构概览
@@ -188,7 +188,7 @@ Claude Code 支持两种方式来添加自定义 skills、agents 和 hooks：
 | `.lsp.json`       | 插件根目录 | 用于代码智能的 LSP server 配置               |
 
 <Note>
-  **后续步骤**：准备好添加更多功能了吗？跳转到[开发更复杂的插件](#develop-more-complex-plugins)以添加 agents、hooks、MCP servers 和 LSP servers。有关所有插件组件的完整技术规范，请参阅[插件参考](/zh-CN/plugins-reference)。
+  **后续步骤**：准备好添加更多功能了吗？跳转到[开发更复杂的插件](#develop-more-complex-plugins)以添加 agents、hooks、MCP servers 和 LSP servers。有关所有插件组件的完整技术规范，请参阅[插件参考](/claude-code/04-build-with-claude/07-plugins-reference)。
 </Note>
 
 ## 开发更复杂的插件
@@ -197,7 +197,7 @@ Claude Code 支持两种方式来添加自定义 skills、agents 和 hooks：
 
 ### 向你的插件添加 Skills
 
-插件可以包含[Agent Skills](/zh-CN/skills)以扩展 Claude 的功能。Skills 是模型调用的：Claude 根据任务上下文自动使用它们。
+插件可以包含[Agent Skills](/claude-code/04-build-with-claude/01-skills)以扩展 Claude 的功能。Skills 是模型调用的：Claude 根据任务上下文自动使用它们。
 
 在你的插件根目录添加一个 `skills/` 目录，其中包含包含 `SKILL.md` 文件的 Skill 文件夹：
 
@@ -225,7 +225,7 @@ When reviewing code, check for:
 4. Test coverage
 ```
 
-安装插件后，重启 Claude Code 以加载 Skills。有关完整的 Skill 编写指南，包括渐进式披露和工具限制，请参阅[Agent Skills](/zh-CN/skills)。
+安装插件后，重启 Claude Code 以加载 Skills。有关完整的 Skill 编写指南，包括渐进式披露和工具限制，请参阅[Agent Skills](/claude-code/04-build-with-claude/01-skills)。
 
 ### 向你的插件添加 LSP servers
 
@@ -249,11 +249,11 @@ LSP（Language Server Protocol）插件为 Claude 提供实时代码智能。如
 
 安装你的插件的用户必须在其机器上安装语言服务器二进制文件。
 
-有关完整的 LSP 配置选项，请参阅[LSP servers](/zh-CN/plugins-reference#lsp-servers)。
+有关完整的 LSP 配置选项，请参阅[LSP servers](/claude-code/04-build-with-claude/07-plugins-reference#lsp-servers)。
 
 ### 组织复杂的插件
 
-对于具有许多组件的插件，按功能组织你的目录结构。有关完整的目录布局和组织模式，请参阅[插件目录结构](/zh-CN/plugins-reference#plugin-directory-structure)。
+对于具有许多组件的插件，按功能组织你的目录结构。有关完整的目录布局和组织模式，请参阅[插件目录结构](/claude-code/04-build-with-claude/07-plugins-reference#plugin-directory-structure)。
 
 ### 在本地测试你的插件
 
@@ -283,21 +283,21 @@ claude --plugin-dir ./my-plugin
 
 1. **检查结构**：确保你的目录在插件根目录，而不是在 `.claude-plugin/` 内
 2. **单独测试组件**：分别检查每个命令、agent 和 hook
-3. **使用验证和调试工具**：有关 CLI 命令和故障排除技术，请参阅[调试和开发工具](/zh-CN/plugins-reference#debugging-and-development-tools)
+3. **使用验证和调试工具**：有关 CLI 命令和故障排除技术，请参阅[调试和开发工具](/claude-code/04-build-with-claude/07-plugins-reference#debugging-and-development-tools)
 
 ### 共享你的插件
 
 当你的插件准备好共享时：
 
 1. **添加文档**：包含一个 `README.md`，其中包含安装和使用说明
-2. **对你的插件进行版本控制**：在你的 `plugin.json` 中使用[语义版本控制](/zh-CN/plugins-reference#version-management)
-3. **创建或使用市场**：通过[插件市场](/zh-CN/plugin-marketplaces)进行分发以供安装
+2. **对你的插件进行版本控制**：在你的 `plugin.json` 中使用[语义版本控制](/claude-code/04-build-with-claude/07-plugins-reference#version-management)
+3. **创建或使用市场**：通过[插件市场](/claude-code/04-build-with-claude/09-plugin-marketplaces)进行分发以供安装
 4. **与他人测试**：在更广泛的分发之前让团队成员测试插件
 
-一旦你的插件在市场中，其他人可以使用[发现和安装插件](/zh-CN/discover-plugins)中的说明安装它。
+一旦你的插件在市场中，其他人可以使用[发现和安装插件](/claude-code/04-build-with-claude/08-discover-plugins)中的说明安装它。
 
 <Note>
-  有关完整的技术规范、调试技术和分发策略，请参阅[插件参考](/zh-CN/plugins-reference)。
+  有关完整的技术规范、调试技术和分发策略，请参阅[插件参考](/claude-code/04-build-with-claude/07-plugins-reference)。
 </Note>
 
 ## 将现有配置转换为插件
@@ -393,15 +393,15 @@ claude --plugin-dir ./my-plugin
 
 ### 对于插件用户
 
-* [发现和安装插件](/zh-CN/discover-plugins)：浏览市场并安装插件
-* [配置团队市场](/zh-CN/discover-plugins#configure-team-marketplaces)：为你的团队设置存储库级别的插件
+* [发现和安装插件](/claude-code/04-build-with-claude/08-discover-plugins)：浏览市场并安装插件
+* [配置团队市场](/claude-code/04-build-with-claude/08-discover-plugins#configure-team-marketplaces)：为你的团队设置存储库级别的插件
 
 ### 对于插件开发者
 
-* [创建和分发市场](/zh-CN/plugin-marketplaces)：打包和共享你的插件
-* [插件参考](/zh-CN/plugins-reference)：完整的技术规范
+* [创建和分发市场](/claude-code/04-build-with-claude/09-plugin-marketplaces)：打包和共享你的插件
+* [插件参考](/claude-code/04-build-with-claude/07-plugins-reference)：完整的技术规范
 * 深入了解特定的插件组件：
-  * [Skills](/zh-CN/skills)：skill 开发详情
-  * [Subagents](/zh-CN/sub-agents)：agent 配置和功能
-  * [Hooks](/zh-CN/hooks)：事件处理和自动化
-  * [MCP](/zh-CN/mcp)：外部工具集成
+  * [Skills](/claude-code/04-build-with-claude/01-skills)：skill 开发详情
+  * [Subagents](/claude-code/04-build-with-claude/02-sub-agents)：agent 配置和功能
+  * [Hooks](/claude-code/04-build-with-claude/03-hooks)：事件处理和自动化
+  * [MCP](/claude-code/04-build-with-claude/05-mcp)：外部工具集成

@@ -9,7 +9,7 @@ description: "使用 Agent SDK 从 CLI、Python 或 TypeScript 以编程方式�
   CLI 之前称为"headless mode"。`-p` 标志和所有 CLI 选项的工作方式相同。
 </Note>
 
-要从 CLI 以编程方式运行 Claude Code，请使用 `-p` 传递您的提示和任何 [CLI 选项](/zh-CN/cli-reference)：
+要从 CLI 以编程方式运行 Claude Code，请使用 `-p` 传递您的提示和任何 [CLI 选项](/claude-code/08-reference/01-cli-reference)：
 
 ```bash  theme={null}
 claude -p "Find and fix the bug in auth.py" --allowedTools "Read,Edit,Bash"
@@ -19,7 +19,7 @@ claude -p "Find and fix the bug in auth.py" --allowedTools "Read,Edit,Bash"
 
 ## 基本用法
 
-将 `-p`（或 `--print`）标志添加到任何 `claude` 命令以非交互方式运行它。所有 [CLI 选项](/zh-CN/cli-reference) 都适用于 `-p`，包括：
+将 `-p`（或 `--print`）标志添加到任何 `claude` 命令以非交互方式运行它。所有 [CLI 选项](/claude-code/08-reference/01-cli-reference) 都适用于 `-p`，包括：
 
 * `--continue` 用于 [继续对话](#continue-conversations)
 * `--allowedTools` 用于 [自动批准工具](#auto-approve-tools)
@@ -109,10 +109,10 @@ claude -p "Look at my staged changes and create an appropriate commit" \
   --allowedTools "Bash(git diff *),Bash(git log *),Bash(git status *),Bash(git commit *)"
 ```
 
-`--allowedTools` 标志使用 [权限规则语法](/zh-CN/settings#permission-rule-syntax)。尾部的 ` *` 启用前缀匹配，因此 `Bash(git diff *)` 允许任何以 `git diff` 开头的命令。空格在 `*` 之前很重要：没有它，`Bash(git diff*)` 也会匹配 `git diff-index`。
+`--allowedTools` 标志使用 [权限规则语法](/claude-code/07-configuration/01-settings#permission-rule-syntax)。尾部的 ` *` 启用前缀匹配，因此 `Bash(git diff *)` 允许任何以 `git diff` 开头的命令。空格在 `*` 之前很重要：没有它，`Bash(git diff*)` 也会匹配 `git diff-index`。
 
 <Note>
-  用户调用的 [skills](/zh-CN/skills) 如 `/commit` 和 [内置命令](/zh-CN/interactive-mode#built-in-commands) 仅在交互模式中可用。在 `-p` 模式中，改为描述您想要完成的任务。
+  用户调用的 [skills](/claude-code/04-build-with-claude/01-skills) 如 `/commit` 和 [内置命令](/claude-code/08-reference/02-interactive-mode#built-in-commands) 仅在交互模式中可用。在 `-p` 模式中，改为描述您想要完成的任务。
 </Note>
 
 ### 自定义系统提示
@@ -125,7 +125,7 @@ gh pr diff "$1" | claude -p \
   --output-format json
 ```
 
-有关更多选项（包括 `--system-prompt` 以完全替换默认提示），请参阅 [系统提示标志](/zh-CN/cli-reference#system-prompt-flags)。
+有关更多选项（包括 `--system-prompt` 以完全替换默认提示），请参阅 [系统提示标志](/claude-code/08-reference/01-cli-reference#system-prompt-flags)。
 
 ### 继续对话
 
@@ -154,15 +154,15 @@ claude -p "Continue that review" --resume "$session_id"
     使用 Python 或 TypeScript 构建您的第一个 agent
   </Card>
 
-  <Card title="CLI 参考" icon="terminal" href="/zh-CN/cli-reference">
+  <Card title="CLI 参考" icon="terminal" href="/claude-code/08-reference/01-cli-reference">
     探索所有 CLI 标志和选项
   </Card>
 
-  <Card title="GitHub Actions" icon="github" href="/zh-CN/github-actions">
+  <Card title="GitHub Actions" icon="github" href="/claude-code/05-deployment/01-github-actions">
     在 GitHub 工作流中使用 Agent SDK
   </Card>
 
-  <Card title="GitLab CI/CD" icon="gitlab" href="/zh-CN/gitlab-ci-cd">
+  <Card title="GitLab CI/CD" icon="gitlab" href="/claude-code/05-deployment/02-gitlab-ci-cd">
     在 GitLab 管道中使用 Agent SDK
   </Card>
 </CardGroup>

@@ -665,7 +665,7 @@ claude_args: "--max-turns 5 --model claude-sonnet-4-5-20250929 --mcp-config /pat
 
 您可以通过两种方式配置 Claude 的行为：
 
-1. **CLAUDE.md**：在您的仓库根目录的 `CLAUDE.md` 文件中定义编码标准、审查标准和项目特定规则。Claude 在创建 PR 和响应请求时将遵循这些指南。查看我们的 [Memory 文档](/zh-CN/memory)了解更多详情。
+1. **CLAUDE.md**：在您的仓库根目录的 `CLAUDE.md` 文件中定义编码标准、审查标准和项目特定规则。Claude 在创建 PR 和响应请求时将遵循这些指南。查看我们的 [Memory 文档](/claude-code/07-configuration/03-memory)了解更多详情。
 2. **自定义提示**：在工作流文件中使用 `prompt` 参数提供工作流特定的指令。这允许您为不同的工作流或任务自定义 Claude 的行为。
 
 Claude 在创建 PR 和响应请求时将遵循这些指南。

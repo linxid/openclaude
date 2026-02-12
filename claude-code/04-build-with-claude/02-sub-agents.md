@@ -6,7 +6,7 @@ description: "在 Claude Code 中创建和使用专门的 AI subagents，用于�
 Subagents 是处理特定类型任务的专门 AI 助手。每个 subagent 在自己的上下文窗口中运行，具有自定义系统提示、特定的工具访问权限和独立的权限。当 Claude 遇到与 subagent 描述相匹配的任务时，它会委托给该 subagent，该 subagent 独立工作并返回结果。
 
 <Note>
-  如果您需要多个代理并行工作并相互通信，请参阅 [agent teams](/zh-CN/agent-teams)。Subagents 在单个会话中工作；agent teams 跨多个会话进行协调。
+  如果您需要多个代理并行工作并相互通信，请参阅 [agent teams](/claude-code/05-deployment/04-agent-teams)。Subagents 在单个会话中工作；agent teams 跨多个会话进行协调。
 </Note>
 
 Subagents 帮助您：
@@ -39,7 +39,7 @@ Claude Code 包括内置 subagents，Claude 在适当时会自动使用。每个
   </Tab>
 
   <Tab title="Plan">
-    一个研究代理，在 [plan mode](/zh-CN/common-workflows#use-plan-mode-for-safe-code-analysis) 期间使用，以在呈现计划之前收集上下文。
+    一个研究代理，在 [plan mode](/claude-code/02-core-concepts/03-common-workflows#use-plan-mode-for-safe-code-analysis) 期间使用，以在呈现计划之前收集上下文。
 
     * **模型**：继承自主对话
     * **工具**：只读工具（拒绝访问 Write 和 Edit 工具）
@@ -152,7 +152,7 @@ Subagents 是带有 YAML frontmatter 的 Markdown 文件。根据范围将它们
 | `--agents` CLI 标志   | 当前会话    | 1（最高） | 启动 Claude Code 时传递 JSON          |
 | `.claude/agents/`   | 当前项目    | 2     | 交互式或手动                           |
 | `~/.claude/agents/` | 您的所有项目  | 3     | 交互式或手动                           |
-| 插件的 `agents/` 目录    | 启用插件的位置 | 4（最低） | 与 [plugins](/zh-CN/plugins) 一起安装 |
+| 插件的 `agents/` 目录    | 启用插件的位置 | 4（最低） | 与 [plugins](/claude-code/04-build-with-claude/06-plugins) 一起安装 |
 
 **项目 subagents**（`.claude/agents/`）非常适合特定于代码库的 subagents。将它们检入版本控制，以便您的团队可以协作使用和改进它们。
 
@@ -171,9 +171,9 @@ claude --agents '{
 }'
 ```
 
-`--agents` 标志接受与 [frontmatter](#supported-frontmatter-fields) 相同字段的 JSON。对系统提示使用 `prompt`（等同于基于文件的 subagents 中的 markdown 正文）。有关完整 JSON 格式，请参阅 [CLI 参考](/zh-CN/cli-reference#agents-flag-format)。
+`--agents` 标志接受与 [frontmatter](#supported-frontmatter-fields) 相同字段的 JSON。对系统提示使用 `prompt`（等同于基于文件的 subagents 中的 markdown 正文）。有关完整 JSON 格式，请参阅 [CLI 参考](/claude-code/08-reference/01-cli-reference#agents-flag-format)。
 
-**插件 subagents** 来自您已安装的 [plugins](/zh-CN/plugins)。它们与您的自定义 subagents 一起出现在 `/agents` 中。有关创建插件 subagents 的详细信息，请参阅 [插件组件参考](/zh-CN/plugins-reference#agents)。
+**插件 subagents** 来自您已安装的 [plugins](/claude-code/04-build-with-claude/06-plugins)。它们与您的自定义 subagents 一起出现在 `/agents` 中。有关创建插件 subagents 的详细信息，请参阅 [插件组件参考](/claude-code/04-build-with-claude/07-plugins-reference#agents)。
 
 ### 编写 subagent 文件
 
@@ -209,13 +209,13 @@ Frontmatter 定义了 subagent 的元数据和配置。正文成为指导 subage
 | `disallowedTools` | 否  | 要拒绝的工具，从继承或指定的列表中删除                                                                       |
 | `model`           | 否  | 要使用的 [模型](#choose-a-model)：`sonnet`、`opus`、`haiku` 或 `inherit`。默认为 `inherit`              |
 | `permissionMode`  | 否  | [权限模式](#permission-modes)：`default`、`acceptEdits`、`dontAsk`、`bypassPermissions` 或 `plan`  |
-| `skills`          | 否  | 在启动时加载到 subagent 上下文中的 [Skills](/zh-CN/skills)。注入完整的技能内容，而不仅仅是可用于调用。Subagents 不继承来自父对话的技能 |
+| `skills`          | 否  | 在启动时加载到 subagent 上下文中的 [Skills](/claude-code/04-build-with-claude/01-skills)。注入完整的技能内容，而不仅仅是可用于调用。Subagents 不继承来自父对话的技能 |
 | `hooks`           | 否  | 限定于此 subagent 的 [生命周期 hooks](#define-hooks-for-subagents)                                 |
 | `memory`          | 否  | [持久内存范围](#enable-persistent-memory)：`user`、`project` 或 `local`。启用跨会话学习                    |
 
 ### 选择模型
 
-`model` 字段控制 subagent 使用的 [AI 模型](/zh-CN/model-config)：
+`model` 字段控制 subagent 使用的 [AI 模型](/claude-code/07-configuration/04-model-config)：
 
 * **模型别名**：使用可用的别名之一：`sonnet`、`opus` 或 `haiku`
 * **inherit**：使用与主对话相同的模型
@@ -227,7 +227,7 @@ Frontmatter 定义了 subagent 的元数据和配置。正文成为指导 subage
 
 #### 可用工具
 
-Subagents 可以使用 Claude Code 的任何 [内部工具](/zh-CN/settings#tools-available-to-claude)。默认情况下，subagents 继承主对话的所有工具，包括 MCP 工具。
+Subagents 可以使用 Claude Code 的任何 [内部工具](/claude-code/07-configuration/01-settings#tools-available-to-claude)。默认情况下，subagents 继承主对话的所有工具，包括 MCP 工具。
 
 要限制工具，使用 `tools` 字段（允许列表）或 `disallowedTools` 字段（拒绝列表）：
 
@@ -277,7 +277,7 @@ Implement API endpoints. Follow the conventions and patterns from the preloaded 
 每个 skill 的完整内容被注入到 subagent 的上下文中，而不仅仅是可用于调用。Subagents 不继承来自父对话的 skills；您必须明确列出它们。
 
 <Note>
-  这与 [在 subagent 中运行 skill](/zh-CN/skills#run-skills-in-a-subagent) 相反。使用 subagent 中的 `skills`，subagent 控制系统提示并加载 skill 内容。使用 skill 中的 `context: fork`，skill 内容被注入到您指定的代理中。两者都使用相同的底层系统。
+  这与 [在 subagent 中运行 skill](/claude-code/04-build-with-claude/01-skills#run-skills-in-a-subagent) 相反。使用 subagent 中的 `skills`，subagent 控制系统提示并加载 skill 内容。使用 skill 中的 `context: fork`，skill 内容被注入到您指定的代理中。两者都使用相同的底层系统。
 </Note>
 
 #### 启用持久内存
@@ -343,7 +343,7 @@ hooks:
 ---
 ```
 
-Claude Code [通过 stdin 将 hook 输入作为 JSON 传递](/zh-CN/hooks#pretooluse-input) 给 hook 命令。验证脚本读取此 JSON，提取 Bash 命令，并 [以代码 2 退出](/zh-CN/hooks#exit-code-2-behavior-per-event) 来阻止写操作：
+Claude Code [通过 stdin 将 hook 输入作为 JSON 传递](/claude-code/04-build-with-claude/03-hooks#pretooluse-input) 给 hook 命令。验证脚本读取此 JSON，提取 Bash 命令，并 [以代码 2 退出](/claude-code/04-build-with-claude/03-hooks#exit-code-2-behavior-per-event) 来阻止写操作：
 
 ```bash  theme={null}
 #!/bin/bash
@@ -361,11 +361,11 @@ fi
 exit 0
 ```
 
-有关完整的输入架构，请参阅 [Hook 输入](/zh-CN/hooks#pretooluse-input)，有关退出代码如何影响行为，请参阅 [退出代码](/zh-CN/hooks#exit-code-output)。
+有关完整的输入架构，请参阅 [Hook 输入](/claude-code/04-build-with-claude/03-hooks#pretooluse-input)，有关退出代码如何影响行为，请参阅 [退出代码](/claude-code/04-build-with-claude/03-hooks#exit-code-output)。
 
 #### 禁用特定 subagents
 
-您可以通过将 subagents 添加到您的 [settings](/zh-CN/settings#permission-settings) 中的 `deny` 数组来防止 Claude 使用特定 subagents。使用格式 `Task(subagent-name)`，其中 `subagent-name` 与 subagent 的 name 字段匹配。
+您可以通过将 subagents 添加到您的 [settings](/claude-code/07-configuration/01-settings#permission-settings) 中的 `deny` 数组来防止 Claude 使用特定 subagents。使用格式 `Task(subagent-name)`，其中 `subagent-name` 与 subagent 的 name 字段匹配。
 
 ```json  theme={null}
 {
@@ -381,11 +381,11 @@ exit 0
 claude --disallowedTools "Task(Explore)"
 ```
 
-有关权限规则的更多详细信息，请参阅 [权限文档](/zh-CN/permissions#tool-specific-permission-rules)。
+有关权限规则的更多详细信息，请参阅 [权限文档](/claude-code/07-configuration/02-permissions#tool-specific-permission-rules)。
 
 ### 为 subagents 定义 hooks
 
-Subagents 可以定义在 subagent 生命周期期间运行的 [hooks](/zh-CN/hooks)。有两种方式配置 hooks：
+Subagents 可以定义在 subagent 生命周期期间运行的 [hooks](/claude-code/04-build-with-claude/03-hooks)。有两种方式配置 hooks：
 
 1. **在 subagent 的 frontmatter 中**：定义仅在该 subagent 活动时运行的 hooks
 2. **在 `settings.json` 中**：定义在 subagents 启动或停止时在主会话中运行的 hooks
@@ -394,7 +394,7 @@ Subagents 可以定义在 subagent 生命周期期间运行的 [hooks](/zh-CN/ho
 
 直接在 subagent 的 markdown 文件中定义 hooks。这些 hooks 仅在该特定 subagent 活动时运行，并在其完成时清理。
 
-支持所有 [hook 事件](/zh-CN/hooks#hook-events)。subagents 最常见的事件是：
+支持所有 [hook 事件](/claude-code/04-build-with-claude/03-hooks#hook-events)。subagents 最常见的事件是：
 
 | 事件            | 匹配器输入 | 何时触发                                   |
 | :------------ | :---- | :------------------------------------- |
@@ -457,7 +457,7 @@ Frontmatter 中的 `Stop` hooks 会自动转换为 `SubagentStop` 事件。
 }
 ```
 
-有关完整的 hook 配置格式，请参阅 [Hooks](/zh-CN/hooks)。
+有关完整的 hook 配置格式，请参阅 [Hooks](/claude-code/04-build-with-claude/03-hooks)。
 
 ## 使用 subagents
 
@@ -476,7 +476,7 @@ Have the code-reviewer subagent look at my recent changes
 
 Subagents 可以在前台（阻塞）或后台（并发）运行：
 
-* **前台 subagents** 阻塞主对话直到完成。权限提示和澄清问题（如 [`AskUserQuestion`](/zh-CN/settings#tools-available-to-claude)）会传递给您。
+* **前台 subagents** 阻塞主对话直到完成。权限提示和澄清问题（如 [`AskUserQuestion`](/claude-code/07-configuration/01-settings#tools-available-to-claude)）会传递给您。
 * **后台 subagents** 在您继续工作时并发运行。启动前，Claude Code 会提示您输入 subagent 需要的任何工具权限，确保它具有必要的批准。一旦运行，subagent 继承这些权限并自动拒绝任何未预先批准的内容。如果后台 subagent 需要提出澄清问题，该工具调用会失败，但 subagent 继续。MCP 工具在后台 subagents 中不可用。
 
 如果后台 subagent 由于缺少权限而失败，您可以 [恢复它](#resume-subagents) 在前台以使用交互式提示重试。
@@ -486,7 +486,7 @@ Claude 根据任务决定是否在前台或后台运行 subagents。您也可以
 * 要求 Claude "run this in the background"
 * 按 **Ctrl+B** 将运行中的任务放在后台
 
-要禁用所有后台任务功能，请将 `CLAUDE_CODE_DISABLE_BACKGROUND_TASKS` 环境变量设置为 `1`。请参阅 [环境变量](/zh-CN/settings#environment-variables)。
+要禁用所有后台任务功能，请将 `CLAUDE_CODE_DISABLE_BACKGROUND_TASKS` 环境变量设置为 `1`。请参阅 [环境变量](/claude-code/07-configuration/01-settings#environment-variables)。
 
 ### 常见模式
 
@@ -512,7 +512,7 @@ Research the authentication, database, and API modules in parallel using separat
   当 subagents 完成时，它们的结果返回到您的主对话。运行许多 subagents，每个都返回详细结果，可能会消耗大量上下文。
 </Warning>
 
-对于需要持续并行性或超过您的上下文窗口的任务，[agent teams](/zh-CN/agent-teams) 为每个工作者提供自己的独立上下文。
+对于需要持续并行性或超过您的上下文窗口的任务，[agent teams](/claude-code/05-deployment/04-agent-teams) 为每个工作者提供自己的独立上下文。
 
 #### 链接 subagents
 
@@ -537,10 +537,10 @@ Use the code-reviewer subagent to find performance issues, then use the optimize
 * 您想强制执行特定的工具限制或权限
 * 工作是自包含的，可以返回摘要
 
-当您想要在主对话上下文中运行的可重用提示或工作流而不是隔离的 subagent 上下文时，请考虑 [Skills](/zh-CN/skills)。
+当您想要在主对话上下文中运行的可重用提示或工作流而不是隔离的 subagent 上下文时，请考虑 [Skills](/claude-code/04-build-with-claude/01-skills)。
 
 <Note>
-  Subagents 无法生成其他 subagents。如果您的工作流需要嵌套委托，请使用 [Skills](/zh-CN/skills) 或从主对话 [链接 subagents](#chain-subagents)。
+  Subagents 无法生成其他 subagents。如果您的工作流需要嵌套委托，请使用 [Skills](/claude-code/04-build-with-claude/01-skills) 或从主对话 [链接 subagents](#chain-subagents)。
 </Note>
 
 ### 管理 subagent 上下文
@@ -571,7 +571,7 @@ Subagent 成绩单独立于主对话持久化：
 
 #### 自动压缩
 
-Subagents 支持使用与主对话相同的逻辑进行自动压缩。默认情况下，自动压缩在大约 95% 容量时触发。要更早触发压缩，请将 `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` 设置为较低的百分比（例如，`50`）。有关详细信息，请参阅 [环境变量](/zh-CN/settings#environment-variables)。
+Subagents 支持使用与主对话相同的逻辑进行自动压缩。默认情况下，自动压缩在大约 95% 容量时触发。要更早触发压缩，请将 `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` 设置为较低的百分比（例如，`50`）。有关详细信息，请参阅 [环境变量](/claude-code/07-configuration/01-settings#environment-variables)。
 
 压缩事件记录在 subagent 成绩单文件中：
 
@@ -739,7 +739,7 @@ When asked to analyze data:
 You cannot modify data. If asked to INSERT, UPDATE, DELETE, or modify schema, explain that you only have read access.
 ```
 
-Claude Code [通过 stdin 将 hook 输入作为 JSON 传递](/zh-CN/hooks#pretooluse-input) 给 hook 命令。验证脚本读取此 JSON，提取正在执行的命令，并根据 SQL 写操作列表检查它。如果检测到写操作，脚本 [以代码 2 退出](/zh-CN/hooks#exit-code-2-behavior-per-event) 来阻止执行并通过 stderr 向 Claude 返回错误消息。
+Claude Code [通过 stdin 将 hook 输入作为 JSON 传递](/claude-code/04-build-with-claude/03-hooks#pretooluse-input) 给 hook 命令。验证脚本读取此 JSON，提取正在执行的命令，并根据 SQL 写操作列表检查它。如果检测到写操作，脚本 [以代码 2 退出](/claude-code/04-build-with-claude/03-hooks#exit-code-2-behavior-per-event) 来阻止执行并通过 stderr 向 Claude 返回错误消息。
 
 在您的项目中的任何位置创建验证脚本。路径必须与您的 hook 配置中的 `command` 字段匹配：
 
@@ -772,12 +772,12 @@ exit 0
 chmod +x ./scripts/validate-readonly-query.sh
 ```
 
-Hook 通过 stdin 接收 JSON，Bash 命令在 `tool_input.command` 中。退出代码 2 阻止操作并将错误消息反馈给 Claude。有关退出代码和 [Hook 输入](/zh-CN/hooks#pretooluse-input) 的完整输入架构的详细信息，请参阅 [Hooks](/zh-CN/hooks#exit-code-output)。
+Hook 通过 stdin 接收 JSON，Bash 命令在 `tool_input.command` 中。退出代码 2 阻止操作并将错误消息反馈给 Claude。有关退出代码和 [Hook 输入](/claude-code/04-build-with-claude/03-hooks#pretooluse-input) 的完整输入架构的详细信息，请参阅 [Hooks](/claude-code/04-build-with-claude/03-hooks#exit-code-output)。
 
 ## 后续步骤
 
 现在您了解了 subagents，请探索这些相关功能：
 
-* [使用插件分发 subagents](/zh-CN/plugins) 以在团队或项目中共享 subagents
-* [以编程方式运行 Claude Code](/zh-CN/headless) 使用 Agent SDK 进行 CI/CD 和自动化
-* [使用 MCP servers](/zh-CN/mcp) 为 subagents 提供对外部工具和数据的访问
+* [使用插件分发 subagents](/claude-code/04-build-with-claude/06-plugins) 以在团队或项目中共享 subagents
+* [以编程方式运行 Claude Code](/claude-code/05-deployment/03-headless) 使用 Agent SDK 进行 CI/CD 和自动化
+* [使用 MCP servers](/claude-code/04-build-with-claude/05-mcp) 为 subagents 提供对外部工具和数据的访问

@@ -7,7 +7,7 @@ description: "了解 Claude Code，Anthropic 的代理编码工具，它位于�
 
 前置条件：
 
-- 满足[系统要求](/zh-CN/setup#system-requirements)
+- 满足[系统要求](/claude-code/01-getting-started/03-setup#system-requirements)
 - 拥有 [Claude 订阅](https://claude.com/pricing)（Pro、Max、Teams 或 Enterprise）或 [Claude Console](https://console.anthropic.com/) 账户
 
 **安装 Claude Code：**
@@ -65,53 +65,53 @@ cd your-project
 claude
 ```
 
-首次使用时，系统会提示您登录。就这么简单！[继续快速入门（5 分钟）→](/zh-CN/quickstart)
+首次使用时，系统会提示您登录。就这么简单！[继续快速入门（5 分钟）→](/claude-code/01-getting-started/02-quickstart)
 
 <Tip>
-  查看[高级设置](/zh-CN/setup)了解安装选项、手动更新或卸载说明。如果遇到问题，请访问[故障排除](/zh-CN/troubleshooting)。
+  查看[高级设置](/claude-code/01-getting-started/03-setup)了解安装选项、手动更新或卸载说明。如果遇到问题，请访问[故障排除](/claude-code/09-resources/04-troubleshooting)。
 </Tip>
 
 ## Claude Code 为您做什么
 
 - **从描述构建功能**：用纯英文告诉 Claude 您想构建什么。它将制定计划、编写代码并确保其正常工作。
 - **调试和修复问题**：描述一个错误或粘贴错误消息。Claude Code 将分析您的代码库、识别问题并实施修复。
-- **导航任何代码库**：询问有关您团队代码库的任何内容，并获得深思熟虑的答案。Claude Code 维护对整个项目结构的认识，可以从网络上查找最新信息，并且通过 [MCP](/zh-CN/mcp) 可以从 Google Drive、Figma 和 Slack 等外部数据源提取数据。
+- **导航任何代码库**：询问有关您团队代码库的任何内容，并获得深思熟虑的答案。Claude Code 维护对整个项目结构的认识，可以从网络上查找最新信息，并且通过 [MCP](/claude-code/04-build-with-claude/05-mcp) 可以从 Google Drive、Figma 和 Slack 等外部数据源提取数据。
 - **自动化繁琐任务**：修复棘手的 lint 问题、解决合并冲突和编写发布说明。从您的开发机器上用一个命令完成所有这些，或在 CI 中自动完成。
 
 ## 开发者为什么喜欢 Claude Code
 
 - **在您的终端中工作**：不是另一个聊天窗口。不是另一个 IDE。Claude Code 在您已经工作的地方与您相遇，使用您已经喜欢的工具。
-- **采取行动**：Claude Code 可以直接编辑文件、运行命令和创建提交。需要更多？[MCP](/zh-CN/mcp) 让 Claude 读取您在 Google Drive 中的设计文档、更新您在 Jira 中的工单，或使用\_您的\_自定义开发者工具。
+- **采取行动**：Claude Code 可以直接编辑文件、运行命令和创建提交。需要更多？[MCP](/claude-code/04-build-with-claude/05-mcp) 让 Claude 读取您在 Google Drive 中的设计文档、更新您在 Jira 中的工单，或使用\_您的\_自定义开发者工具。
 - **Unix 哲学**：Claude Code 是可组合和可脚本化的。`tail -f app.log | claude -p "Slack me if you see any anomalies appear in this log stream"` _有效_。您的 CI 可以运行 `claude -p "If there are new text strings, translate them into French and raise a PR for @lang-fr-team to review"`。
-- **企业就绪**：使用 Claude API，或在 AWS 或 GCP 上托管。企业级[安全](/zh-CN/security)、[隐私](/zh-CN/data-usage)和[合规性](https://trust.anthropic.com/)是内置的。
+- **企业就绪**：使用 Claude API，或在 AWS 或 GCP 上托管。企业级[安全](/claude-code/09-resources/01-security)、[隐私](/claude-code/09-resources/02-data-usage)和[合规性](https://trust.anthropic.com/)是内置的。
 
 ## 在任何地方使用 Claude Code
 
 Claude Code 在您的整个开发环境中工作：在您的终端、IDE、云中和 Slack 中。
 
-- [**终端 (CLI)**](/zh-CN/quickstart)：核心 Claude Code 体验。在任何终端中运行 `claude` 开始编码。
-- [**网络上的 Claude Code**](/zh-CN/claude-code-on-the-web)：从您的浏览器在 [claude.ai/code](https://claude.ai/code) 或 Claude iOS 应用中使用 Claude Code，无需本地设置。并行运行任务、处理您本地没有的仓库，并在内置的 diff 视图中查看更改。
-- [**桌面应用**](/zh-CN/desktop)：一个独立应用程序，具有 diff 审查、通过 git worktrees 的并行会话以及启动云会话的能力。
-- [**VS Code**](/zh-CN/vs-code)：一个原生扩展，具有内联 diff、@-提及和计划审查。
-- [**JetBrains IDE**](/zh-CN/jetbrains)：IntelliJ IDEA、PyCharm、WebStorm 和其他 JetBrains IDE 的插件，具有 IDE diff 查看和上下文共享。
-- [**GitHub Actions**](/zh-CN/github-actions)：使用 `@claude` 提及在 CI/CD 中自动化代码审查、问题分类和其他工作流。
-- [**GitLab CI/CD**](/zh-CN/gitlab-ci-cd)：GitLab 合并请求和问题的事件驱动自动化。
-- [**Slack**](/zh-CN/slack)：在 Slack 中提及 Claude 以将编码任务路由到网络上的 Claude Code 并获取 PR。
-- [**Chrome**](/zh-CN/chrome)：将 Claude Code 连接到您的浏览器以进行实时调试、设计验证和网络应用测试。
+- [**终端 (CLI)**](/claude-code/01-getting-started/02-quickstart)：核心 Claude Code 体验。在任何终端中运行 `claude` 开始编码。
+- [**网络上的 Claude Code**](/claude-code/03-platforms/01-claude-code-on-the-web)：从您的浏览器在 [claude.ai/code](https://claude.ai/code) 或 Claude iOS 应用中使用 Claude Code，无需本地设置。并行运行任务、处理您本地没有的仓库，并在内置的 diff 视图中查看更改。
+- [**桌面应用**](/claude-code/03-platforms/02-desktop)：一个独立应用程序，具有 diff 审查、通过 git worktrees 的并行会话以及启动云会话的能力。
+- [**VS Code**](/claude-code/03-platforms/04-vs-code)：一个原生扩展，具有内联 diff、@-提及和计划审查。
+- [**JetBrains IDE**](/claude-code/03-platforms/05-jetbrains)：IntelliJ IDEA、PyCharm、WebStorm 和其他 JetBrains IDE 的插件，具有 IDE diff 查看和上下文共享。
+- [**GitHub Actions**](/claude-code/05-deployment/01-github-actions)：使用 `@claude` 提及在 CI/CD 中自动化代码审查、问题分类和其他工作流。
+- [**GitLab CI/CD**](/claude-code/05-deployment/02-gitlab-ci-cd)：GitLab 合并请求和问题的事件驱动自动化。
+- [**Slack**](/claude-code/03-platforms/06-slack)：在 Slack 中提及 Claude 以将编码任务路由到网络上的 Claude Code 并获取 PR。
+- [**Chrome**](/claude-code/03-platforms/03-chrome)：将 Claude Code 连接到您的浏览器以进行实时调试、设计验证和网络应用测试。
 
 ## 后续步骤
 
 <CardGroup>
-  <Card title="快速入门" icon="rocket" href="/zh-CN/quickstart">
+  <Card title="快速入门" icon="rocket" href="/claude-code/01-getting-started/02-quickstart">
     通过实际示例查看 Claude Code 的实际应用
   </Card>
-  <Card title="常见工作流" icon="graduation-cap" href="/zh-CN/common-workflows">
+  <Card title="常见工作流" icon="graduation-cap" href="/claude-code/02-core-concepts/03-common-workflows">
     常见工作流的分步指南
   </Card>
-  <Card title="故障排除" icon="wrench" href="/zh-CN/troubleshooting">
+  <Card title="故障排除" icon="wrench" href="/claude-code/09-resources/04-troubleshooting">
     Claude Code 常见问题的解决方案
   </Card>
-  <Card title="桌面应用" icon="laptop" href="/zh-CN/desktop">
+  <Card title="桌面应用" icon="laptop" href="/claude-code/03-platforms/02-desktop">
     将 Claude Code 作为独立应用程序运行
   </Card>
 </CardGroup>
@@ -125,22 +125,22 @@ Claude Code 在您的整个开发环境中工作：在您的终端、IDE、云�
   <Card title="使用 Agent SDK 构建" icon="code-branch" href="https://platform.claude.com/docs/en/agent-sdk/overview">
     使用 Claude Agent SDK 创建自定义 AI 代理
   </Card>
-  <Card title="在 AWS 或 GCP 上托管" icon="cloud" href="/zh-CN/third-party-integrations">
+  <Card title="在 AWS 或 GCP 上托管" icon="cloud" href="/claude-code/06-administration/01-third-party-integrations">
     使用 Amazon Bedrock 或 Google Vertex AI 配置 Claude Code
   </Card>
-  <Card title="设置" icon="gear" href="/zh-CN/settings">
+  <Card title="设置" icon="gear" href="/claude-code/07-configuration/01-settings">
     为您的工作流自定义 Claude Code                       
   </Card>
-  <Card title="命令" icon="terminal" href="/zh-CN/cli-reference">
+  <Card title="命令" icon="terminal" href="/claude-code/08-reference/01-cli-reference">
     了解 CLI 命令和控制
   </Card>
   <Card title="参考实现" icon="code" href="https://github.com/anthropics/claude-code/tree/main/.devcontainer">
     克隆我们的开发容器参考实现
   </Card>
-  <Card title="安全" icon="shield" href="/zh-CN/security">
+  <Card title="安全" icon="shield" href="/claude-code/09-resources/01-security">
     发现 Claude Code 的保障措施和安全使用的最佳实践
   </Card>
-  <Card title="隐私和数据使用" icon="lock" href="/zh-CN/data-usage">
+  <Card title="隐私和数据使用" icon="lock" href="/claude-code/09-resources/02-data-usage">
     了解 Claude Code 如何处理您的数据
   </Card>
 </CardGroup>

@@ -3,27 +3,27 @@ title: "扩展 Claude Code"
 description: "了解何时使用 CLAUDE.md、Skills、subagents、hooks、MCP 和 plugins。"
 ---
 
-Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/how-claude-code-works#tools)，用于文件操作、搜索、执行和网络访问。内置工具涵盖了大多数编码任务。本指南涵盖扩展层：您添加的功能，用于自定义 Claude 的知识、将其连接到外部服务并自动化工作流。
+Claude Code 结合了一个能够推理代码的模型和[内置工具](/claude-code/02-core-concepts/01-how-claude-code-works#tools)，用于文件操作、搜索、执行和网络访问。内置工具涵盖了大多数编码任务。本指南涵盖扩展层：您添加的功能，用于自定义 Claude 的知识、将其连接到外部服务并自动化工作流。
 
 <Note>
-  有关核心代理循环如何工作的信息，请参阅[Claude Code 如何工作](/zh-CN/how-claude-code-works)。
+  有关核心代理循环如何工作的信息，请参阅[Claude Code 如何工作](/claude-code/02-core-concepts/01-how-claude-code-works)。
 </Note>
 
-**初次使用 Claude Code？** 从[CLAUDE.md](/zh-CN/memory)开始了解项目约定。根据需要添加其他扩展。
+**初次使用 Claude Code？** 从[CLAUDE.md](/claude-code/07-configuration/03-memory)开始了解项目约定。根据需要添加其他扩展。
 
 ## 概述
 
 扩展插入代理循环的不同部分：
 
-* **[CLAUDE.md](/zh-CN/memory)** 添加 Claude 每个会话都能看到的持久上下文
-* **[Skills](/zh-CN/skills)** 添加可重用的知识和可调用的工作流
-* **[MCP](/zh-CN/mcp)** 将 Claude 连接到外部服务和工具
-* **[Subagents](/zh-CN/sub-agents)** 在隔离的上下文中运行自己的循环，返回摘要
-* **[Agent teams](/zh-CN/agent-teams)** 协调多个独立会话，具有共享任务和点对点消息传递
-* **[Hooks](/zh-CN/hooks)** 完全在循环外运行作为确定性脚本
-* **[Plugins](/zh-CN/plugins)** 和 **[marketplaces](/zh-CN/plugin-marketplaces)** 打包和分发这些功能
+* **[CLAUDE.md](/claude-code/07-configuration/03-memory)** 添加 Claude 每个会话都能看到的持久上下文
+* **[Skills](/claude-code/04-build-with-claude/01-skills)** 添加可重用的知识和可调用的工作流
+* **[MCP](/claude-code/04-build-with-claude/05-mcp)** 将 Claude 连接到外部服务和工具
+* **[Subagents](/claude-code/04-build-with-claude/02-sub-agents)** 在隔离的上下文中运行自己的循环，返回摘要
+* **[Agent teams](/claude-code/05-deployment/04-agent-teams)** 协调多个独立会话，具有共享任务和点对点消息传递
+* **[Hooks](/claude-code/04-build-with-claude/03-hooks)** 完全在循环外运行作为确定性脚本
+* **[Plugins](/claude-code/04-build-with-claude/06-plugins)** 和 **[marketplaces](/claude-code/04-build-with-claude/09-plugin-marketplaces)** 打包和分发这些功能
 
-[Skills](/zh-CN/skills) 是最灵活的扩展。Skill 是一个包含知识、工作流或说明的 markdown 文件。您可以使用斜杠命令（如 `/deploy`）调用 skills，或者 Claude 可以在相关时自动加载它们。Skills 可以在您当前的对话中运行，也可以通过 subagents 在隔离的上下文中运行。
+[Skills](/claude-code/04-build-with-claude/01-skills) 是最灵活的扩展。Skill 是一个包含知识、工作流或说明的 markdown 文件。您可以使用斜杠命令（如 `/deploy`）调用 skills，或者 Claude 可以在相关时自动加载它们。Skills 可以在您当前的对话中运行，也可以通过 subagents 在隔离的上下文中运行。
 
 ## 将功能与您的目标相匹配
 
@@ -34,11 +34,11 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
 | **CLAUDE.md**                         | 每次对话加载的持久上下文           | 项目约定、"始终执行 X"规则       | "使用 pnpm，而不是 npm。在提交前运行测试。"               |
 | **Skill**                             | Claude 可以使用的说明、知识和工作流  | 可重用内容、参考文档、可重复任务      | `/review` 运行您的代码审查清单；带有端点模式的 API 文档 skill |
 | **Subagent**                          | 返回摘要结果的隔离执行上下文         | 上下文隔离、并行任务、专门工作者      | 读取许多文件但仅返回关键发现的研究任务                       |
-| **[Agent teams](/zh-CN/agent-teams)** | 协调多个独立的 Claude Code 会话 | 并行研究、新功能开发、使用竞争假设进行调试 | 生成审查者同时检查安全性、性能和测试                        |
+| **[Agent teams](/claude-code/05-deployment/04-agent-teams)** | 协调多个独立的 Claude Code 会话 | 并行研究、新功能开发、使用竞争假设进行调试 | 生成审查者同时检查安全性、性能和测试                        |
 | **MCP**                               | 连接到外部服务                | 外部数据或操作               | 查询您的数据库、发布到 Slack、控制浏览器                   |
 | **Hook**                              | 在事件上运行的确定性脚本           | 可预测的自动化，不涉及 LLM       | 每次文件编辑后运行 ESLint                          |
 
-**[Plugins](/zh-CN/plugins)** 是打包层。Plugin 将 skills、hooks、subagents 和 MCP servers 捆绑到单个可安装单元中。Plugin skills 是命名空间的（如 `/my-plugin:review`），因此多个 plugins 可以共存。当您想在多个存储库中重用相同的设置或通过 **[marketplace](/zh-CN/plugin-marketplaces)** 分发给他人时，使用 plugins。
+**[Plugins](/claude-code/04-build-with-claude/06-plugins)** 是打包层。Plugin 将 skills、hooks、subagents 和 MCP servers 捆绑到单个可安装单元中。Plugin skills 是命名空间的（如 `/my-plugin:review`），因此多个 plugins 可以共存。当您想在多个存储库中重用相同的设置或通过 **[marketplace](/claude-code/04-build-with-claude/09-plugin-marketplaces)** 分发给他人时，使用 plugins。
 
 ### 比较相似的功能
 
@@ -61,7 +61,7 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
 
     **当您需要上下文隔离或上下文窗口变满时，使用 subagent**。Subagent 可能读取数十个文件或运行广泛的搜索，但您的主对话仅接收摘要。由于 subagent 工作不消耗您的主上下文，当您不需要中间工作保持可见时，这也很有用。自定义 subagents 可以有自己的说明，并可以预加载 skills。
 
-    **它们可以结合。** Subagent 可以预加载特定的 skills（`skills:` 字段）。Skill 可以使用 `context: fork` 在隔离的上下文中运行。有关详细信息，请参阅 [Skills](/zh-CN/skills)。
+    **它们可以结合。** Subagent 可以预加载特定的 skills（`skills:` 字段）。Skill 可以使用 `context: fork` 在隔离的上下文中运行。有关详细信息，请参阅 [Skills](/claude-code/04-build-with-claude/01-skills)。
   </Tab>
 
   <Tab title="CLAUDE.md vs Skill">
@@ -102,7 +102,7 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
     **过渡点：** 如果您运行并行 subagents 但遇到上下文限制，或者您的 subagents 需要相互通信，agent teams 是自然的下一步。
 
     <Note>
-      Agent teams 是实验性的，默认禁用。有关设置和当前限制，请参阅 [agent teams](/zh-CN/agent-teams)。
+      Agent teams 是实验性的，默认禁用。有关设置和当前限制，请参阅 [agent teams](/claude-code/05-deployment/04-agent-teams)。
     </Note>
   </Tab>
 
@@ -129,10 +129,10 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
 
 功能可以在多个级别定义：用户范围、按项目、通过 plugins 或通过托管策略。您还可以在子目录中嵌套 CLAUDE.md 文件或在 monorepo 的特定包中放置 skills。当相同的功能存在于多个级别时，以下是它们的分层方式：
 
-* **CLAUDE.md 文件** 是累加的：所有级别同时向 Claude 的上下文贡献内容。来自您的工作目录及以上的文件在启动时加载；子目录在您在其中工作时加载。当说明冲突时，Claude 使用判断来协调它们，更具体的说明通常优先。有关详细信息，请参阅[Claude 如何查找记忆](/zh-CN/memory#how-claude-looks-up-memories)。
-* **Skills 和 subagents** 按名称覆盖：当相同的名称存在于多个级别时，一个定义根据优先级获胜（对于 skills 为托管 > 用户 > 项目；对于 subagents 为托管 > CLI 标志 > 项目 > 用户 > plugin）。Plugin skills 是[命名空间的](/zh-CN/plugins#add-skills-to-your-plugin)以避免冲突。有关详细信息，请参阅 [skill 发现](/zh-CN/skills#where-skills-live)和 [subagent 范围](/zh-CN/sub-agents#choose-the-subagent-scope)。
-* **MCP servers** 按名称覆盖：本地 > 项目 > 用户。有关详细信息，请参阅 [MCP 范围](/zh-CN/mcp#scope-hierarchy-and-precedence)。
-* **Hooks** 合并：所有注册的 hooks 为其匹配的事件触发，无论来源如何。有关详细信息，请参阅 [hooks](/zh-CN/hooks)。
+* **CLAUDE.md 文件** 是累加的：所有级别同时向 Claude 的上下文贡献内容。来自您的工作目录及以上的文件在启动时加载；子目录在您在其中工作时加载。当说明冲突时，Claude 使用判断来协调它们，更具体的说明通常优先。有关详细信息，请参阅[Claude 如何查找记忆](/claude-code/07-configuration/03-memory#how-claude-looks-up-memories)。
+* **Skills 和 subagents** 按名称覆盖：当相同的名称存在于多个级别时，一个定义根据优先级获胜（对于 skills 为托管 > 用户 > 项目；对于 subagents 为托管 > CLI 标志 > 项目 > 用户 > plugin）。Plugin skills 是[命名空间的](/claude-code/04-build-with-claude/06-plugins#add-skills-to-your-plugin)以避免冲突。有关详细信息，请参阅 [skill 发现](/claude-code/04-build-with-claude/01-skills#where-skills-live)和 [subagent 范围](/claude-code/04-build-with-claude/02-sub-agents#choose-the-subagent-scope)。
+* **MCP servers** 按名称覆盖：本地 > 项目 > 用户。有关详细信息，请参阅 [MCP 范围](/claude-code/04-build-with-claude/05-mcp#scope-hierarchy-and-precedence)。
+* **Hooks** 合并：所有注册的 hooks 为其匹配的事件触发，无论来源如何。有关详细信息，请参阅 [hooks](/claude-code/04-build-with-claude/03-hooks)。
 
 ### 组合功能
 
@@ -177,7 +177,7 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
 
     **加载内容：** 所有 CLAUDE.md 文件的完整内容（托管、用户和项目级别）。
 
-    **继承：** Claude 从您的工作目录读取 CLAUDE.md 文件到根目录，并在访问这些文件时在子目录中发现嵌套的文件。有关详细信息，请参阅[Claude 如何查找记忆](/zh-CN/memory#how-claude-looks-up-memories)。
+    **继承：** Claude 从您的工作目录读取 CLAUDE.md 文件到根目录，并在访问这些文件时在子目录中发现嵌套的文件。有关详细信息，请参阅[Claude 如何查找记忆](/claude-code/07-configuration/03-memory#how-claude-looks-up-memories)。
 
     <Tip>保持 CLAUDE.md 在约 500 行以下。将参考材料移到按需加载的 skills。</Tip>
   </Tab>
@@ -203,7 +203,7 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
 
     **加载内容：** 来自连接的服务器的所有工具定义和 JSON 架构。
 
-    **上下文成本：** [工具搜索](/zh-CN/mcp#scale-with-mcp-tool-search)（默认启用）将 MCP 工具加载到上下文的 10%，并推迟其余的直到需要。
+    **上下文成本：** [工具搜索](/claude-code/04-build-with-claude/05-mcp#scale-with-mcp-tool-search)（默认启用）将 MCP 工具加载到上下文的 10%，并推迟其余的直到需要。
 
     **可靠性说明：** MCP 连接可能在会话中途无声地失败。如果服务器断开连接，其工具会无警告地消失。Claude 可能尝试使用不再存在的工具。如果您注意到 Claude 无法使用它之前可以访问的 MCP 工具，请使用 `/mcp` 检查连接。
 
@@ -226,7 +226,7 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
   </Tab>
 
   <Tab title="Hooks">
-    **何时：** 触发时。Hooks 在特定生命周期事件（如工具执行、会话边界、提示提交、权限请求和压缩）时触发。有关完整列表，请参阅 [Hooks](/zh-CN/hooks)。
+    **何时：** 触发时。Hooks 在特定生命周期事件（如工具执行、会话边界、提示提交、权限请求和压缩）时触发。有关完整列表，请参阅 [Hooks](/claude-code/04-build-with-claude/03-hooks)。
 
     **加载内容：** 默认情况下无。Hooks 作为外部脚本运行。
 
@@ -241,35 +241,35 @@ Claude Code 结合了一个能够推理代码的模型和[内置工具](/zh-CN/h
 每个功能都有自己的指南，包含设置说明、示例和配置选项。
 
 <CardGroup cols={2}>
-  <Card title="CLAUDE.md" icon="file-lines" href="/zh-CN/memory">
+  <Card title="CLAUDE.md" icon="file-lines" href="/claude-code/07-configuration/03-memory">
     存储项目上下文、约定和说明
   </Card>
 
-  <Card title="Skills" icon="brain" href="/zh-CN/skills">
+  <Card title="Skills" icon="brain" href="/claude-code/04-build-with-claude/01-skills">
     给予 Claude 领域专业知识和可重用工作流
   </Card>
 
-  <Card title="Subagents" icon="users" href="/zh-CN/sub-agents">
+  <Card title="Subagents" icon="users" href="/claude-code/04-build-with-claude/02-sub-agents">
     将工作卸载到隔离的上下文
   </Card>
 
-  <Card title="Agent teams" icon="network" href="/zh-CN/agent-teams">
+  <Card title="Agent teams" icon="network" href="/claude-code/05-deployment/04-agent-teams">
     协调多个并行工作的会话
   </Card>
 
-  <Card title="MCP" icon="plug" href="/zh-CN/mcp">
+  <Card title="MCP" icon="plug" href="/claude-code/04-build-with-claude/05-mcp">
     将 Claude 连接到外部服务
   </Card>
 
-  <Card title="Hooks" icon="bolt" href="/zh-CN/hooks-guide">
+  <Card title="Hooks" icon="bolt" href="/claude-code/04-build-with-claude/04-hooks-guide">
     使用 hooks 自动化工作流
   </Card>
 
-  <Card title="Plugins" icon="puzzle-piece" href="/zh-CN/plugins">
+  <Card title="Plugins" icon="puzzle-piece" href="/claude-code/04-build-with-claude/06-plugins">
     捆绑和共享功能集
   </Card>
 
-  <Card title="Marketplaces" icon="store" href="/zh-CN/plugin-marketplaces">
+  <Card title="Marketplaces" icon="store" href="/claude-code/04-build-with-claude/09-plugin-marketplaces">
     托管和分发 plugin 集合
   </Card>
 </CardGroup>

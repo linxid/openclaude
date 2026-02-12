@@ -64,15 +64,15 @@ description: "了解 Claude Code 如何与各种第三方服务和基础设施�
 ## 云提供商
 
 <CardGroup cols={3}>
-  <Card title="Amazon Bedrock" icon="aws" href="/zh-CN/amazon-bedrock">
+  <Card title="Amazon Bedrock" icon="aws" href="/claude-code/06-administration/02-amazon-bedrock">
     通过 AWS 基础设施使用 Claude 模型，支持 API 密钥或基于 IAM 的身份验证以及 AWS 原生监控
   </Card>
 
-  <Card title="Google Vertex AI" icon="google" href="/zh-CN/google-vertex-ai">
+  <Card title="Google Vertex AI" icon="google" href="/claude-code/06-administration/03-google-vertex-ai">
     通过 Google Cloud Platform 访问 Claude 模型，具有企业级安全性和合规性
   </Card>
 
-  <Card title="Microsoft Foundry" icon="microsoft" href="/zh-CN/microsoft-foundry">
+  <Card title="Microsoft Foundry" icon="microsoft" href="/claude-code/06-administration/04-microsoft-foundry">
     通过 Azure 访问 Claude，支持 API 密钥或 Microsoft Entra ID 身份验证以及 Azure 计费
   </Card>
 </CardGroup>
@@ -80,11 +80,11 @@ description: "了解 Claude Code 如何与各种第三方服务和基础设施�
 ## 企业基础设施
 
 <CardGroup cols={2}>
-  <Card title="企业网络" icon="shield" href="/zh-CN/network-config">
+  <Card title="企业网络" icon="shield" href="/claude-code/07-configuration/07-network-config">
     配置 Claude Code 以与您组织的代理服务器和 SSL/TLS 需求配合使用
   </Card>
 
-  <Card title="LLM 网关" icon="server" href="/zh-CN/llm-gateway">
+  <Card title="LLM 网关" icon="server" href="/claude-code/06-administration/05-llm-gateway">
     部署集中式模型访问，具有使用情况跟踪、预算编制和审计日志
   </Card>
 </CardGroup>
@@ -219,7 +219,7 @@ Claude Code 在需要时使用 `ANTHROPIC_AUTH_TOKEN` 作为 `Authorization` 标
 
 调试部署时：
 
-* 使用 `claude /status` [斜杠命令](/zh-CN/slash-commands)。此命令提供对任何应用的身份验证、代理和 URL 设置的可观测性。
+* 使用 `claude /status` [斜杠命令](/claude-code/04-build-with-claude/01-skills)。此命令提供对任何应用的身份验证、代理和 URL 设置的可观测性。
 * 设置环境变量 `export ANTHROPIC_LOG=debug` 以记录请求。
 
 ## 组织的最佳实践
@@ -231,7 +231,7 @@ Claude Code 在需要时使用 `ANTHROPIC_AUTH_TOKEN` 作为 `Authorization` 标
 * **组织范围**：部署到系统目录，如 `/Library/Application Support/ClaudeCode/CLAUDE.md`（macOS），用于公司范围的标准
 * **存储库级别**：在存储库根目录中创建 `CLAUDE.md` 文件，包含项目架构、构建命令和贡献指南。将这些文件检入源代码控制，以便所有用户受益
 
-  [了解更多](/zh-CN/memory)。
+  [了解更多](/claude-code/07-configuration/03-memory)。
 
 ### 2. 简化部署
 
@@ -243,19 +243,19 @@ Claude Code 在需要时使用 `ANTHROPIC_AUTH_TOKEN` 作为 `Authorization` 标
 
 ### 4. 配置安全策略
 
-安全团队可以配置托管权限，以确定 Claude Code 允许和不允许做什么，这不能被本地配置覆盖。[了解更多](/zh-CN/security)。
+安全团队可以配置托管权限，以确定 Claude Code 允许和不允许做什么，这不能被本地配置覆盖。[了解更多](/claude-code/09-resources/01-security)。
 
 ### 5. 利用 MCP 进行集成
 
-MCP 是为 Claude Code 提供更多信息的好方法，例如连接到票证管理系统或错误日志。我们建议一个中央团队配置 MCP 服务器，并将 `.mcp.json` 配置检入代码库，以便所有用户受益。[了解更多](/zh-CN/mcp)。
+MCP 是为 Claude Code 提供更多信息的好方法，例如连接到票证管理系统或错误日志。我们建议一个中央团队配置 MCP 服务器，并将 `.mcp.json` 配置检入代码库，以便所有用户受益。[了解更多](/claude-code/04-build-with-claude/05-mcp)。
 
 在 Anthropic，我们信任 Claude Code 为每个 Anthropic 代码库的开发提供动力。我们希望您像我们一样享受使用 Claude Code。
 
 ## 后续步骤
 
-* [设置 Amazon Bedrock](/zh-CN/amazon-bedrock) 用于 AWS 原生部署
-* [配置 Google Vertex AI](/zh-CN/google-vertex-ai) 用于 GCP 部署
-* [设置 Microsoft Foundry](/zh-CN/microsoft-foundry) 用于 Azure 部署
-* [配置企业网络](/zh-CN/network-config) 用于网络需求
-* [部署 LLM 网关](/zh-CN/llm-gateway) 用于企业管理
-* [设置](/zh-CN/settings) 用于配置选项和环境变量
+* [设置 Amazon Bedrock](/claude-code/06-administration/02-amazon-bedrock) 用于 AWS 原生部署
+* [配置 Google Vertex AI](/claude-code/06-administration/03-google-vertex-ai) 用于 GCP 部署
+* [设置 Microsoft Foundry](/claude-code/06-administration/04-microsoft-foundry) 用于 Azure 部署
+* [配置企业网络](/claude-code/07-configuration/07-network-config) 用于网络需求
+* [部署 LLM 网关](/claude-code/06-administration/05-llm-gateway) 用于企业管理
+* [设置](/claude-code/07-configuration/01-settings) 用于配置选项和环境变量

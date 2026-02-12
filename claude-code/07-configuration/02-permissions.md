@@ -27,14 +27,14 @@ Claude Code 使用分层权限系统来平衡功能和安全性：
 
 ## 权限模式
 
-Claude Code 支持多种权限模式来控制工具的批准方式。在您的[设置文件](/zh-CN/settings#settings-files)中设置 `defaultMode`：
+Claude Code 支持多种权限模式来控制工具的批准方式。在您的[设置文件](/claude-code/07-configuration/01-settings#settings-files)中设置 `defaultMode`：
 
 | 模式                  | 描述                                                                                                           |
 | :------------------ | :----------------------------------------------------------------------------------------------------------- |
 | `default`           | 标准行为：在首次使用每个工具时提示权限                                                                                          |
 | `acceptEdits`       | 自动接受会话的文件编辑权限                                                                                                |
 | `plan`              | Plan Mode：Claude 可以分析但不能修改文件或执行命令                                                                            |
-| `delegate`          | 代理团队负责人的协调专用模式。将负责人限制为团队管理工具，因此所有实现工作都通过队友进行。仅在代理团队活跃时可用。有关详细信息，请参阅[委托模式](/zh-CN/agent-teams#delegate-mode)。 |
+| `delegate`          | 代理团队负责人的协调专用模式。将负责人限制为团队管理工具，因此所有实现工作都通过队友进行。仅在代理团队活跃时可用。有关详细信息，请参阅[委托模式](/claude-code/05-deployment/04-agent-teams#delegate-mode)。 |
 | `dontAsk`           | 自动拒绝工具，除非通过 `/permissions` 或 `permissions.allow` 规则预先批准                                                      |
 | `bypassPermissions` | 跳过所有权限提示（需要安全环境，请参阅下面的警告）                                                                                    |
 
@@ -167,7 +167,7 @@ Read 和 Edit 规则都遵循 [gitignore](https://git-scm.com/docs/gitignore) �
 
 ### Task（subagents）
 
-使用 `Task(AgentName)` 规则来控制 Claude 可以使用哪些 [subagents](/zh-CN/sub-agents)：
+使用 `Task(AgentName)` 规则来控制 Claude 可以使用哪些 [subagents](/claude-code/04-build-with-claude/02-sub-agents)：
 
 * `Task(Explore)` 匹配 Explore subagent
 * `Task(Plan)` 匹配 Plan subagent
@@ -185,7 +185,7 @@ Read 和 Edit 规则都遵循 [gitignore](https://git-scm.com/docs/gitignore) �
 
 ## 使用 hooks 扩展权限
 
-[Claude Code hooks](/zh-CN/hooks-guide) 提供了一种方法来注册自定义 shell 命令以在运行时执行权限评估。当 Claude Code 进行工具调用时，PreToolUse hooks 在权限系统之前运行，hook 输出可以确定是否批准或拒绝工具调用来代替权限系统。
+[Claude Code hooks](/claude-code/04-build-with-claude/04-hooks-guide) 提供了一种方法来注册自定义 shell 命令以在运行时执行权限评估。当 Claude Code 进行工具调用时，PreToolUse hooks 在权限系统之前运行，hook 输出可以确定是否批准或拒绝工具调用来代替权限系统。
 
 ## 工作目录
 
@@ -193,13 +193,13 @@ Read 和 Edit 规则都遵循 [gitignore](https://git-scm.com/docs/gitignore) �
 
 * **启动期间**：使用 `--add-dir <path>` CLI 参数
 * **会话期间**：使用 `/add-dir` 命令
-* **持久配置**：添加到[设置文件](/zh-CN/settings#settings-files)中的 `additionalDirectories`
+* **持久配置**：添加到[设置文件](/claude-code/07-configuration/01-settings#settings-files)中的 `additionalDirectories`
 
 其他目录中的文件遵循与原始工作目录相同的权限规则：它们变为可读的而无需提示，文件编辑权限遵循当前权限模式。
 
 ## 权限如何与沙箱交互
 
-权限和[沙箱](/zh-CN/sandboxing)是互补的安全层：
+权限和[沙箱](/claude-code/07-configuration/10-sandboxing)是互补的安全层：
 
 * **权限**控制 Claude Code 可以使用哪些工具以及可以访问哪些文件或域。它们适用于所有工具（Bash、Read、Edit、WebFetch、MCP 和其他）。
 * **沙箱**提供操作系统级别的强制执行，限制 Bash 工具的文件系统和网络访问。它仅适用于 Bash 命令及其子进程。
@@ -234,11 +234,11 @@ Read 和 Edit 规则都遵循 [gitignore](https://git-scm.com/docs/gitignore) �
 | `disableBypassPermissionsMode`    | 设置为 `"disable"` 以防止 `bypassPermissions` 模式和 `--dangerously-skip-permissions` 标志         |
 | `allowManagedPermissionRulesOnly` | 当为 `true` 时，防止用户和项目设置定义 `allow`、`ask` 或 `deny` 权限规则。仅应用托管设置中的规则                         |
 | `allowManagedHooksOnly`           | 当为 `true` 时，防止加载用户、项目和插件 hooks。仅允许托管 hooks 和 SDK hooks                                  |
-| `strictKnownMarketplaces`         | 控制用户可以添加哪些插件市场。请参阅[托管市场限制](/zh-CN/plugin-marketplaces#managed-marketplace-restrictions) |
+| `strictKnownMarketplaces`         | 控制用户可以添加哪些插件市场。请参阅[托管市场限制](/claude-code/04-build-with-claude/09-plugin-marketplaces#managed-marketplace-restrictions) |
 
 ## 设置优先级
 
-权限规则遵循与所有其他 Claude Code 设置相同的[设置优先级](/zh-CN/settings#settings-precedence)：托管设置具有最高优先级，其次是命令行参数、本地项目、共享项目和用户设置。
+权限规则遵循与所有其他 Claude Code 设置相同的[设置优先级](/claude-code/07-configuration/01-settings#settings-precedence)：托管设置具有最高优先级，其次是命令行参数、本地项目、共享项目和用户设置。
 
 如果权限在用户设置中被允许但在项目设置中被拒绝，项目设置优先，权限被阻止。
 
@@ -248,8 +248,8 @@ Read 和 Edit 规则都遵循 [gitignore](https://git-scm.com/docs/gitignore) �
 
 ## 另请参阅
 
-* [Settings](/zh-CN/settings)：完整的配置参考，包括权限设置表
-* [Sandboxing](/zh-CN/sandboxing)：Bash 命令的操作系统级文件系统和网络隔离
-* [Authentication](/zh-CN/authentication)：设置用户对 Claude Code 的访问
-* [Security](/zh-CN/security)：安全保障和最佳实践
-* [Hooks](/zh-CN/hooks-guide)：自动化工作流并扩展权限评估
+* [Settings](/claude-code/07-configuration/01-settings)：完整的配置参考，包括权限设置表
+* [Sandboxing](/claude-code/07-configuration/10-sandboxing)：Bash 命令的操作系统级文件系统和网络隔离
+* [Authentication](/claude-code/07-configuration/02-permissions)：设置用户对 Claude Code 的访问
+* [Security](/claude-code/09-resources/01-security)：安全保障和最佳实践
+* [Hooks](/claude-code/04-build-with-claude/04-hooks-guide)：自动化工作流并扩展权限评估

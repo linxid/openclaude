@@ -90,6 +90,10 @@ claude
   您可以在同一电子邮件地址下拥有两种账户类型。如果您需要再次登录或切换账户，请在 Claude Code 中使用 `/login` 命令。
 </Note>
 
+<Tip>
+  打开 Claude 后，有多种方式可以使用 Claude，默认的方式是登录 Claude 官方账号，如何配置第三方 API，可以参阅 [第三方 API](/claude-code/01-getting-started/04-third-party-api)
+</Tip>
+
 ## 步骤 3：启动您的第一个会话
 
 在任何项目目录中打开您的终端并启动 Claude Code：
@@ -102,7 +106,7 @@ claude
 您将看到 Claude Code 欢迎屏幕，其中包含您的会话信息、最近的对话和最新更新。输入 `/help` 查看可用命令或输入 `/resume` 继续之前的对话。
 
 <Tip>
-  登录后（步骤 2），您的凭证将存储在您的系统上。在 [凭证管理](/zh-CN/iam#credential-management) 中了解更多信息。
+  登录后（步骤 2），您的凭证将存储在您的系统上。在 [凭证管理](/claude-code/07-configuration/02-permissions#credential-management) 中了解更多信息。
 </Tip>
 
 ## 步骤 4：提出您的第一个问题
@@ -261,7 +265,7 @@ Claude Code 将：
 | `/help`             | 显示可用命令         | `> /help`                           |
 | `exit` 或 Ctrl+C     | 退出 Claude Code | `> exit`                            |
 
-有关完整的命令列表，请参阅 [CLI 参考](/zh-CN/cli-reference)。
+有关完整的命令列表，请参阅 [CLI 参考](/claude-code/08-reference/01-cli-reference)。
 
 ## 初学者专业提示
 
@@ -310,16 +314,16 @@ Claude Code 将：
 现在您已经学习了基础知识，探索更多高级功能：
 
 <CardGroup cols={3}>
-  <Card title="常见工作流" icon="graduation-cap" href="/zh-CN/common-workflows">
+  <Card title="常见工作流" icon="graduation-cap" href="/claude-code/02-core-concepts/03-common-workflows">
     常见任务的分步指南
   </Card>
-  <Card title="CLI 参考" icon="terminal" href="/zh-CN/cli-reference">
+  <Card title="CLI 参考" icon="terminal" href="/claude-code/08-reference/01-cli-reference">
     掌握所有命令和选项
   </Card>
-  <Card title="配置" icon="gear" href="/zh-CN/settings">
+  <Card title="配置" icon="gear" href="/claude-code/07-configuration/01-settings">
     为您的工作流自定义 Claude Code
   </Card>
-  <Card title="网络上的 Claude Code" icon="cloud" href="/zh-CN/claude-code-on-the-web">
+  <Card title="网络上的 Claude Code" icon="cloud" href="/claude-code/03-platforms/01-claude-code-on-the-web">
     在云中异步运行任务
   </Card>
   <Card title="关于 Claude Code" icon="sparkles" href="https://claude.com/product/claude-code">

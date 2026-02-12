@@ -67,7 +67,7 @@ Bedrock API 密钥提供了一种更简单的身份验证方法，无需完整�
 
 #### 高级凭证配置
 
-Claude Code 支持 AWS SSO 和企业身份提供商的自动凭证刷新。将这些设置添加到您的 Claude Code 设置文件中（请参阅 [Settings](/zh-CN/settings) 了解文件位置）。
+Claude Code 支持 AWS SSO 和企业身份提供商的自动凭证刷新。将这些设置添加到您的 Claude Code 设置文件中（请参阅 [Settings](/claude-code/07-configuration/01-settings) 了解文件位置）。
 
 当 Claude Code 检测到您的 AWS 凭证已过期（基于本地时间戳或当 Bedrock 返回凭证错误时），它将自动运行您配置的 `awsAuthRefresh` 和/或 `awsCredentialExport` 命令来获取新凭证，然后重试请求。
 
@@ -115,7 +115,7 @@ export ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION=us-west-2
 
 * `AWS_REGION` 是必需的环境变量。Claude Code 不会从 `.aws` 配置文件中读取此设置。
 * 使用 Bedrock 时，`/login` 和 `/logout` 命令被禁用，因为身份验证通过 AWS 凭证处理。
-* 您可以使用设置文件来处理环境变量，如 `AWS_PROFILE`，这样您不想将其泄露给其他进程。请参阅 [Settings](/zh-CN/settings) 了解更多信息。
+* 您可以使用设置文件来处理环境变量，如 `AWS_PROFILE`，这样您不想将其泄露给其他进程。请参阅 [Settings](/claude-code/07-configuration/01-settings) 了解更多信息。
 
 ### 4. 模型配置
 
@@ -212,7 +212,7 @@ export MAX_THINKING_TOKENS=1024
 
 ## AWS Guardrails
 
-[Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) 让您为 Claude Code 实现内容过滤。在 [Amazon Bedrock 控制台](https://console.aws.amazon.com/bedrock/) 中创建 Guardrail，发布一个版本，然后将 Guardrail 标头添加到您的 [settings 文件](/zh-CN/settings)。如果您使用跨区域推理配置文件，请在您的 Guardrail 上启用跨区域推理。
+[Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) 让您为 Claude Code 实现内容过滤。在 [Amazon Bedrock 控制台](https://console.aws.amazon.com/bedrock/) 中创建 Guardrail，发布一个版本，然后将 Guardrail 标头添加到您的 [settings 文件](/claude-code/07-configuration/01-settings)。如果您使用跨区域推理配置文件，请在您的 Guardrail 上启用跨区域推理。
 
 示例配置：
 

@@ -5,7 +5,7 @@ description: "了解代理循环、内置工具以及 Claude Code 如何与您�
 
 Claude Code 是一个在您的终端中运行的代理助手。虽然它擅长编码，但它可以帮助您从命令行执行的任何操作：编写文档、运行构建、搜索文件、研究主题等。
 
-本指南涵盖核心架构、内置功能和[有效使用 Claude Code 的提示](#work-effectively-with-claude-code)。有关分步演练，请参阅[常见工作流](/zh-CN/common-workflows)。有关 skills、MCP 和 hooks 等可扩展性功能，请参阅[扩展 Claude Code](/zh-CN/features-overview)。
+本指南涵盖核心架构、内置功能和[有效使用 Claude Code 的提示](#work-effectively-with-claude-code)。有关分步演练，请参阅[常见工作流](/claude-code/02-core-concepts/03-common-workflows)。有关 skills、MCP 和 hooks 等可扩展性功能，请参阅[扩展 Claude Code](/claude-code/02-core-concepts/02-features-overview)。
 
 ## 代理循环
 
@@ -23,7 +23,7 @@ Claude Code 是一个在您的终端中运行的代理助手。虽然它擅长�
 
 Claude Code 使用 Claude 模型来理解您的代码并推理任务。Claude 可以读取任何语言的代码、理解组件如何连接，以及确定需要更改什么来实现您的目标。对于复杂的任务，它将工作分解为步骤、执行它们，并根据学到的内容进行调整。
 
-[多个模型](/zh-CN/model-config)可用，具有不同的权衡。Sonnet 可以很好地处理大多数编码任务。Opus 为复杂的架构决策提供更强的推理能力。在会话期间使用 `/model` 切换或使用 `claude --model <name>` 启动。
+[多个模型](/claude-code/07-configuration/04-model-config)可用，具有不同的权衡。Sonnet 可以很好地处理大多数编码任务。Opus 为复杂的架构决策提供更强的推理能力。在会话期间使用 `/model` 切换或使用 `claude --model <name>` 启动。
 
 当本指南说"Claude 选择"或"Claude 决定"时，是模型在进行推理。
 
@@ -39,9 +39,9 @@ Claude Code 使用 Claude 模型来理解您的代码并推理任务。Claude �
 | **搜索**   | 按模式查找文件、使用正则表达式搜索内容、探索代码库                                                      |
 | **执行**   | 运行 shell 命令、启动服务器、运行测试、使用 git                                                  |
 | **网络**   | 搜索网络、获取文档、查找错误消息                                                               |
-| **代码智能** | 编辑后查看类型错误和警告、跳转到定义、查找引用（需要[代码智能插件](/zh-CN/discover-plugins#code-intelligence)） |
+| **代码智能** | 编辑后查看类型错误和警告、跳转到定义、查找引用（需要[代码智能插件](/claude-code/04-build-with-claude/08-discover-plugins#code-intelligence)） |
 
-这些是主要功能。Claude 还有用于生成 subagents、询问您问题和其他编排任务的工具。有关完整列表，请参阅[Claude 可用的工具](/zh-CN/settings#tools-available-to-claude)。
+这些是主要功能。Claude 还有用于生成 subagents、询问您问题和其他编排任务的工具。有关完整列表，请参阅[Claude 可用的工具](/claude-code/07-configuration/01-settings#tools-available-to-claude)。
 
 Claude 根据您的提示和沿途学到的内容选择使用哪些工具。当您说"修复失败的测试"时，Claude 可能会：
 
@@ -54,19 +54,19 @@ Claude 根据您的提示和沿途学到的内容选择使用哪些工具。当�
 
 每个工具使用都会给 Claude 新的信息，告知下一步。这就是代理循环的实际应用。
 
-**扩展基本功能：** 内置工具是基础。您可以使用 [skills](/zh-CN/skills) 扩展 Claude 知道的内容、使用 [MCP](/zh-CN/mcp) 连接到外部服务、使用 [hooks](/zh-CN/hooks) 自动化工作流，以及使用 [subagents](/zh-CN/sub-agents) 卸载任务。这些扩展形成了核心代理循环之上的一层。有关为您的需求选择正确扩展的指导，请参阅[扩展 Claude Code](/zh-CN/features-overview)。
+**扩展基本功能：** 内置工具是基础。您可以使用 [skills](/claude-code/04-build-with-claude/01-skills) 扩展 Claude 知道的内容、使用 [MCP](/claude-code/04-build-with-claude/05-mcp) 连接到外部服务、使用 [hooks](/claude-code/04-build-with-claude/03-hooks) 自动化工作流，以及使用 [subagents](/claude-code/04-build-with-claude/02-sub-agents) 卸载任务。这些扩展形成了核心代理循环之上的一层。有关为您的需求选择正确扩展的指导，请参阅[扩展 Claude Code](/claude-code/02-core-concepts/02-features-overview)。
 
 ## Claude 可以访问什么
 
-本指南重点关注终端。Claude Code 也在 [VS Code、JetBrains IDE 和其他环境](/zh-CN/ide-integrations)中运行。
+本指南重点关注终端。Claude Code 也在 [VS Code、JetBrains IDE 和其他环境](/claude-code/03-platforms/04-vs-code)中运行。
 
 当您在目录中运行 `claude` 时，Claude Code 可以访问：
 
 * **您的项目。** 您的目录和子目录中的文件，以及您允许的其他地方的文件。
 * **您的终端。** 您可以运行的任何命令：构建工具、git、包管理器、系统实用程序、脚本。如果您可以从命令行执行，Claude 也可以。
 * **您的 git 状态。** 当前分支、未提交的更改和最近的提交历史。
-* **您的 [CLAUDE.md](/zh-CN/memory)。** 一个 markdown 文件，您可以在其中存储项目特定的说明、约定和 Claude 应该在每个会话中了解的上下文。
-* **您配置的扩展。** 用于外部服务的 [MCP servers](/zh-CN/mcp)、用于工作流的 [skills](/zh-CN/skills)、用于委派工作的 [subagents](/zh-CN/sub-agents) 和用于浏览器交互的 [Claude in Chrome](/zh-CN/chrome)。
+* **您的 [CLAUDE.md](/claude-code/07-configuration/03-memory)。** 一个 markdown 文件，您可以在其中存储项目特定的说明、约定和 Claude 应该在每个会话中了解的上下文。
+* **您配置的扩展。** 用于外部服务的 [MCP servers](/claude-code/04-build-with-claude/05-mcp)、用于工作流的 [skills](/claude-code/04-build-with-claude/01-skills)、用于委派工作的 [subagents](/claude-code/04-build-with-claude/02-sub-agents) 和用于浏览器交互的 [Claude in Chrome](/claude-code/03-platforms/03-chrome)。
 
 因为 Claude 看到您的整个项目，它可以跨越它工作。当您要求 Claude"修复身份验证错误"时，它搜索相关文件、读取多个文件以理解上下文、跨它们进行协调编辑、运行测试以验证修复，并在您要求时提交更改。这与只看到当前文件的内联代码助手不同。
 
@@ -74,7 +74,7 @@ Claude 根据您的提示和沿途学到的内容选择使用哪些工具。当�
 
 Claude Code 在您工作时将您的对话保存在本地。每条消息、工具使用和结果都被存储，这使得[回退](#undo-changes-with-checkpoints)、[恢复和分叉](#resume-or-fork-sessions)会话成为可能。在 Claude 进行代码更改之前，它还会对受影响的文件进行快照，以便您在需要时可以恢复。
 
-**会话是短暂的。** 与 claude.ai 不同，Claude Code 在会话之间没有持久的内存。每个新会话都从头开始。Claude 不会"学习"您的偏好或记住您上周做了什么。如果您希望 Claude 在会话之间了解某些内容，请将其放在您的 [CLAUDE.md](/zh-CN/memory) 中。
+**会话是短暂的。** 与 claude.ai 不同，Claude Code 在会话之间没有持久的内存。每个新会话都从头开始。Claude 不会"学习"您的偏好或记住您上周做了什么。如果您希望 Claude 在会话之间了解某些内容，请将其放在您的 [CLAUDE.md](/claude-code/07-configuration/03-memory) 中。
 
 ### 跨分支工作
 
@@ -82,7 +82,7 @@ Claude Code 在您工作时将您的对话保存在本地。每条消息、工�
 
 Claude 看到您当前分支的文件。当您切换分支时，Claude 看到新分支的文件，但您的对话历史保持不变。Claude 记得您讨论过的内容，即使在切换后也是如此。
 
-由于会话与目录相关联，您可以通过使用 [git worktrees](/zh-CN/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees) 运行并行 Claude 会话，这为各个分支创建单独的目录。
+由于会话与目录相关联，您可以通过使用 [git worktrees](/claude-code/02-core-concepts/03-common-workflows#run-parallel-claude-code-sessions-with-git-worktrees) 运行并行 Claude 会话，这为各个分支创建单独的目录。
 
 ### 恢复或分叉会话
 
@@ -102,7 +102,7 @@ claude --continue --fork-session
 
 ### 上下文窗口
 
-Claude 的上下文窗口包含您的对话历史、文件内容、命令输出、[CLAUDE.md](/zh-CN/memory)、加载的 skills 和系统说明。当您工作时，上下文会填满。Claude 会自动压缩，但对话早期的说明可能会丢失。将持久规则放在 CLAUDE.md 中，并运行 `/context` 以查看占用空间的内容。
+Claude 的上下文窗口包含您的对话历史、文件内容、命令输出、[CLAUDE.md](/claude-code/07-configuration/03-memory)、加载的 skills 和系统说明。当您工作时，上下文会填满。Claude 会自动压缩，但对话早期的说明可能会丢失。将持久规则放在 CLAUDE.md 中，并运行 `/context` 以查看占用空间的内容。
 
 #### 当上下文填满时
 
@@ -116,11 +116,11 @@ Claude Code 在您接近限制时自动管理上下文。它首先清除较旧�
 
 除了压缩，您可以使用其他功能来控制加载到上下文中的内容。
 
-[Skills](/zh-CN/skills) 按需加载。Claude 在会话开始时看到 skill 描述，但完整内容仅在使用 skill 时加载。对于您手动调用的 skills，设置 `disable-model-invocation: true` 以将描述保留在上下文之外，直到您需要它们。
+[Skills](/claude-code/04-build-with-claude/01-skills) 按需加载。Claude 在会话开始时看到 skill 描述，但完整内容仅在使用 skill 时加载。对于您手动调用的 skills，设置 `disable-model-invocation: true` 以将描述保留在上下文之外，直到您需要它们。
 
-[Subagents](/zh-CN/sub-agents) 获得自己的新鲜上下文，完全独立于您的主要对话。他们的工作不会膨胀您的上下文。完成后，他们返回摘要。这种隔离是 subagents 在长会话中有帮助的原因。
+[Subagents](/claude-code/04-build-with-claude/02-sub-agents) 获得自己的新鲜上下文，完全独立于您的主要对话。他们的工作不会膨胀您的上下文。完成后，他们返回摘要。这种隔离是 subagents 在长会话中有帮助的原因。
 
-有关每个功能的成本，请参阅[上下文成本](/zh-CN/features-overview#understand-context-costs)，有关管理上下文的提示，请参阅[减少令牌使用](/zh-CN/costs#reduce-token-usage)。
+有关每个功能的成本，请参阅[上下文成本](/claude-code/02-core-concepts/02-features-overview#understand-context-costs)，有关管理上下文的提示，请参阅[减少令牌使用](/claude-code/06-administration/08-costs#reduce-token-usage)。
 
 ## 使用检查点和权限保持安全
 
@@ -139,9 +139,9 @@ Claude 有两个安全机制：检查点让您撤销文件更改，权限控制 
 * **默认**：Claude 在文件编辑和 shell 命令之前询问
 * **自动接受编辑**：Claude 编辑文件而不询问，仍然询问命令
 * **Plan Mode**：Claude 仅使用只读工具，创建您可以在执行前批准的计划
-* **Delegate mode**：Claude 仅通过[代理团队](/zh-CN/agent-teams)协调工作，没有直接实现。仅在代理团队活跃时可用。
+* **Delegate mode**：Claude 仅通过[代理团队](/claude-code/05-deployment/04-agent-teams)协调工作，没有直接实现。仅在代理团队活跃时可用。
 
-您也可以在 `.claude/settings.json` 中允许特定命令，以便 Claude 不会每次都询问。这对于受信任的命令（如 `npm test` 或 `git status`）很有用。设置可以从组织范围的策略范围到个人偏好。有关详细信息，请参阅[权限](/zh-CN/permissions)。
+您也可以在 `.claude/settings.json` 中允许特定命令，以便 Claude 不会每次都询问。这对于受信任的命令（如 `npm test` 或 `git status`）很有用。设置可以从组织范围的策略范围到个人偏好。有关详细信息，请参阅[权限](/claude-code/07-configuration/02-permissions)。
 
 ***
 
@@ -227,11 +227,11 @@ Claude Code 是对话式的。您不需要完美的提示。从您想要的开�
 ## 接下来是什么
 
 <CardGroup cols={2}>
-  <Card title="使用功能扩展" icon="puzzle-piece" href="/zh-CN/features-overview">
+  <Card title="使用功能扩展" icon="puzzle-piece" href="/claude-code/02-core-concepts/02-features-overview">
     添加 Skills、MCP 连接和自定义命令
   </Card>
 
-  <Card title="常见工作流" icon="graduation-cap" href="/zh-CN/common-workflows">
+  <Card title="常见工作流" icon="graduation-cap" href="/claude-code/02-core-concepts/03-common-workflows">
     典型任务的分步指南
   </Card>
 </CardGroup>

@@ -61,6 +61,6 @@ Checkpoints 设计用于快速的会话级恢复。对于永久版本历史和�
 
 ## 另请参阅
 
-* [Interactive mode](/zh-CN/interactive-mode) - 快捷键和会话控制
-* [Built-in commands](/zh-CN/interactive-mode#built-in-commands) - 使用 `/rewind` 访问 checkpoints
-* [CLI reference](/zh-CN/cli-reference) - 命令行选项
+* [Interactive mode](/claude-code/08-reference/02-interactive-mode) - 快捷键和会话控制
+* [Built-in commands](/claude-code/08-reference/02-interactive-mode#built-in-commands) - 使用 `/rewind` 访问 checkpoints
+* [CLI reference](/claude-code/08-reference/01-cli-reference) - 命令行选项

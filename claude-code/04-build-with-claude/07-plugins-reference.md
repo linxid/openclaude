@@ -4,7 +4,7 @@ description: "Claude Code 插件系统的完整技术参考，包括架构、CLI
 ---
 
 <Tip>
-  想要安装插件？请参阅[发现和安装插件](/zh-CN/discover-plugins)。如需创建插件，请参阅[插件](/zh-CN/plugins)。如需分发插件，请参阅[插件市场](/zh-CN/plugin-marketplaces)。
+  想要安装插件？请参阅[发现和安装插件](/claude-code/04-build-with-claude/08-discover-plugins)。如需创建插件，请参阅[插件](/claude-code/04-build-with-claude/06-plugins)。如需分发插件，请参阅[插件市场](/claude-code/04-build-with-claude/09-plugin-marketplaces)。
 </Tip>
 
 本参考提供了 Claude Code 插件系统的完整技术规范，包括组件架构、CLI 命令和开发工具。
@@ -39,7 +39,7 @@ skills/
 * Claude 可以根据任务上下文自动调用它们
 * Skills 可以在 SKILL.md 旁边包含支持文件
 
-有关完整详情，请参阅 [Skills](/zh-CN/skills)。
+有关完整详情，请参阅 [Skills](/claude-code/04-build-with-claude/01-skills)。
 
 ### Agents
 
@@ -67,7 +67,7 @@ description: 该代理的专长以及 Claude 应何时调用它
 * Agents 可以由用户手动调用
 * 插件 agents 与内置 Claude agents 一起工作
 
-有关完整详情，请参阅 [Subagents](/zh-CN/sub-agents)。
+有关完整详情，请参阅 [Subagents](/claude-code/04-build-with-claude/02-sub-agents)。
 
 ### Hooks
 
@@ -252,7 +252,7 @@ LSP 集成提供：
 | `local`   | `.claude/settings.local.json` | 项目特定的插件，gitignored |
 | `managed` | `managed-settings.json`       | 托管插件（只读，仅更新）       |
 
-插件使用与其他 Claude Code 配置相同的范围系统。有关安装说明和范围标志，请参阅[安装插件](/zh-CN/discover-plugins#install-plugins)。有关范围的完整说明，请参阅[配置范围](/zh-CN/settings#configuration-scopes)。
+插件使用与其他 Claude Code 配置相同的范围系统。有关安装说明和范围标志，请参阅[安装插件](/claude-code/04-build-with-claude/08-discover-plugins#install-plugins)。有关范围的完整说明，请参阅[配置范围](/claude-code/07-configuration/01-settings#configuration-scopes)。
 
 ***
 
@@ -727,10 +727,10 @@ my-plugin/
 
 ## 另请参阅
 
-* [插件](/zh-CN/plugins) - 教程和实际用法
-* [插件市场](/zh-CN/plugin-marketplaces) - 创建和管理市场
-* [Skills](/zh-CN/skills) - Skill 开发详情
-* [Subagents](/zh-CN/sub-agents) - Agent 配置和功能
-* [Hooks](/zh-CN/hooks) - 事件处理和自动化
-* [MCP](/zh-CN/mcp) - 外部工具集成
-* [设置](/zh-CN/settings) - 插件的配置选项
+* [插件](/claude-code/04-build-with-claude/06-plugins) - 教程和实际用法
+* [插件市场](/claude-code/04-build-with-claude/09-plugin-marketplaces) - 创建和管理市场
+* [Skills](/claude-code/04-build-with-claude/01-skills) - Skill 开发详情
+* [Subagents](/claude-code/04-build-with-claude/02-sub-agents) - Agent 配置和功能
+* [Hooks](/claude-code/04-build-with-claude/03-hooks) - 事件处理和自动化
+* [MCP](/claude-code/04-build-with-claude/05-mcp) - 外部工具集成
+* [设置](/claude-code/07-configuration/01-settings) - 插件的配置选项

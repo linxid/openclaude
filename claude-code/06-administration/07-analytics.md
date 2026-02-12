@@ -84,5 +84,5 @@ Claude Code 编写的代码行总数，用户已在其会话中接受。
 
 ## 相关资源
 
-* [使用 OpenTelemetry 监控使用情况](/zh-CN/monitoring-usage)，用于自定义指标和警报
-* [身份和访问管理](/zh-CN/iam)，用于角色配置
+* [使用 OpenTelemetry 监控使用情况](/claude-code/06-administration/06-monitoring-usage)，用于自定义指标和警报
+* [身份和访问管理](/claude-code/07-configuration/02-permissions)，用于角色配置

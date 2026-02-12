@@ -7,13 +7,13 @@ description: "在您的开发机器上安装、认证和开始使用 Claude Code
 
 * **操作系统**：macOS 13.0+、Ubuntu 20.04+/Debian 10+ 或 Windows 10+（带 WSL 1、WSL 2 或 Git for Windows）
 * **硬件**：4 GB+ RAM
-* **网络**：需要互联网连接（请参阅[网络配置](/zh-CN/network-config#network-access-requirements)）
+* **网络**：需要互联网连接（请参阅[网络配置](/claude-code/07-configuration/07-network-config#network-access-requirements)）
 * **Shell**：在 Bash 或 Zsh 中效果最佳
 * **位置**：[Anthropic 支持的国家/地区](https://www.anthropic.com/supported-countries)
 
 ### 其他依赖项
 
-* **ripgrep**：通常包含在 Claude Code 中。如果搜索失败，请参阅[搜索故障排除](/zh-CN/troubleshooting#search-and-discovery-issues)。
+* **ripgrep**：通常包含在 Claude Code 中。如果搜索失败，请参阅[搜索故障排除](/claude-code/09-resources/04-troubleshooting#search-and-discovery-issues)。
 * **[Node.js 18+](https://nodejs.org/en/download)**：仅对[已弃用的 npm 安装](#npm-installation-deprecated)需要
 
 ## 安装
@@ -73,7 +73,7 @@ cd your-awesome-project
 claude
 ```
 
-如果您在安装过程中遇到任何问题，请查阅[故障排除指南](/zh-CN/troubleshooting)。
+如果您在安装过程中遇到任何问题，请查阅[故障排除指南](/claude-code/09-resources/04-troubleshooting)。
 
 <Tip>
   安装后运行 `claude doctor` 以检查您的安装类型和版本。
@@ -94,7 +94,7 @@ claude
 
 1. **Claude for Teams 或 Enterprise**（推荐）：订阅 [Claude for Teams](https://claude.com/pricing#team-&-enterprise) 或 [Claude for Enterprise](https://anthropic.com/contact-sales)，以获得集中计费、团队管理以及对 Claude Code 和网页版 Claude 的访问权限。团队成员使用其 Claude.ai 账户登录。
 2. **带有团队计费的 Claude Console**：设置共享的 [Claude Console](https://console.anthropic.com) 组织，并启用团队计费。邀请团队成员并分配角色以进行使用情况跟踪。
-3. **云提供商**：配置 Claude Code 以使用 [Amazon Bedrock、Google Vertex AI 或 Microsoft Foundry](/zh-CN/third-party-integrations)，以便与您现有的云基础设施进行部署。
+3. **云提供商**：配置 Claude Code 以使用 [Amazon Bedrock、Google Vertex AI 或 Microsoft Foundry](/claude-code/06-administration/01-third-party-integrations)，以便与您现有的云基础设施进行部署。
 
 ### 安装特定版本
 
@@ -185,7 +185,7 @@ npm install -g @anthropic-ai/claude-code
 
 <Warning>
   不要使用 `sudo npm install -g`，因为这可能导致权限问题和安全风险。
-  如果您遇到权限错误，请参阅[故障排除权限错误](/zh-CN/troubleshooting#command-not-found-claude-or-permission-errors)以获取推荐的解决方案。
+  如果您遇到权限错误，请参阅[故障排除权限错误](/claude-code/09-resources/04-troubleshooting#command-not-found-claude-or-permission-errors)以获取推荐的解决方案。
 </Warning>
 
 ## Windows 设置
@@ -226,7 +226,7 @@ Claude Code 会自动保持最新状态，以确保您拥有最新的功能和�
 * `"latest"`（默认）：在新功能发布后立即接收
 * `"stable"`：使用通常约一周前的版本，跳过有重大回归的发布
 
-通过 `/config` → **自动更新渠道**配置此项，或将其添加到您的 [settings.json 文件](/zh-CN/settings)：
+通过 `/config` → **自动更新渠道**配置此项，或将其添加到您的 [settings.json 文件](/claude-code/07-configuration/01-settings)：
 
 ```json  theme={null}
 {
@@ -234,11 +234,11 @@ Claude Code 会自动保持最新状态，以确保您拥有最新的功能和�
 }
 ```
 
-对于企业部署，您可以使用[托管设置](/zh-CN/iam#managed-settings)在整个组织中强制执行一致的发布渠道。
+对于企业部署，您可以使用[托管设置](/claude-code/07-configuration/02-permissions#managed-settings)在整个组织中强制执行一致的发布渠道。
 
 ### 禁用自动更新
 
-在您的 shell 或 [settings.json 文件](/zh-CN/settings)中设置 `DISABLE_AUTOUPDATER` 环境变量：
+在您的 shell 或 [settings.json 文件](/claude-code/07-configuration/01-settings)中设置 `DISABLE_AUTOUPDATER` 环境变量：
 
 ```bash  theme={null}
 export DISABLE_AUTOUPDATER=1

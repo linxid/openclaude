@@ -36,7 +36,7 @@ Total code changes:    0 lines added, 0 lines removed
 
 使用 Claude API 时，您可以限制 Claude Code 工作区的总支出。要进行配置，请[按照这些说明](https://support.claude.com/zh-CN/articles/9796807-creating-and-managing-workspaces)操作。管理员可以通过[按照这些说明](https://support.claude.com/zh-CN/articles/9534590-cost-and-usage-reporting-in-console)查看成本和使用情况报告。
 
-在 Bedrock 和 Vertex 上，Claude Code 不会从您的云中发送指标。为了获取成本指标，一些大型企业报告使用了 [LiteLLM](/zh-CN/third-party-integrations#litellm)，这是一个开源工具，可帮助公司[按密钥跟踪支出](https://docs.litellm.ai/docs/proxy/virtual_keys#tracking-spend)。此项目与 Anthropic 无关，我们尚未审计其安全性。
+在 Bedrock 和 Vertex 上，Claude Code 不会从您的云中发送指标。为了获取成本指标，一些大型企业报告使用了 [LiteLLM](/claude-code/06-administration/01-third-party-integrations#litellm)，这是一个开源工具，可帮助公司[按密钥跟踪支出](https://docs.litellm.ai/docs/proxy/virtual_keys#tracking-spend)。此项目与 Anthropic 无关，我们尚未审计其安全性。
 
 ### 速率限制建议
 

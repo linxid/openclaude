@@ -3,7 +3,7 @@ title: "在 Chrome 中使用 Claude Code（测试版）"
 description: "将 Claude Code 连接到 Chrome 浏览器，以测试网络应用、使用控制台日志进行调试、自动填充表单以及从网页中提取数据。"
 ---
 
-Claude Code 与 Claude in Chrome 浏览器扩展程序集成，为您提供从 CLI 或 [VS Code 扩展程序](/zh-CN/vs-code#automate-browser-tasks-with-chrome) 进行浏览器自动化的功能。构建您的代码，然后在浏览器中测试和调试，无需切换上下文。
+Claude Code 与 Claude in Chrome 浏览器扩展程序集成，为您提供从 CLI 或 [VS Code 扩展程序](/claude-code/03-platforms/04-vs-code#automate-browser-tasks-with-chrome) 进行浏览器自动化的功能。构建您的代码，然后在浏览器中测试和调试，无需切换上下文。
 
 Claude 为浏览器任务打开新标签页，并共享您浏览器的登录状态，因此它可以访问您已登录的任何网站。浏览器操作在实时可见的 Chrome 窗口中运行。当 Claude 遇到登录页面或 CAPTCHA 时，它会暂停并要求您手动处理。
 
@@ -29,7 +29,7 @@ Claude 为浏览器任务打开新标签页，并共享您浏览器的登录状�
 
 * [Google Chrome](https://www.google.com/chrome/) 浏览器
 * [Claude in Chrome 扩展程序](https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn) 版本 1.0.36 或更高版本
-* [Claude Code](/zh-CN/quickstart#step-1-install-claude-code) 版本 2.0.73 或更高版本
+* [Claude Code](/claude-code/01-getting-started/02-quickstart#step-1-install-claude-code) 版本 2.0.73 或更高版本
 * 直接 Anthropic 计划（Pro、Max、Team 或 Enterprise）
 
 <Note>
@@ -61,13 +61,13 @@ Claude 为浏览器任务打开新标签页，并共享您浏览器的登录状�
 
 随时运行 `/chrome` 以检查连接状态、管理权限或重新连接扩展程序。
 
-对于 VS Code，请参阅 [VS Code 中的浏览器自动化](/zh-CN/vs-code#automate-browser-tasks-with-chrome)。
+对于 VS Code，请参阅 [VS Code 中的浏览器自动化](/claude-code/03-platforms/04-vs-code#automate-browser-tasks-with-chrome)。
 
 ### 默认启用 Chrome
 
 为了避免每个会话都传递 `--chrome`，运行 `/chrome` 并选择"默认启用"。
 
-在 [VS Code 扩展程序](/zh-CN/vs-code#automate-browser-tasks-with-chrome) 中，只要安装了 Chrome 扩展程序，Chrome 就可用。无需额外标志。
+在 [VS Code 扩展程序](/claude-code/03-platforms/04-vs-code#automate-browser-tasks-with-chrome) 中，只要安装了 Chrome 扩展程序，Chrome 就可用。无需额外标志。
 
 <Note>
   在 CLI 中默认启用 Chrome 会增加上下文使用，因为浏览器工具始终被加载。如果您注意到上下文消耗增加，请禁用此设置，仅在需要时使用 `--chrome`。
@@ -213,8 +213,8 @@ Chrome 扩展程序的 service worker 在扩展会话期间可能会进入空闲
 
 ## 另请参阅
 
-* [在 VS Code 中使用 Claude Code](/zh-CN/vs-code#automate-browser-tasks-with-chrome)：VS Code 扩展程序中的浏览器自动化
-* [CLI 参考](/zh-CN/cli-reference)：命令行标志，包括 `--chrome`
-* [常见工作流](/zh-CN/common-workflows)：更多使用 Claude Code 的方式
-* [数据和隐私](/zh-CN/data-usage)：Claude Code 如何处理您的数据
+* [在 VS Code 中使用 Claude Code](/claude-code/03-platforms/04-vs-code#automate-browser-tasks-with-chrome)：VS Code 扩展程序中的浏览器自动化
+* [CLI 参考](/claude-code/08-reference/01-cli-reference)：命令行标志，包括 `--chrome`
+* [常见工作流](/claude-code/02-core-concepts/03-common-workflows)：更多使用 Claude Code 的方式
+* [数据和隐私](/claude-code/09-resources/02-data-usage)：Claude Code 如何处理您的数据
 * [Claude in Chrome 入门](https://support.claude.com/en/articles/12012173-getting-started-with-claude-in-chrome)：Chrome 扩展程序的完整文档，包括快捷键、计划和权限

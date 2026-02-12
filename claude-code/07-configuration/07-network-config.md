@@ -6,7 +6,7 @@ description: "为企业环境配置 Claude Code，支持代理服务器、自定
 Claude Code 通过环境变量支持各种企业网络和安全配置。这包括通过公司代理服务器路由流量、信任自定义证书颁发机构 (CA) 以及使用相互传输层安全 (mTLS) 证书进行身份验证以增强安全性。
 
 <Note>
-  本页面显示的所有环境变量也可以在 [`settings.json`](/zh-CN/settings) 中配置。
+  本页面显示的所有环境变量也可以在 [`settings.json`](/claude-code/07-configuration/01-settings) 中配置。
 </Note>
 
 ## 代理配置
@@ -86,6 +86,6 @@ Claude Code 需要访问以下 URL：
 
 ## 其他资源
 
-* [Claude Code 设置](/zh-CN/settings)
-* [环境变量参考](/zh-CN/settings#environment-variables)
-* [故障排除指南](/zh-CN/troubleshooting)
+* [Claude Code 设置](/claude-code/07-configuration/01-settings)
+* [环境变量参考](/claude-code/07-configuration/01-settings#environment-variables)
+* [故障排除指南](/claude-code/09-resources/04-troubleshooting)

@@ -6,7 +6,7 @@ description: "学习如何通过注册 shell 命令来自定义和扩展 Claude 
 Claude Code 钩子是用户定义的 shell 命令，在 Claude Code 生命周期的各个点执行。钩子提供对 Claude Code 行为的确定性控制，确保某些操作总是发生，而不是依赖 LLM 选择运行它们。
 
 <Tip>
-  有关钩子的参考文档，请参阅 [钩子参考](/zh-CN/hooks)。
+  有关钩子的参考文档，请参阅 [钩子参考](/claude-code/04-build-with-claude/03-hooks)。
 </Tip>
 
 钩子的示例用例包括：
@@ -22,7 +22,7 @@ Claude Code 钩子是用户定义的 shell 命令，在 Claude Code 生命周期
 <Warning>
   在添加钩子时，您必须考虑钩子的安全隐患，因为钩子在代理循环期间使用您当前环境的凭证自动运行。例如，恶意钩子代码可能会泄露您的数据。在注册钩子之前，始终审查您的钩子实现。
 
-  有关完整的安全最佳实践，请参阅钩子参考文档中的 [安全考虑](/zh-CN/hooks#security-considerations)。
+  有关完整的安全最佳实践，请参阅钩子参考文档中的 [安全考虑](/claude-code/04-build-with-claude/03-hooks#security-considerations)。
 </Warning>
 
 ## 钩子事件概述
@@ -52,7 +52,7 @@ Claude Code 提供了在工作流的不同点运行的多个钩子事件：
 
 ### 步骤 1：打开钩子配置
 
-运行 `/hooks` [斜杠命令](/zh-CN/slash-commands) 并选择 `PreToolUse` 钩子事件。
+运行 `/hooks` [斜杠命令](/claude-code/04-build-with-claude/01-skills) 并选择 `PreToolUse` 钩子事件。
 
 `PreToolUse` 钩子在工具调用之前运行，可以阻止它们，同时向 Claude 提供关于如何不同处理的反馈。
 
@@ -311,6 +311,6 @@ chmod +x .claude/hooks/markdown_formatter.py
 
 ## 了解更多
 
-* 有关钩子的参考文档，请参阅 [钩子参考](/zh-CN/hooks)。
-* 有关全面的安全最佳实践和安全指南，请参阅钩子参考文档中的 [安全考虑](/zh-CN/hooks#security-considerations)。
-* 有关故障排除步骤和调试技术，请参阅钩子参考文档中的 [调试](/zh-CN/hooks#debugging)。
+* 有关钩子的参考文档，请参阅 [钩子参考](/claude-code/04-build-with-claude/03-hooks)。
+* 有关全面的安全最佳实践和安全指南，请参阅钩子参考文档中的 [安全考虑](/claude-code/04-build-with-claude/03-hooks#security-considerations)。
+* 有关故障排除步骤和调试技术，请参阅钩子参考文档中的 [调试](/claude-code/04-build-with-claude/03-hooks#debugging)。
