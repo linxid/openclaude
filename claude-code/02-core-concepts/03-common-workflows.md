@@ -5,7 +5,7 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
 
 本页涵盖日常开发的实用工作流程：探索陌生代码、调试、重构、编写测试、创建 PR 和管理会话。每个部分都包含示例提示，您可以根据自己的项目进行调整。有关更高级的模式和提示，请参阅[最佳实践](/claude-code/02-core-concepts/04-best-practices)。
 
-## 理解新代码库
+## 1. 理解新代码库
 
 ### 快速获取代码库概览
 
@@ -87,7 +87,7 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
 
 ***
 
-## 高效修复错误
+## 2. 高效修复错误
 
 假设您遇到了错误消息，需要找到并修复其来源。
 
@@ -121,7 +121,7 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
 
 ***
 
-## 重构代码
+## 3. 重构代码
 
 假设您需要更新旧代码以使用现代模式和实践。
 
@@ -161,7 +161,7 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
 
 ***
 
-## 使用专门的 subagents
+## 4. 使用专门的 subagents
 
 假设您想使用专门的 AI subagents 来更有效地处理特定任务。
 
@@ -221,7 +221,7 @@ description: "使用 Claude Code 探索代码库、修复错误、重构、测�
 
 ***
 
-## 使用 Plan Mode 进行安全的代码分析
+## 5. 使用 Plan Mode 进行安全的代码分析
 
 Plan Mode 指示 Claude 通过使用只读操作分析代码库来创建计划，非常适合探索代码库、规划复杂更改或安全地审查代码。在 Plan Mode 中，Claude 使用 [`AskUserQuestion`](/claude-code/07-configuration/01-settings#tools-available-to-claude) 来收集需求并在提出计划之前澄清您的目标。
 
@@ -289,7 +289,7 @@ Claude 分析当前实现并创建全面的计划。通过后续问题进行细�
 
 ***
 
-## 使用测试
+## 6. 使用测试
 
 假设您需要为未覆盖的代码添加测试。
 
@@ -325,7 +325,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 创建 pull requests
+## 7. 创建 pull requests
 
 您可以直接要求 Claude 创建 pull requests（"create a pr for my changes"）或使用 `/commit-push-pr` skill，它在一个步骤中提交、推送和打开 PR。
 
@@ -363,7 +363,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
   在提交前审查 Claude 生成的 PR，并要求 Claude 突出显示潜在的风险或注意事项。
 </Tip>
 
-## 处理文档
+## 8. 处理文档
 
 假设您需要为代码添加或更新文档。
 
@@ -403,7 +403,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 使用图像
+## 9. 使用图像
 
 假设您需要在代码库中使用图像，并希望 Claude 帮助分析图像内容。
 
@@ -463,7 +463,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 引用文件和目录
+## 10. 引用文件和目录
 
 使用 @ 快速包含文件或目录，无需等待 Claude 读取它们。
 
@@ -504,11 +504,11 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 使用扩展思考（Thinking Mode）
+## 11. 使用扩展思考（Thinking Mode）
 
 [扩展思考](https://platform.claude.com/docs/en/build-with-claude/extended-thinking)默认启用，为 Claude 提供空间在响应前逐步推理复杂问题。这种推理在详细模式中可见，您可以使用 `Ctrl+O` 切换。
 
-此外，Opus 4.6 引入了自适应推理：不是固定的思考令牌预算，而是模型根据您的[努力级别](/claude-code/07-configuration/04-model-config#adjust-effort-level)设置动态分配思考。扩展思考和自适应推理一起工作，让您可以控制 Claude 在响应前的推理深度。
+此外，Opus 4.6 引入了自适应推理：不是固定的思考令牌预算，而是模型根据您的[困难级别](/claude-code/07-configuration/04-model-config#adjust-effort-level)设置动态分配思考。扩展思考和自适应推理一起工作，让您可以控制 Claude 在响应前的推理深度。
 
 扩展思考对于复杂的架构决策、具有挑战性的错误、多步骤实现规划和评估不同方法之间的权衡特别有价值。
 
@@ -545,7 +545,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 恢复以前的对话
+## 12. 恢复以前的对话
 
 启动 Claude Code 时，您可以恢复以前的会话：
 
@@ -637,7 +637,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 使用 Git worktrees 运行并行 Claude Code 会话
+## 13. 使用 Git worktrees 运行并行 Claude Code 会话
 
 假设您需要同时处理多个任务，并在 Claude Code 实例之间完全隔离代码。
 
@@ -704,7 +704,7 @@ Claude 可以生成遵循您项目现有模式和约定的测试。请求测试�
 
 ***
 
-## 将 Claude 用作 unix 风格的实用程序
+## 14. 将 Claude 用作 unix 风格的实用程序
 
 ### 将 Claude 添加到您的验证流程
 
@@ -789,7 +789,7 @@ cat build-error.txt | claude -p 'concisely explain the root cause of this build 
 
 ***
 
-## 询问 Claude 其功能
+## 15. 询问 Claude 其功能
 
 Claude 内置访问其文档，可以回答有关其自身功能和限制的问题。
 
