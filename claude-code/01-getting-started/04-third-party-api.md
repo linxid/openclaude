@@ -2,6 +2,12 @@
 title: "使用第三方 API"
 description: "配置 Claude Code 使用 Kimi、MiniMax、GLM、DeepSeek 等第三方模型 API。"
 ---
+<Tip>
+## News：
+* 2026-0212：智谱发布新一代旗舰模型GLM-5，重点提升编程与智能体能力
+* 2026-0127：杨植麟亲自开源Kimi K2.5！国产大模型打架的一天
+* 2026-0206：AI编程大战打响！OpenAI推出GPT-5.3-Codex，与Anthropic同步发布新模型 Claude Opus 4.6
+</Tip>
 
 Claude Code 支持通过 OpenAI 兼容 API 接口使用第三方模型。本文介绍如何配置各种国内外模型提供商。
 
@@ -37,6 +43,38 @@ export ANTHROPIC_MODEL="model-name"
 ```
 
 ## 国内模型提供商
+
+### GLM（智谱）
+智谱最新推出的 GLM-5 是全球最强的开源 Agent 模型，在变成和 Agent 能力上效果卓越。
+
+配置文件：
+```bash
+# 编辑或新增 `settings.json` 文件
+# MacOS & Linux 为 `~/.claude/settings.json`
+# Windows 为`用户目录/.claude/settings.json`
+# 新增或修改里面的 env 字段
+# 注意替换里面的 `your_zhipu_api_key` 为您上一步获取到的 API Key
+# GLM-5 已经发布，可以使用 GLM-5 替换下面的模型 ID
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "your_zhipu_api_key",
+    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.5-air",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-4.7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-4.7"
+  }
+}
+# 再编辑或新增 `.claude.json` 文件
+# MacOS & Linux 为 `~/.claude.json`
+# Windows 为`用户目录/.claude.json`
+# 新增 `hasCompletedOnboarding` 参数
+{
+  "hasCompletedOnboarding": true
+}
+```
+获取 API Key：[https://open.bigmodel.cn/](https://open.bigmodel.cn/)
 
 ### Kimi (月之暗面)
 
@@ -122,16 +160,16 @@ export ANTHROPIC_MODEL="glm-4-plus"
 DeepSeek 提供高性价比的代码和推理模型。
 
 ```bash
-export ANTHROPIC_BASE_URL="https://api.deepseek.com/v1"
-export ANTHROPIC_API_KEY="sk-your-deepseek-key"
-export ANTHROPIC_MODEL="deepseek-chat"
+export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+export ANTHROPIC_AUTH_TOKEN="DEEPSEEK_API_KEY"
+export ANTHROPIC_MODEL=deepseek-chat
+export ANTHROPIC_SMALL_FAST_MODEL=deepseek-chat
 ```
 
 **可用模型：**
 | 模型名称 | 说明 |
 |---------|------|
-| `deepseek-chat` | 通用对话模型 |
-| `deepseek-coder` | 代码专用模型 |
+| `deepseek-chat` | 通用对话模型，目前版本是 DeepSeek-V3.2（2026-0212）|
 | `deepseek-reasoner` | 推理增强模型 |
 
 **获取 API Key：** [https://platform.deepseek.com](https://platform.deepseek.com)
