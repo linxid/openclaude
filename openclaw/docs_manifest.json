@@ -70,1746 +70,1746 @@
       "hash": "a1ac55957a7e3ade8e5c55413eafb849512b1a8e9a315446b8a812e858857b19",
       "last_updated": "2026-02-11T17:45:18.772618"
     },
-    "08-automation/auth-monitoring.md": {
-      "original_path": "08-automation/auth-monitoring",
+    "automation/auth-monitoring.md": {
+      "original_path": "automation/auth-monitoring",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/auth-monitoring",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "71d9abd2340ee1c47fccc667d45df5e3348eeac47f531ae040b51c7f4fe59644",
       "last_updated": "2026-02-11T17:45:19.813083"
     },
-    "08-automation/cron-jobs.md": {
-      "original_path": "08-automation/cron-jobs",
+    "automation/cron-jobs.md": {
+      "original_path": "automation/cron-jobs",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/cron-jobs",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "ebb125ea8062945747d423ee68107134e1630ec91a061b98d8a8a13de859e6c1",
       "last_updated": "2026-02-11T17:45:20.696621"
     },
-    "08-automation/cron-vs-heartbeat.md": {
-      "original_path": "08-automation/cron-vs-heartbeat",
+    "automation/cron-vs-heartbeat.md": {
+      "original_path": "automation/cron-vs-heartbeat",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/cron-vs-heartbeat",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "d76cf4ebab7bc8c1da1a161b711650411e4992c91ffd1d38cbb697419c5d0eb0",
       "last_updated": "2026-02-11T17:45:21.554413"
     },
-    "08-automation/gmail-pubsub.md": {
-      "original_path": "08-automation/gmail-pubsub",
+    "automation/gmail-pubsub.md": {
+      "original_path": "automation/gmail-pubsub",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/gmail-pubsub",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "93acef0ce9b6724e8cbe593fa68a33b519687b64e614f63c394d36696567d811",
       "last_updated": "2026-02-11T17:45:22.441889"
     },
-    "08-automation/hooks.md": {
-      "original_path": "08-automation/hooks",
+    "automation/hooks.md": {
+      "original_path": "automation/hooks",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/hooks",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "f06f5e207ab5eab2978d2b3fe1a9396fededa915cd36435c6b8a8168b961d12b",
       "last_updated": "2026-02-11T17:45:23.602341"
     },
-    "08-automation/poll.md": {
-      "original_path": "08-automation/poll",
+    "automation/poll.md": {
+      "original_path": "automation/poll",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/poll",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "0fa0d3c1f248bf40108eccfa5c3aafd7b8a110733108a46292f9fbed5870f4c9",
       "last_updated": "2026-02-11T17:45:24.366926"
     },
-    "08-automation/troubleshooting.md": {
-      "original_path": "08-automation/troubleshooting",
+    "automation/troubleshooting.md": {
+      "original_path": "automation/troubleshooting",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/troubleshooting",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "86df46640726e00aaf67426788bb83115973ceecd92cbf308788bd1565dda3c4",
       "last_updated": "2026-02-11T17:45:25.435480"
     },
-    "08-automation/webhook.md": {
-      "original_path": "08-automation/webhook",
+    "automation/webhook.md": {
+      "original_path": "automation/webhook",
       "original_url": "https://docs.openclaw.ai/zh-CN/automation/webhook",
-      "category": "08-automation",
+      "category": "automation",
       "hash": "36858115fb592cbdc250c1c920ff1e118a243d0536dd9d7e3cd07dd08d157953",
       "last_updated": "2026-02-11T17:45:26.162136"
     },
-    "06-channels/broadcast-groups.md": {
-      "original_path": "06-channels/broadcast-groups",
+    "channels/broadcast-groups.md": {
+      "original_path": "channels/broadcast-groups",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/broadcast-groups",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "1789999d375626032fb1d64f64bb3c015fd235c50a655357decd6149c36bd6b3",
       "last_updated": "2026-02-11T17:45:26.916216"
     },
-    "06-channels/channel-routing.md": {
-      "original_path": "06-channels/channel-routing",
+    "channels/channel-routing.md": {
+      "original_path": "channels/channel-routing",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/channel-routing",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "5d143ffadabd4924c738aa9ae076393896044c141bf8f5a71648bf02929823bc",
       "last_updated": "2026-02-11T17:45:27.699767"
     },
-    "06-channels/discord.md": {
-      "original_path": "06-channels/discord",
+    "channels/discord.md": {
+      "original_path": "channels/discord",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/discord",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "1c1d29d2308db6a0b859b2ba6c3fc4168030b123b23b06cc3b34038a2130ece5",
       "last_updated": "2026-02-11T17:45:28.117796"
     },
-    "06-channels/feishu.md": {
-      "original_path": "06-channels/feishu",
+    "channels/feishu.md": {
+      "original_path": "channels/feishu",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/feishu",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "6c834b0d53b82fbb12fbcdf38bc248ef4c9e31ef375952528b34cf8fa7275b33",
       "last_updated": "2026-02-11T17:45:28.529250"
     },
-    "06-channels/googlechat.md": {
-      "original_path": "06-channels/googlechat",
+    "channels/googlechat.md": {
+      "original_path": "channels/googlechat",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/googlechat",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "f00abffb601e0b322b159c9be1cb5b52b292fc645a43a32896a16fbfba3424dc",
       "last_updated": "2026-02-11T17:45:29.336095"
     },
-    "06-channels/grammy.md": {
-      "original_path": "06-channels/grammy",
+    "channels/grammy.md": {
+      "original_path": "channels/grammy",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/grammy",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "fc0bddb4560caf288b261dfef558ab21320f6eb6bb7c3021a7f36ad252798366",
       "last_updated": "2026-02-11T17:45:30.099472"
     },
-    "06-channels/group-messages.md": {
-      "original_path": "06-channels/group-messages",
+    "channels/group-messages.md": {
+      "original_path": "channels/group-messages",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/group-messages",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "3471903ac448fa0232b0c8283d3a99e010209b85e22a9f1bc8cf7baa94cb5e81",
       "last_updated": "2026-02-11T17:45:30.872028"
     },
-    "06-channels/groups.md": {
-      "original_path": "06-channels/groups",
+    "channels/groups.md": {
+      "original_path": "channels/groups",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/groups",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "e5add6deb77c19cb7d449cbdcfa046fdc6b246d5a6b592a03c5e88139f2b39a2",
       "last_updated": "2026-02-11T17:45:31.626573"
     },
-    "06-channels/imessage.md": {
-      "original_path": "06-channels/imessage",
+    "channels/imessage.md": {
+      "original_path": "channels/imessage",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/imessage",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "c9cf74711ce8f5b117cea950171a8c46e0032b68a7a4f72e6d83be4e4afdac07",
       "last_updated": "2026-02-11T17:45:32.410384"
     },
-    "06-channels/line.md": {
-      "original_path": "06-channels/line",
+    "channels/line.md": {
+      "original_path": "channels/line",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/line",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "4fbd9106f5cc961c5994ee82fc64af88fc9c6fd8238df539ba92fd6b9fda8f4e",
       "last_updated": "2026-02-11T17:45:33.123327"
     },
-    "06-channels/location.md": {
-      "original_path": "06-channels/location",
+    "channels/location.md": {
+      "original_path": "channels/location",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/location",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "ad047ce6e835920c0e54ed745e66668ac832ed46dcdc7a889413d92098b81676",
       "last_updated": "2026-02-11T17:45:34.353192"
     },
-    "06-channels/matrix.md": {
-      "original_path": "06-channels/matrix",
+    "channels/matrix.md": {
+      "original_path": "channels/matrix",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/matrix",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "cde2fb2f95d7ecdd209aa6a0fa1e17248aec664e5afc46c361fcf2a2eff85ef8",
       "last_updated": "2026-02-11T17:45:35.104293"
     },
-    "06-channels/mattermost.md": {
-      "original_path": "06-channels/mattermost",
+    "channels/mattermost.md": {
+      "original_path": "channels/mattermost",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/mattermost",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "d76b4e929bda5810aca763e4856905905e1f45b2d7e8912b8d95bb9646f2aab1",
       "last_updated": "2026-02-11T17:45:35.905008"
     },
-    "06-channels/msteams.md": {
-      "original_path": "06-channels/msteams",
+    "channels/msteams.md": {
+      "original_path": "channels/msteams",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/msteams",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "62fb95163532ab0c47bdea291d752d54d50dc2fc1c7edae65c40e25628551f0c",
       "last_updated": "2026-02-11T17:45:36.605090"
     },
-    "06-channels/pairing.md": {
-      "original_path": "06-channels/pairing",
+    "channels/pairing.md": {
+      "original_path": "channels/pairing",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/pairing",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "dbfba2a6b742297dfe30e4b41b9388d579ee5e1fd35d7cffff159cd29280b226",
       "last_updated": "2026-02-11T17:45:37.425749"
     },
-    "06-channels/signal.md": {
-      "original_path": "06-channels/signal",
+    "channels/signal.md": {
+      "original_path": "channels/signal",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/signal",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "f70d759398d440a143fafcc243abcce5d2f436f06ae861de0b707480e621a093",
       "last_updated": "2026-02-11T17:45:38.122784"
     },
-    "06-channels/slack.md": {
-      "original_path": "06-channels/slack",
+    "channels/slack.md": {
+      "original_path": "channels/slack",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/slack",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "a8f773e2546b03c24cfbbf7cce65901ba6eb3ceb9837e9842212fb0b860f686b",
       "last_updated": "2026-02-11T17:45:38.860389"
     },
-    "06-channels/telegram.md": {
-      "original_path": "06-channels/telegram",
+    "channels/telegram.md": {
+      "original_path": "channels/telegram",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/telegram",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "2158ebc0fd8494e10194c8c130829e5f9ea0868324ddb07867c3200ab81ab9cb",
       "last_updated": "2026-02-11T17:45:39.355199"
     },
-    "06-channels/troubleshooting.md": {
-      "original_path": "06-channels/troubleshooting",
+    "channels/troubleshooting.md": {
+      "original_path": "channels/troubleshooting",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/troubleshooting",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "19bdaeb9caadf077adafbdf8f99d1c2de6f7f156ae851afb39d11f7398e6b2ad",
       "last_updated": "2026-02-11T17:45:40.152708"
     },
-    "06-channels/whatsapp.md": {
-      "original_path": "06-channels/whatsapp",
+    "channels/whatsapp.md": {
+      "original_path": "channels/whatsapp",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/whatsapp",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "9c637db4e35740bae3ccb8f5f4099a7f0a64f77c955327bbaaca17c50cb19402",
       "last_updated": "2026-02-11T17:45:40.907805"
     },
-    "06-channels/zalo.md": {
-      "original_path": "06-channels/zalo",
+    "channels/zalo.md": {
+      "original_path": "channels/zalo",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/zalo",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "f9e1b96da91bdc7c012e10fed47c80c5d88b404430a5beb12fe954a1c20890d5",
       "last_updated": "2026-02-11T17:45:41.623660"
     },
-    "06-channels/zalouser.md": {
-      "original_path": "06-channels/zalouser",
+    "channels/zalouser.md": {
+      "original_path": "channels/zalouser",
       "original_url": "https://docs.openclaw.ai/zh-CN/channels/zalouser",
-      "category": "06-channels",
+      "category": "channels",
       "hash": "b122793166e770374fddb85f99578381d2aee042fb87faf9c226cc51bb003042",
       "last_updated": "2026-02-11T17:45:42.442927"
     },
-    "05-cli/agent.md": {
-      "original_path": "05-cli/agent",
+    "cli/agent.md": {
+      "original_path": "cli/agent",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/agent",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "9803fd957d7032d46474171266b8952ec4dfbbae3f37a7478cc5ebd58dcc279a",
       "last_updated": "2026-02-11T17:45:43.213301"
     },
-    "05-cli/agents.md": {
-      "original_path": "05-cli/agents",
+    "cli/agents.md": {
+      "original_path": "cli/agents",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/agents",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "184fbacfbfde730230acab4cea6fa61c27b334c8800f8091a74460014f41b553",
       "last_updated": "2026-02-11T17:45:44.447171"
     },
-    "05-cli/approvals.md": {
-      "original_path": "05-cli/approvals",
+    "cli/approvals.md": {
+      "original_path": "cli/approvals",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/approvals",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "c01a280389be8d36a6fb5938be8d0a8c55f93afd0a31ad2d8bbbfaf2a294b799",
       "last_updated": "2026-02-11T17:45:45.157503"
     },
-    "05-cli/browser.md": {
-      "original_path": "05-cli/browser",
+    "cli/browser.md": {
+      "original_path": "cli/browser",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/browser",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "93b086282ef43366de4a838740bd07da226c3b952bbe552a1db575ac5f4ef3eb",
       "last_updated": "2026-02-11T17:45:45.924782"
     },
-    "05-cli/channels.md": {
-      "original_path": "05-cli/channels",
+    "cli/channels.md": {
+      "original_path": "cli/channels",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/channels",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "9c263ca0e37e91a38a4c7f904f100ca08cf73b670920eb2d8031a4d83059605c",
       "last_updated": "2026-02-11T17:45:46.676439"
     },
-    "05-cli/configure.md": {
-      "original_path": "05-cli/configure",
+    "cli/configure.md": {
+      "original_path": "cli/configure",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/configure",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "957d3094e2b3091d615900e2b4683d4eecfee751be13e3ae57482f8d7a1c5770",
       "last_updated": "2026-02-11T17:45:47.915487"
     },
-    "05-cli/cron.md": {
-      "original_path": "05-cli/cron",
+    "cli/cron.md": {
+      "original_path": "cli/cron",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/cron",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "86853a9dbdf353d4c43069ae9e00eaf1d4a83bbc9fae61cb5526abddc96cd63e",
       "last_updated": "2026-02-11T17:45:48.586927"
     },
-    "05-cli/dashboard.md": {
-      "original_path": "05-cli/dashboard",
+    "cli/dashboard.md": {
+      "original_path": "cli/dashboard",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/dashboard",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "498920260cf315b65c1fe92e376f23a2c1faf355b45d3dd13268b9af76e19bf6",
       "last_updated": "2026-02-11T17:45:49.404710"
     },
-    "05-cli/directory.md": {
-      "original_path": "05-cli/directory",
+    "cli/directory.md": {
+      "original_path": "cli/directory",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/directory",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "a88d2ebf38e239dd79322ae7b422ada84ba4661dbef5bcb0b6263ed1bc83cbc8",
       "last_updated": "2026-02-11T17:45:50.223808"
     },
-    "05-cli/dns.md": {
-      "original_path": "05-cli/dns",
+    "cli/dns.md": {
+      "original_path": "cli/dns",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/dns",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "22f913de58847ec63279b215f81b2f3cb3b310eaa8742c935eddc8c4cd7db81d",
       "last_updated": "2026-02-11T17:45:51.043640"
     },
-    "05-cli/docs.md": {
-      "original_path": "05-cli/docs",
+    "cli/docs.md": {
+      "original_path": "cli/docs",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/docs",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "fe62a8110f664a3fd1d85a43fae5f971152d4c40b821f08beb92221e6121c191",
       "last_updated": "2026-02-11T17:45:51.759568"
     },
-    "05-cli/doctor.md": {
-      "original_path": "05-cli/doctor",
+    "cli/doctor.md": {
+      "original_path": "cli/doctor",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/doctor",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "38d2322ef6b16dd6203cdebe08e06aaa8e0f3a3c6e4504cd8ff1abccff442acd",
       "last_updated": "2026-02-11T17:45:52.579246"
     },
-    "05-cli/gateway.md": {
-      "original_path": "05-cli/gateway",
+    "cli/gateway.md": {
+      "original_path": "cli/gateway",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/gateway",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "a5daf022deb209399dbf31242c9bd7dfdb217127a7e14d4c34a2db8c0aaf8956",
       "last_updated": "2026-02-11T17:45:53.298286"
     },
-    "05-cli/health.md": {
-      "original_path": "05-cli/health",
+    "cli/health.md": {
+      "original_path": "cli/health",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/health",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "d29347f4e027497600ea9bbd75ce46721ba8c023540aac2f494fdf95729c670b",
       "last_updated": "2026-02-11T17:45:54.047055"
     },
-    "05-cli/hooks.md": {
-      "original_path": "05-cli/hooks",
+    "cli/hooks.md": {
+      "original_path": "cli/hooks",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/hooks",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "434fc186458b7881125b00cf994b280e337b5e395af154780cfe2afb50473ca0",
       "last_updated": "2026-02-11T17:45:54.834904"
     },
-    "05-cli/logs.md": {
-      "original_path": "05-cli/logs",
+    "cli/logs.md": {
+      "original_path": "cli/logs",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/logs",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "6d0fcc375c52c135eba9e6bd105800be44a935c29f7f31734ce6900855021678",
       "last_updated": "2026-02-11T17:45:55.435488"
     },
-    "05-cli/memory.md": {
-      "original_path": "05-cli/memory",
+    "cli/memory.md": {
+      "original_path": "cli/memory",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/memory",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "c134ee69953ac90bed63055e8387a695a7d24fc300dde0fce1ec9eb1137f7ff4",
       "last_updated": "2026-02-11T17:45:56.171615"
     },
-    "05-cli/message.md": {
-      "original_path": "05-cli/message",
+    "cli/message.md": {
+      "original_path": "cli/message",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/message",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "c102773fc5422ffbdfe1bb2eb666870117e765f8ea89e26dfb52cbf32a326cd7",
       "last_updated": "2026-02-11T17:45:56.987598"
     },
-    "05-cli/models.md": {
-      "original_path": "05-cli/models",
+    "cli/models.md": {
+      "original_path": "cli/models",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/models",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "02865fea652b9b61086697896464f848fd36fd71cdf638e47256856a777e3157",
       "last_updated": "2026-02-11T17:45:57.738111"
     },
-    "05-cli/nodes.md": {
-      "original_path": "05-cli/nodes",
+    "cli/nodes.md": {
+      "original_path": "cli/nodes",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/nodes",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "a89a1ad1fbbf4ed8a9b85f62819d18a717664d75ed730d998460e4a8603a2b78",
       "last_updated": "2026-02-11T17:45:58.328535"
     },
-    "05-cli/onboard.md": {
-      "original_path": "05-cli/onboard",
+    "cli/onboard.md": {
+      "original_path": "cli/onboard",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/onboard",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "31b91cc3834fcffabead3010ecfef91a28de17f091555c5e50abea166cd77593",
       "last_updated": "2026-02-11T17:45:59.030776"
     },
-    "05-cli/pairing.md": {
-      "original_path": "05-cli/pairing",
+    "cli/pairing.md": {
+      "original_path": "cli/pairing",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/pairing",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "ec32abfc47e6f7fbda03b9e9128ad3ec82f9d5e71c8a7387482724ab548a7047",
       "last_updated": "2026-02-11T17:45:59.645393"
     },
-    "05-cli/plugins.md": {
-      "original_path": "05-cli/plugins",
+    "cli/plugins.md": {
+      "original_path": "cli/plugins",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/plugins",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "868a6a973921cf5c12c272f2fed0663c7b7c5341191b02a91e48fa694649b0d3",
       "last_updated": "2026-02-11T17:46:00.535466"
     },
-    "05-cli/reset.md": {
-      "original_path": "05-cli/reset",
+    "cli/reset.md": {
+      "original_path": "cli/reset",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/reset",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "935ae5e62277b7942a9d4d7803730e56d4ec6d68caf0123f6c244a9c9befcf65",
       "last_updated": "2026-02-11T17:46:01.386401"
     },
-    "05-cli/sandbox.md": {
-      "original_path": "05-cli/sandbox",
+    "cli/sandbox.md": {
+      "original_path": "cli/sandbox",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/sandbox",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "7e1f431432c774b8ff91e7c71194848fa0540497e0cae34b36271fcf4404dd4a",
       "last_updated": "2026-02-11T17:46:01.986556"
     },
-    "05-cli/security.md": {
-      "original_path": "05-cli/security",
+    "cli/security.md": {
+      "original_path": "cli/security",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/security",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "9d3e2e7273d0e0d719dc44cd69b1ac0bfe2922e3d089f003da1bbb1a8d00ea69",
       "last_updated": "2026-02-11T17:46:02.589603"
     },
-    "05-cli/sessions.md": {
-      "original_path": "05-cli/sessions",
+    "cli/sessions.md": {
+      "original_path": "cli/sessions",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/sessions",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "2506a81922e2edf2ba6e1cf63a388ba8de8d3d62a44fc20008e2ad15199853e5",
       "last_updated": "2026-02-11T17:46:03.229292"
     },
-    "05-cli/setup.md": {
-      "original_path": "05-cli/setup",
+    "cli/setup.md": {
+      "original_path": "cli/setup",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/setup",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "93275e7914b6b696855eb522cfbba0935ca9fa5708e85f2fcf54c40e446cbb29",
       "last_updated": "2026-02-11T17:46:03.946156"
     },
-    "05-cli/skills.md": {
-      "original_path": "05-cli/skills",
+    "cli/skills.md": {
+      "original_path": "cli/skills",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/skills",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "8a1e8967ac6d53a696f2c45ca5c0af063c67b3d0ec43ddac2d11251be4fcbec0",
       "last_updated": "2026-02-11T17:46:04.765543"
     },
-    "05-cli/status.md": {
-      "original_path": "05-cli/status",
+    "cli/status.md": {
+      "original_path": "cli/status",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/status",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "9d5ea0a3b955a054925048a85fde5648cf7dc78fb91594f7c0071bc817307392",
       "last_updated": "2026-02-11T17:46:05.584886"
     },
-    "05-cli/system.md": {
-      "original_path": "05-cli/system",
+    "cli/system.md": {
+      "original_path": "cli/system",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/system",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "b279b4fcbb3b9edf2091ff257adfc4162bfd5b6851677715c3ab2df336a47b5e",
       "last_updated": "2026-02-11T17:46:06.096367"
     },
-    "05-cli/tui.md": {
-      "original_path": "05-cli/tui",
+    "cli/tui.md": {
+      "original_path": "cli/tui",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/tui",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "b39dddbe2a02b0ca27984b019eee768fca4d4233f6cfed594c7ef5939860377e",
       "last_updated": "2026-02-11T17:46:07.428493"
     },
-    "05-cli/uninstall.md": {
-      "original_path": "05-cli/uninstall",
+    "cli/uninstall.md": {
+      "original_path": "cli/uninstall",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/uninstall",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "dcc4c41348c7a58e8c03d2229a87a6d11739341945e9d7ad2d1a23bfc39e29ac",
       "last_updated": "2026-02-11T17:46:08.490006"
     },
-    "05-cli/update.md": {
-      "original_path": "05-cli/update",
+    "cli/update.md": {
+      "original_path": "cli/update",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/update",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "e63fb2524d2638f714182d753d528a7db8c5efdb312d107f29b2322d8a7f860b",
       "last_updated": "2026-02-11T17:46:09.271280"
     },
-    "05-cli/voicecall.md": {
-      "original_path": "05-cli/voicecall",
+    "cli/voicecall.md": {
+      "original_path": "cli/voicecall",
       "original_url": "https://docs.openclaw.ai/zh-CN/cli/voicecall",
-      "category": "05-cli",
+      "category": "cli",
       "hash": "458389d213eef56b663be25ff349c02d9a4d7a483e2d7d3628c2fa28ae2571cd",
       "last_updated": "2026-02-11T17:46:09.884881"
     },
-    "03-concepts/agent.md": {
-      "original_path": "03-concepts/agent",
+    "concepts/agent.md": {
+      "original_path": "concepts/agent",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/agent",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "39da2d12d6cd29f54a54e2deb6dcbe40051f8336dbddacc9c61f57e77fbd1231",
       "last_updated": "2026-02-11T17:46:10.648025"
     },
-    "03-concepts/agent-loop.md": {
-      "original_path": "03-concepts/agent-loop",
+    "concepts/agent-loop.md": {
+      "original_path": "concepts/agent-loop",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/agent-loop",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "7b03c9d9bcf46ec65e2e5421b52fef4366414da06c1912c239ab2785e8ded4f8",
       "last_updated": "2026-02-11T17:46:11.386506"
     },
-    "03-concepts/agent-workspace.md": {
-      "original_path": "03-concepts/agent-workspace",
+    "concepts/agent-workspace.md": {
+      "original_path": "concepts/agent-workspace",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/agent-workspace",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "07304f58c360719d5fd1085d8214e4c87ac1dceeb2a96b01da4e059249ea85fd",
       "last_updated": "2026-02-11T17:46:11.984216"
     },
-    "03-concepts/architecture.md": {
-      "original_path": "03-concepts/architecture",
+    "concepts/architecture.md": {
+      "original_path": "concepts/architecture",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/architecture",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "f989d0465e0367fb4513e44edd752179117192e10f75979851f2c330592e7116",
       "last_updated": "2026-02-11T17:46:12.651750"
     },
-    "03-concepts/compaction.md": {
-      "original_path": "03-concepts/compaction",
+    "concepts/compaction.md": {
+      "original_path": "concepts/compaction",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/compaction",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "8e584191478c4371846e37f0e55508b45cae17594321c321f7410b42facee910",
       "last_updated": "2026-02-11T17:46:13.368337"
     },
-    "03-concepts/context.md": {
-      "original_path": "03-concepts/context",
+    "concepts/context.md": {
+      "original_path": "concepts/context",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/context",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "594153c3789e35c995cb337d3c70f1b61c69fa5d36edb5509aafd47250c44fe2",
       "last_updated": "2026-02-11T17:46:14.085185"
     },
-    "03-concepts/features.md": {
-      "original_path": "03-concepts/features",
+    "concepts/features.md": {
+      "original_path": "concepts/features",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/features",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "e92d207bca84fc31036196a73fb6b3c7b8b12a9356c33c508335a0e03c38767d",
       "last_updated": "2026-02-11T17:46:14.615200"
     },
-    "03-concepts/markdown-formatting.md": {
-      "original_path": "03-concepts/markdown-formatting",
+    "concepts/markdown-formatting.md": {
+      "original_path": "concepts/markdown-formatting",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/markdown-formatting",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "c5f2ef2c67f7ab5c76bcc67f9ae23634002f9d4a1026c83e4cbacc8b5527cbf0",
       "last_updated": "2026-02-11T17:46:15.042318"
     },
-    "03-concepts/memory.md": {
-      "original_path": "03-concepts/memory",
+    "concepts/memory.md": {
+      "original_path": "concepts/memory",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/memory",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "513ebe540da5df9cde5f83d2c1f3b78877922384892da567c787508c70bc3422",
       "last_updated": "2026-02-11T17:46:15.509736"
     },
-    "03-concepts/messages.md": {
-      "original_path": "03-concepts/messages",
+    "concepts/messages.md": {
+      "original_path": "concepts/messages",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/messages",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "761fae64ca1da7352c9cb80aad12c92a1b50845450e2a135fde7bfc930e02db1",
       "last_updated": "2026-02-11T17:46:16.439167"
     },
-    "03-concepts/model-failover.md": {
-      "original_path": "03-concepts/model-failover",
+    "concepts/model-failover.md": {
+      "original_path": "concepts/model-failover",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/model-failover",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "d0e7c84bc02e7730d636967340463e1721dcae36d1a871712f0b0ddc5875680d",
       "last_updated": "2026-02-11T17:46:17.361289"
     },
-    "03-concepts/model-providers.md": {
-      "original_path": "03-concepts/model-providers",
+    "concepts/model-providers.md": {
+      "original_path": "concepts/model-providers",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/model-providers",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "918c5e6cb375b7a311df661a39799932ec5210f6aa2001affe7fffcc72cc4651",
       "last_updated": "2026-02-11T17:46:18.181527"
     },
-    "03-concepts/models.md": {
-      "original_path": "03-concepts/models",
+    "concepts/models.md": {
+      "original_path": "concepts/models",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/models",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "df9a4d2141b46d492a24a725bf127a36797783b4ea7cc1ae8e798342392c6626",
       "last_updated": "2026-02-11T17:46:18.611971"
     },
-    "03-concepts/multi-agent.md": {
-      "original_path": "03-concepts/multi-agent",
+    "concepts/multi-agent.md": {
+      "original_path": "concepts/multi-agent",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/multi-agent",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "1a34b09c97e669d4008c6eecd500c85da46ee7853c357342d7d0bdad7fb8d45f",
       "last_updated": "2026-02-11T17:46:19.018877"
     },
-    "03-concepts/oauth.md": {
-      "original_path": "03-concepts/oauth",
+    "concepts/oauth.md": {
+      "original_path": "concepts/oauth",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/oauth",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "7d69ae5a8602f6afdc45ce73076e9d2a2cb4c8cbafe2a0ba191f288010b2c6b7",
       "last_updated": "2026-02-11T17:46:19.818193"
     },
-    "03-concepts/presence.md": {
-      "original_path": "03-concepts/presence",
+    "concepts/presence.md": {
+      "original_path": "concepts/presence",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/presence",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "bd26c19b23310b3f871e3a54be2bc1206e38a4c38c17e2b6fbf94e6c4f4a8c2c",
       "last_updated": "2026-02-11T17:46:20.586597"
     },
-    "03-concepts/queue.md": {
-      "original_path": "03-concepts/queue",
+    "concepts/queue.md": {
+      "original_path": "concepts/queue",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/queue",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "7efa9cff4e82018c7d327cab4459ba611118f1a705d6654a3b699835609c484f",
       "last_updated": "2026-02-11T17:46:21.382653"
     },
-    "03-concepts/retry.md": {
-      "original_path": "03-concepts/retry",
+    "concepts/retry.md": {
+      "original_path": "concepts/retry",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/retry",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "2442eae3adb6ae839de4f3453b65adadc29daa57ef3391c345e01fdcff60af1e",
       "last_updated": "2026-02-11T17:46:22.275187"
     },
-    "03-concepts/session.md": {
-      "original_path": "03-concepts/session",
+    "concepts/session.md": {
+      "original_path": "concepts/session",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/session",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "dbaa9543a1fc7601c77d807dc45b07e14bf345895b88e242cb2515f378a19bae",
       "last_updated": "2026-02-11T17:46:23.095811"
     },
-    "03-concepts/session-pruning.md": {
-      "original_path": "03-concepts/session-pruning",
+    "concepts/session-pruning.md": {
+      "original_path": "concepts/session-pruning",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/session-pruning",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "ce7096411f75603b8c6e4c9c9523478a69ba332b9e69438a4dd9cdbca67da06e",
       "last_updated": "2026-02-11T17:46:23.813653"
     },
-    "03-concepts/session-tool.md": {
-      "original_path": "03-concepts/session-tool",
+    "concepts/session-tool.md": {
+      "original_path": "concepts/session-tool",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/session-tool",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "3c261c68499e4d72e43ea33c3c0095c55edcc95ef93834b9ec83b52ab857901d",
       "last_updated": "2026-02-11T17:46:24.735450"
     },
-    "03-concepts/sessions.md": {
-      "original_path": "03-concepts/sessions",
+    "concepts/sessions.md": {
+      "original_path": "concepts/sessions",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/sessions",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "f5ecb3161f9f157013b86594aa82acfed012a6e862866bfdbf99ea47a7e61e47",
       "last_updated": "2026-02-11T17:46:25.489210"
     },
-    "03-concepts/streaming.md": {
-      "original_path": "03-concepts/streaming",
+    "concepts/streaming.md": {
+      "original_path": "concepts/streaming",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/streaming",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "a6a8753099159127b77f2a4d9acf735892da13dc2f6e5f0ceacffd084d36e7d7",
       "last_updated": "2026-02-11T17:46:25.976169"
     },
-    "03-concepts/system-prompt.md": {
-      "original_path": "03-concepts/system-prompt",
+    "concepts/system-prompt.md": {
+      "original_path": "concepts/system-prompt",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/system-prompt",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "2197bcc88c367fb62478efb0f313f97014edcf995653d04d8c7d3d78cb382c7f",
       "last_updated": "2026-02-11T17:46:26.681078"
     },
-    "03-concepts/timezone.md": {
-      "original_path": "03-concepts/timezone",
+    "concepts/timezone.md": {
+      "original_path": "concepts/timezone",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/timezone",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "f2513aa64b1c371d914eb83baaa1da44c519358aa0e269da34d49b12e9feb3fe",
       "last_updated": "2026-02-11T17:46:27.410973"
     },
-    "03-concepts/typebox.md": {
-      "original_path": "03-concepts/typebox",
+    "concepts/typebox.md": {
+      "original_path": "concepts/typebox",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/typebox",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "588aedd6fd43d80ed41d092d80ced1c98effa8a7912fa0ba6ada1bcb09922457",
       "last_updated": "2026-02-11T17:46:28.109773"
     },
-    "03-concepts/typing-indicators.md": {
-      "original_path": "03-concepts/typing-indicators",
+    "concepts/typing-indicators.md": {
+      "original_path": "concepts/typing-indicators",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/typing-indicators",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "a44fb0729ecd68470e618bbc14998a4356094f4101bbdf7165bd962b19631faa",
       "last_updated": "2026-02-11T17:46:28.931814"
     },
-    "03-concepts/usage-tracking.md": {
-      "original_path": "03-concepts/usage-tracking",
+    "concepts/usage-tracking.md": {
+      "original_path": "concepts/usage-tracking",
       "original_url": "https://docs.openclaw.ai/zh-CN/concepts/usage-tracking",
-      "category": "03-concepts",
+      "category": "concepts",
       "hash": "afe2d13f304eb5b8baf3a818eac167fd0942008f8b67d916a66ede01c5d0de2f",
       "last_updated": "2026-02-11T17:46:29.742774"
     },
-    "16-experiments/onboarding-config-protocol.md": {
-      "original_path": "16-experiments/onboarding-config-protocol",
+    "experiments/onboarding-config-protocol.md": {
+      "original_path": "experiments/onboarding-config-protocol",
       "original_url": "https://docs.openclaw.ai/zh-CN/experiments/onboarding-config-protocol",
-      "category": "16-experiments",
+      "category": "experiments",
       "hash": "2fd4b456b07b2188ec6bc73b594ed38ad3540e4ab1da5fb7e5f114b7f0aea513",
       "last_updated": "2026-02-11T17:46:30.570101"
     },
-    "16-experiments/plans/cron-add-hardening.md": {
-      "original_path": "16-experiments/plans/cron-add-hardening",
+    "experiments/plans/cron-add-hardening.md": {
+      "original_path": "experiments/plans/cron-add-hardening",
       "original_url": "https://docs.openclaw.ai/zh-CN/experiments/plans/cron-add-hardening",
-      "category": "16-experiments",
+      "category": "experiments",
       "hash": "581a1580d659ebabba2723dab5b409efb1abc88342f27a04db2dda8e468e01d0",
       "last_updated": "2026-02-11T17:46:31.287382"
     },
-    "16-experiments/plans/group-policy-hardening.md": {
-      "original_path": "16-experiments/plans/group-policy-hardening",
+    "experiments/plans/group-policy-hardening.md": {
+      "original_path": "experiments/plans/group-policy-hardening",
       "original_url": "https://docs.openclaw.ai/zh-CN/experiments/plans/group-policy-hardening",
-      "category": "16-experiments",
+      "category": "experiments",
       "hash": "073040632b225a6b06fc5fdddeb877a41bf6f9a183174f0a840f6b6a2a646624",
       "last_updated": "2026-02-11T17:46:31.881994"
     },
-    "16-experiments/proposals/model-config.md": {
-      "original_path": "16-experiments/proposals/model-config",
+    "experiments/proposals/model-config.md": {
+      "original_path": "experiments/proposals/model-config",
       "original_url": "https://docs.openclaw.ai/zh-CN/experiments/proposals/model-config",
-      "category": "16-experiments",
+      "category": "experiments",
       "hash": "387f2da1990f08243d2882e3a34161229f0f5a08dd24ab0a6f42396a475e1ed9",
       "last_updated": "2026-02-11T17:46:32.706362"
     },
-    "16-experiments/research/memory.md": {
-      "original_path": "16-experiments/research/memory",
+    "experiments/research/memory.md": {
+      "original_path": "experiments/research/memory",
       "original_url": "https://docs.openclaw.ai/zh-CN/experiments/research/memory",
-      "category": "16-experiments",
+      "category": "experiments",
       "hash": "7f5be63c727bf2babc80d8b8fdceed44c106e7b675ba34ec900359b94f1af307",
       "last_updated": "2026-02-11T17:46:33.541104"
     },
-    "04-gateway/authentication.md": {
-      "original_path": "04-gateway/authentication",
+    "gateway/authentication.md": {
+      "original_path": "gateway/authentication",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/authentication",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "82d7d392b398ea5ade88c4d9d900da173deeb00bffb20076414fa62d9526214d",
       "last_updated": "2026-02-11T17:46:34.343582"
     },
-    "04-gateway/background-process.md": {
-      "original_path": "04-gateway/background-process",
+    "gateway/background-process.md": {
+      "original_path": "gateway/background-process",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/background-process",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "aeb10f6c2592b93e8ce052f9efed5a1037b8b4aeb4798fd6fc30debec760d2f1",
       "last_updated": "2026-02-11T17:46:34.935285"
     },
-    "04-gateway/bonjour.md": {
-      "original_path": "04-gateway/bonjour",
+    "gateway/bonjour.md": {
+      "original_path": "gateway/bonjour",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/bonjour",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "ece8cf8c62b567133c3c01c12e14e0b6cde89e4953ac0eb4cc6cc53eae7b6ecd",
       "last_updated": "2026-02-11T17:46:35.692493"
     },
-    "04-gateway/bridge-protocol.md": {
-      "original_path": "04-gateway/bridge-protocol",
+    "gateway/bridge-protocol.md": {
+      "original_path": "gateway/bridge-protocol",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/bridge-protocol",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "0292416e84a06663d03af4e971c3e9c320ca8926eef35b0d0cb7495c584f1897",
       "last_updated": "2026-02-11T17:46:36.400399"
     },
-    "04-gateway/cli-backends.md": {
-      "original_path": "04-gateway/cli-backends",
+    "gateway/cli-backends.md": {
+      "original_path": "gateway/cli-backends",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/cli-backends",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "766517558d27cf5a5b6f8f3c04412f2338bc79006c6f9bb9e46db048fc655375",
       "last_updated": "2026-02-11T17:46:37.213158"
     },
-    "04-gateway/configuration.md": {
-      "original_path": "04-gateway/configuration",
+    "gateway/configuration.md": {
+      "original_path": "gateway/configuration",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/configuration",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "114c19e846b0a299a8ae0811f9c9216f63c8622eba1941a63e4e0ac214943b80",
       "last_updated": "2026-02-11T17:46:38.047844"
     },
-    "04-gateway/configuration-examples.md": {
-      "original_path": "04-gateway/configuration-examples",
+    "gateway/configuration-examples.md": {
+      "original_path": "gateway/configuration-examples",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/configuration-examples",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "e9271b9c8dfb5fd678d1bd75fe3412822181c0c023d5cf8f9355133dec5f0764",
       "last_updated": "2026-02-11T17:46:38.865979"
     },
-    "04-gateway/discovery.md": {
-      "original_path": "04-gateway/discovery",
+    "gateway/discovery.md": {
+      "original_path": "gateway/discovery",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/discovery",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "829d2096fac356faa307a1ad522c814a0460c9fa9491bd8faed3c00ded25cad5",
       "last_updated": "2026-02-11T17:46:39.480684"
     },
-    "04-gateway/doctor.md": {
-      "original_path": "04-gateway/doctor",
+    "gateway/doctor.md": {
+      "original_path": "gateway/doctor",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/doctor",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "0d24d06804b29313456c729e6f2e3b94b8364c5582c61eabb2f08cf7e2f6e9a0",
       "last_updated": "2026-02-11T17:46:40.425671"
     },
-    "04-gateway/gateway-lock.md": {
-      "original_path": "04-gateway/gateway-lock",
+    "gateway/gateway-lock.md": {
+      "original_path": "gateway/gateway-lock",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/gateway-lock",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "90d46dc6d5d0bebf27bcd6fe7d10ff68de369a0945d85798b6c26428bf9125e2",
       "last_updated": "2026-02-11T17:46:41.630267"
     },
-    "04-gateway/health.md": {
-      "original_path": "04-gateway/health",
+    "gateway/health.md": {
+      "original_path": "gateway/health",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/health",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "a4ef252c4fdcedd1dd7aa4498994fc81153ff5d3be7e19b3177db025d0d6017b",
       "last_updated": "2026-02-11T17:46:42.245264"
     },
-    "04-gateway/heartbeat.md": {
-      "original_path": "04-gateway/heartbeat",
+    "gateway/heartbeat.md": {
+      "original_path": "gateway/heartbeat",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/heartbeat",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "2eee8f79d13e0b11b623dc62e3627055797f1974764f17b29387db2aec9dfc8e",
       "last_updated": "2026-02-11T17:46:43.019890"
     },
-    "04-gateway/local-models.md": {
-      "original_path": "04-gateway/local-models",
+    "gateway/local-models.md": {
+      "original_path": "gateway/local-models",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/local-models",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "2e1b8019d540ec8541cd75f2be730e25b1873dfa2b51f497258d1a39cc50a7b8",
       "last_updated": "2026-02-11T17:46:43.518043"
     },
-    "04-gateway/logging.md": {
-      "original_path": "04-gateway/logging",
+    "gateway/logging.md": {
+      "original_path": "gateway/logging",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/logging",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "c1029b25ac88c7eed232f0d20294afa73cc26571a105d2a0f451be06761c5ef4",
       "last_updated": "2026-02-11T17:46:44.113372"
     },
-    "04-gateway/multiple-gateways.md": {
-      "original_path": "04-gateway/multiple-gateways",
+    "gateway/multiple-gateways.md": {
+      "original_path": "gateway/multiple-gateways",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/multiple-gateways",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "aa7db5404871e622f2ed0174cf8cb8e887a45ac9a7721473b140a83866b61d4e",
       "last_updated": "2026-02-11T17:46:44.906507"
     },
-    "04-gateway/network-model.md": {
-      "original_path": "04-gateway/network-model",
+    "gateway/network-model.md": {
+      "original_path": "gateway/network-model",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/network-model",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "7a0040eff5df5fdf73230389271ab08bc3f7d039e189d357c5fb3a0333f7fc71",
       "last_updated": "2026-02-11T17:46:45.523749"
     },
-    "04-gateway/openai-http-api.md": {
-      "original_path": "04-gateway/openai-http-api",
+    "gateway/openai-http-api.md": {
+      "original_path": "gateway/openai-http-api",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/openai-http-api",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "48975c846d53fc755bebe5f55db4648411600b7c7dcf0347b7587e75d169d114",
       "last_updated": "2026-02-11T17:46:46.018581"
     },
-    "04-gateway/pairing.md": {
-      "original_path": "04-gateway/pairing",
+    "gateway/pairing.md": {
+      "original_path": "gateway/pairing",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/pairing",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "0b9f7936fb8c8f6b85605b9f4988e67dc50dc36dc68f0383ea1de77300b7ce9f",
       "last_updated": "2026-02-11T17:46:46.852761"
     },
-    "04-gateway/protocol.md": {
-      "original_path": "04-gateway/protocol",
+    "gateway/protocol.md": {
+      "original_path": "gateway/protocol",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/protocol",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "e11fef9d5ad70ca9466f62eacea4ab6ec92bcfed1de8c8f473ddede51ab236df",
       "last_updated": "2026-02-11T17:46:47.541069"
     },
-    "04-gateway/remote.md": {
-      "original_path": "04-gateway/remote",
+    "gateway/remote.md": {
+      "original_path": "gateway/remote",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/remote",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "5216ed3bf2927b56e1094246d7187cdf6618497a46b45f846a3aac2e4ca4cfeb",
       "last_updated": "2026-02-11T17:46:48.304606"
     },
-    "04-gateway/remote-gateway-readme.md": {
-      "original_path": "04-gateway/remote-gateway-readme",
+    "gateway/remote-gateway-readme.md": {
+      "original_path": "gateway/remote-gateway-readme",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/remote-gateway-readme",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "981c34f943475e656a498c51152b3d4a74ec74bc88f3a6b025bc2cc0996e769b",
       "last_updated": "2026-02-11T17:46:48.925876"
     },
-    "04-gateway/sandbox-vs-tool-policy-vs-elevated.md": {
-      "original_path": "04-gateway/sandbox-vs-tool-policy-vs-elevated",
+    "gateway/sandbox-vs-tool-policy-vs-elevated.md": {
+      "original_path": "gateway/sandbox-vs-tool-policy-vs-elevated",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/sandbox-vs-tool-policy-vs-elevated",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "1f1b62e6106a8d53522f83c4473a63867a47888fa84f60115a73488990a978d3",
       "last_updated": "2026-02-11T17:46:49.721138"
     },
-    "04-gateway/sandboxing.md": {
-      "original_path": "04-gateway/sandboxing",
+    "gateway/sandboxing.md": {
+      "original_path": "gateway/sandboxing",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/sandboxing",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "569bde6ed3d42bd648c3d52cd545f5cb55ea836d15e0be4135cfe146ddc80450",
       "last_updated": "2026-02-11T17:46:50.334148"
     },
-    "04-gateway/security.md": {
-      "original_path": "04-gateway/security",
+    "gateway/security.md": {
+      "original_path": "gateway/security",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/security",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "7891441a45a8838648a241f1a07032640a157200ce95419e31efd642ee910539",
       "last_updated": "2026-02-11T17:46:50.949434"
     },
-    "04-gateway/tailscale.md": {
-      "original_path": "04-gateway/tailscale",
+    "gateway/tailscale.md": {
+      "original_path": "gateway/tailscale",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/tailscale",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "15b3630ab2dfb8920ca535474c66e96f421c22a279c152549a9f9be5e257610d",
       "last_updated": "2026-02-11T17:46:51.398693"
     },
-    "04-gateway/tools-invoke-http-api.md": {
-      "original_path": "04-gateway/tools-invoke-http-api",
+    "gateway/tools-invoke-http-api.md": {
+      "original_path": "gateway/tools-invoke-http-api",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/tools-invoke-http-api",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "2c5d2cc38eff53fb57505a1ad65de32fd606ffdd6bfb895503ffc6c3a94a136f",
       "last_updated": "2026-02-11T17:46:52.177910"
     },
-    "04-gateway/troubleshooting.md": {
-      "original_path": "04-gateway/troubleshooting",
+    "gateway/troubleshooting.md": {
+      "original_path": "gateway/troubleshooting",
       "original_url": "https://docs.openclaw.ai/zh-CN/gateway/troubleshooting",
-      "category": "04-gateway",
+      "category": "gateway",
       "hash": "e58d50ff14e86f729243de9cefb09f3733addae5a81354758b2aa9f072d0d2f0",
       "last_updated": "2026-02-11T17:46:52.931815"
     },
-    "18-help/debugging.md": {
-      "original_path": "18-help/debugging",
+    "help/debugging.md": {
+      "original_path": "help/debugging",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/debugging",
-      "category": "18-help",
+      "category": "help",
       "hash": "51cf7c9764cbb8a0d55e2710ed121d1d2c7fac5b007bd976500564009bda5175",
       "last_updated": "2026-02-11T17:46:53.714687"
     },
-    "18-help/environment.md": {
-      "original_path": "18-help/environment",
+    "help/environment.md": {
+      "original_path": "help/environment",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/environment",
-      "category": "18-help",
+      "category": "help",
       "hash": "2dc241f80ab53fe44c4247d796f0576d4526b981f13959990e95410d07e6bf81",
       "last_updated": "2026-02-11T17:46:54.533285"
     },
-    "18-help/faq.md": {
-      "original_path": "18-help/faq",
+    "help/faq.md": {
+      "original_path": "help/faq",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/faq",
-      "category": "18-help",
+      "category": "help",
       "hash": "159a4099e717b74b1a010af1d75b642cc566e9c80efa9d1964f05953b0ec4d9d",
       "last_updated": "2026-02-11T17:46:55.250885"
     },
-    "18-help/scripts.md": {
-      "original_path": "18-help/scripts",
+    "help/scripts.md": {
+      "original_path": "help/scripts",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/scripts",
-      "category": "18-help",
+      "category": "help",
       "hash": "52dd8b88f5b2e5d058ad6cfa2ea3cc11603ed4459a6383c989f08f756fc52e95",
       "last_updated": "2026-02-11T17:46:56.059763"
     },
-    "18-help/submitting-a-pr.md": {
-      "original_path": "18-help/submitting-a-pr",
+    "help/submitting-a-pr.md": {
+      "original_path": "help/submitting-a-pr",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/submitting-a-pr",
-      "category": "18-help",
+      "category": "help",
       "hash": "1046599c9ef1a9428e3d96cc339e849dce7202a647b406c4cedddd1d56153184",
       "last_updated": "2026-02-11T17:46:56.808486"
     },
-    "18-help/submitting-an-issue.md": {
-      "original_path": "18-help/submitting-an-issue",
+    "help/submitting-an-issue.md": {
+      "original_path": "help/submitting-an-issue",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/submitting-an-issue",
-      "category": "18-help",
+      "category": "help",
       "hash": "453bf480912535e6e6f881af43b9fdd624becd8c5a447b0f941e41ff002e450d",
       "last_updated": "2026-02-11T17:46:57.511162"
     },
-    "18-help/testing.md": {
-      "original_path": "18-help/testing",
+    "help/testing.md": {
+      "original_path": "help/testing",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/testing",
-      "category": "18-help",
+      "category": "help",
       "hash": "a09d009b8322c5fbf45e59d1a2e7c2ceb49ea6e2fafc7b8447ed01947497a0aa",
       "last_updated": "2026-02-11T17:46:58.321815"
     },
-    "18-help/troubleshooting.md": {
-      "original_path": "18-help/troubleshooting",
+    "help/troubleshooting.md": {
+      "original_path": "help/troubleshooting",
       "original_url": "https://docs.openclaw.ai/zh-CN/help/troubleshooting",
-      "category": "18-help",
+      "category": "help",
       "hash": "ddf9514c694b20ff788d67f2405b3a5ce950d5bf85f9a26b44ecc9da5894db71",
       "last_updated": "2026-02-11T17:46:58.936051"
     },
-    "13-hooks/soul-evil.md": {
-      "original_path": "13-hooks/soul-evil",
+    "hooks/soul-evil.md": {
+      "original_path": "hooks/soul-evil",
       "original_url": "https://docs.openclaw.ai/zh-CN/hooks/soul-evil",
-      "category": "13-hooks",
+      "category": "hooks",
       "hash": "4820e549cab795fa90cef97ea1c36c660b6131bc59dfe2c0fca76cb921fd93e9",
       "last_updated": "2026-02-11T17:46:59.549056"
     },
-    "02-install/ansible.md": {
-      "original_path": "02-install/ansible",
+    "install/ansible.md": {
+      "original_path": "install/ansible",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/ansible",
-      "category": "02-install",
+      "category": "install",
       "hash": "7887108a3e3b1b7bf770c55bdb2daa397ae053b1ca7a0eaef0f1b7c5293e9ad9",
       "last_updated": "2026-02-11T17:47:00.247504"
     },
-    "02-install/bun.md": {
-      "original_path": "02-install/bun",
+    "install/bun.md": {
+      "original_path": "install/bun",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/bun",
-      "category": "02-install",
+      "category": "install",
       "hash": "7c7bfcdf8ee46489de83f84833e0c4bcf99be982023463d9e483d846b02e41ed",
       "last_updated": "2026-02-11T17:47:00.982652"
     },
-    "02-install/development-channels.md": {
-      "original_path": "02-install/development-channels",
+    "install/development-channels.md": {
+      "original_path": "install/development-channels",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/development-channels",
-      "category": "02-install",
+      "category": "install",
       "hash": "242fc6a972020e262bf249489d99f1e8f616f1bb3dbf2e7f05e824725c57b86f",
       "last_updated": "2026-02-11T17:47:01.803623"
     },
-    "02-install/docker.md": {
-      "original_path": "02-install/docker",
+    "install/docker.md": {
+      "original_path": "install/docker",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/docker",
-      "category": "02-install",
+      "category": "install",
       "hash": "0ba9456d342bc94a4f7101d7c9f9887371dd4d3cf3898230a6f0bd058c41cbeb",
       "last_updated": "2026-02-11T17:47:02.297325"
     },
-    "02-install/exe-dev.md": {
-      "original_path": "02-install/exe-dev",
+    "install/exe-dev.md": {
+      "original_path": "install/exe-dev",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/exe-dev",
-      "category": "02-install",
+      "category": "install",
       "hash": "65dbc8e94524771b6caecffc895bd016cd83bf46f9de5b79934cb5f9391bdac0",
       "last_updated": "2026-02-11T17:47:02.927924"
     },
-    "02-install/fly.md": {
-      "original_path": "02-install/fly",
+    "install/fly.md": {
+      "original_path": "install/fly",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/fly",
-      "category": "02-install",
+      "category": "install",
       "hash": "970e33f9bba78f5b350e016d5389c378e6ab85966541f990a72b97145f56e95b",
       "last_updated": "2026-02-11T17:47:04.056157"
     },
-    "02-install/gcp.md": {
-      "original_path": "02-install/gcp",
+    "install/gcp.md": {
+      "original_path": "install/gcp",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/gcp",
-      "category": "02-install",
+      "category": "install",
       "hash": "58070265c91b8755487a94d8948731322006e37b4cc56a950f2e89f73b5b0915",
       "last_updated": "2026-02-11T17:47:05.080876"
     },
-    "02-install/hetzner.md": {
-      "original_path": "02-install/hetzner",
+    "install/hetzner.md": {
+      "original_path": "install/hetzner",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/hetzner",
-      "category": "02-install",
+      "category": "install",
       "hash": "28119599b1fe80a03fa132ef2a4aaaa59cdda70d50e4ee759bd061d788422811",
       "last_updated": "2026-02-11T17:47:05.900052"
     },
-    "02-install/installer.md": {
-      "original_path": "02-install/installer",
+    "install/installer.md": {
+      "original_path": "install/installer",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/installer",
-      "category": "02-install",
+      "category": "install",
       "hash": "46a08b65bb804f2502e8f2979ca269df5256b5962e4890fa7ca53345af10d5c3",
       "last_updated": "2026-02-11T17:47:06.720057"
     },
-    "02-install/macos-vm.md": {
-      "original_path": "02-install/macos-vm",
+    "install/macos-vm.md": {
+      "original_path": "install/macos-vm",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/macos-vm",
-      "category": "02-install",
+      "category": "install",
       "hash": "41b33695501ebbfbc8f063582345cacce0dfa78002dda4c9b7155a4136f76486",
       "last_updated": "2026-02-11T17:47:07.341437"
     },
-    "02-install/migrating.md": {
-      "original_path": "02-install/migrating",
+    "install/migrating.md": {
+      "original_path": "install/migrating",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/migrating",
-      "category": "02-install",
+      "category": "install",
       "hash": "947e853131b0374b557d1479b18e9cbea66a77bc3b42eb4adb2bbac89c10f94c",
       "last_updated": "2026-02-11T17:47:07.837730"
     },
-    "02-install/nix.md": {
-      "original_path": "02-install/nix",
+    "install/nix.md": {
+      "original_path": "install/nix",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/nix",
-      "category": "02-install",
+      "category": "install",
       "hash": "fdee53abd46c26d023ab7c619ca382487ba4cde9713f1b9252eb1fdc888dab01",
       "last_updated": "2026-02-11T17:47:08.640721"
     },
-    "02-install/node.md": {
-      "original_path": "02-install/node",
+    "install/node.md": {
+      "original_path": "install/node",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/node",
-      "category": "02-install",
+      "category": "install",
       "hash": "ff436104ea7b82265d4dbeb12e9a7978d8b5d0828a78a771077a51f045e3d6f9",
       "last_updated": "2026-02-11T17:47:09.945712"
     },
-    "02-install/northflank.md": {
-      "original_path": "02-install/northflank",
+    "install/northflank.md": {
+      "original_path": "install/northflank",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/northflank",
-      "category": "02-install",
+      "category": "install",
       "hash": "05f4675fc8880bc431fd83ab71e75b62204b08318676815bc3dc57f45338e68c",
       "last_updated": "2026-02-11T17:47:10.917824"
     },
-    "02-install/railway.md": {
-      "original_path": "02-install/railway",
+    "install/railway.md": {
+      "original_path": "install/railway",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/railway",
-      "category": "02-install",
+      "category": "install",
       "hash": "926e284f06a67aedafb7a82f22e13ce857925f3d6d9865359faf04ad3750e01f",
       "last_updated": "2026-02-11T17:47:11.735718"
     },
-    "02-install/render.md": {
-      "original_path": "02-install/render",
+    "install/render.md": {
+      "original_path": "install/render",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/render",
-      "category": "02-install",
+      "category": "install",
       "hash": "38a35415f00d968225cfb7e9471757f2f496d19bafcda488429f86242835dc6e",
       "last_updated": "2026-02-11T17:47:12.475736"
     },
-    "02-install/uninstall.md": {
-      "original_path": "02-install/uninstall",
+    "install/uninstall.md": {
+      "original_path": "install/uninstall",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/uninstall",
-      "category": "02-install",
+      "category": "install",
       "hash": "0ecd804383e76d1ae095a38b725a83218672b20e9f049fee63ec7f98dac4900c",
       "last_updated": "2026-02-11T17:47:12.944753"
     },
-    "02-install/updating.md": {
-      "original_path": "02-install/updating",
+    "install/updating.md": {
+      "original_path": "install/updating",
       "original_url": "https://docs.openclaw.ai/zh-CN/install/updating",
-      "category": "02-install",
+      "category": "install",
       "hash": "6620898d2191f054668293ba4053cf33ad212ac3c0d58401e00bf268d7a272a8",
       "last_updated": "2026-02-11T17:47:13.356177"
     },
-    "09-nodes/audio.md": {
-      "original_path": "09-nodes/audio",
+    "nodes/audio.md": {
+      "original_path": "nodes/audio",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/audio",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "e27e268eea1bcdcaf9b44bacb7b06fcfb209556a354f806701bf08b90e4ba95e",
       "last_updated": "2026-02-11T17:47:14.128660"
     },
-    "09-nodes/camera.md": {
-      "original_path": "09-nodes/camera",
+    "nodes/camera.md": {
+      "original_path": "nodes/camera",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/camera",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "5d56b38e31ced89783f9c2d2781284352c7d8d7b486e7db34ebacf918138899a",
       "last_updated": "2026-02-11T17:47:14.910703"
     },
-    "09-nodes/images.md": {
-      "original_path": "09-nodes/images",
+    "nodes/images.md": {
+      "original_path": "nodes/images",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/images",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "a306b9078e98f04f09297aa0400c2b53d6d522e4f93dca54e0fa299318e5e86b",
       "last_updated": "2026-02-11T17:47:15.934579"
     },
-    "09-nodes/location-command.md": {
-      "original_path": "09-nodes/location-command",
+    "nodes/location-command.md": {
+      "original_path": "nodes/location-command",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/location-command",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "9b48f2c8a5f25ad0cc3fb31a5728b06ed2adc37cf89a5428523111448d546b61",
       "last_updated": "2026-02-11T17:47:16.752816"
     },
-    "09-nodes/talk.md": {
-      "original_path": "09-nodes/talk",
+    "nodes/talk.md": {
+      "original_path": "nodes/talk",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/talk",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "b4285aa5c3d06298056fa34f7c0fd3e67b3bb894f6d42ef83ac437c33b11ea4e",
       "last_updated": "2026-02-11T17:47:17.653755"
     },
-    "09-nodes/troubleshooting.md": {
-      "original_path": "09-nodes/troubleshooting",
+    "nodes/troubleshooting.md": {
+      "original_path": "nodes/troubleshooting",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/troubleshooting",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "193f7d7ff739ca5d5569deef83b6b6c15a058887835ff93b9a495f9e610bf27d",
       "last_updated": "2026-02-11T17:47:18.391766"
     },
-    "09-nodes/voicewake.md": {
-      "original_path": "09-nodes/voicewake",
+    "nodes/voicewake.md": {
+      "original_path": "nodes/voicewake",
       "original_url": "https://docs.openclaw.ai/zh-CN/nodes/voicewake",
-      "category": "09-nodes",
+      "category": "nodes",
       "hash": "18044a5ea6264214e122f38939f1d671f35f702b034b69c9b94debbda8fca904",
       "last_updated": "2026-02-11T17:47:19.133611"
     },
-    "10-platforms/android.md": {
-      "original_path": "10-platforms/android",
+    "platforms/android.md": {
+      "original_path": "platforms/android",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/android",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "2fdcce2441805bd59d45eb6d10fa9306d0eca41399f5e621289a58c80663fd3a",
       "last_updated": "2026-02-11T17:47:19.826028"
     },
-    "10-platforms/ios.md": {
-      "original_path": "10-platforms/ios",
+    "platforms/ios.md": {
+      "original_path": "platforms/ios",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/ios",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "1da4a867af2f69b1b78952f501df44d5b51a95db385e162829d16d4153ad92a3",
       "last_updated": "2026-02-11T17:47:20.570309"
     },
-    "10-platforms/linux.md": {
-      "original_path": "10-platforms/linux",
+    "platforms/linux.md": {
+      "original_path": "platforms/linux",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/linux",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "405b3ed84ed090ff6d10cbd95f04bb1a760df68f95a8887d621897633d7ecbab",
       "last_updated": "2026-02-11T17:47:21.174498"
     },
-    "10-platforms/mac/bundled-gateway.md": {
-      "original_path": "10-platforms/mac/bundled-gateway",
+    "platforms/mac/bundled-gateway.md": {
+      "original_path": "platforms/mac/bundled-gateway",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/bundled-gateway",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "34b3aa53fad86c9e754b255540b7a85720ff0d1d7d37faaf22fcf0d19d3b0749",
       "last_updated": "2026-02-11T17:47:22.077564"
     },
-    "10-platforms/mac/canvas.md": {
-      "original_path": "10-platforms/mac/canvas",
+    "platforms/mac/canvas.md": {
+      "original_path": "platforms/mac/canvas",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/canvas",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "e8583135d0d844669162a9fac9e084f62ba513900f9ebd7417732d719b1f6d7d",
       "last_updated": "2026-02-11T17:47:22.762040"
     },
-    "10-platforms/mac/child-process.md": {
-      "original_path": "10-platforms/mac/child-process",
+    "platforms/mac/child-process.md": {
+      "original_path": "platforms/mac/child-process",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/child-process",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "a0220d8fd4c9773c4f27ca175706a1807841fa68da9e7a8042e0349907fb1bfc",
       "last_updated": "2026-02-11T17:47:23.718024"
     },
-    "10-platforms/mac/dev-setup.md": {
-      "original_path": "10-platforms/mac/dev-setup",
+    "platforms/mac/dev-setup.md": {
+      "original_path": "platforms/mac/dev-setup",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/dev-setup",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "06b2b6223decead11ea9e291c2fb19927f72403f3fedf0ab0979988d39e3aca1",
       "last_updated": "2026-02-11T17:47:24.536100"
     },
-    "10-platforms/mac/health.md": {
-      "original_path": "10-platforms/mac/health",
+    "platforms/mac/health.md": {
+      "original_path": "platforms/mac/health",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/health",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "83e642cac33d8aefe97f16ae28e97813fb147683086181daf7aaa2dff313d944",
       "last_updated": "2026-02-11T17:47:25.267770"
     },
-    "10-platforms/mac/icon.md": {
-      "original_path": "10-platforms/mac/icon",
+    "platforms/mac/icon.md": {
+      "original_path": "platforms/mac/icon",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/icon",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "34a40ea935113dd37995b086e06e7688bec0f4454a9a02c5a4780284809f933e",
       "last_updated": "2026-02-11T17:47:26.072866"
     },
-    "10-platforms/mac/logging.md": {
-      "original_path": "10-platforms/mac/logging",
+    "platforms/mac/logging.md": {
+      "original_path": "platforms/mac/logging",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/logging",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "39328c30909db23f1ce4c8a3d4dfc7f8a8f0b806961816ff71e5a78cbae4c573",
       "last_updated": "2026-02-11T17:47:26.687436"
     },
-    "10-platforms/mac/menu-bar.md": {
-      "original_path": "10-platforms/mac/menu-bar",
+    "platforms/mac/menu-bar.md": {
+      "original_path": "platforms/mac/menu-bar",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/menu-bar",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "83197c91145ff38c3b307bf0d4094441175d4d31925e7b9c547e86a71c953844",
       "last_updated": "2026-02-11T17:47:27.271762"
     },
-    "10-platforms/mac/peekaboo.md": {
-      "original_path": "10-platforms/mac/peekaboo",
+    "platforms/mac/peekaboo.md": {
+      "original_path": "platforms/mac/peekaboo",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/peekaboo",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "3b1214e6d60dc25c3a6cb58954267ab7ca5bbab85785c8260b3d7666691f95f3",
       "last_updated": "2026-02-11T17:47:28.190589"
     },
-    "10-platforms/mac/permissions.md": {
-      "original_path": "10-platforms/mac/permissions",
+    "platforms/mac/permissions.md": {
+      "original_path": "platforms/mac/permissions",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/permissions",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "734efc36943677e904ef3fb76aa229209258d1b99a9184b4d860ee24e15619be",
       "last_updated": "2026-02-11T17:47:28.606927"
     },
-    "10-platforms/mac/release.md": {
-      "original_path": "10-platforms/mac/release",
+    "platforms/mac/release.md": {
+      "original_path": "platforms/mac/release",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/release",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "c6d7ca623c6de7c87b4ac61ec8b58ea0280c1c360d1bf341392dd63bc6235297",
       "last_updated": "2026-02-11T17:47:29.452058"
     },
-    "10-platforms/mac/remote.md": {
-      "original_path": "10-platforms/mac/remote",
+    "platforms/mac/remote.md": {
+      "original_path": "platforms/mac/remote",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/remote",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "318f60b53d45f42b35db7db3f362eda3d6e4730d2a308a99ce46e4695f9f1bf0",
       "last_updated": "2026-02-11T17:47:30.356274"
     },
-    "10-platforms/mac/signing.md": {
-      "original_path": "10-platforms/mac/signing",
+    "platforms/mac/signing.md": {
+      "original_path": "platforms/mac/signing",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/signing",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "ab534a6317c4a17c7f3760769b426b80cb910c426262168e96252cfb4a120f82",
       "last_updated": "2026-02-11T17:47:30.949409"
     },
-    "10-platforms/mac/skills.md": {
-      "original_path": "10-platforms/mac/skills",
+    "platforms/mac/skills.md": {
+      "original_path": "platforms/mac/skills",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/skills",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "c1cb853ff8fc1e48aac725fd35ccb1d1410ca426e6b62840b662b3b9508d547e",
       "last_updated": "2026-02-11T17:47:31.600921"
     },
-    "10-platforms/mac/voice-overlay.md": {
-      "original_path": "10-platforms/mac/voice-overlay",
+    "platforms/mac/voice-overlay.md": {
+      "original_path": "platforms/mac/voice-overlay",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/voice-overlay",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "672d7d5015966c50a82c6b2e9d9b03e43bff3dd71ba720aaefe7447289c324a1",
       "last_updated": "2026-02-11T17:47:32.830244"
     },
-    "10-platforms/mac/voicewake.md": {
-      "original_path": "10-platforms/mac/voicewake",
+    "platforms/mac/voicewake.md": {
+      "original_path": "platforms/mac/voicewake",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/voicewake",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "a4a3db913407b110afcb3927a1be73d48ed70616ce030faf26e24b9f73809d1b",
       "last_updated": "2026-02-11T17:47:33.446012"
     },
-    "10-platforms/mac/webchat.md": {
-      "original_path": "10-platforms/mac/webchat",
+    "platforms/mac/webchat.md": {
+      "original_path": "platforms/mac/webchat",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/webchat",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "0ef65d251e0b0eefa5fa9ff4853eecc5a355c22a0685626c3610d6ec23c3db6c",
       "last_updated": "2026-02-11T17:47:34.207926"
     },
-    "10-platforms/mac/xpc.md": {
-      "original_path": "10-platforms/mac/xpc",
+    "platforms/mac/xpc.md": {
+      "original_path": "platforms/mac/xpc",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/mac/xpc",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "06d684c0bf866123a7608fa536ab95b76386154ecb6153d43ef7a4e41c72cdeb",
       "last_updated": "2026-02-11T17:47:35.091963"
     },
-    "10-platforms/macos.md": {
-      "original_path": "10-platforms/macos",
+    "platforms/macos.md": {
+      "original_path": "platforms/macos",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/macos",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "9e2942f2893b2cadc96cea09ee02c3c08675607c1a6940e50425e72e2c7fb665",
       "last_updated": "2026-02-11T17:47:35.899476"
     },
-    "10-platforms/windows.md": {
-      "original_path": "10-platforms/windows",
+    "platforms/windows.md": {
+      "original_path": "platforms/windows",
       "original_url": "https://docs.openclaw.ai/zh-CN/platforms/windows",
-      "category": "10-platforms",
+      "category": "platforms",
       "hash": "c09d4341f52f2746469b655d72076b3c710803180c1e88adc0f0e3ebfc306b5c",
       "last_updated": "2026-02-11T17:47:36.638137"
     },
-    "12-plugins/voice-call.md": {
-      "original_path": "12-plugins/voice-call",
+    "plugins/voice-call.md": {
+      "original_path": "plugins/voice-call",
       "original_url": "https://docs.openclaw.ai/zh-CN/plugins/voice-call",
-      "category": "12-plugins",
+      "category": "plugins",
       "hash": "02ee2275e8f5ede2c63c79cdc934460422fdc63dda9f63d6ff922b7d0e0ec8ca",
       "last_updated": "2026-02-11T17:47:37.131982"
     },
-    "12-plugins/zalouser.md": {
-      "original_path": "12-plugins/zalouser",
+    "plugins/zalouser.md": {
+      "original_path": "plugins/zalouser",
       "original_url": "https://docs.openclaw.ai/zh-CN/plugins/zalouser",
-      "category": "12-plugins",
+      "category": "plugins",
       "hash": "85f91ab9b03c1f564e3bc08a70da202525dc07a8284ee39fe271f151b2626094",
       "last_updated": "2026-02-11T17:47:37.879202"
     },
-    "11-providers/anthropic.md": {
-      "original_path": "11-providers/anthropic",
+    "providers/anthropic.md": {
+      "original_path": "providers/anthropic",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/anthropic",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "c81402f047e57a91fda6925db74de700f9581e1dbe5fae9a1357a0b4a030bd6c",
       "last_updated": "2026-02-11T17:47:38.581052"
     },
-    "11-providers/bedrock.md": {
-      "original_path": "11-providers/bedrock",
+    "providers/bedrock.md": {
+      "original_path": "providers/bedrock",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/bedrock",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "12813df792b9e3ac91d5d01fc7c3fbdab908caf06bf255494513f0de2405dc5c",
       "last_updated": "2026-02-11T17:47:39.390798"
     },
-    "11-providers/glm.md": {
-      "original_path": "11-providers/glm",
+    "providers/glm.md": {
+      "original_path": "providers/glm",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/glm",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "dc35ee2203eb29dba3140f07d7fba244bd2713a2dffef64a78df024d7101041f",
       "last_updated": "2026-02-11T17:47:40.099926"
     },
-    "11-providers/minimax.md": {
-      "original_path": "11-providers/minimax",
+    "providers/minimax.md": {
+      "original_path": "providers/minimax",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/minimax",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "323f378157f64df23c841c457293dab44888048cb9f8d37c58e7e8c0baacf110",
       "last_updated": "2026-02-11T17:47:40.846902"
     },
-    "11-providers/models.md": {
-      "original_path": "11-providers/models",
+    "providers/models.md": {
+      "original_path": "providers/models",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/models",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "6415d8328168b914e1b48319f885671162dd9567635303b4bc80720d11ea5299",
       "last_updated": "2026-02-11T17:47:41.550100"
     },
-    "11-providers/moonshot.md": {
-      "original_path": "11-providers/moonshot",
+    "providers/moonshot.md": {
+      "original_path": "providers/moonshot",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/moonshot",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "a9aa25a8950caf04bb3b6a2ef31d279c976c05c5b8592ad7a435156738ff3d2d",
       "last_updated": "2026-02-11T17:47:42.353444"
     },
-    "11-providers/openai.md": {
-      "original_path": "11-providers/openai",
+    "providers/openai.md": {
+      "original_path": "providers/openai",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/openai",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "da8290ec19b33e4ed82c21784d590d075e05d423fb45f5999c7197e9ffaa067d",
       "last_updated": "2026-02-11T17:47:42.961314"
     },
-    "11-providers/opencode.md": {
-      "original_path": "11-providers/opencode",
+    "providers/opencode.md": {
+      "original_path": "providers/opencode",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/opencode",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "891590a9dd1f90cc56eba87c5bed55a064bfb2006834c80f8fdeb62ede77a460",
       "last_updated": "2026-02-11T17:47:43.785948"
     },
-    "11-providers/openrouter.md": {
-      "original_path": "11-providers/openrouter",
+    "providers/openrouter.md": {
+      "original_path": "providers/openrouter",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/openrouter",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "912984fb1a32fc79df1ab075b87c6463f0f24daf0493c01974aed982c2b9140f",
       "last_updated": "2026-02-11T17:47:44.395676"
     },
-    "11-providers/qianfan.md": {
-      "original_path": "11-providers/qianfan",
+    "providers/qianfan.md": {
+      "original_path": "providers/qianfan",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/qianfan",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "29fdc485e585b4dd6be0154b9030b1f9b1cb17e514c4d46c7aa6611d557a3220",
       "last_updated": "2026-02-11T17:47:45.014478"
     },
-    "11-providers/synthetic.md": {
-      "original_path": "11-providers/synthetic",
+    "providers/synthetic.md": {
+      "original_path": "providers/synthetic",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/synthetic",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "80f304afa3c34f1a1398de76defa288f95f04ebaa50388420d001008ea8bd285",
       "last_updated": "2026-02-11T17:47:45.621706"
     },
-    "11-providers/vercel-ai-gateway.md": {
-      "original_path": "11-providers/vercel-ai-gateway",
+    "providers/vercel-ai-gateway.md": {
+      "original_path": "providers/vercel-ai-gateway",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/vercel-ai-gateway",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "ac1816951dfc7b6c1031dbfb9c9f52981e920115c2c29b9d6143b05c6befe2c6",
       "last_updated": "2026-02-11T17:47:46.509364"
     },
-    "11-providers/zai.md": {
-      "original_path": "11-providers/zai",
+    "providers/zai.md": {
+      "original_path": "providers/zai",
       "original_url": "https://docs.openclaw.ai/zh-CN/providers/zai",
-      "category": "11-providers",
+      "category": "providers",
       "hash": "578c45e6edf0a0154581bd6bbc573c10b97a5c9af404b7c0d3880e74c04d06c6",
       "last_updated": "2026-02-11T17:47:47.574970"
     },
-    "17-reference/AGENTS.default.md": {
-      "original_path": "17-reference/AGENTS.default",
+    "reference/AGENTS.default.md": {
+      "original_path": "reference/AGENTS.default",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/AGENTS.default",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "d43d84113616c3e9234b9e9b4cd71336a25fcfe0b2668fd823d1315a02001839",
       "last_updated": "2026-02-11T17:47:48.190685"
     },
-    "17-reference/RELEASING.md": {
-      "original_path": "17-reference/RELEASING",
+    "reference/RELEASING.md": {
+      "original_path": "reference/RELEASING",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/RELEASING",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "66731792c4aa96da1eb6c1c22be5ba5319276209682c96fe3c14f7e6e82a67de",
       "last_updated": "2026-02-11T17:47:48.804776"
     },
-    "17-reference/credits.md": {
-      "original_path": "17-reference/credits",
+    "reference/credits.md": {
+      "original_path": "reference/credits",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/credits",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "21fe9130b9163a8b560bc031238af1d743c6671ff257a24155947a752d17fae8",
       "last_updated": "2026-02-11T17:47:49.397466"
     },
-    "17-reference/device-models.md": {
-      "original_path": "17-reference/device-models",
+    "reference/device-models.md": {
+      "original_path": "reference/device-models",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/device-models",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "41ddb81b63381b38c56e5beb6fe210b406451cd94f8f04d0b4112e9f41848a7b",
       "last_updated": "2026-02-11T17:47:50.180351"
     },
-    "17-reference/rpc.md": {
-      "original_path": "17-reference/rpc",
+    "reference/rpc.md": {
+      "original_path": "reference/rpc",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/rpc",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "1d91e5257a1a9f7a173035079aa1e3ed5adc48aeb8894eb279ecb4ec7b319670",
       "last_updated": "2026-02-11T17:47:50.788129"
     },
-    "17-reference/session-management-compaction.md": {
-      "original_path": "17-reference/session-management-compaction",
+    "reference/session-management-compaction.md": {
+      "original_path": "reference/session-management-compaction",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/session-management-compaction",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "f9c62ae6c963e4b29715d796f4840424efbbef9229bec5c1e2f0eeeca827133b",
       "last_updated": "2026-02-11T17:47:51.673669"
     },
-    "17-reference/templates/AGENTS.md": {
-      "original_path": "17-reference/templates/AGENTS",
+    "reference/templates/AGENTS.md": {
+      "original_path": "reference/templates/AGENTS",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/AGENTS",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "0ae02d702fb646935669a99a919397b4cc1da6013e1449d87606499217d6eb19",
       "last_updated": "2026-02-11T17:47:52.389214"
     },
-    "17-reference/templates/BOOT.md": {
-      "original_path": "17-reference/templates/BOOT",
+    "reference/templates/BOOT.md": {
+      "original_path": "reference/templates/BOOT",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/BOOT",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "e2aa698166c11196a586d097da478b4980890fe863f30590b032a7d105718f7f",
       "last_updated": "2026-02-11T17:47:53.152626"
     },
-    "17-reference/templates/BOOTSTRAP.md": {
-      "original_path": "17-reference/templates/BOOTSTRAP",
+    "reference/templates/BOOTSTRAP.md": {
+      "original_path": "reference/templates/BOOTSTRAP",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/BOOTSTRAP",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "ad9907a7f704ce629f7ac8db9b5ccca9fbd58695001f2fe53460cf245ab5ea1f",
       "last_updated": "2026-02-11T17:47:53.961321"
     },
-    "17-reference/templates/HEARTBEAT.md": {
-      "original_path": "17-reference/templates/HEARTBEAT",
+    "reference/templates/HEARTBEAT.md": {
+      "original_path": "reference/templates/HEARTBEAT",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/HEARTBEAT",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "2db3e178f87c7942beb63aa56f0981dcef0a174a7aa4107cc929ff7f1f0e265a",
       "last_updated": "2026-02-11T17:47:54.858153"
     },
-    "17-reference/templates/IDENTITY.md": {
-      "original_path": "17-reference/templates/IDENTITY",
+    "reference/templates/IDENTITY.md": {
+      "original_path": "reference/templates/IDENTITY",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/IDENTITY",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "4ff7bf04c7d17ad994d3d4043514688698d0e6c51196c962c0d4cf7bdfcd6b69",
       "last_updated": "2026-02-11T17:47:55.977452"
     },
-    "17-reference/templates/SOUL.md": {
-      "original_path": "17-reference/templates/SOUL",
+    "reference/templates/SOUL.md": {
+      "original_path": "reference/templates/SOUL",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/SOUL",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "367b3f67dd9bcf444c1109ebacda7e78bb2a66ef3e00808ed051fd1a0e00d797",
       "last_updated": "2026-02-11T17:47:56.669519"
     },
-    "17-reference/templates/TOOLS.md": {
-      "original_path": "17-reference/templates/TOOLS",
+    "reference/templates/TOOLS.md": {
+      "original_path": "reference/templates/TOOLS",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/TOOLS",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "d3e0e3ad52b5c19b12a983c4e9d43b738aad6ebd1867f39c32c1cffc08394da3",
       "last_updated": "2026-02-11T17:47:57.405591"
     },
-    "17-reference/templates/USER.md": {
-      "original_path": "17-reference/templates/USER",
+    "reference/templates/USER.md": {
+      "original_path": "reference/templates/USER",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/templates/USER",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "d6aafe5dcfa6b33ce503edf9580062b956b831631087f12cb220887e768a90e0",
       "last_updated": "2026-02-11T17:47:58.270530"
     },
-    "17-reference/test.md": {
-      "original_path": "17-reference/test",
+    "reference/test.md": {
+      "original_path": "reference/test",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/test",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "556d31d7c03b398274404a68b97466195a1286f236f993dec9f306d4195aa76f",
       "last_updated": "2026-02-11T17:47:59.147712"
     },
-    "17-reference/token-use.md": {
-      "original_path": "17-reference/token-use",
+    "reference/token-use.md": {
+      "original_path": "reference/token-use",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/token-use",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "261630dbf807a5624f04f1f4c84737d66a1dbd3dacd5a3dfd01c94eca78f707e",
       "last_updated": "2026-02-11T17:47:59.557431"
     },
-    "17-reference/wizard.md": {
-      "original_path": "17-reference/wizard",
+    "reference/wizard.md": {
+      "original_path": "reference/wizard",
       "original_url": "https://docs.openclaw.ai/zh-CN/reference/wizard",
-      "category": "17-reference",
+      "category": "reference",
       "hash": "be9aa7a00de17a49ed1f4b158c56abb6b3a53a8c9f99df2c5529df032190588e",
       "last_updated": "2026-02-11T17:48:00.374958"
     },
-    "15-security/formal-verification.md": {
-      "original_path": "15-security/formal-verification",
+    "security/formal-verification.md": {
+      "original_path": "security/formal-verification",
       "original_url": "https://docs.openclaw.ai/zh-CN/security/formal-verification",
-      "category": "15-security",
+      "category": "security",
       "hash": "6f9fda9742aa0c857c43ec9678352afac36f8f5750410b81f1ef5abdef8c775e",
       "last_updated": "2026-02-11T17:48:01.112602"
     },
-    "01-start/bootstrapping.md": {
-      "original_path": "01-start/bootstrapping",
+    "start/bootstrapping.md": {
+      "original_path": "start/bootstrapping",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/bootstrapping",
-      "category": "01-start",
+      "category": "start",
       "hash": "a6aa1eadecc300104d18e8b2f795889594c6fc11bc3c256daf0625c5b954e997",
       "last_updated": "2026-02-11T17:48:01.824716"
     },
-    "01-start/docs-directory.md": {
-      "original_path": "01-start/docs-directory",
+    "start/docs-directory.md": {
+      "original_path": "start/docs-directory",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/docs-directory",
-      "category": "01-start",
+      "category": "start",
       "hash": "b0bb59d1a20e37061e49230f74fb329da7f1a667768ed59427c5b8d517fb316e",
       "last_updated": "2026-02-11T17:48:02.628929"
     },
-    "01-start/getting-started.md": {
-      "original_path": "01-start/getting-started",
+    "start/getting-started.md": {
+      "original_path": "start/getting-started",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/getting-started",
-      "category": "01-start",
+      "category": "start",
       "hash": "9ba43d48463afa718d766efac6f39d3b1de147a9c8edad3d3d640094e6b91219",
       "last_updated": "2026-02-11T17:48:03.041866"
     },
-    "01-start/hubs.md": {
-      "original_path": "01-start/hubs",
+    "start/hubs.md": {
+      "original_path": "start/hubs",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/hubs",
-      "category": "01-start",
+      "category": "start",
       "hash": "cdfa2431efb7e4b1c9d4f4abdd0a152f00424bae067270baf24af14a7840f437",
       "last_updated": "2026-02-11T17:48:03.653444"
     },
-    "01-start/lore.md": {
-      "original_path": "01-start/lore",
+    "start/lore.md": {
+      "original_path": "start/lore",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/lore",
-      "category": "01-start",
+      "category": "start",
       "hash": "48c3af186b8f0cbb40f01b5ce8f047d8fcf2b501d03d72c8adec2a25da9a3830",
       "last_updated": "2026-02-11T17:48:04.370311"
     },
-    "01-start/onboarding.md": {
-      "original_path": "01-start/onboarding",
+    "start/onboarding.md": {
+      "original_path": "start/onboarding",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/onboarding",
-      "category": "01-start",
+      "category": "start",
       "hash": "27658f312ca4194e7bb764d92943da439d26a8be64c6a09c86024929f2b627ef",
       "last_updated": "2026-02-11T17:48:05.190085"
     },
-    "01-start/openclaw.md": {
-      "original_path": "01-start/openclaw",
+    "start/openclaw.md": {
+      "original_path": "start/openclaw",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/openclaw",
-      "category": "01-start",
+      "category": "start",
       "hash": "834c8837dad16c44e9afef3f2d9f5b54f7016a1a4d61ffa1ca947e128787a5be",
       "last_updated": "2026-02-11T17:48:05.803837"
     },
-    "01-start/setup.md": {
-      "original_path": "01-start/setup",
+    "start/setup.md": {
+      "original_path": "start/setup",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/setup",
-      "category": "01-start",
+      "category": "start",
       "hash": "b974ad89cb33b7c5e214ef86cfb31d124fd625013965cf4610eafd4dcb4d7a06",
       "last_updated": "2026-02-11T17:48:06.499628"
     },
-    "01-start/showcase.md": {
-      "original_path": "01-start/showcase",
+    "start/showcase.md": {
+      "original_path": "start/showcase",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/showcase",
-      "category": "01-start",
+      "category": "start",
       "hash": "edcd2018f21419348af3c5000bea7b8f262620fd81b366d7c1aefe80f54386be",
       "last_updated": "2026-02-11T17:48:06.911952"
     },
-    "01-start/wizard.md": {
-      "original_path": "01-start/wizard",
+    "start/wizard.md": {
+      "original_path": "start/wizard",
       "original_url": "https://docs.openclaw.ai/zh-CN/start/wizard",
-      "category": "01-start",
+      "category": "start",
       "hash": "8e83cf28af81973fe81f2a3babd4615ae8e95ef269135a4bb4626787038ccebb",
       "last_updated": "2026-02-11T17:48:07.325821"
     },
-    "07-tools/agent-send.md": {
-      "original_path": "07-tools/agent-send",
+    "tools/agent-send.md": {
+      "original_path": "tools/agent-send",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/agent-send",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "b6c7a108ce4955b49a4f0655b69480eea2d2ecd8040580fbc72a130b3f2cc53d",
       "last_updated": "2026-02-11T17:48:08.074587"
     },
-    "07-tools/apply-patch.md": {
-      "original_path": "07-tools/apply-patch",
+    "tools/apply-patch.md": {
+      "original_path": "tools/apply-patch",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/apply-patch",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "2673f18f51d96c56baa522cf8bd8f79ac7f7ca468849b1bef07a4f05eea7fd62",
       "last_updated": "2026-02-11T17:48:08.875052"
     },
-    "07-tools/browser.md": {
-      "original_path": "07-tools/browser",
+    "tools/browser.md": {
+      "original_path": "tools/browser",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/browser",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "0117e4c9d2799da645b604cb5924cd48963d6a10a86677d69e29d390f6e0e912",
       "last_updated": "2026-02-11T17:48:09.347732"
     },
-    "07-tools/browser-linux-troubleshooting.md": {
-      "original_path": "07-tools/browser-linux-troubleshooting",
+    "tools/browser-linux-troubleshooting.md": {
+      "original_path": "tools/browser-linux-troubleshooting",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/browser-linux-troubleshooting",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "d601371350c5cc018f6d5c528596af580d50f9814d6bbd989bdad59d5829126c",
       "last_updated": "2026-02-11T17:48:10.095231"
     },
-    "07-tools/browser-login.md": {
-      "original_path": "07-tools/browser-login",
+    "tools/browser-login.md": {
+      "original_path": "tools/browser-login",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/browser-login",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "95eaa2c8fb39bc3aede40350d95075659b46d8f98b58724b7b772d10ca640417",
       "last_updated": "2026-02-11T17:48:10.820210"
     },
-    "07-tools/chrome-extension.md": {
-      "original_path": "07-tools/chrome-extension",
+    "tools/chrome-extension.md": {
+      "original_path": "tools/chrome-extension",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/chrome-extension",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "b27f8709c333367b22ec166e1f059e68f8074838af104dc6be56ec24a1c2e8a2",
       "last_updated": "2026-02-11T17:48:11.241959"
     },
-    "07-tools/clawhub.md": {
-      "original_path": "07-tools/clawhub",
+    "tools/clawhub.md": {
+      "original_path": "tools/clawhub",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/clawhub",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "e9136f5815e01737e28c4d03c726d8a24a7a9e1cd16ba399f025c5dd2a1f754b",
       "last_updated": "2026-02-11T17:48:11.726705"
     },
-    "07-tools/elevated.md": {
-      "original_path": "07-tools/elevated",
+    "tools/elevated.md": {
+      "original_path": "tools/elevated",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/elevated",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "d4ee870b6f8442c86e34938884d74a8883af4ec93b5ac67b333f944903373f40",
       "last_updated": "2026-02-11T17:48:12.666964"
     },
-    "07-tools/exec.md": {
-      "original_path": "07-tools/exec",
+    "tools/exec.md": {
+      "original_path": "tools/exec",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/exec",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "1ce38c8e40d1ffb05b9b49abc6ec04afeef9d71e50361d98da1824d97ff81877",
       "last_updated": "2026-02-11T17:48:13.080240"
     },
-    "07-tools/llm-task.md": {
-      "original_path": "07-tools/llm-task",
+    "tools/llm-task.md": {
+      "original_path": "tools/llm-task",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/llm-task",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "c1a820d4b46562bd0b9adfcdaed0703c393aae05b06abf680d40d7663a5e3e83",
       "last_updated": "2026-02-11T17:48:13.995815"
     },
-    "07-tools/lobster.md": {
-      "original_path": "07-tools/lobster",
+    "tools/lobster.md": {
+      "original_path": "tools/lobster",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/lobster",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "b0b136a132caea3b0bab39e8a6b0efdb2825f5a042ca68c8fdc97b677de5c813",
       "last_updated": "2026-02-11T17:48:14.762382"
     },
-    "07-tools/multi-agent-sandbox-tools.md": {
-      "original_path": "07-tools/multi-agent-sandbox-tools",
+    "tools/multi-agent-sandbox-tools.md": {
+      "original_path": "tools/multi-agent-sandbox-tools",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/multi-agent-sandbox-tools",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "0fef05d267fde689ef6ab323ecc15f4bcced452496c6ca9d0b379dfe93147305",
       "last_updated": "2026-02-11T17:48:15.429859"
     },
-    "07-tools/plugin.md": {
-      "original_path": "07-tools/plugin",
+    "tools/plugin.md": {
+      "original_path": "tools/plugin",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/plugin",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "71faae15560075ad0e2cdd538689c5fba18e19d6d7843e8b068470329e4522c1",
       "last_updated": "2026-02-11T17:48:16.305831"
     },
-    "07-tools/reactions.md": {
-      "original_path": "07-tools/reactions",
+    "tools/reactions.md": {
+      "original_path": "tools/reactions",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/reactions",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "a05187944400ee28603ec95271acaec1cafa125a487ec64afcac052b811868bf",
       "last_updated": "2026-02-11T17:48:17.168754"
     },
-    "07-tools/skills.md": {
-      "original_path": "07-tools/skills",
+    "tools/skills.md": {
+      "original_path": "tools/skills",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/skills",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "4d35800706b88a064408402e39967b61d777999cad629f69aed1ae65a59d1cd1",
       "last_updated": "2026-02-11T17:48:17.882600"
     },
-    "07-tools/skills-config.md": {
-      "original_path": "07-tools/skills-config",
+    "tools/skills-config.md": {
+      "original_path": "tools/skills-config",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/skills-config",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "ff732ebe5801f73e6aeb96076a8dcfd462ae8232bb05fd920061c7ecf35cd3d1",
       "last_updated": "2026-02-11T17:48:18.362470"
     },
-    "07-tools/slash-commands.md": {
-      "original_path": "07-tools/slash-commands",
+    "tools/slash-commands.md": {
+      "original_path": "tools/slash-commands",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/slash-commands",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "f5daa5c15f57aa3bd1eb13244feaa1b3b4661ba8d2a2415f8a0476b67a4890b6",
       "last_updated": "2026-02-11T17:48:19.013494"
     },
-    "07-tools/subagents.md": {
-      "original_path": "07-tools/subagents",
+    "tools/subagents.md": {
+      "original_path": "tools/subagents",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/subagents",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "254416d42c50f91d5943410ed62772487dafd281243e31ef0317f6fdf4ae4aff",
       "last_updated": "2026-02-11T17:48:19.832477"
     },
-    "07-tools/thinking.md": {
-      "original_path": "07-tools/thinking",
+    "tools/thinking.md": {
+      "original_path": "tools/thinking",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/thinking",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "ddd432eb7110ccb4890cae050739d476d44d9867fe918c08ad7c17005eee2458",
       "last_updated": "2026-02-11T17:48:20.587690"
     },
-    "07-tools/web.md": {
-      "original_path": "07-tools/web",
+    "tools/web.md": {
+      "original_path": "tools/web",
       "original_url": "https://docs.openclaw.ai/zh-CN/tools/web",
-      "category": "07-tools",
+      "category": "tools",
       "hash": "abf65f03d9739212759a877da7d5cc366200e06f573db13978e2862cfa5a35fd",
       "last_updated": "2026-02-11T17:48:21.009759"
     },
-    "14-web/control-ui.md": {
-      "original_path": "14-web/control-ui",
+    "web/control-ui.md": {
+      "original_path": "web/control-ui",
       "original_url": "https://docs.openclaw.ai/zh-CN/web/control-ui",
-      "category": "14-web",
+      "category": "web",
       "hash": "a1b8b6294a64557847d58c1d55752607f6f17dfcdc48ead3e6d4319c0fe1cc8e",
       "last_updated": "2026-02-11T17:48:21.778372"
     },
-    "14-web/dashboard.md": {
-      "original_path": "14-web/dashboard",
+    "web/dashboard.md": {
+      "original_path": "web/dashboard",
       "original_url": "https://docs.openclaw.ai/zh-CN/web/dashboard",
-      "category": "14-web",
+      "category": "web",
       "hash": "0a95f87e926f84e4897753d1ac2f73a4b8a91d90de0319cdad6edeadea24a6d3",
       "last_updated": "2026-02-11T17:48:22.597353"
     },
-    "14-web/tui.md": {
-      "original_path": "14-web/tui",
+    "web/tui.md": {
+      "original_path": "web/tui",
       "original_url": "https://docs.openclaw.ai/zh-CN/web/tui",
-      "category": "14-web",
+      "category": "web",
       "hash": "bf552c7f8501701abeb1f69d0c736dc8c9379516ac3bc2b4a79c236ab76fa94a",
       "last_updated": "2026-02-11T17:48:23.337761"
     },
-    "14-web/webchat.md": {
-      "original_path": "14-web/webchat",
+    "web/webchat.md": {
+      "original_path": "web/webchat",
       "original_url": "https://docs.openclaw.ai/zh-CN/web/webchat",
-      "category": "14-web",
+      "category": "web",
       "hash": "ae3d0683b49c8d682542d76e232d5cca1464879fccef8888431f4fee7e715fb2",
       "last_updated": "2026-02-11T17:48:24.133005"
     },
