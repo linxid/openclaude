@@ -1,43 +1,69 @@
-# Mintlify Starter Kit
+# OpenClaude 中文社区
 
-Use the starter kit to get your docs deployed and ready to customize.
+[English](./README_EN.md) | 中文
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+OpenClaude 是一个社区驱动的中文文档站点，为中文用户提供 AI 开发工具的高质量文档资源。
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## 文档内容
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+### Claude Code
 
-## Development
+[Claude Code](https://code.claude.com/) 是 Anthropic 官方的 AI 编程助手，本站提供完整的中文文档，包括：
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- **入门指南** - 快速开始、安装设置
+- **核心概念** - 工作原理、功能概览、最佳实践
+- **平台集成** - VS Code、JetBrains、Chrome 扩展、Slack
+- **高级功能** - Skills、Hooks、MCP 协议、插件系统
+- **部署运维** - GitHub Actions、GitLab CI/CD、无头模式
+- **企业管理** - Amazon Bedrock、Google Vertex AI、成本监控
 
-```
+### OpenClaw
+
+[OpenClaw](https://openclaw.ai/) 是一个开源的 AI Agent 平台，支持多渠道消息集成。文档涵盖：
+
+- **核心概念** - Agent 架构、会话管理、记忆系统
+- **聊天渠道** - Telegram、WhatsApp、Discord、Slack、飞书等
+- **部署方式** - Docker、Node.js、Nix、云平台部署
+- **模型支持** - Anthropic、OpenAI、Bedrock、国内模型
+- **CLI 命令** - 完整的命令行工具参考
+
+## 本地开发
+
+### 安装依赖
+
+```bash
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+### 启动开发服务器
 
-```
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+在浏览器访问 `http://localhost:3000` 预览文档。
 
-## Publishing changes
+### 常见问题
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+- 如果开发环境无法启动，运行 `mint update` 更新 CLI
+- 如果页面 404，确保在包含 `docs.json` 的目录下运行
 
-## Need help?
+## 贡献指南
 
-### Troubleshooting
+欢迎提交 Pull Request 改进文档！
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+1. Fork 本仓库
+2. 创建功能分支 (`git checkout -b feature/improvement`)
+3. 提交更改 (`git commit -m 'Add some improvement'`)
+4. 推送到分支 (`git push origin feature/improvement`)
+5. 创建 Pull Request
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+## 相关链接
+
+- [Claude Code 官方文档](https://code.claude.com/docs/zh-CN)
+- [OpenClaw 官方文档](https://docs.openclaw.ai/zh-CN)
+- [Mintlify 文档](https://mintlify.com/docs)
+
+## 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
