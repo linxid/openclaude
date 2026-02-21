@@ -165,6 +165,6 @@ CLI 有意**不**打印 `node_modules` 路径。始终先运行 `openclaw browse
 
 相关：
 
-* 浏览器工具概述：[浏览器](/tools/browser)
-* 安全审计：[安全](/gateway/security)
-* Tailscale 设置：[Tailscale](/gateway/tailscale)
+* 浏览器工具概述：[浏览器](/openclaw/tools/browser)
+* 安全审计：[安全](/openclaw/gateway/security)
+* Tailscale 设置：[Tailscale](/openclaw/gateway/tailscale)

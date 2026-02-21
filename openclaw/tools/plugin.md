@@ -34,10 +34,10 @@ openclaw plugins install @openclaw/voice-call
 * Memory (LanceDB) — 捆绑的长期记忆插件（自动召回/捕获；设置 `plugins.slots.memory = "memory-lancedb"`）
 * [Voice Call](/plugins/voice-call) — `@openclaw/voice-call`
 * [Zalo Personal](/plugins/zalouser) — `@openclaw/zalouser`
-* [Matrix](/channels/matrix) — `@openclaw/matrix`
-* [Nostr](/channels/nostr) — `@openclaw/nostr`
-* [Zalo](/channels/zalo) — `@openclaw/zalo`
-* [Microsoft Teams](/channels/msteams) — `@openclaw/msteams`
+* [Matrix](/openclaw/channels/matrix) — `@openclaw/matrix`
+* [Nostr](/openclaw/channels/nostr) — `@openclaw/nostr`
+* [Zalo](/openclaw/channels/zalo) — `@openclaw/zalo`
+* [Microsoft Teams](/openclaw/channels/msteams) — `@openclaw/msteams`
 * Google Antigravity OAuth（提供商认证）— 作为 `google-antigravity-auth` 捆绑（默认禁用）
 * Gemini CLI OAuth（提供商认证）— 作为 `google-gemini-cli-auth` 捆绑（默认禁用）
 * Qwen OAuth（提供商认证）— 作为 `qwen-portal-auth` 捆绑（默认禁用）

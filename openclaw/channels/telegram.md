@@ -68,7 +68,7 @@ description: "Telegram 渠道配置"
 环境变量选项：`TELEGRAM_BOT_TOKEN=...`（适用于默认账户）。
 如果环境变量和配置都设置了，配置优先。
 
-多账户支持：使用 `channels.telegram.accounts`，每个账户有独立的 token 和可选的 `name`。参见 [`gateway/configuration`](/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。
+多账户支持：使用 `channels.telegram.accounts`，每个账户有独立的 token 和可选的 `name`。参见 [`gateway/configuration`](/openclaw/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。
 
 3. 启动 Gateway 网关。当 token 解析成功时 Telegram 启动（配置优先，环境变量回退）。
 4. 私信访问默认为配对模式。机器人首次被联系时批准配对码。
@@ -146,7 +146,7 @@ OpenClaw 在启动时向 Telegram 的机器人菜单注册原生命令（如 `/s
 * 日志中出现 `setMyCommands failed` 通常意味着到 `api.telegram.org` 的出站 HTTPS/DNS 被阻止。
 * 如果你看到 `sendMessage` 或 `sendChatAction` 失败，检查 IPv6 路由和 DNS。
 
-更多帮助：[渠道故障排除](/channels/troubleshooting)。
+更多帮助：[渠道故障排除](/openclaw/channels/troubleshooting)。
 
 注意：
 
@@ -345,7 +345,7 @@ Telegram 功能可以在两个级别配置（上面显示的对象形式；旧�
 * 批准方式：
   * `openclaw pairing list telegram`
   * `openclaw pairing approve telegram <CODE>`
-* 配对是 Telegram 私信使用的默认 token 交换。详情：[配对](/channels/pairing)
+* 配对是 Telegram 私信使用的默认 token 交换。详情：[配对](/openclaw/channels/pairing)
 * `channels.telegram.allowFrom` 接受数字用户 ID（推荐）或 `@username` 条目。这**不是**机器人用户名；使用人类发送者的 ID。向导接受 `@username` 并在可能时将其解析为数字 ID。
 
 #### 查找你的 Telegram 用户 ID
@@ -587,18 +587,18 @@ OpenClaw 使用 Bot API `sendMessageDraft`（不是真实消息），然后将�
 
 * `/reasoning stream` 在回复生成时将推理流式传输到草稿气泡中，然后发送不带推理的最终答案。
 * 如果 `channels.telegram.streamMode` 为 `off`，推理流被禁用。
-  更多上下文：[流式传输 + 分块](/concepts/streaming)。
+  更多上下文：[流式传输 + 分块](/openclaw/concepts/streaming)。
 
 ## 重试策略
 
-出站 Telegram API 调用在遇到临时网络/429 错误时会以指数退避和抖动进行重试。通过 `channels.telegram.retry` 配置。参见[重试策略](/concepts/retry)。
+出站 Telegram API 调用在遇到临时网络/429 错误时会以指数退避和抖动进行重试。通过 `channels.telegram.retry` 配置。参见[重试策略](/openclaw/concepts/retry)。
 
 ## 智能体工具（消息 + 反应）
 
 * 工具：`telegram`，使用 `sendMessage` 动作（`to`、`content`，可选 `mediaUrl`、`replyToMessageId`、`messageThreadId`）。
 * 工具：`telegram`，使用 `react` 动作（`chatId`、`messageId`、`emoji`）。
 * 工具：`telegram`，使用 `deleteMessage` 动作（`chatId`、`messageId`）。
-* 反应移除语义：参见 [/tools/reactions](/tools/reactions)。
+* 反应移除语义：参见 [/tools/reactions](/openclaw/tools/reactions)。
 * 工具门控：`channels.telegram.actions.reactions`、`channels.telegram.actions.sendMessage`、`channels.telegram.actions.deleteMessage`（默认：启用），以及 `channels.telegram.actions.sticker`（默认：禁用）。
 
 ## 反应通知
@@ -692,7 +692,7 @@ Telegram 反应作为**单独的 `message_reaction` 事件**到达，而不是�
 
 ## 配置参考（Telegram）
 
-完整配置：[配置](/gateway/configuration)
+完整配置：[配置](/openclaw/gateway/configuration)
 
 提供商选项：
 

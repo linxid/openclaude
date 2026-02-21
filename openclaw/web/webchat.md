@@ -31,7 +31,7 @@ description: "WebChat 文档"
 
 ## 配置参考（WebChat）
 
-完整配置：[配置](/gateway/configuration)
+完整配置：[配置](/openclaw/gateway/configuration)
 
 渠道选项：
 

@@ -8,7 +8,7 @@ description: "approvals 文档"
 
 相关内容：
 
-* 执行审批：[执行审批](/tools/exec-approvals)
+* 执行审批：[执行审批](/openclaw/tools/exec-approvals)
 * 节点：[节点](/nodes)
 
 ## 常用命令

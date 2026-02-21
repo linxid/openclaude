@@ -8,8 +8,8 @@ description: "memory 文档"
 
 相关内容：
 
-* 记忆概念：[记忆](/concepts/memory)
-* 插件：[插件](/tools/plugin)
+* 记忆概念：[记忆](/openclaw/concepts/memory)
+* 插件：[插件](/openclaw/tools/plugin)
 
 ## 示例
 

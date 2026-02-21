@@ -199,7 +199,7 @@ OpenClaw 支持多个命名配置文件（路由配置）。配置文件可以�
 
 OpenClaw 还可以通过本地 CDP 中继 + Chrome 扩展驱动**你现有的 Chrome 标签页**（无需单独的"openclaw"Chrome 实例）。
 
-完整指南：[Chrome 扩展](/tools/chrome-extension)
+完整指南：[Chrome 扩展](/openclaw/tools/chrome-extension)
 
 流程：
 
@@ -308,7 +308,7 @@ docker compose run --rm openclaw-cli \
   node /app/node_modules/playwright-core/cli.js install chromium
 ```
 
-要持久化浏览器下载，设置 `PLAYWRIGHT_BROWSERS_PATH`（例如 `/home/node/.cache/ms-playwright`）并确保 `/home/node` 通过 `OPENCLAW_HOME_VOLUME` 或绑定挂载持久化。参见 [Docker](/install/docker)。
+要持久化浏览器下载，设置 `PLAYWRIGHT_BROWSERS_PATH`（例如 `/home/node/.cache/ms-playwright`）并确保 `/home/node` 通过 `OPENCLAW_HOME_VOLUME` 或绑定挂载持久化。参见 [Docker](/openclaw/install/docker)。
 
 ## 工作原理（内部）
 
@@ -410,7 +410,7 @@ docker compose run --rm openclaw-cli \
   * `--format ai`（安装 Playwright 时的默认值）：返回带有数字 ref 的 AI 快照（`aria-ref="<n>"`）。
   * `--format aria`：返回无障碍树（无 ref；仅供检查）。
   * `--efficient`（或 `--mode efficient`）：紧凑角色快照预设（interactive + compact + depth + 较低的 maxChars）。
-  * 配置默认值（仅限工具/CLI）：设置 `browser.snapshotDefaults.mode: "efficient"` 以在调用者未传递模式时使用高效快照（参见 [Gateway 网关配置](/gateway/configuration#browser-openclaw-managed-browser)）。
+  * 配置默认值（仅限工具/CLI）：设置 `browser.snapshotDefaults.mode: "efficient"` 以在调用者未传递模式时使用高效快照（参见 [Gateway 网关配置](/openclaw/gateway/configuration#browser-openclaw-managed-browser)）。
   * 角色快照选项（`--interactive`、`--compact`、`--depth`、`--selector`）强制使用带有 `ref=e12` 等 ref 的基于角色的快照。
   * `--frame "<iframe selector>"` 将角色快照范围限定到 iframe（与 `e12` 等角色 ref 配合使用）。
   * `--interactive` 输出一个扁平的、易于选择的交互元素列表（最适合驱动操作）。
@@ -511,13 +511,13 @@ JSON 格式的角色快照包含 `refs` 加上一个小的 `stats` 块（lines/c
 
 * openclaw 浏览器配置文件可能包含已登录的会话；请将其视为敏感信息。
 * `browser act kind=evaluate` / `openclaw browser evaluate` 和 `wait --fn` 在页面上下文中执行任意 JavaScript。提示注入可能会操纵它。如果不需要，请使用 `browser.evaluateEnabled=false` 禁用它。
-* 有关登录和反机器人注意事项（X/Twitter 等），请参阅 [浏览器登录 + X/Twitter 发帖](/tools/browser-login)。
+* 有关登录和反机器人注意事项（X/Twitter 等），请参阅 [浏览器登录 + X/Twitter 发帖](/openclaw/tools/browser-login)。
 * 保持 Gateway 网关/节点主机私有（仅限 loopback 或 tailnet）。
 * 远程 CDP 端点功能强大；请通过隧道保护它们。
 
 ## 故障排除
 
-有关 Linux 特定问题（特别是 snap Chromium），请参阅[浏览器故障排除](/tools/browser-linux-troubleshooting)。
+有关 Linux 特定问题（特别是 snap Chromium），请参阅[浏览器故障排除](/openclaw/tools/browser-linux-troubleshooting)。
 
 ## 智能体工具 + 控制工作原理
 

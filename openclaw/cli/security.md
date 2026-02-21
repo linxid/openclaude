@@ -7,7 +7,7 @@ description: "security 文档"
 
 相关：
 
-* 安全指南：[安全](/gateway/security)
+* 安全指南：[安全](/openclaw/gateway/security)
 
 ## 审计
 

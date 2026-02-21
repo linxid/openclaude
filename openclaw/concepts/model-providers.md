@@ -4,7 +4,7 @@ description: "模型提供商 文档"
 ---
 
 本页介绍 **LLM/模型提供商**（不是 WhatsApp/Telegram 等聊天渠道）。
-关于模型选择规则，请参阅 [/concepts/models](/concepts/models)。
+关于模型选择规则，请参阅 [/concepts/models](/openclaw/concepts/models)。
 
 ## 快速规则
 
@@ -188,7 +188,7 @@ openclaw models auth login --provider qwen-portal --set-default
 * `qwen-portal/coder-model`
 * `qwen-portal/vision-model`
 
-参见 [/providers/qwen](/providers/qwen) 了解设置详情和注意事项。
+参见 [/providers/qwen](/openclaw/providers/qwen) 了解设置详情和注意事项。
 
 ### Synthetic
 
@@ -225,7 +225,7 @@ MiniMax 通过 `models.providers` 配置，因为它使用自定义端点：
 * MiniMax（Anthropic 兼容）：`--auth-choice minimax-api`
 * 认证：`MINIMAX_API_KEY`
 
-参见 [/providers/minimax](/providers/minimax) 了解设置详情、模型选项和配置片段。
+参见 [/providers/minimax](/openclaw/providers/minimax) 了解设置详情、模型选项和配置片段。
 
 ### Ollama
 
@@ -249,7 +249,7 @@ ollama pull llama3.3
 }
 ```
 
-当 Ollama 在本地 `http://127.0.0.1:11434/v1` 运行时会自动检测。参见 [/providers/ollama](/providers/ollama) 了解模型推荐和自定义配置。
+当 Ollama 在本地 `http://127.0.0.1:11434/v1` 运行时会自动检测。参见 [/providers/ollama](/openclaw/providers/ollama) 了解模型推荐和自定义配置。
 
 ### 本地代理（LM Studio、vLLM、LiteLLM 等）
 
@@ -305,4 +305,4 @@ openclaw models set opencode/claude-opus-4-5
 openclaw models list
 ```
 
-另请参阅：[/gateway/configuration](/gateway/configuration) 了解完整配置示例。
+另请参阅：[/gateway/configuration](/openclaw/gateway/configuration) 了解完整配置示例。

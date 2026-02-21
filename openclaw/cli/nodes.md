@@ -8,8 +8,8 @@ description: "nodes 文档"
 相关内容：
 
 * 节点概述：[节点](/nodes)
-* 摄像头：[摄像头节点](/nodes/camera)
-* 图像：[图像节点](/nodes/images)
+* 摄像头：[摄像头节点](/openclaw/nodes/camera)
+* 图像：[图像节点](/openclaw/nodes/images)
 
 通用选项：
 

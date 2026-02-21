@@ -7,7 +7,7 @@ description: "onboard 文档"
 
 相关内容：
 
-* 向导指南：[新手引导](/start/onboarding)
+* 向导指南：[新手引导](/openclaw/start/onboarding)
 
 ## 示例
 

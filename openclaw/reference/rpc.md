@@ -12,7 +12,7 @@ OpenClaw 通过 JSON-RPC 集成外部 CLI。目前使用两种模式。
 * 健康探测：`/api/v1/check`。
 * 当 `channels.signal.autoStart=true` 时，OpenClaw 负责生命周期管理。
 
-设置和端点参见 [Signal](/channels/signal)。
+设置和端点参见 [Signal](/openclaw/channels/signal)。
 
 ## 模式 B：stdio 子进程（imsg）
 
@@ -27,7 +27,7 @@ OpenClaw 通过 JSON-RPC 集成外部 CLI。目前使用两种模式。
 * `send`
 * `chats.list`（探测/诊断）
 
-设置和寻址（首选 `chat_id`）参见 [iMessage](/channels/imessage)。
+设置和寻址（首选 `chat_id`）参见 [iMessage](/openclaw/channels/imessage)。
 
 ## 适配器指南
 

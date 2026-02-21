@@ -14,7 +14,7 @@ OpenClaw 从 `~/.openclaw/openclaw.json` 读取可选的 **JSON5** 配置（支�
 * 调整内置智能体默认值（`agents.defaults`）和会话行为（`session`）
 * 设置每个智能体的身份标识（`agents.list[].identity`）
 
-> **初次接触配置？** 请查阅[配置示例](/gateway/configuration-examples)指南，获取带有详细说明的完整示例！
+> **初次接触配置？** 请查阅[配置示例](/openclaw/gateway/configuration-examples)指南，获取带有详细说明的完整示例！
 
 ## 严格配置验证
 
@@ -283,7 +283,7 @@ OpenClaw 从父进程（shell、launchd/systemd、CI 等）读取环境变量。
 }
 ```
 
-参见 [/environment](/help/environment) 了解优先级和来源详情。
+参见 [/environment](/openclaw/help/environment) 了解优先级和来源详情。
 
 ### `env.shellEnv`（可选）
 
@@ -354,7 +354,7 @@ OpenClaw 在以下位置存储**每个智能体的**认证配置文件（OAuth +
 
 * `<agentDir>/auth-profiles.json`（默认：`~/.openclaw/agents/<agentId>/agent/auth-profiles.json`）
 
-另请参阅：[/concepts/oauth](/concepts/oauth)
+另请参阅：[/concepts/oauth](/openclaw/concepts/oauth)
 
 旧版 OAuth 导入：
 
@@ -778,7 +778,7 @@ OpenClaw 在以下位置存储**每个智能体的**认证配置文件（OAuth +
 * **只读**工具 + 工作区
 * **无文件系统访问**（仅消息/会话工具）
 
-参见[多智能体沙箱与工具](/tools/multi-agent-sandbox-tools)了解优先级和更多示例。
+参见[多智能体沙箱与工具](/openclaw/tools/multi-agent-sandbox-tools)了解优先级和更多示例。
 
 完全访问（无沙箱）：
 
@@ -1090,7 +1090,7 @@ OpenClaw 仅在存在 `channels.telegram` 配置段时启动 Telegram。机器�
 * 使用 Telegram `sendMessageDraft`（草稿气泡，不是真正的消息）。
 * 需要**私聊话题**（私信 中的 message\_thread\_id；机器人已启用话题）。
 * `/reasoning stream` 将推理过程流式传输到草稿中，然后发送最终答案。
-  重试策略默认值和行为记录在[重试策略](/concepts/retry)中。
+  重试策略默认值和行为记录在[重试策略](/openclaw/concepts/retry)中。
 
 ### `channels.discord`（机器人传输）
 
@@ -1176,7 +1176,7 @@ OpenClaw 仅在存在 `channels.discord` 配置段时启动 Discord。token 从 
 * `all`：所有消息上的所有反应。
 * `allowlist`：`guilds.<id>.users` 中的用户在所有消息上的反应（空列表禁用）。
   出站文本按 `channels.discord.textChunkLimit`（默认 2000）分块。设置 `channels.discord.chunkMode="newline"` 在长度分块前按空行（段落边界）分割。Discord 客户端可能裁剪过高的消息，因此 `channels.discord.maxLinesPerMessage`（默认 17）即使在 2000 字符以内也会分割长多行回复。
-  重试策略默认值和行为记录在[重试策略](/concepts/retry)中。
+  重试策略默认值和行为记录在[重试策略](/openclaw/concepts/retry)中。
 
 ### `channels.googlechat`（Chat API webhook）
 
@@ -1482,7 +1482,7 @@ exec ssh -T gateway-host imsg "$@"
 ### `messages`
 
 控制入站/出站前缀和可选的确认反应。
-参见[消息](/concepts/messages)了解排队、会话和流式上下文。
+参见[消息](/openclaw/concepts/messages)了解排队、会话和流式上下文。
 
 ```json5  theme={null}
 {
@@ -1870,11 +1870,11 @@ MiniMax 认证：设置 `MINIMAX_API_KEY`（环境变量）或配置 `models.pro
 }
 ```
 
-参见 [/concepts/session-pruning](/concepts/session-pruning) 了解行为细节。
+参见 [/concepts/session-pruning](/openclaw/concepts/session-pruning) 了解行为细节。
 
 #### `agents.defaults.compaction`（预留空间 + 记忆刷新）
 
-`agents.defaults.compaction.mode` 选择压缩摘要策略。默认为 `default`；设为 `safeguard` 可为超长历史启用分块摘要。参见 [/concepts/compaction](/concepts/compaction)。
+`agents.defaults.compaction.mode` 选择压缩摘要策略。默认为 `default`；设为 `safeguard` 可为超长历史启用分块摘要。参见 [/concepts/compaction](/openclaw/concepts/compaction)。
 
 `agents.defaults.compaction.reserveTokensFloor` 为 Pi 压缩强制一个最小 `reserveTokens` 值（默认：`20000`）。设为 `0` 禁用此底线。
 
@@ -1939,7 +1939,7 @@ MiniMax 认证：设置 `MINIMAX_API_KEY`（环境变量）或配置 `models.pro
     agents: { defaults: { humanDelay: { mode: "natural" } } },
   }
   ```
-  参见 [/concepts/streaming](/concepts/streaming) 了解行为 + 分块细节。
+  参见 [/concepts/streaming](/openclaw/concepts/streaming) 了解行为 + 分块细节。
 
 输入指示器：
 
@@ -1948,7 +1948,7 @@ MiniMax 认证：设置 `MINIMAX_API_KEY`（环境变量）或配置 `models.pro
 * `session.typingMode`：每会话的模式覆盖。
 * `agents.defaults.typingIntervalSeconds`：输入信号刷新频率（默认：6s）。
 * `session.typingIntervalSeconds`：每会话的刷新间隔覆盖。
-  参见 [/concepts/typing-indicators](/concepts/typing-indicators) 了解行为细节。
+  参见 [/concepts/typing-indicators](/openclaw/concepts/typing-indicators) 了解行为细节。
 
 `agents.defaults.model.primary` 应设为 `provider/model`（例如 `anthropic/claude-opus-4-5`）。
 别名来自 `agents.defaults.models.*.alias`（例如 `Opus`）。
@@ -2217,7 +2217,7 @@ Z.AI 模型可通过 `zai/<model>` 使用（例如 `zai/glm-4.7`），需要环�
 
 为内置智能体提供可选的 **Docker 沙箱**。适用于非主会话，使其无法访问你的主机系统。
 
-详情：[沙箱](/gateway/sandboxing)
+详情：[沙箱](/openclaw/gateway/sandboxing)
 
 默认值（如果启用）：
 
@@ -2230,7 +2230,7 @@ Z.AI 模型可通过 `zai/<model>` 使用（例如 `zai/glm-4.7`），需要环�
 * 自动清理：空闲超过 24h 或存在超过 7d
 * 工具策略：仅允许 `exec`、`process`、`read`、`write`、`edit`、`apply_patch`、`sessions_list`、`sessions_history`、`sessions_send`、`sessions_spawn`、`session_status`（deny 优先）
   * 通过 `tools.sandbox.tools` 配置，通过 `agents.list[].tools.sandbox.tools` 进行每智能体覆盖
-  * 沙箱策略中支持工具组简写：`group:runtime`、`group:fs`、`group:sessions`、`group:memory`（参见[沙箱 vs 工具策略 vs 提升](/gateway/sandbox-vs-tool-policy-vs-elevated#tool-groups-shorthands)）
+  * 沙箱策略中支持工具组简写：`group:runtime`、`group:fs`、`group:sessions`、`group:memory`（参见[沙箱 vs 工具策略 vs 提升](/openclaw/gateway/sandbox-vs-tool-policy-vs-elevated#tool-groups-shorthands)）
 * 可选的沙箱浏览器（Chromium + CDP，noVNC 观察器）
 * 加固旋钮：`network`、`user`、`pidsLimit`、`memory`、`cpus`、`ulimits`、`seccompProfile`、`apparmorProfile`
 
@@ -2360,7 +2360,7 @@ noVNC URL 会注入系统提示中，以便智能体可以引用它。
 
 OpenClaw 使用 **pi-coding-agent** 模型目录。你可以通过编写
 `~/.openclaw/agents/<agentId>/agent/models.json` 或在 OpenClaw 配置中的 `models.providers` 下定义相同的 schema 来添加自定义提供商（LiteLLM、本地 OpenAI 兼容服务器、Anthropic 代理等）。
-按提供商的概述 + 示例：[/concepts/model-providers](/concepts/model-providers)。
+按提供商的概述 + 示例：[/concepts/model-providers](/openclaw/concepts/model-providers)。
 
 当存在 `models.providers` 时，OpenClaw 在启动时将 `models.json` 写入/合并到
 `~/.openclaw/agents/<agentId>/agent/`：
@@ -2566,7 +2566,7 @@ Z.AI 模型通过内置的 `zai` 提供商提供。在环境中设置 `ZAI_API_K
 
 ### 本地模型（LM Studio）— 推荐设置
 
-参见 [/gateway/local-models](/gateway/local-models) 了解当前本地指南。简而言之：在高性能硬件上通过 LM Studio Responses API 运行 MiniMax M2.1；保留托管模型合并作为回退。
+参见 [/gateway/local-models](/openclaw/gateway/local-models) 了解当前本地指南。简而言之：在高性能硬件上通过 LM Studio Responses API 运行 MiniMax M2.1；保留托管模型合并作为回退。
 
 ### MiniMax M2.1
 
@@ -2770,7 +2770,7 @@ Z.AI 模型通过内置的 `zai` 提供商提供。在环境中设置 `ZAI_API_K
 ### `plugins`（扩展）
 
 控制插件发现、允许/拒绝和每插件配置。插件从 `~/.openclaw/extensions`、`<workspace>/.openclaw/extensions` 以及任何 `plugins.load.paths` 条目加载。**配置更改需要重启 Gateway 网关。**
-参见 [/plugin](/tools/plugin) 了解详情。
+参见 [/plugin](/openclaw/tools/plugin) 了解详情。
 
 字段：
 
@@ -2897,10 +2897,10 @@ OpenClaw 可以为 OpenClaw 启动一个**专用、隔离的** Chrome/Brave/Edge
 
 相关文档：
 
-* [控制台 UI](/web/control-ui)
+* [控制台 UI](/openclaw/web/control-ui)
 * [Web 概述](/web)
-* [Tailscale](/gateway/tailscale)
-* [远程访问](/gateway/remote)
+* [Tailscale](/openclaw/gateway/tailscale)
+* [远程访问](/openclaw/gateway/remote)
 
 信任的代理：
 
@@ -3037,7 +3037,7 @@ Gateway 网关监视 `~/.openclaw/openclaw.json`（或 `OPENCLAW_CONFIG_PATH`）
 * `openclaw --profile <name> …` → 使用 `~/.openclaw-<name>`（端口通过配置/环境变量/标志）
 
 参见 [Gateway 网关运维手册](/gateway) 了解派生的端口映射（gateway/browser/canvas）。
-参见[多 Gateway 网关](/gateway/multiple-gateways) 了解浏览器/CDP 端口隔离细节。
+参见[多 Gateway 网关](/openclaw/gateway/multiple-gateways) 了解浏览器/CDP 端口隔离细节。
 
 示例：
 
@@ -3319,4 +3319,4 @@ Cron 是 Gateway 网关自有的唤醒和定时任务调度器。参见 [Cron �
 
 ***
 
-*下一步：[智能体运行时](/concepts/agent)* 🦞
+*下一步：[智能体运行时](/openclaw/concepts/agent)* 🦞

@@ -569,7 +569,7 @@ openclaw pairing list feishu
 
 ## 配置参考
 
-完整配置请参考：[网关配置](/gateway/configuration)
+完整配置请参考：[网关配置](/openclaw/gateway/configuration)
 
 主要选项：
 

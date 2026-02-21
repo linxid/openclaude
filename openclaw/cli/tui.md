@@ -7,7 +7,7 @@ description: "tui 文档"
 
 相关：
 
-* TUI 指南：[TUI](/web/tui)
+* TUI 指南：[TUI](/openclaw/web/tui)
 
 ## 示例
 

@@ -101,7 +101,7 @@ openclaw tui --url ws://<host>:<port> --token <gateway-token>
 * `/settings`
 * `/exit`
 
-其他 Gateway 网关斜杠命令（例如 `/context`）会转发到 Gateway 网关并显示为系统输出。参见[斜杠命令](/tools/slash-commands)。
+其他 Gateway 网关斜杠命令（例如 `/context`）会转发到 Gateway 网关并显示为系统输出。参见[斜杠命令](/openclaw/tools/slash-commands)。
 
 ## 本地 shell 命令
 

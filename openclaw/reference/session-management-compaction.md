@@ -15,10 +15,10 @@ description: "会话管理深入了解 文档"
 
 如果你想先了解更高层次的概述，请从以下内容开始：
 
-* [/concepts/session](/concepts/session)
-* [/concepts/compaction](/concepts/compaction)
-* [/concepts/session-pruning](/concepts/session-pruning)
-* [/reference/transcript-hygiene](/reference/transcript-hygiene)
+* [/concepts/session](/openclaw/concepts/session)
+* [/concepts/compaction](/openclaw/concepts/compaction)
+* [/concepts/session-pruning](/openclaw/concepts/session-pruning)
+* [/reference/transcript-hygiene](/openclaw/reference/transcript-hygiene)
 
 ***
 
@@ -71,7 +71,7 @@ OpenClaw 通过 `src/config/sessions.ts` 解析这些位置。
 * 定时任务：`cron:<job.id>`
 * Webhook：`hook:<uuid>`（除非被覆盖）
 
-规范规则记录在 [/concepts/session](/concepts/session)。
+规范规则记录在 [/concepts/session](/openclaw/concepts/session)。
 
 ***
 
@@ -148,7 +148,7 @@ OpenClaw 有意**不**"修复"记录；Gateway 网关使用 `SessionManager` 来
 * 上下文窗口来自模型目录（可以通过配置覆盖）。
 * 存储中的 `contextTokens` 是运行时估计/报告值；不要将其视为严格保证。
 
-更多信息，参见 [/token-use](/reference/token-use)。
+更多信息，参见 [/token-use](/openclaw/reference/token-use)。
 
 ***
 
@@ -161,7 +161,7 @@ OpenClaw 有意**不**"修复"记录；Gateway 网关使用 `SessionManager` 来
 * 压缩摘要
 * `firstKeptEntryId` 之后的消息
 
-压缩是**持久化的**（与会话修剪不同）。参见 [/concepts/session-pruning](/concepts/session-pruning)。
+压缩是**持久化的**（与会话修剪不同）。参见 [/concepts/session-pruning](/openclaw/concepts/session-pruning)。
 
 ***
 
@@ -257,7 +257,7 @@ OpenClaw 使用**预阈值刷新**方法：
 * 刷新每个压缩周期运行一次（在 `sessions.json` 中跟踪）。
 * 刷新仅对嵌入式 Pi 会话运行（CLI 后端跳过它）。
 * 当会话工作空间是只读时（`workspaceAccess: "ro"` 或 `"none"`），刷新会被跳过。
-* 参见[记忆](/concepts/memory)了解工作空间文件布局和写入模式。
+* 参见[记忆](/openclaw/concepts/memory)了解工作空间文件布局和写入模式。
 
 Pi 还在扩展 API 中公开了 `session_before_compact` 钩子，但 OpenClaw 的刷新逻辑目前位于 Gateway 网关端。
 
@@ -265,7 +265,7 @@ Pi 还在扩展 API 中公开了 `session_before_compact` 钩子，但 OpenClaw 
 
 ## 故障排除检查清单
 
-* 会话键错误？从 [/concepts/session](/concepts/session) 开始，并在 `/status` 中确认 `sessionKey`。
+* 会话键错误？从 [/concepts/session](/openclaw/concepts/session) 开始，并在 `/status` 中确认 `sessionKey`。
 * 存储 vs 记录不匹配？从 `openclaw status` 确认 Gateway 网关主机和存储路径。
 * 压缩过于频繁？检查：
   * 模型上下文窗口（太小）

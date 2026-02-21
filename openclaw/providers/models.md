@@ -12,7 +12,7 @@ Venice 是我们推荐的 Venice AI 设置，用于隐私优先的推理，并�
 * 默认：`venice/llama-3.3-70b`
 * 最佳综合：`venice/claude-opus-45`（Opus 仍然是最强的）
 
-参见 [Venice AI](/providers/venice)。
+参见 [Venice AI](/openclaw/providers/venice)。
 
 ## 快速开始（两个步骤）
 
@@ -27,17 +27,17 @@ Venice 是我们推荐的 Venice AI 设置，用于隐私优先的推理，并�
 
 ## 支持的提供商（入门集）
 
-* [OpenAI（API + Codex）](/providers/openai)
-* [Anthropic（API + Claude Code CLI）](/providers/anthropic)
-* [OpenRouter](/providers/openrouter)
-* [Vercel AI Gateway](/providers/vercel-ai-gateway)
-* [Moonshot AI（Kimi + Kimi Coding）](/providers/moonshot)
-* [Synthetic](/providers/synthetic)
-* [OpenCode Zen](/providers/opencode)
-* [Z.AI](/providers/zai)
-* [GLM 模型](/providers/glm)
-* [MiniMax](/providers/minimax)
-* [Venice（Venice AI）](/providers/venice)
-* [Amazon Bedrock](/providers/bedrock)
+* [OpenAI（API + Codex）](/openclaw/providers/openai)
+* [Anthropic（API + Claude Code CLI）](/openclaw/providers/anthropic)
+* [OpenRouter](/openclaw/providers/openrouter)
+* [Vercel AI Gateway](/openclaw/providers/vercel-ai-gateway)
+* [Moonshot AI（Kimi + Kimi Coding）](/openclaw/providers/moonshot)
+* [Synthetic](/openclaw/providers/synthetic)
+* [OpenCode Zen](/openclaw/providers/opencode)
+* [Z.AI](/openclaw/providers/zai)
+* [GLM 模型](/openclaw/providers/glm)
+* [MiniMax](/openclaw/providers/minimax)
+* [Venice（Venice AI）](/openclaw/providers/venice)
+* [Amazon Bedrock](/openclaw/providers/bedrock)
 
-有关完整的提供商目录（xAI、Groq、Mistral 等）和高级配置，请参阅[模型提供商](/concepts/model-providers)。
+有关完整的提供商目录（xAI、Groq、Mistral 等）和高级配置，请参阅[模型提供商](/openclaw/concepts/model-providers)。

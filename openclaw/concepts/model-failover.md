@@ -18,7 +18,7 @@ OpenClaw 对 API 密钥和 OAuth 令牌都使用**认证配置文件**。
 * 配置 `auth.profiles` / `auth.order` **仅用于元数据和路由**（不含密钥）。
 * 旧版仅导入 OAuth 文件：`~/.openclaw/credentials/oauth.json`（首次使用时导入到 `auth-profiles.json`）。
 
-更多详情：[/concepts/oauth](/concepts/oauth)
+更多详情：[/concepts/oauth](/openclaw/concepts/oauth)
 
 凭证类型：
 
@@ -122,7 +122,7 @@ OpenClaw **为每个会话固定所选的认证配置文件**以保持提供商�
 
 ## 相关配置
 
-参阅 [Gateway 网关配置](/gateway/configuration) 了解：
+参阅 [Gateway 网关配置](/openclaw/gateway/configuration) 了解：
 
 * `auth.profiles` / `auth.order`
 * `auth.cooldowns.billingBackoffHours` / `auth.cooldowns.billingBackoffHoursByProvider`
@@ -130,4 +130,4 @@ OpenClaw **为每个会话固定所选的认证配置文件**以保持提供商�
 * `agents.defaults.model.primary` / `agents.defaults.model.fallbacks`
 * `agents.defaults.imageModel` 路由
 
-参阅[模型](/concepts/models)了解更广泛的模型选择和回退概述。
+参阅[模型](/openclaw/concepts/models)了解更广泛的模型选择和回退概述。

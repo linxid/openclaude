@@ -53,7 +53,7 @@ description: "远程控制 文档"
 
 * 优先在远程主机上使用 loopback 绑定，并通过 SSH 或 Tailscale 连接。
 * 如果你将 Gateway 网关绑定到非 loopback 接口，请要求令牌/密码认证。
-* 参见[安全](/gateway/security)和 [Tailscale](/gateway/tailscale)。
+* 参见[安全](/openclaw/gateway/security)和 [Tailscale](/openclaw/gateway/tailscale)。
 
 ## WhatsApp 登录流程（远程）
 

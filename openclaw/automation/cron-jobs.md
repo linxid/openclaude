@@ -110,7 +110,7 @@ Cron 表达式使用 `croner`。如果省略时区，将使用 Gateway网关主�
 * `wakeMode: "next-heartbeat"`（默认）：事件等待下一次计划心跳。
 * `wakeMode: "now"`：事件触发立即心跳运行。
 
-当你需要正常的心跳提示 + 主会话上下文时，这是最佳选择。参见[心跳](/gateway/heartbeat)。
+当你需要正常的心跳提示 + 主会话上下文时，这是最佳选择。参见[心跳](/openclaw/gateway/heartbeat)。
 
 #### 隔离任务（专用定时会话）
 
@@ -393,7 +393,7 @@ openclaw system event --mode now --text "Next heartbeat: check battery."
 
 * `cron.list`、`cron.status`、`cron.add`、`cron.update`、`cron.remove`
 * `cron.run`（强制或到期）、`cron.runs`
-  如需不创建任务直接发送系统事件，请使用 [`openclaw system event`](/cli/system)。
+  如需不创建任务直接发送系统事件，请使用 [`openclaw system event`](/openclaw/cli/system)。
 
 ## 故障排除
 

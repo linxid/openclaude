@@ -89,7 +89,7 @@ description: "斜杠命令 文档"
 
 仅文本：
 
-* `/compact [instructions]`（参见 [/concepts/compaction](/concepts/compaction)）
+* `/compact [instructions]`（参见 [/concepts/compaction](/openclaw/concepts/compaction)）
 * `! <command>`（仅主机；一次一个；对长时间运行的任务使用 `!poll` + `!stop`）
 * `!poll`（检查输出/状态；接受可选的 `sessionId`；`/bash poll` 也可用）
 * `!stop`（停止正在运行的 bash 任务；接受可选的 `sessionId`；`/bash stop` 也可用）

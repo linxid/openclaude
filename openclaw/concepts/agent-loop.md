@@ -38,7 +38,7 @@ description: "智能体循环 文档"
 
 * 运行按会话键（会话通道）序列化，可选择通过全局通道。
 * 这可以防止工具/会话竞争并保持会话历史的一致性。
-* 消息渠道可以选择队列模式（collect/steer/followup）来馈送此通道系统。参见[命令队列](/concepts/queue)。
+* 消息渠道可以选择队列模式（collect/steer/followup）来馈送此通道系统。参见[命令队列](/openclaw/concepts/queue)。
 
 ## 会话 + 工作区准备
 
@@ -51,7 +51,7 @@ description: "智能体循环 文档"
 
 * 系统提示由 OpenClaw 的基础提示、Skills 提示、引导上下文和每次运行的覆盖构建。
 * 强制执行模型特定的限制和压缩保留令牌。
-* 参见[系统提示](/concepts/system-prompt)了解模型看到的内容。
+* 参见[系统提示](/openclaw/concepts/system-prompt)了解模型看到的内容。
 
 ## 钩子点（可以拦截的位置）
 
@@ -80,14 +80,14 @@ OpenClaw 有两个钩子系统：
 * **`session_start` / `session_end`**：会话生命周期边界。
 * **`gateway_start` / `gateway_stop`**：Gateway 网关生命周期事件。
 
-参见[插件](/tools/plugin#plugin-hooks)了解钩子 API 和注册详情。
+参见[插件](/openclaw/tools/plugin#plugin-hooks)了解钩子 API 和注册详情。
 
 ## 流式传输 + 部分回复
 
 * 助手增量从 pi-agent-core 流式传输并作为 `assistant` 事件发出。
 * 分块流式传输可以在 `text_end` 或 `message_end` 时发出部分回复。
 * 推理流式传输可以作为单独的流或作为块回复发出。
-* 参见[流式传输](/concepts/streaming)了解分块和块回复行为。
+* 参见[流式传输](/openclaw/concepts/streaming)了解分块和块回复行为。
 
 ## 工具执行 + 消息工具
 
@@ -109,7 +109,7 @@ OpenClaw 有两个钩子系统：
 
 * 自动压缩发出 `compaction` 流事件，可以触发重试。
 * 重试时，内存缓冲区和工具摘要会重置以避免重复输出。
-* 参见[压缩](/concepts/compaction)了解压缩管道。
+* 参见[压缩](/openclaw/concepts/compaction)了解压缩管道。
 
 ## 事件流（当前）
 

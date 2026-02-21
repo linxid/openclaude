@@ -182,6 +182,6 @@ openclaw doctor
 
 ## 相关内容
 
-* [Doctor](/gateway/doctor)
-* [Gateway 网关故障排除](/gateway/troubleshooting)
-* [OpenClaw 在哪里存储数据？](/help/faq#where-does-openclaw-store-its-data)
+* [Doctor](/openclaw/gateway/doctor)
+* [Gateway 网关故障排除](/openclaw/gateway/troubleshooting)
+* [OpenClaw 在哪里存储数据？](/openclaw/help/faq#where-does-openclaw-store-its-data)

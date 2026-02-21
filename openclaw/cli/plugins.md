@@ -7,9 +7,9 @@ description: "plugins 文档"
 
 相关内容：
 
-* 插件系统：[插件](/tools/plugin)
+* 插件系统：[插件](/openclaw/tools/plugin)
 * 插件清单 + 模式：[插件清单](/plugins/manifest)
-* 安全加固：[安全](/gateway/security)
+* 安全加固：[安全](/openclaw/gateway/security)
 
 ## 命令
 

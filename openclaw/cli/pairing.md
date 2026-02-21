@@ -7,7 +7,7 @@ description: "pairing 文档"
 
 相关内容：
 
-* 配对流程：[配对](/channels/pairing)
+* 配对流程：[配对](/openclaw/channels/pairing)
 
 ## 命令
 

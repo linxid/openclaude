@@ -182,7 +182,7 @@ exec ssh -T bot@mac-mini.tailnet-1234.ts.net imsg "$@"
 * 使用 SSH 密钥使 `ssh bot@mac-mini.tailnet-1234.ts.net` 无需提示即可工作。
 * `remoteHost` 应与 SSH 目标匹配，以便 SCP 可以获取附件。
 
-多账户支持：使用 `channels.imessage.accounts` 配置每个账户及可选的 `name`。参见 [`gateway/configuration`](/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。不要提交 `~/.openclaw/openclaw.json`（它通常包含令牌）。
+多账户支持：使用 `channels.imessage.accounts` 配置每个账户及可选的 `name`。参见 [`gateway/configuration`](/openclaw/gateway/configuration#telegramaccounts--discordaccounts--slackaccounts--signalaccounts--imessageaccounts) 了解共享模式。不要提交 `~/.openclaw/openclaw.json`（它通常包含令牌）。
 
 ## 访问控制（私信 + 群组）
 
@@ -193,7 +193,7 @@ exec ssh -T bot@mac-mini.tailnet-1234.ts.net imsg "$@"
 * 批准方式：
   * `openclaw pairing list imessage`
   * `openclaw pairing approve imessage <CODE>`
-* 配对是 iMessage 私信的默认令牌交换方式。详情：[配对](/channels/pairing)
+* 配对是 iMessage 私信的默认令牌交换方式。详情：[配对](/openclaw/channels/pairing)
 
 群组：
 
@@ -232,7 +232,7 @@ exec ssh -T bot@mac-mini.tailnet-1234.ts.net imsg "$@"
 }
 ```
 
-当你想为特定会话使用隔离的个性/模型时这很有用（参见[多智能体路由](/concepts/multi-agent)）。关于文件系统隔离，参见[沙箱隔离](/gateway/sandboxing)。
+当你想为特定会话使用隔离的个性/模型时这很有用（参见[多智能体路由](/openclaw/concepts/multi-agent)）。关于文件系统隔离，参见[沙箱隔离](/openclaw/gateway/sandboxing)。
 
 ## 媒体 + 限制
 
@@ -262,7 +262,7 @@ imsg chats --limit 20
 
 ## 配置参考（iMessage）
 
-完整配置：[配置](/gateway/configuration)
+完整配置：[配置](/openclaw/gateway/configuration)
 
 提供商选项：
 

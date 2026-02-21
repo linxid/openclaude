@@ -113,7 +113,7 @@ openclaw.invoke --tool llm-task --action json --args-json '{
 }'
 ```
 
-参见 [LLM Task](/tools/llm-task) 了解详情和配置选项。
+参见 [LLM Task](/openclaw/tools/llm-task) 了解详情和配置选项。
 
 ## 工作流文件（.lobster）
 
@@ -325,7 +325,7 @@ OpenProse 与 Lobster 配合良好：使用 `/prose` 编排多智能体准备，
 
 ## 了解更多
 
-* [插件](/tools/plugin)
+* [插件](/openclaw/tools/plugin)
 * [插件工具开发](/plugins/agent-tools)
 
 ## 案例研究：社区工作流

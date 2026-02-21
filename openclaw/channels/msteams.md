@@ -30,7 +30,7 @@ openclaw plugins install ./extensions/msteams
 如果你在配置/新手引导过程中选择 Teams 并检测到 git 检出，
 OpenClaw 将自动提供本地安装路径。
 
-详情：[插件](/tools/plugin)
+详情：[插件](/openclaw/tools/plugin)
 
 ## 快速设置（初学者）
 
@@ -466,7 +466,7 @@ Teams markdown 比 Slack 或 Discord 更有限：
 
 ## 路由和会话
 
-* 会话键遵循标准智能体格式（见 [/concepts/session](/concepts/session)）：
+* 会话键遵循标准智能体格式（见 [/concepts/session](/openclaw/concepts/session)）：
   * 私信共享主会话（`agent:<agentId>:<mainKey>`）。
   * 频道/群组消息使用会话 ID：
     * `agent:<agentId>:msteams:channel:<conversationId>`

@@ -64,7 +64,7 @@ description: "定时任务与心跳对比 文档"
 }
 ```
 
-完整配置请参阅[心跳](/gateway/heartbeat)。
+完整配置请参阅[心跳](/openclaw/gateway/heartbeat)。
 
 ## 定时任务：精确调度
 
@@ -200,7 +200,7 @@ Lobster 是用于**多步骤工具管道**的工作流运行时，适用于需�
 * 该工具是**可选插件**；建议通过 `tools.alsoAllow: ["lobster"]` 附加启用。
 * 如果传入 `lobsterPath`，必须是**绝对路径**。
 
-完整用法和示例请参阅 [Lobster](/tools/lobster)。
+完整用法和示例请参阅 [Lobster](/openclaw/tools/lobster)。
 
 ## 主会话与隔离会话
 
@@ -268,6 +268,6 @@ openclaw cron add \
 
 ## 相关内容
 
-* [心跳](/gateway/heartbeat) - 完整的心跳配置
+* [心跳](/openclaw/gateway/heartbeat) - 完整的心跳配置
 * [定时任务](/automation/cron-jobs) - 完整的定时任务 CLI 和 API 参考
-* [系统](/cli/system) - 系统事件 + 心跳控制
+* [系统](/openclaw/cli/system) - 系统事件 + 心跳控制

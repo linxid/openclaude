@@ -3,7 +3,7 @@ title: "配置示例"
 description: "配置示例 文档"
 ---
 
-以下示例与当前配置模式一致。有关详尽的参考和每个字段的说明，请参阅[配置](/gateway/configuration)。
+以下示例与当前配置模式一致。有关详尽的参考和每个字段的说明，请参阅[配置](/openclaw/gateway/configuration)。
 
 ## 快速开始
 
@@ -571,4 +571,4 @@ description: "配置示例 文档"
 * 如果你设置 `dmPolicy: "open"`，匹配的 `allowFrom` 列表必须包含 `"*"`。
 * 提供商 ID 各不相同（电话号码、用户 ID、频道 ID）。使用提供商文档确认格式。
 * 稍后添加的可选部分：`web`、`browser`、`ui`、`discovery`、`canvasHost`、`talk`、`signal`、`imessage`。
-* 参阅[提供商](/channels/whatsapp)和[故障排除](/gateway/troubleshooting)了解更深入的设置说明。
+* 参阅[提供商](/openclaw/channels/whatsapp)和[故障排除](/openclaw/gateway/troubleshooting)了解更深入的设置说明。

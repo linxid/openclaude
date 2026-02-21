@@ -55,7 +55,7 @@ description: "思考级别 文档"
 
 ## 相关内容
 
-* 提权模式文档位于[提权模式](/tools/elevated)。
+* 提权模式文档位于[提权模式](/openclaw/tools/elevated)。
 
 ## 心跳
 

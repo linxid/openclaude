@@ -35,7 +35,7 @@ openclaw sandbox explain --json
 * `"non-main"`：仅非主会话被沙箱隔离（群组/渠道的常见"意外"）。
 * `"all"`：所有内容都被沙箱隔离。
 
-参见[沙箱隔离](/gateway/sandboxing)了解完整矩阵（范围、工作区挂载、镜像）。
+参见[沙箱隔离](/openclaw/gateway/sandboxing)了解完整矩阵（范围、工作区挂载、镜像）。
 
 ### 绑定挂载（安全快速检查）
 
@@ -106,7 +106,7 @@ openclaw sandbox explain --json
 * 启用：`tools.elevated.enabled`（以及可选的 `agents.list[].tools.elevated.enabled`）
 * 发送者允许列表：`tools.elevated.allowFrom.<provider>`（以及可选的 `agents.list[].tools.elevated.allowFrom.<provider>`）
 
-参见[提权模式](/tools/elevated)。
+参见[提权模式](/openclaw/tools/elevated)。
 
 ## 常见"沙箱困境"修复
 

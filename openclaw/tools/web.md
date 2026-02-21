@@ -8,7 +8,7 @@ OpenClaw 提供两个轻量级 Web 工具：
 * `web_search` — 通过 Brave Search API（默认）或 Perplexity Sonar（直连或通过 OpenRouter）搜索网络。
 * `web_fetch` — HTTP 获取 + 可读性提取（HTML → markdown/文本）。
 
-这些**不是**浏览器自动化。对于 JS 密集型网站或需要登录的情况，请使用[浏览器工具](/tools/browser)。
+这些**不是**浏览器自动化。对于 JS 密集型网站或需要登录的情况，请使用[浏览器工具](/openclaw/tools/browser)。
 
 ## 工作原理
 
@@ -73,7 +73,7 @@ Brave 提供免费层和付费计划；查看 Brave API 门户了解当前限制
 
 **推荐：** 运行 `openclaw configure --section web`。它将密钥存储在 `~/.openclaw/openclaw.json` 的 `tools.web.search.apiKey` 下。
 
-**环境变量替代方案：** 在 Gateway 网关进程环境中设置 `BRAVE_API_KEY`。对于 Gateway 网关安装，将其放在 `~/.openclaw/.env`（或你的服务环境）中。参见[环境变量](/help/faq#how-does-openclaw-load-environment-variables)。
+**环境变量替代方案：** 在 Gateway 网关进程环境中设置 `BRAVE_API_KEY`。对于 Gateway 网关安装，将其放在 `~/.openclaw/.env`（或你的服务环境）中。参见[环境变量](/openclaw/help/faq#how-does-openclaw-load-environment-variables)。
 
 ## 使用 Perplexity（直连或通过 OpenRouter）
 
@@ -238,7 +238,7 @@ await web_search({
 * `web_fetch` 默认发送类 Chrome 的 User-Agent 和 `Accept-Language`；如需要可覆盖 `userAgent`。
 * `web_fetch` 阻止私有/内部主机名并重新检查重定向（用 `maxRedirects` 限制）。
 * `web_fetch` 是尽力提取；某些网站需要浏览器工具。
-* 参见 [Firecrawl](/tools/firecrawl) 了解密钥设置和服务详情。
+* 参见 [Firecrawl](/openclaw/tools/firecrawl) 了解密钥设置和服务详情。
 * 响应会被缓存（默认 15 分钟）以减少重复获取。
 * 如果你使用工具配置文件/允许列表，添加 `web_search`/`web_fetch` 或 `group:web`。
 * 如果缺少 Brave 密钥，`web_search` 返回一个简短的设置提示和文档链接。

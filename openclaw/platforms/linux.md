@@ -16,18 +16,18 @@ Gateway 网关在 Linux 上完全支持。**Node 是推荐的运行时**。
 4. 从你的笔记本电脑：`ssh -N -L 18789:127.0.0.1:18789 <user>@<host>`
 5. 打开 `http://127.0.0.1:18789/` 并粘贴你的令牌
 
-分步 VPS 指南：[exe.dev](/install/exe-dev)
+分步 VPS 指南：[exe.dev](/openclaw/install/exe-dev)
 
 ## 安装
 
-* [入门指南](/start/getting-started)
-* [安装与更新](/install/updating)
-* 可选流程：[Bun（实验性）](/install/bun)、[Nix](/install/nix)、[Docker](/install/docker)
+* [入门指南](/openclaw/start/getting-started)
+* [安装与更新](/openclaw/install/updating)
+* 可选流程：[Bun（实验性）](/openclaw/install/bun)、[Nix](/openclaw/install/nix)、[Docker](/openclaw/install/docker)
 
 ## Gateway 网关
 
 * [Gateway 网关运行手册](/gateway)
-* [配置](/gateway/configuration)
+* [配置](/openclaw/gateway/configuration)
 
 ## Gateway 网关服务安装（CLI）
 

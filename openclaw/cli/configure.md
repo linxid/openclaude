@@ -11,8 +11,8 @@ description: "configure 文档"
 
 相关内容：
 
-* Gateway 网关配置参考：[配置](/gateway/configuration)
-* Config CLI：[Config](/cli/config)
+* Gateway 网关配置参考：[配置](/openclaw/gateway/configuration)
+* Config CLI：[Config](/openclaw/cli/config)
 
 注意事项：
 

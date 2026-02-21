@@ -8,7 +8,7 @@ description: "hooks 文档"
 相关内容：
 
 * 钩子：[钩子](/automation/hooks)
-* 插件钩子：[插件](/tools/plugin#plugin-hooks)
+* 插件钩子：[插件](/openclaw/tools/plugin#plugin-hooks)
 
 ## 列出所有钩子
 

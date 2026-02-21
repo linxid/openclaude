@@ -7,9 +7,9 @@ description: "skills 文档"
 
 相关内容：
 
-* Skills 系统：[Skills](/tools/skills)
-* Skills 配置：[Skills 配置](/tools/skills-config)
-* ClawHub 安装：[ClawHub](/tools/clawhub)
+* Skills 系统：[Skills](/openclaw/tools/skills)
+* Skills 配置：[Skills 配置](/openclaw/tools/skills-config)
+* ClawHub 安装：[ClawHub](/openclaw/tools/clawhub)
 
 ## 命令
 

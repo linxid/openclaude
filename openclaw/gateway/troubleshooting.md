@@ -5,9 +5,9 @@ description: "故障排除 文档"
 
 当 OpenClaw 出现异常时，以下是解决方法。
 
-如果你只想快速分类问题，请先查看常见问题的[最初的六十秒](/help/faq#first-60-seconds-if-somethings-broken)。本页深入介绍运行时故障和诊断。
+如果你只想快速分类问题，请先查看常见问题的[最初的六十秒](/openclaw/help/faq#first-60-seconds-if-somethings-broken)。本页深入介绍运行时故障和诊断。
 
-特定提供商的快捷方式：[/channels/troubleshooting](/channels/troubleshooting)
+特定提供商的快捷方式：[/channels/troubleshooting](/openclaw/channels/troubleshooting)
 
 ## 状态与诊断
 
@@ -25,7 +25,7 @@ description: "故障排除 文档"
 
 **分享输出：** 优先使用 `openclaw status --all`（它会隐藏令牌）。如果你粘贴 `openclaw status`，考虑先设置 `OPENCLAW_SHOW_SECRETS=0`（令牌预览）。
 
-另请参阅：[健康检查](/gateway/health) 和 [日志](/logging)。
+另请参阅：[健康检查](/openclaw/gateway/health) 和 [日志](/logging)。
 
 ## 常见问题
 
@@ -70,7 +70,7 @@ openclaw models auth paste-token --provider anthropic
 openclaw models status
 ```
 
-更多详情：[Anthropic](/providers/anthropic) 和 [OAuth](/concepts/oauth)。
+更多详情：[Anthropic](/openclaw/providers/anthropic) 和 [OAuth](/openclaw/concepts/oauth)。
 
 ### Control UI 在 HTTP 上失败（"device identity required" / "connect failed"）
 
@@ -80,16 +80,16 @@ openclaw models status
 
 **修复：**
 
-* 优先通过 [Tailscale Serve](/gateway/tailscale) 使用 HTTPS。
+* 优先通过 [Tailscale Serve](/openclaw/gateway/tailscale) 使用 HTTPS。
 * 或在 Gateway 网关主机上本地打开：`http://127.0.0.1:18789/`。
 * 如果必须使用 HTTP，启用 `gateway.controlUi.allowInsecureAuth: true` 并
   使用 Gateway 网关令牌（仅令牌；无设备身份/配对）。参见
-  [Control UI](/web/control-ui#insecure-http)。
+  [Control UI](/openclaw/web/control-ui#insecure-http)。
 
 ### CI Secrets Scan Failed
 
 这意味着 `detect-secrets` 发现了尚未在基线中的新候选项。
-按照 [密钥扫描](/gateway/security#secret-scanning-detect-secrets) 操作。
+按照 [密钥扫描](/openclaw/gateway/security#secret-scanning-detect-secrets) 操作。
 
 ### 服务已安装但没有运行
 
@@ -169,7 +169,7 @@ Gateway 网关服务使用**最小 PATH** 运行以避免 shell/管理器的干�
 变量如 `DISPLAY` 应该放在 `~/.openclaw/.env` 中（由 Gateway 网关早期加载）。
 在 `host=gateway` 上的 Exec 运行会将你的登录 shell `PATH` 合并到 exec 环境中，
 所以缺少的工具通常意味着你的 shell 初始化没有导出它们（或设置
-`tools.exec.pathPrepend`）。参见 [/tools/exec](/tools/exec)。
+`tools.exec.pathPrepend`）。参见 [/tools/exec](/openclaw/tools/exec)。
 
 WhatsApp + Telegram 渠道需要 **Node**；不支持 Bun。如果你的
 服务是用 Bun 或版本管理的 Node 路径安装的，运行 `openclaw doctor`
@@ -254,7 +254,7 @@ openclaw gateway status
 只有一个工作区是活动的。
 
 **修复：** 保留单个活动工作区并归档/删除其余的。参见
-[智能体工作区](/concepts/agent-workspace#extra-workspace-folders)。
+[智能体工作区](/openclaw/concepts/agent-workspace#extra-workspace-folders)。
 
 ### 主聊天在沙箱工作区中运行
 
@@ -293,7 +293,7 @@ OpenClaw 有意拒绝**较旧/不安全的模型**（尤其是那些更容易受
   `openclaw models scan` 并选择一个支持的模型。
 * 检查 Gateway 网关日志以获取详细的失败原因。
 
-另请参阅：[模型 CLI](/cli/models) 和 [模型提供商](/concepts/model-providers)。
+另请参阅：[模型 CLI](/openclaw/cli/models) 和 [模型提供商](/openclaw/concepts/model-providers)。
 
 ### 消息未触发
 
@@ -492,7 +492,7 @@ openclaw doctor --fix
 }
 ```
 
-参见 [WhatsApp 设置](/channels/whatsapp)。
+参见 [WhatsApp 设置](/openclaw/channels/whatsapp)。
 
 ### WhatsApp 将我登出。如何重新认证？
 
@@ -569,7 +569,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 2. 如果你想要真正的多消息分块回复，设置 `channels.telegram.streamMode: "off"`。
 3. 调试时使用较小的 chunk/coalesce 阈值。
 
-参见 [流式传输](/concepts/streaming)。
+参见 [流式传输](/openclaw/concepts/streaming)。
 
 ### 即使设置了 `requireMention: false`，Discord 也不在我的服务器中回复。为什么？
 
@@ -586,7 +586,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 4. 确保机器人有 **Message Content Intent** 和频道权限。
 5. 运行 `openclaw channels status --probe` 获取审计提示。
 
-文档：[Discord](/channels/discord)、[渠道故障排除](/channels/troubleshooting)。
+文档：[Discord](/openclaw/channels/discord)、[渠道故障排除](/openclaw/channels/troubleshooting)。
 
 ### Cloud Code Assist API 错误：invalid tool schema（400）。现在怎么办？
 
@@ -605,7 +605,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 3. 如果你定义自定义工具，保持顶级模式为 `type: "object"` 并使用
    `properties` 和简单枚举。
 
-参见 [工具](/tools) 和 [TypeBox 模式](/concepts/typebox)。
+参见 [工具](/tools) 和 [TypeBox 模式](/openclaw/concepts/typebox)。
 
 ## macOS 特定问题
 
@@ -757,4 +757,4 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 }
 ```
 
-**完整指南：** 参见 [browser-linux-troubleshooting](/tools/browser-linux-troubleshooting)
+**完整指南：** 参见 [browser-linux-troubleshooting](/openclaw/tools/browser-linux-troubleshooting)

@@ -12,12 +12,12 @@ Gateway 网关仪表板是默认在 `/` 提供的浏览器控制 UI
 
 关键参考：
 
-* [控制 UI](/web/control-ui) 了解使用方法和 UI 功能。
-* [Tailscale](/gateway/tailscale) 了解 Serve/Funnel 自动化。
+* [控制 UI](/openclaw/web/control-ui) 了解使用方法和 UI 功能。
+* [Tailscale](/openclaw/gateway/tailscale) 了解 Serve/Funnel 自动化。
 * [Web 界面](/web) 了解绑定模式和安全注意事项。
 
 认证通过 `connect.params.auth`（token 或密码）在 WebSocket 握手时强制执行。
-参见 [Gateway 网关配置](/gateway/configuration) 中的 `gateway.auth`。
+参见 [Gateway 网关配置](/openclaw/gateway/configuration) 中的 `gateway.auth`。
 
 安全注意事项：控制 UI 是一个**管理界面**（聊天、配置、执行审批）。
 不要公开暴露它。UI 在首次加载后将 token 存储在 `localStorage` 中。

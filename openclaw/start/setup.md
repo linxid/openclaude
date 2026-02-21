@@ -15,7 +15,7 @@ description: "设置 文档"
 
 * Node `>=22`
 * `pnpm`
-* Docker（可选；仅用于容器化设置/e2e — 参阅 [Docker](/install/docker)）
+* Docker（可选；仅用于容器化设置/e2e — 参阅 [Docker](/openclaw/install/docker)）
 
 ## 个性化策略（让更新不会造成问题）
 
@@ -115,7 +115,7 @@ openclaw health
 * **配对允许列表**：`~/.openclaw/credentials/<channel>-allowFrom.json`
 * **模型认证配置文件**：`~/.openclaw/agents/<agentId>/agent/auth-profiles.json`
 * **旧版 OAuth 导入**：`~/.openclaw/credentials/oauth.json`
-  更多详情：[安全](/gateway/security#credential-storage-map)。
+  更多详情：[安全](/openclaw/gateway/security#credential-storage-map)。
 
 ## 更新（不破坏你的设置）
 
@@ -135,7 +135,7 @@ sudo loginctl enable-linger $USER
 ## 相关文档
 
 * [Gateway 网关运行手册](/gateway)（标志、监督、端口）
-* [Gateway 网关配置](/gateway/configuration)（配置模式 + 示例）
-* [Discord](/channels/discord) 和 [Telegram](/channels/telegram)（回复标签 + replyToMode 设置）
-* [OpenClaw 助手设置](/start/openclaw)
-* [macOS 应用](/platforms/macos)（Gateway 网关生命周期）
+* [Gateway 网关配置](/openclaw/gateway/configuration)（配置模式 + 示例）
+* [Discord](/openclaw/channels/discord) 和 [Telegram](/openclaw/channels/telegram)（回复标签 + replyToMode 设置）
+* [OpenClaw 助手设置](/openclaw/start/openclaw)
+* [macOS 应用](/openclaw/platforms/macos)（Gateway 网关生命周期）

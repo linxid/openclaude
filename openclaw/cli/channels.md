@@ -7,8 +7,8 @@ description: "channels 文档"
 
 相关文档：
 
-* 渠道指南：[渠道](/channels/index)
-* Gateway 网关配置：[配置](/gateway/configuration)
+* 渠道指南：[渠道](/openclaw/channels/index)
+* Gateway 网关配置：[配置](/openclaw/gateway/configuration)
 
 ## 常用命令
 

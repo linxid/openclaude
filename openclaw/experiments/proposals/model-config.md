@@ -5,9 +5,9 @@ description: "模型配置探索 文档"
 
 本文档记录了未来模型配置的**构想**。这不是正式的发布规范。如需了解当前行为，请参阅：
 
-* [模型](/concepts/models)
-* [模型故障转移](/concepts/model-failover)
-* [OAuth + 配置文件](/concepts/oauth)
+* [模型](/openclaw/concepts/models)
+* [模型故障转移](/openclaw/concepts/model-failover)
+* [OAuth + 配置文件](/openclaw/concepts/oauth)
 
 ## 动机
 

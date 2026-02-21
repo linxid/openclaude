@@ -7,8 +7,8 @@ Gateway 网关和渠道的健康检查 + 快速修复。
 
 相关内容：
 
-* 故障排除：[故障排除](/gateway/troubleshooting)
-* 安全审计：[安全](/gateway/security)
+* 故障排除：[故障排除](/openclaw/gateway/troubleshooting)
+* 安全审计：[安全](/openclaw/gateway/security)
 
 ## 示例
 
