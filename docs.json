@@ -123,7 +123,12 @@
               "claude-code/09-resources/01-security",
               "claude-code/09-resources/02-data-usage",
               "claude-code/09-resources/03-legal-and-compliance",
-              "claude-code/09-resources/04-troubleshooting",
+              "claude-code/09-resources/04-troubleshooting"
+            ]
+          },
+          {
+            "group": "更新日志",
+            "pages": [
               "claude-code/changelog"
             ]
           }
