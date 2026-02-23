@@ -94,6 +94,7 @@ claude
   打开 Claude 后，有多种方式可以使用 Claude，默认的方式是登录 Claude 官方账号，如何配置第三方 API，可以参阅 [第三方 API](/claude-code/01-getting-started/04-third-party-api)
 </Tip>
 
+
 ## 步骤 3：启动您的第一个会话
 
 在任何项目目录中打开您的终端并启动 Claude Code：
