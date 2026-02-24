@@ -231,6 +231,88 @@ openclaw models list --all
 
 ```
 
+## Openclaw IOS应用连接OpenClaw教程：
+
+**OpenClaw iOS（模拟器）从安装到手动连接 Mac mini 全流程（不使用配对码）**
+
+1. **安装依赖（Mac mini）**
+```bash
+cd /Volumes/Project/Agent/openclaw
+pnpm install
+brew install xcodegen
+```
+
+2. **生成 iOS 工程**
+```bash
+cd /Volumes/Project/Agent/openclaw/apps/ios
+xcodegen generate
+open OpenClaw.xcodeproj
+```
+
+3. **在 Xcode 安装到模拟器**
+- Scheme: `OpenClaw`
+- Destination: 任选 iPhone Simulator（如 iPhone 16）
+- Configuration: `Debug`
+- 点击 Run（`⌘R`）
+
+4. **启动并确认网关**
+```bash
+openclaw gateway start
+openclaw gateway status
+lsof -nP -iTCP:18789 -sTCP:LISTEN
+```
+应看到监听 `127.0.0.1:18789`。
+
+5. **确认网关认证方式**
+```bash
+openclaw config get gateway.auth.mode
+```
+你当前是 `token` 模式。
+
+6. **取手动连接所需凭证**
+```bash
+jq -r '.gateway.auth.token' ~/.openclaw/openclaw.json
+```
+拿到 token（password 在 token 模式下不用填）。
+
+7. **iOS App 手动连接（不走 setup code）**
+在模拟器 App 中：
+- `Settings -> Gateway -> Advanced`
+- 打开 `Use Manual Gateway`
+- Host: `127.0.0.1`（或 `localhost`）
+- Port: `18789`
+- Use TLS: `off`
+- Gateway OAuth Token: 第 6 步 token
+- Gateway OAuth Password: 留空
+- 点击 `Connect (Manual)`
+
+8. **如果出现 `pairing required`（常见）**
+这不是 setup code，而是设备审批，执行：
+```bash
+openclaw devices list
+openclaw devices approve <requestId>
+```
+或 Telegram `/pair approve`。
+
+9. **验证连接**
+```bash
+openclaw logs --follow --plain
+```
+并在 App 的 `Settings -> Gateway` 看：
+- `Status` 已连接
+- `Server/Address` 有值
+
+---
+
+**一键排障命令（连接失败时按顺序跑）**
+```bash
+openclaw gateway status
+openclaw doctor
+openclaw gateway restart
+openclaw devices list
+openclaw logs --follow --plain
+```
+
 ## Bug 解决：
 
 ### Bug1： gateway connect failed: Error: pairing required
